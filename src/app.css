@@ -1,69 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
- 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
- 
+    --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
- 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
- 
-    --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
- 
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
- 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
- 
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 210 20% 98%;
- 
-    --ring: 224 71.4% 4.1%;
- 
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
- 
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
- 
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
- 
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
- 
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
- 
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
- 
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
- 
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
- 
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
- 
-    --ring: 216 12.2% 83.9%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 346.8 77.2% 49.8%;
   }
 }
  
@@ -75,3 +59,121 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+:root {
+  font-family: 'Geist', sans-serif;
+  font-optical-sizing: auto;
+  --page-padding: 1rem;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition: 0.3s var(--ease-out-expo);
+}
+
+strong {
+  color: hsla(var(--foreground) / 90%);
+}
+
+a strong {
+  color: hsla(var(--primary) / 90%);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block-start: 2rem;
+}
+
+p {
+  margin-block: 1rem;
+}
+
+li p {
+  display: inline;
+}
+
+.markdown a {
+  color: hsla(var(--primary));
+  text-decoration: none;
+}
+
+table {
+  border: 2px solid hsla(var(--muted-foreground));
+  border-radius: 8px;
+  border-collapse: separate;
+}
+
+table * {
+  padding: 1rem;
+  }
+
+.advisory {
+  padding: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+  font-weight: 700;
+  border-radius: var(--radius);
+}
+
+ul li::before {
+  content: "-";
+  margin-right: 0.5rem;
+}
+
+mark {
+  background: #2196F360;
+  padding: 0;
+  color: hsla(var(--secondary-foreground));
+}
+
+mark[red] {
+  background: #FF000040;
+}
+
+mark[yellow] {
+  background: #FFEB3B40;
+}
+
+.sticky-top {
+  position: sticky;
+  top: var(--page-padding);
+}
+

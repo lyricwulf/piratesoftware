@@ -1,0 +1,123 @@
+---
+title: "Summary"
+order: -1
+---
+
+<script>
+   import ChatBubble from '$lib/components/ChatBubble.svelte';
+</script>
+
+<div class="advisory">
+
+This document contains content that may be disturbing,  
+including emotional abuse, manipulation,  
+and adult themes including sexual exploitation and infidelity.
+
+Please read at your own discretion.
+
+</div>
+
+## **Summary**
+
+When I was 20 years old, I was emotionally abused and manipulated by **Jason Thor Hall (aka PirateSoftware)**, aged 31 at the time, for his own sexual and financial gain.
+
+Thor’s friend and business partner **Shaye (aka RiverMakes, FlSHB0NES)**, aged
+22 at the time—while at first sympathetic to my situation—**would ultimately be
+a willing accomplice to Thor silencing me**.
+
+I saw Thor as an older male role model in my life. **I admired him** as a
+content creator, being an aspiring creator myself. **I viewed him as trustworthy
+because of his large following and impressive career**.
+
+**I was extremely honored** to have such a successful and notable figure take interest in me romantically and sexually. **I felt like he was way out of my league and that I couldn’t possibly do better than him**.
+
+## **Constructing Commitment**
+
+**Thor would cultivate an emotional dependence** on him, **showering me with platitudes** and **being unconditionally supportive** eg.
+
+<ChatBubble withDate link="messages.html#message49755" from="Thor" time="2018/08/30 10:16:56 AM">Can't see why anyone would break up with you tbh</ChatBubble>
+
+He would **push our attachment by calling me pet names** such as “babe” and “my
+wuff”.
+
+<ChatBubble withDate link="messages.html#message49515" from="Thor" time="2018/08/30 08:36:01 AM">*Turns his head up and kisses you softly.* "My wuff"</ChatBubble>
+<ChatBubble withDate link="messages2.html#message50349" from="Thor" time="2018/09/01 12:49:53 PM">Of course, thanks babe</ChatBubble>
+<ChatBubble withDate link="messages2.html#message50843" from="Thor" time="2018/09/04 11:13:13 PM">starting up now babe :3</ChatBubble>
+<ChatBubble withDate link="messages3.html#message56160" from="Thor" time="2018/09/13 09:13:47 AM">*Flops down on his stomach with his arms up.* "Whatever you like babe"</ChatBubble>
+
+He would **train me like a dog**. Whenever we had conversations about our
+relationship **he would take advantage of our power dynamic to define what is
+right or wrong**, rather than coming to a mutual agreement. **He would reward
+me** by saying “good answer” **or punish me** with blame, bullying, or abandonment. 
+
+<ChatBubble withDate link="messages.html#message49713" from="Thor" time="2018/08/30 10:09:50 AM">Good answer *kisses your nose*</ChatBubble>
+<ChatBubble withDate link="messages.html#message49828" from="Thor" time="2018/08/30 10:33:39 AM">Good answer</ChatBubble>
+<ChatBubble withDate link="messages4.html#message64965" from="Thor" time="2018/10/01 12:32:50 AM">Good answer ;3</ChatBubble>
+
+Thor would demonstrate that [he wanted me to be **“infatuated”** and **“obsessed”**](/) with him. Specifically, he recalls his ideal version of me: 
+
+<ChatBubble withDate link="messages5.html#message66253" from="Thor" time="2018/10/01 04:52:36 PM">Said you loved me, said you would give me your entire savings, wanted to live with me, wanted to be with me forever</ChatBubble>
+
+When [**I told him repeatedly that I was not interested**](/) in a committed relationship, [**Thor insisted that I change my mind**](/), and **he tried to [gaslight me into believing that I was already implicitly committed](/)** to him by not having any other love interests.
+
+When **he wasn’t satisfied with my response** to that conversation, [**Thor refused to interact with me**](/)**, taking advantage of my emotional dependence which he cultivated**. _\[elaborate, abandonment\]_
+
+After I was manipulated into asking him to date me, **he blamed my reluctance in order to convince me to act my part of a committed relationship without being “official”**: _“As long as we don't have any more surprises like this yes. I'd like a week for things to calm down” ([source](/))_
+
+## **TwitchCon Meetup**
+
+Throughout our conversations **he constantly pushed for us to meet at TwitchCon 2018**. He would regularly bring up how nice it would be to see me there and how we would have a lot of “fun” there.
+
+**I wanted to room with him and Shaye** since it would have cost around $500 for me to room by myself. **He would remind me almost daily to book my own hotel room**, insisting it was the only way we would have “alone time”.
+
+We met up at TwitchCon 2018, as planned, on October 26\.
+
+On the first day, we roamed with Shaye and some other streamers. By night, **the group went to a bar, but I could not join since I was underage**. I went back to my hotel room, and **Thor excused himself from the bar and had the promised “alone time” with me** before heading back to the bar.
+
+On the second day, Thor was feeling sick. While we were roaming and chatting, **Shaye mentioned that Thor has a “secret wife”**. After we went back to Thor’s hotel room **I messaged him asking about a wife, which he denied and blamed me** for making the situation weird. \[[source](/)\]
+
+Since Thor refused to talk, **I decided to message Shaye about it**. I explained my situation to them, and when asked if it was true, **I sent screenshots of the conversation where I guided Thor to my hotel room**. Shaye was sympathetic, and **I would learn that they were also sexual partners, and that they were in an agreement to be open at the con as long as they communicated it with each other**. \[[source: i wrote this down the day after](/)\]
+
+Shaye was devastated, and messaged Thor about his uncommunicated infidelity. **Thor blamed me for “sending logs to Shaye”, saying “leave me alone” and “Why that would ever be ok is beyond me”**.
+
+I left the room, and he blocked me.
+
+## **Public Fallout**
+
+In early March 2019 I [charged back](/) a donation of $800 made in August 2018\. Thor would [publicly call me out](/) by name and make posts on Twitter, painting me as a scammer. On April 1st 2019 [Thor filed a DMCA claim](/) against my YouTube channel.
+
+On April 5th 2019, I [posted about the strike](/) on Twitter, and Thor would
+continue calling me out on the chargeback. I responded with a [Google Doc](/)
+recounting my experience with Thor at TwitchCon.
+
+In the past 5 years he deleted his original Discord announcement addressing the situation ([as well as all messages in his Discord around that time](/)). However, considering **members of his community as well as Shaye mention these “facts” in both public and private interactions, we can infer that this information comes directly from Thor**.
+
+There were three aspects to [Thor’s defense](/):
+
+- **“Thor is divorced.”**
+- **“Lyric doxxed Thor.”**
+- **“Lyric planned this and he is a scammer.”**
+
+All of these would seem like the truth because the public has no greater knowledge about any of these facts. He had reasonable deniability for his marriage since it wasn’t publicized, and he was able to convince the public that **I publicly leaked his phone number and cited attacks via his phone**.
+
+“**Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number**, so he's essentially gotten doxxed, and **people have already started subscribing him to shit with his number**.” \- Member of his community
+
+In reality:
+
+- [**Thor was married from October 17, 2015 to August 19, 2020**](/).
+- **None of the published messages, images, or metadata included any personal information except for Lyric’s phone number occurring twice**. ([Telegram Source is the same as I released in 2018](/))
+- **Thor [focused on financially exploiting me](/)**, **and [rewarded me with emotional and sexual attention](/) after large donations**.
+
+## **My Silencing**
+
+Thor was able to lie so confidently that **even I would end up believing him**.
+At the time I didn’t read back through the chat logs so I didn't know that his
+phone number wasn't actually there.
+
+I found another romantic partner in January 2019\. Thor and Shaye would contact my partner to convince them of my wrongdoing. **They told my partner that I doxxed them, attacked them, and proposed a solution** ([source](/))**:**
+
+**“\[Lyric\] can fix this on his end by deleting the posts / reversing the chargeback”**. ([source](/))
+
+Convinced by Thor and Shaye’s lies and manipulation, **my partner would give me an ultimatum**, **that I have to drop the “drama”** and delete all my posts in order to show that I care about our relationship. **My partner assured me that Shaye was trustworthy** because they are friends of a friend, and **assured me that Thor was trustworthy** because he [agreed to delete his posts](/).
+
+**On April 14th 2019, I was coerced to delete all of my posts**. However, **Thor and Shaye did not delete any of their messages as promised**, instead leaving all of their Twitter replies and Discord posts public, making it look like I was remorseful because my “stunt” didn’t work and further cementing the image of a “scammer”. ([Shaye deleted their replies to my tweet on Feb 22, 2025](/).)

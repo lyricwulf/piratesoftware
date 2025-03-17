@@ -1,0 +1,26 @@
+---
+title: Preface
+order: 2
+---
+
+## Preface
+This document aims to summarize all information about the interactions between myself (Lyric) and Jason Thor Hall.
+
+In pursuit of clarity, I will do my best to include as many details as I possibly can without harming others. **Any explanation of my motivations in the past should not be viewed as an excuse for the behavior.** I will try to explain everything to the best of my ability.
+
+## Using the Archive
+
+An archive of the Telegram chat between myself and Jason (“Thor”) has been
+uploaded to https://piratesoftware.sucks/archive/telegram. All transcripts will be cited with a link,
+which can be used to view additional messages before and after the transcript.
+
+The archive should not be browsed if you are under the age of 18.
+
+While this document selects specific points of interaction, no messages were
+omitted from the archive. The archive is the same as uploaded by myself on Dec
+18th, 2018, and no messages have been curated or modified in any way,
+except as disclosed in the Telegram Source Info section.
+
+## Document Mutability
+
+This document is subject to change. I strongly encourage the use of archiving.
