@@ -2,8 +2,6 @@
   import NavNode from "./NavNode.svelte";
   import "../app.css";
   import { NAV_ITEMS } from "./md-metadata";
-
-  console.log(NAV_ITEMS);
 </script>
 
 <nav class="sticky-top">

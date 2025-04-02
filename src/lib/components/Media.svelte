@@ -1,9 +1,9 @@
 <script>
-  let { key, children, type } = $props();
+  let { key, media } = $props();
 </script>
 
-<div class={type}>
-  <img src="/{type}/{key}.webp" alt={type} />
+<div class={media}>
+  <img src="/{media}/{key}.webp" alt={media} />
 </div>
 
 <style>

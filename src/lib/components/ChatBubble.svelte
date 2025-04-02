@@ -1,20 +1,45 @@
-<script>
+<script lang="ts">
+  import ANNOTATIONS from "$lib/annotations";
+  import AnnotationBlock from "$lib/components/AnnotationBlock.svelte";
+  import Media from "$lib/components/Media.svelte";
+  import ChatBubble from "$lib/components/ChatBubble.svelte";
+
   let {
     from = "",
-    children,
-    time = "",
-    link = "",
+    text,
+    dt = 0,
+    id,
     withDate = false,
+    media,
+    key,
+    file,
+    dialog = true,
   } = $props();
+
+  const inProps = { from, text, dt, id, withDate, media, key, file, dialog };
 
   let useRight = from === "Lyric";
   let background = useRight
     ? "linear-gradient(315deg, #0D47A1 25%, #1565C0 75%)"
     : "linear-gradient(45deg, #263238 25%, #37474F 75%)";
 
+  const link = `messages${file === 1 ? "" : file}.html#message${id}`;
+
+  const messageId = id;
+
+  const messageAnnotation = ANNOTATIONS.get(messageId || "");
+  const annotatedMessage = messageAnnotation?.metadata.message;
+
+  const hasAnnotation = Boolean(messageAnnotation);
+  const useAnnotated = Boolean(annotatedMessage);
+
+  // const annotation = import.meta.glob(`./annotation${messageId}.svx`, {
+  //   eager: true,
+  // });
+
   let timeStr = $derived(
     (() => {
-      let date = new Date(time);
+      let date = new Date(dt * 1000);
       if (!withDate) {
         return date.toLocaleTimeString("en-US", {
           hour: "numeric",
@@ -32,20 +57,51 @@
       });
     })()
   );
+
+  let open = $state(null as boolean);
+  let chatBubble = $state<HTMLDivElement>(null);
+
+  $effect(() => {});
 </script>
 
 <div
   class="chat-bubble text-sm"
-  class:right={useRight}
+  class:useRight
+  class:hasAnnotation
+  class:dialog
   style="background: {background}"
+  onclick={() => (open = !open)}
+  bind:this={chatBubble}
 >
   <div>
-    {@render children()}
+    {#if useAnnotated}
+      {@html annotatedMessage}
+    {:else if text}
+      {text}
+    {/if}
+    {#if media}
+      <Media {media} {key} />
+    {/if}
   </div>
   <div class="chat-time text-xs text-gray-400 text-right">
-    <a href="/archive/telegram/{link}" rel="external">{timeStr}</a>
+    <a href="/archive/telegram/{link}" rel="external" target="_blank">
+      {timeStr}
+    </a>
   </div>
 </div>
+
+{#if hasAnnotation && dialog}
+  <AnnotationBlock
+    {messageId}
+    {open}
+    onOpenChange={(newOpen) => (open = newOpen)}
+    children={messageAnnotation.default}
+  >
+    {#snippet referenceMessage()}
+      <ChatBubble {...inProps} dialog={false} />
+    {/snippet}
+  </AnnotationBlock>
+{/if}
 
 <style>
   a {
@@ -63,6 +119,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+
+    color: hsl(var(--foreground));
   }
 
   .chat-time {
@@ -85,12 +143,29 @@
     border-radius: 5px;
   }
 
-  .right {
+  .chat-bubble :global(mark) {
+    transition: background-color 0.2s;
+  }
+
+  .chat-bubble.dialog:not(:hover) :global(mark) {
+    --mark-opacity: 0.1;
+    /* background-color: transparent; */
+  }
+
+  .useRight {
     background-color: hsl(var(--accent));
     border-radius: 1rem 1rem 0 1rem;
 
     align-self: flex-end;
     margin-left: auto;
+  }
+
+  .chat-bubble.hasAnnotation.dialog {
+    transition: transform 0.2s;
+  }
+  .chat-bubble.hasAnnotation.dialog:hover {
+    cursor: pointer;
+    transform: scale(1.01);
   }
 
   @media (max-width: 1200px) {

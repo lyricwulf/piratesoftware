@@ -6,23 +6,35 @@
   import { pushState } from "$app/navigation";
   import { tick, onMount } from "svelte";
 
-  let { children, referenceMessage, for: messageId } = $props();
+  let {
+    children,
+    referenceMessage,
+    messageId,
+    open: extOpen,
+    onOpenChange,
+  } = $props();
 
   // NOTE: avoid setting the initial open state to true.
   // When open state is initially true, the dialog will be open at the start
   // but closing that dialog will cause the main body to be unscrollable.
-  let open = $state(false);
+  let open = $state(null as boolean);
 
   // setting the state after mount to circumvent the above issue
   onMount(() => {
-    if (getQueryParameter() === messageId) {
-      open = true;
+    open = getQueryParameter() === String(messageId);
+  });
+
+  $effect(() => {
+    if (typeof extOpen === "boolean") {
+      console.log("extOpen", extOpen, open);
+      open = extOpen;
     }
   });
 
   // sync the query parameter with the dialog state
   $effect(() => {
     void open; // dependency
+    if (typeof open !== "boolean") return;
     tick().then(() => {
       if (open) {
         setQueryParameter(messageId);
@@ -52,22 +64,22 @@
   }
 </script>
 
-<Dialog.Root bind:open>
-  <Dialog.Trigger>
-    <Button
-      variant="ghost"
-      class="gap-2 flex mx-auto"
-      on:click={() => (open = !open)}
-    >
-      <StickyNote /> Annotation
-    </Button></Dialog.Trigger
+<Dialog.Root bind:open {onOpenChange}>
+  <!-- <Dialog.Trigger> -->
+  <!-- <Button
+    variant="ghost"
+    class="flex gap-2 mx-auto mb-8"
+    on:click={() => (open = !open)}
   >
+    <StickyNote /> Annotation
+  </Button> -->
+  <!-- </Dialog.Trigger> -->
   <Dialog.Content class="max-w-[600px]">
     <Dialog.Header class="max-h-[calc(100vh-10rem)]">
       <!-- <Dialog.Title>Are you sure absolutely sure?</Dialog.Title> -->
       {@render referenceMessage()}
       <!-- <ScrollArea> -->
-      <ScrollArea class="pr-2">
+      <ScrollArea class="pr-2 mt-1.5">
         <Dialog.Description>
           {@render children()}
         </Dialog.Description>

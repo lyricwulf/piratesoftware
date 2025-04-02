@@ -13,45 +13,45 @@
     typeof window !== "undefined" && window.location.hash
   );
 
-  function setSection(section: string) {
-    if (currentSection === section) return;
-    currentSection = section;
-    const location = window.location.toString().split("#")[0];
-    replaceState(location + section, { hash: section });
-  }
+  // function setSection(section: string) {
+  //   if (currentSection === section) return;
+  //   currentSection = section;
+  //   const location = window.location.toString().split("#")[0];
+  //   replaceState(location + section, { hash: section });
+  // }
 
-  let destroyCb = $state(() => {});
-  function attachListener() {
-    destroyCb?.();
-    const headings = [...document.querySelectorAll("a")].filter((a) => {
-      return `#${a.parentElement?.id}` === a.hash;
-    });
-    const scroll_cb = (e: Event) => {
-      for (const ha of headings) {
-        const rect = ha.getBoundingClientRect();
-        if (rect.top >= 0) {
-          if (currentSection === ha.hash) return;
-          setSection(ha.hash);
-          return;
-        }
-      }
-    };
+  // let destroyCb = $state(() => {});
+  // function attachListener() {
+  //   destroyCb?.();
+  //   const headings = [...document.querySelectorAll("a")].filter((a) => {
+  //     return `#${a.parentElement?.id}` === a.hash;
+  //   });
+  //   const scroll_cb = (e: Event) => {
+  //     for (const ha of headings) {
+  //       const rect = ha.getBoundingClientRect();
+  //       if (rect.top >= 0) {
+  //         if (currentSection === ha.hash) return;
+  //         setSection(ha.hash);
+  //         return;
+  //       }
+  //     }
+  //   };
 
-    document.addEventListener("scroll", scroll_cb, { passive: true });
-    destroyCb = () => {
-      document.removeEventListener("scroll", scroll_cb);
-    };
-    return () => destroyCb();
-  }
+  //   document.addEventListener("scroll", scroll_cb, { passive: true });
+  //   destroyCb = () => {
+  //     document.removeEventListener("scroll", scroll_cb);
+  //   };
+  //   return () => destroyCb();
+  // }
 
-  onMount(() => {
-    attachListener();
-  });
+  // onMount(() => {
+  //   attachListener();
+  // });
 
-  afterNavigate(() => {
-    attachListener();
-    setSection(page.url.hash);
-  });
+  // afterNavigate(() => {
+  //   attachListener();
+  //   setSection(page.url.hash);
+  // });
 </script>
 
 <div class="sidebar sticky-top">

@@ -54,6 +54,7 @@
 @layer base {
   * {
     @apply border-border;
+    @apply leading-normal;
   }
   body {
     @apply bg-background text-foreground;
@@ -117,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-block-start: 2rem;
 }
 
-p {
+p ~ p {
   margin-block: 1rem;
 }
 
@@ -138,7 +139,7 @@ table {
 
 table * {
   padding: 1rem;
-  }
+}
 
 .advisory {
   padding: 1rem;
@@ -158,18 +159,37 @@ ul li::before {
   margin-right: 0.5rem;
 }
 
+ol {
+  list-style-type: decimal;
+  padding-inline-start: 1rem;
+}
+
+.markdown ol li {
+  margin-block: 0.5rem;
+  padding-inline-start: 0.25rem;
+}
+
+.markdown ol li::marker {
+  margin-right: 2rem;
+}
+
 mark {
-  background: #2196F360;
+  --mark-opacity: 0.3;
+  background: rgba(33, 150, 243, var(--mark-opacity));
   padding: 0;
-  color: hsla(var(--secondary-foreground));
+  color: inherit;
 }
 
 mark[red] {
-  background: #FF000040;
+  background: rgba(255, 0, 0, var(--mark-opacity));
 }
 
 mark[yellow] {
-  background: #FFEB3B40;
+  background: rgba(255, 235, 59, var(--mark-opacity));
+}
+
+mark[blue] {
+  background: rgba(33, 150, 243, var(--mark-opacity));
 }
 
 .sticky-top {
@@ -177,3 +197,9 @@ mark[yellow] {
   top: var(--page-padding);
 }
 
+mark[area] {
+  display: block;
+  padding: 1rem;
+  margin: 0.25rem 0;
+  border-radius: var(--radius);
+}

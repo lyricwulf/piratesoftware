@@ -1,12 +1,16 @@
 import DIR_METADATA from "./dir-metadata.json";
 
-const blogFiles = import.meta.glob("/src/routes/**/*.svx", { eager: true });
+const svxFiles = import.meta.glob("/src/routes/**/*.svx", { eager: true });
 
 export const NAV_ITEMS = { name: "", children: [], href: "" };
 
 export const MD_METADATA = new Map<string, any>();
 
-for (const [filePath, fileModule] of Object.entries(blogFiles)) {
+for (const [filePath, fileModule] of Object.entries(svxFiles)) {
+  // skip annotations
+  if (filePath.match(/\/annotation-\d*\.svx$/)) {
+    continue;
+  }
   const parts = filePath.split("/");
   const name = parts[parts.length - 2];
   const pagePath = filePath

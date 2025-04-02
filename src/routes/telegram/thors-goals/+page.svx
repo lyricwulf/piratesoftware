@@ -6,6 +6,7 @@ title: Thor's Goals
   import Media from "$lib/components/Media.svelte";  
   import ChatBubble from "$lib/components/ChatBubble.svelte";
   import AnnotationBlock from "$lib/components/AnnotationBlock.svelte";
+  import Messages from "$lib/components/Messages.svelte";
 </script>
 
 ## Thor’s Goals
@@ -62,7 +63,9 @@ Not only is that his ideal version of Lyric, he **deserves** to have **that Lyri
 
 ## Annotated Transcript
 
-<ChatBubble link="messages5.html#message66244" from="Lyric" time="2018/10/01 04:34:48 PM">His mate knows and the erp isn't me trying to get with them or anything</ChatBubble>
+<Messages from="66244" to="66996" />
+
+<!-- <ChatBubble link="messages5.html#message66244" from="Lyric" time="2018/10/01 04:34:48 PM">His mate knows and the erp isn't me trying to get with them or anything</ChatBubble>
 <ChatBubble link="messages5.html#message66245" from="Lyric" time="2018/10/01 04:34:50 PM">and</ChatBubble>
 <ChatBubble link="messages5.html#message66246" from="Thor" time="2018/10/01 04:35:03 PM">Then what's the point!</ChatBubble>
 <ChatBubble link="messages5.html#message66247" from="Lyric" time="2018/10/01 04:35:35 PM">I... guess there's no point.</ChatBubble>
@@ -78,7 +81,9 @@ Not only is that his ideal version of Lyric, he **deserves** to have **that Lyri
 <ChatBubble link="messages5.html#message66253" from="Thor" time="2018/10/01 04:52:36 PM"><mark blue>Said you loved me, said you would give me your entire savings, wanted to live with me, wanted to be with me forever</mark>, <mark red>now you're talking about hookups even though they weren't hookups</mark> and <mark yellow>how you want to keep erping with a dude online despite him being with someone</mark> and it being not ok for me and stopping us from moving forward.</ChatBubble>
 {/snippet}
 
-We know for a fact that some of the items in this list are exactly what Jason wants:
+<mark area blue>
+Jason has demonstrated that some of the items in this list are
+exactly what he wants:
 
 - **you loved me**  
 - **wanted to live with me**  
@@ -97,18 +102,36 @@ Let’s explore this for a moment. Jason is referring to a single
 
 It was only mentioned **in conversation** that one time, and Lyric also made numerous donations to Jason. But isn’t it interesting that this is one of the core facets that Jason remembers? 
 
-Jason remembers that small quip. Why recount this detail specifically? **Why not asking for sleep calls? What about Lyric staying up late even though he has 8am classes? Or acting like a pet? There’s something notable about the financial incentive for Jason.**
+Why recount this detail specifically? Why not
+- Lyric asking for sleep calls? 
+- Lyric staying up late even though he has 8am classes? 
+- Lyric acting like a pet? 
+
+**There’s something notable about the financial incentive for Jason.**
 
 Not only does it demonstrate quite the selective memory in recounting the past, but also **it’s a description of his ideal version of Lyric**. You will see in these upcoming messages that Jason desperately wants to get down to the bottom of this: **why did Lyric stray from this path?** And more importantly, **what can Jason do now to keep Lyric under his control?**
+</mark>
 
-I don’t think this detail ever really mattered, it only functions as a tool for blame.
 
-Well Lyric said they’d stop but **what Jason doesn’t like is that Lyric still *wants* to**. He wants two things here:
+<mark area red>
 
-1. He wants Lyric to be emotionally dependent on him, to the point where **Lyric will have no support group who can help them escape this situation**. This is a common manipulative practice in abusive relationships and cult induction.  
+The specific of this detail never really mattered, since **Thor
+was upset at the roleplaying, and he only later attempts to conflate the two. In
+this context, it only functions as a tool for blame.**
+
+</mark>
+
+
+<mark area yellow>
+
+Even though Lyric said they’d stop, **what Jason wants is obsession
+from Lyric, and that means not having an inkling of desire for anyone else**. This confirms:
+
+1. He wants Lyric to be emotionally dependent on him, to the point where **Lyric will have no support group who can help them escape this situation**.
+
 2. He wants Lyric to be sexually dependent on him, to the point where **Lyric has no desire for sexual others whatsoever**.
 
-This seems to only confirm those things are what Jason values.
+</mark>
 
 </AnnotationBlock>
 
@@ -160,4 +183,4 @@ This seems to only confirm those things are what Jason values.
 <ChatBubble link="messages5.html#message66989" from="Lyric" time="2018/10/02 12:43:51 AM">That game looks really fun~</ChatBubble>
 <ChatBubble link="messages5.html#message66990" from="Lyric" time="2018/10/02 12:43:57 AM">Also I'm going to bed now</ChatBubble>
 <ChatBubble link="messages5.html#message66991" from="Lyric" time="2018/10/02 12:44:02 AM">Good night!</ChatBubble>
-<ChatBubble link="messages5.html#message66996" from="Thor" time="2018/10/02 03:53:22 AM">Night</ChatBubble>
+<ChatBubble link="messages5.html#message66996" from="Thor" time="2018/10/02 03:53:22 AM">Night</ChatBubble> -->
