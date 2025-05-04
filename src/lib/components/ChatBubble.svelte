@@ -3,6 +3,8 @@
   import AnnotationBlock from "$lib/components/AnnotationBlock.svelte";
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
+  import * as Collapsible from "$lib/components/ui/collapsible";
+  import { Info } from "@lucide/svelte";
 
   let {
     from = "",
@@ -28,14 +30,13 @@
   const messageId = id;
 
   const messageAnnotation = ANNOTATIONS.get(messageId || "");
-  const annotatedMessage = messageAnnotation?.metadata.message;
+  const annotation = {
+    component: messageAnnotation?.default,
+    ...messageAnnotation?.metadata,
+  };
 
-  const hasAnnotation = Boolean(messageAnnotation);
-  const useAnnotated = Boolean(annotatedMessage);
-
-  // const annotation = import.meta.glob(`./annotation${messageId}.svx`, {
-  //   eager: true,
-  // });
+  const hasAnnotation = Boolean(messageAnnotation && !annotation?.comment);
+  const useAnnotated = Boolean(annotation?.message);
 
   let timeStr = $derived(
     (() => {
@@ -58,7 +59,7 @@
     })()
   );
 
-  let open = $state(null as boolean);
+  let open = $state(annotation?.comment ? true : (null as boolean));
   let chatBubble = $state<HTMLDivElement>(null);
 
   $effect(() => {});
@@ -70,12 +71,17 @@
   class:hasAnnotation
   class:dialog
   style="background: {background}"
-  onclick={() => (open = !open)}
+  onclick={() => {
+    open = !open;
+    navigator.clipboard.writeText(`annotation-${id}`);
+  }}
+  role="button"
   bind:this={chatBubble}
 >
   <div>
+    ({id})
     {#if useAnnotated}
-      {@html annotatedMessage}
+      {@html annotation?.message}
     {:else if text}
       {text}
     {/if}
@@ -88,6 +94,26 @@
       {timeStr}
     </a>
   </div>
+  {#if annotation?.comment}
+    <div
+      class="annotation-comment w-full"
+      style="--comment-color: var(--{annotation.color})"
+    >
+      <Collapsible.Root {open}>
+        <div class="flex items-center gap-2 font-bold">
+          <Info class="shrink-0 basis-[20px]" />
+          Comment
+        </div>
+        <Collapsible.Content>
+          <div
+            class="mt-2 pt-1 border-t-1 border-solid border-muted-foreground"
+          >
+            {@html annotation.comment}
+          </div>
+        </Collapsible.Content>
+      </Collapsible.Root>
+    </div>
+  {/if}
 </div>
 
 {#if hasAnnotation && dialog}
@@ -95,7 +121,7 @@
     {messageId}
     {open}
     onOpenChange={(newOpen) => (open = newOpen)}
-    children={messageAnnotation.default}
+    children={annotation.component}
   >
     {#snippet referenceMessage()}
       <ChatBubble {...inProps} dialog={false} />
@@ -104,6 +130,10 @@
 {/if}
 
 <style>
+  :root {
+    --red: hsla(0, 100%, 20%, 0.4);
+    --yellow: hsla(45, 100%, 15%, 0.4);
+  }
   a {
     color: hsl(var(--text)) !important;
   }
@@ -150,6 +180,26 @@
   .chat-bubble.dialog:not(:hover) :global(mark) {
     --mark-opacity: 0.1;
     /* background-color: transparent; */
+  }
+
+  :global(.annotation-comment *) {
+    --mark-opacity: 0.4 !important;
+  }
+
+  .annotation-comment {
+    /* color: var(--comment-color); */
+    color: hsl(var(--muted-foreground));
+    background: var(--comment-color, hsla(var(--popover) / 35%));
+    border: 1px solid hsla(var(--muted-foreground) / 10%);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 0.25rem;
+
+    transition: border-color 0.2s;
+  }
+
+  .chat-bubble:hover .annotation-comment {
+    border-color: hsla(var(--muted-foreground) / 40%);
   }
 
   .useRight {

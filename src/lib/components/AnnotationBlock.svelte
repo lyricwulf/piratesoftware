@@ -80,7 +80,7 @@
       {@render referenceMessage()}
       <!-- <ScrollArea> -->
       <ScrollArea class="pr-2 mt-1.5">
-        <Dialog.Description>
+        <Dialog.Description class="markdown">
           {@render children()}
         </Dialog.Description>
       </ScrollArea>

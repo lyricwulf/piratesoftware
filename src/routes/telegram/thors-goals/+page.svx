@@ -1,5 +1,6 @@
 ---
 title: Thor's Goals
+order: 3
 ---
 
 <script>
@@ -14,17 +15,7 @@ title: Thor's Goals
 This page is a direct continuation of 10/1 Commitment, which I trust you read
 because it has a ❗.
 
-<div class="chatlog">
-  <ChatBubble name="Thor">
-    <Media type="sticker" key="69" />
-  </ChatBubble>
-  <ChatBubble name="Thor">
-    You've said a lot of wild shit since we met.
-  </ChatBubble>
-  <ChatBubble name="Thor">
-    <mark red>Said you</mark> loved me, said you would give me your entire savings, wanted to live with me, wanted to be with me forever
-  </ChatBubble>
-</div>
+<Messages from="66251" to="66253" />
 
 We know for a fact that some of the items in this list are exactly what Jason wants:
 
@@ -64,123 +55,3 @@ Not only is that his ideal version of Lyric, he **deserves** to have **that Lyri
 ## Annotated Transcript
 
 <Messages from="66244" to="66996" />
-
-<!-- <ChatBubble link="messages5.html#message66244" from="Lyric" time="2018/10/01 04:34:48 PM">His mate knows and the erp isn't me trying to get with them or anything</ChatBubble>
-<ChatBubble link="messages5.html#message66245" from="Lyric" time="2018/10/01 04:34:50 PM">and</ChatBubble>
-<ChatBubble link="messages5.html#message66246" from="Thor" time="2018/10/01 04:35:03 PM">Then what's the point!</ChatBubble>
-<ChatBubble link="messages5.html#message66247" from="Lyric" time="2018/10/01 04:35:35 PM">I... guess there's no point.</ChatBubble>
-<ChatBubble link="messages5.html#message66248" from="Thor" time="2018/10/01 04:37:15 PM"><Media type="sticker" key="75" /></ChatBubble>
-<ChatBubble link="messages5.html#message66249" from="Thor" time="2018/10/01 04:40:07 PM">Boy you gotta get your priorities straight.</ChatBubble>
-<ChatBubble link="messages5.html#message66250" from="Lyric" time="2018/10/01 04:40:29 PM">I know...</ChatBubble>
-<ChatBubble link="messages5.html#message66251" from="Thor" time="2018/10/01 04:50:12 PM"><Media type="sticker" key="69" /></ChatBubble>
-<ChatBubble link="messages5.html#message66252" from="Thor" time="2018/10/01 04:51:36 PM">You've said a lot of wild shit since we met.</ChatBubble>
-<ChatBubble link="messages5.html#message66253" from="Thor" time="2018/10/01 04:52:36 PM"><mark blue>Said you loved me, said you would give me your entire savings, wanted to live with me, wanted to be with me forever</mark>, <mark red>now you're talking about hookups even though they weren't hookups</mark> and <mark yellow>how you want to keep erping with a dude online despite him being with someone</mark> and it being not ok for me and stopping us from moving forward.</ChatBubble>
-
-<AnnotationBlock for="message66253">
-{#snippet referenceMessage()}
-<ChatBubble link="messages5.html#message66253" from="Thor" time="2018/10/01 04:52:36 PM"><mark blue>Said you loved me, said you would give me your entire savings, wanted to live with me, wanted to be with me forever</mark>, <mark red>now you're talking about hookups even though they weren't hookups</mark> and <mark yellow>how you want to keep erping with a dude online despite him being with someone</mark> and it being not ok for me and stopping us from moving forward.</ChatBubble>
-{/snippet}
-
-<mark area blue>
-Jason has demonstrated that some of the items in this list are
-exactly what he wants:
-
-- **you loved me**  
-- **wanted to live with me**  
-- **wanted to be with me forever**
-
-And then there is this item in the list thrown right in the middle
-
-- **you would give me your entire savings**
-
-Doesn’t that seem a little strange? Usually this is not what people fixate on. **“You said that you loved me, that you want to be with me forever, that you would give me all of your money” just seems a little unsettling to me.** Surely this is just speculation…
-
-Let’s explore this for a moment. Jason is referring to a single
-[message](https://thor.pc.dev/messages.html#message50017) that Lyric sent:
-
-<ChatBubble link="messages.html#message50017" from="Lyric" time="2018/08/30 09:58:29 PM">that one night i asked you how much to make heartbound free i was thinking about dumping my entire savings into it but what i have is nowhere compared to what those companies offered you xP</ChatBubble>
-
-It was only mentioned **in conversation** that one time, and Lyric also made numerous donations to Jason. But isn’t it interesting that this is one of the core facets that Jason remembers? 
-
-Why recount this detail specifically? Why not
-- Lyric asking for sleep calls? 
-- Lyric staying up late even though he has 8am classes? 
-- Lyric acting like a pet? 
-
-**There’s something notable about the financial incentive for Jason.**
-
-Not only does it demonstrate quite the selective memory in recounting the past, but also **it’s a description of his ideal version of Lyric**. You will see in these upcoming messages that Jason desperately wants to get down to the bottom of this: **why did Lyric stray from this path?** And more importantly, **what can Jason do now to keep Lyric under his control?**
-</mark>
-
-
-<mark area red>
-
-The specific of this detail never really mattered, since **Thor
-was upset at the roleplaying, and he only later attempts to conflate the two. In
-this context, it only functions as a tool for blame.**
-
-</mark>
-
-
-<mark area yellow>
-
-Even though Lyric said they’d stop, **what Jason wants is obsession
-from Lyric, and that means not having an inkling of desire for anyone else**. This confirms:
-
-1. He wants Lyric to be emotionally dependent on him, to the point where **Lyric will have no support group who can help them escape this situation**.
-
-2. He wants Lyric to be sexually dependent on him, to the point where **Lyric has no desire for sexual others whatsoever**.
-
-</mark>
-
-</AnnotationBlock>
-
-<ChatBubble link="messages5.html#message66254" from="Thor" time="2018/10/01 04:53:08 PM"><mark>For all intents and purposes you either didn't mean those initial things you said to me or you don't mean the ones you're saying now.</mark></ChatBubble>
-<ChatBubble link="messages5.html#message66255" from="Lyric" time="2018/10/01 05:01:12 PM">The only thing stopping us from moving forward is that I don't know if I'm ready to date yet.</ChatBubble>
-<ChatBubble link="messages5.html#message66256" from="Thor" time="2018/10/01 05:01:40 PM">I like how you glossed over all of that and came to say this. lol</ChatBubble>
-<ChatBubble link="messages5.html#message66257" from="Lyric" time="2018/10/01 05:02:13 PM">Well, I read the whole thing and noticed a pretty big misunderstanding there</ChatBubble>
-<ChatBubble link="messages5.html#message66258" from="Lyric" time="2018/10/01 05:02:36 PM">I did mean those things at the beginning</ChatBubble>
-<ChatBubble link="messages5.html#message66259" from="Thor" time="2018/10/01 05:05:16 PM">If you werent ready to date you wouldnt be trying to date me and be with me at twitchcon you bigass baby</ChatBubble>
-<ChatBubble link="messages5.html#message66260" from="Lyric" time="2018/10/01 05:06:45 PM">I just</ChatBubble>
-<ChatBubble link="messages5.html#message66261" from="Lyric" time="2018/10/01 05:06:54 PM">wouldn't be able to give you the time you deserve</ChatBubble>
-<ChatBubble link="messages5.html#message66262" from="Thor" time="2018/10/01 05:07:08 PM">What does that even mean?</ChatBubble>
-<ChatBubble link="messages5.html#message66263" from="Lyric" time="2018/10/01 05:07:22 PM">I'm a double time student and I am just a total mess right now in terms of responsibilities</ChatBubble>
-<ChatBubble link="messages5.html#message66264" from="Lyric" time="2018/10/01 05:07:59 PM">I just don't know if I can handle more stress</ChatBubble>
-<ChatBubble link="messages5.html#message66265" from="Lyric" time="2018/10/01 05:19:09 PM">I was infatuated with you when we first met.</ChatBubble>
-<ChatBubble link="messages5.html#message66266" from="Thor" time="2018/10/01 05:19:23 PM">Was?</ChatBubble>
-<ChatBubble link="messages5.html#message66267" from="Lyric" time="2018/10/01 05:19:39 PM">When we first met...?</ChatBubble>
-<ChatBubble link="messages5.html#message66268" from="Lyric" time="2018/10/01 05:20:01 PM">Yes.</ChatBubble>
-<ChatBubble link="messages5.html#message66269" from="Lyric" time="2018/10/01 05:20:15 PM">I was obsessed, really.</ChatBubble>
-<ChatBubble link="messages5.html#message66270" from="Lyric" time="2018/10/01 05:20:41 PM">Especially when you said you wanted to voice call every day, that made me really happy.</ChatBubble>
-<ChatBubble link="messages5.html#message66271" from="Lyric" time="2018/10/01 05:21:14 PM">VCs mean a lot to me</ChatBubble>
-<ChatBubble link="messages5.html#message66272" from="Thor" time="2018/10/01 05:21:47 PM">What changed?</ChatBubble>
-<ChatBubble link="messages5.html#message66273" from="Thor" time="2018/10/01 05:22:16 PM">From my side it changed when you started in your words "flirting around"</ChatBubble>
-<ChatBubble link="messages5.html#message66274" from="Lyric" time="2018/10/01 05:23:20 PM">with time I became more and more scared of what you think of me</ChatBubble>
-<ChatBubble link="messages5.html#message66275" from="Lyric" time="2018/10/01 05:23:49 PM">especially when you said that you wanted to slow down</ChatBubble>
-<ChatBubble link="messages5.html#message66276" from="Lyric" time="2018/10/01 05:24:16 PM">Maybe to you it was just a passing comment but</ChatBubble>
-<ChatBubble link="messages5.html#message66277" from="Lyric" time="2018/10/01 05:24:55 PM">I guess I can say I started being a lot more self conscious around you after that</ChatBubble>
-<ChatBubble link="messages5.html#message66278" from="Thor" time="2018/10/01 05:26:34 PM">uhhh k?</ChatBubble>
-<ChatBubble link="messages5.html#message66279" from="Thor" time="2018/10/01 05:29:31 PM">you were going too fast why wouldnt I say something?</ChatBubble>
-<ChatBubble link="messages5.html#message66280" from="Thor" time="2018/10/01 05:30:19 PM">I mean theres tons of shit that i noticed and never said anything about</ChatBubble>
-<ChatBubble link="messages5.html#message66281" from="Lyric" time="2018/10/01 05:30:21 PM">I'm not saying you're at fault ^^;</ChatBubble>
-<ChatBubble link="messages5.html#message66282" from="Thor" time="2018/10/01 05:30:26 PM">like your telegram profile</ChatBubble>
-<ChatBubble link="messages5.html#message66283" from="Lyric" time="2018/10/01 05:30:32 PM">I agree with what you said</ChatBubble>
-<ChatBubble link="messages5.html#message66284" from="Thor" time="2018/10/01 05:30:55 PM">"a canines got the keys to my heart" is a pretty weird thing to put out there if youre single?</ChatBubble>
-<ChatBubble link="messages5.html#message66285" from="Lyric" time="2018/10/01 05:31:56 PM">Oh... yeah.</ChatBubble>
-<ChatBubble link="messages5.html#message66286" from="Lyric" time="2018/10/01 05:32:23 PM">You're right, it's weird—</ChatBubble>
-<ChatBubble link="messages5.html#message66287" from="Lyric" time="2018/10/01 05:32:50 PM">I guess you... would like me to explain it?</ChatBubble>
-<ChatBubble link="messages5.html#message66288" from="Lyric" time="2018/10/01 05:33:35 PM">Alright I'll take that as a yes.</ChatBubble>
-<ChatBubble link="messages5.html#message66289" from="Thor" time="2018/10/01 05:35:19 PM">yeah</ChatBubble>
-<ChatBubble link="messages5.html#message66290" from="Lyric" time="2018/10/01 05:35:45 PM">(am driving gimme a hot sec)</ChatBubble>
-<ChatBubble link="messages5.html#message66291" from="Lyric" time="2018/10/01 05:39:53 PM">Basically, to clarify, I am single and not looking, and also added that to my bio as a stunt with one of my friends</ChatBubble>
-<ChatBubble link="messages5.html#message66292" from="Lyric" time="2018/10/01 05:42:56 PM">It was literally because we thought it'd be funny and was not indicative of a relationship.</ChatBubble>
-<ChatBubble link="messages5.html#message66295" from="Thor" time="2018/10/01 06:04:57 PM">Awk</ChatBubble>
-<ChatBubble link="messages5.html#message66296" from="Lyric" time="2018/10/01 06:07:50 PM">Yeah...</ChatBubble>
-<ChatBubble link="messages5.html#message66297" from="Lyric" time="2018/10/01 06:08:25 PM">uwu...</ChatBubble>
-<ChatBubble link="messages5.html#message66304" from="Thor" time="2018/10/01 06:18:06 PM">Night, napping before night stream.</ChatBubble>
-<ChatBubble link="messages5.html#message66305" from="Lyric" time="2018/10/01 06:18:23 PM">Have a good rest ^^</ChatBubble>
-<ChatBubble link="messages5.html#message66306" from="Lyric" time="2018/10/01 06:18:34 PM">I'll be around~ uwu 💝</ChatBubble>
-<ChatBubble link="messages5.html#message66989" from="Lyric" time="2018/10/02 12:43:51 AM">That game looks really fun~</ChatBubble>
-<ChatBubble link="messages5.html#message66990" from="Lyric" time="2018/10/02 12:43:57 AM">Also I'm going to bed now</ChatBubble>
-<ChatBubble link="messages5.html#message66991" from="Lyric" time="2018/10/02 12:44:02 AM">Good night!</ChatBubble>
-<ChatBubble link="messages5.html#message66996" from="Thor" time="2018/10/02 03:53:22 AM">Night</ChatBubble> -->

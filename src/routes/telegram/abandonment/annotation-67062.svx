@@ -1,0 +1,3 @@
+---
+comment: "Sarcasm, mocking of Lyric's feelings."
+---

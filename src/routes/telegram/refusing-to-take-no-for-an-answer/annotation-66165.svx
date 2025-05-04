@@ -1,0 +1,3 @@
+---
+comment: "Thor recognizes Lyric’s message as a valid point and uses blame to stop Lyric’s line of thinking."
+---

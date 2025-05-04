@@ -1,0 +1,12 @@
+<script>
+   import Message from '$lib/components/Message.svelte';
+   import Messages from '$lib/components/Messages.svelte';
+</script>
+
+Lyric has stated they will stop roleplaying:
+
+<Messages to="65310" from="65290" />
+<Message n="65482" />
+<Message n="65503" />
+<Message n="65609" />
+<Message n="66182" />

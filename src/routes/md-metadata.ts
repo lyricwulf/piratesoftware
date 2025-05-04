@@ -24,10 +24,10 @@ for (const [filePath, fileModule] of Object.entries(svxFiles)) {
 
   let cur = NAV_ITEMS;
   for (const part of pathArr) {
-    let found = cur.children.find((child) => child.name === part);
+    let found = cur.children.find((child) => child.code === part);
 
     if (!found) {
-      found = { name: part, children: [], href: "" };
+      found = { code: part, name: part, children: [], href: "" };
       if (DIR_METADATA[part]) {
         found.name = DIR_METADATA[part].name;
         found.order = DIR_METADATA[part].order;

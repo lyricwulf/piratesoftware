@@ -1,0 +1,4 @@
+---
+color: red
+comment: This single word tells us a lot about Thor's desires. He <b>wants</b> Lyric to have an unhealthy attachment to him.
+---

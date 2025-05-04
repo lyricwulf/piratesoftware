@@ -2,5 +2,9 @@
   "telegram": {
     "name": "Telegram",
     "order": 4
+  },
+  "background": {
+    "name": "Background",
+    "order": 3
   }
 }

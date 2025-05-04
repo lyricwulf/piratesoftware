@@ -1,0 +1,4 @@
+---
+color: red
+comment: "We see the reason for Thor's previous messages now. <b>Lyric should feel guilty for having the audacity to feel happiness.</b>"
+---

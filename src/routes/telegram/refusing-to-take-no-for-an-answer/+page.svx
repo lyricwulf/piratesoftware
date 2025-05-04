@@ -1,0 +1,91 @@
+---
+title: Refusing to take "no" for an answer
+order: 3
+---
+
+<script>
+   import Messages from "$lib/components/Messages.svelte";
+</script>
+
+Let’s look at the penultimate of the conversation on 10/1. At this point, the conversation has lasted **7 hours.** 
+
+## **1\. Healthy Discussion?**
+
+This conversation goes over the goals of Lyric and Thor’s relationship. In this
+excerpt we will see that 
+
+- **Lyric states several times that they are not interested in a committed relationship**  
+- Jason states he is not interested in any arrangement where a sexual partner is not in a committed relationship with him.
+
+Keep reading, this is worth it…
+
+<Messages from="65947" to="65986" />
+
+To reiterate from before:
+
+- **Lyric is not interested in a committed relationship**  
+- **Jason is only interested in a sexual partner who is in a committed relationship with him**
+
+In the above messages, we see Jason acknowledge that their goals are incompatible.
+
+<div class="border-1 border-muted-foreground border-solid rounded-md p-4">
+
+**Let’s think about acceptable ways to proceed in this situation.** (As an
+exercise to the reader, you may think about more ways about how you might
+proceed.) Try to guess which approach Jason will take. 
+
+**Hypothetically**:
+
+- **Redefine the relationship**, eg “Alright, I respect your decision to stay single. I value our connection and honestly want to keep you in my life, but for now it would be best to **stay as friends**”  
+- **Step back to establish emotional connection,** eg “Let's try **focusing on our emotional connection**—with no sexual expectations—and then reassess how we feel.”  
+- **Cut off interaction**, eg “Alright, we clearly have different goals and I want to be respectful of both of our time. I think **it’s best if we go our separate ways**.”
+
+It is at this point that I will mention again that **Jason is 31 years old and
+Lyric is 20 years old**. Think about that deeply for a moment, and then read
+each person’s goals and look at the options again. **Does this 11-year age gap
+affect your answer?**
+
+
+</div>
+
+## **2\. Chance to change the answer**
+
+(Because I know this next message will take you by surprise, I feel obligated to say that there are no messages between the below and the above. There is no additional conversation that you are missing.)
+
+<Messages from="65987" to="65994" />
+
+By now, it’s established Jason wants a committed sexual relationship, while Lyric does not want any form of commitment. It is clear that Lyric’s wants and Jason’s wants are incompatible. It would make sense to drop it at this point. However we see **Jason is refusing to let Lyric go, still trying to convince Lyric to devote themselves to him**.
+
+Read his last message again. If you think that sounds weird, and that **“not boning other peeps” is the commitment of dating**, then you would be very much correct. **Why would Jason say something so absurd?** Well, take into account the power dynamic. Lyric, at age 20 and unsure of their own stance as evidenced in the conversation prior, is in no position to challenge this statement from the older and wiser Jason. **This is not the first time Jason says something absurd with the goal of reshaping Lyric’s reality.**
+
+So, he can reshape reality, but **why make this specific leap in logic**? Jason takes this stance because **Lyric has been reiterating that they do not want a commitment**. It’s phrased so that **Jason can get what he wants (commitment) while convincing Lyric it is also what they want (not commitment).**
+
+## **3\. Close friends don’t exist**
+
+<Messages from="65996" to="66013" />
+
+You can continue reading in the annotated transcript, but I want to **skip ahead** to some other concerning behavior.
+
+## **4\. Same as commitment**
+
+We see that Jason continues **even further** to try to convince Lyric that they
+want to date him.
+
+<Messages from="66106" to="66161" />
+
+Jason’s last message aims to convince Lyric to devote themselves to him. It is essentially this argument: “I know you *said* you don’t want any commitment, but *really* you just don’t know what you’re talking about\! **I know deep down what you actually want is a commitment with me.**”
+
+In Jason’s version of reality, a commitment doesn’t have to be made verbally.
+It’s implicit\! So Lyric is already doing these things, eg. not having sex with
+other people. Therefore, Lyric logically is already in a commitment with Jason.
+So now Lyric just has to **say it**.
+
+## **5\. Convincing Lyric with logic**
+
+In the following section, Thor continues to manipulate Lyric to date him.
+
+<Messages from="66160" to="66249" />
+
+## **Annotated Transcription**
+
+<Messages from="65916" to="66250" />

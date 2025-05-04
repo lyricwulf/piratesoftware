@@ -1,0 +1,4 @@
+---
+color: red
+comment: "Thor is now trying to constructively resolve the \"problem\", offering info to help his \"investigation\"."
+---

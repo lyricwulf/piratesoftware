@@ -116,9 +116,9 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   margin-block-start: 2rem;
-}
+} 
 
-p ~ p {
+p:not(:first-child) {
   margin-block: 1rem;
 }
 
@@ -154,12 +154,12 @@ table * {
   border-radius: var(--radius);
 }
 
-ul li::before {
+.markdown ul li::before {
   content: "-";
   margin-right: 0.5rem;
 }
 
-ol {
+.markdown ol {
   list-style-type: decimal;
   padding-inline-start: 1rem;
 }
@@ -199,7 +199,7 @@ mark[blue] {
 
 mark[area] {
   display: block;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin: 0.25rem 0;
   border-radius: var(--radius);
 }

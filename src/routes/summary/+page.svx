@@ -5,6 +5,7 @@ order: -1
 
 <script>
    import ChatBubble from '$lib/components/ChatBubble.svelte';
+   import Message from '$lib/components/Message.svelte';
 </script>
 
 <div class="advisory">
@@ -35,28 +36,28 @@ because of his large following and impressive career**.
 
 **Thor would cultivate an emotional dependence** on him, **showering me with platitudes** and **being unconditionally supportive** eg.
 
-<ChatBubble withDate link="messages.html#message49755" from="Thor" time="2018/08/30 10:16:56 AM">Can't see why anyone would break up with you tbh</ChatBubble>
+<Message n="49755" />
 
 He would **push our attachment by calling me pet names** such as “babe” and “my
 wuff”.
 
-<ChatBubble withDate link="messages.html#message49515" from="Thor" time="2018/08/30 08:36:01 AM">*Turns his head up and kisses you softly.* "My wuff"</ChatBubble>
-<ChatBubble withDate link="messages2.html#message50349" from="Thor" time="2018/09/01 12:49:53 PM">Of course, thanks babe</ChatBubble>
-<ChatBubble withDate link="messages2.html#message50843" from="Thor" time="2018/09/04 11:13:13 PM">starting up now babe :3</ChatBubble>
-<ChatBubble withDate link="messages3.html#message56160" from="Thor" time="2018/09/13 09:13:47 AM">*Flops down on his stomach with his arms up.* "Whatever you like babe"</ChatBubble>
+<Message n="49515" />
+<Message n="50349" />
+<Message n="50843" />
+<Message n="56160" />
 
 He would **train me like a dog**. Whenever we had conversations about our
 relationship **he would take advantage of our power dynamic to define what is
 right or wrong**, rather than coming to a mutual agreement. **He would reward
 me** by saying “good answer” **or punish me** with blame, bullying, or abandonment. 
 
-<ChatBubble withDate link="messages.html#message49713" from="Thor" time="2018/08/30 10:09:50 AM">Good answer *kisses your nose*</ChatBubble>
-<ChatBubble withDate link="messages.html#message49828" from="Thor" time="2018/08/30 10:33:39 AM">Good answer</ChatBubble>
-<ChatBubble withDate link="messages4.html#message64965" from="Thor" time="2018/10/01 12:32:50 AM">Good answer ;3</ChatBubble>
+<Message n="49713" />
+<Message n="49828" />
+<Message n="64965" />
 
 Thor would demonstrate that [he wanted me to be **“infatuated”** and **“obsessed”**](/) with him. Specifically, he recalls his ideal version of me: 
 
-<ChatBubble withDate link="messages5.html#message66253" from="Thor" time="2018/10/01 04:52:36 PM">Said you loved me, said you would give me your entire savings, wanted to live with me, wanted to be with me forever</ChatBubble>
+<Message n="66253" />
 
 When [**I told him repeatedly that I was not interested**](/) in a committed relationship, [**Thor insisted that I change my mind**](/), and **he tried to [gaslight me into believing that I was already implicitly committed](/)** to him by not having any other love interests.
 

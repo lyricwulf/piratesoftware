@@ -1,0 +1,4 @@
+---
+color: red
+comment: "Note that this is <b>not</b< saying that Lyric has no reason be sorry. Thor is telling Lyric to prove that they are sorry."
+---
