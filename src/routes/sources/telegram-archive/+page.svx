@@ -1,0 +1,45 @@
+---
+title: "Telegram Archive"
+---
+
+<script>
+    import Image from '$lib/components/Image.svelte';
+    import KvTable from '$lib/components/KvTable.svelte';
+
+</script>
+
+# Telegram Archive
+The Telegram archive uploaded https://thor.pc.dev is otherwise identical to the
+first publication on Dec 18, 2018, except as noted below.
+
+## Log of first publication
+All information reflects the original archive as exported.
+
+<KvTable rows={[
+    { key: 'Exported from', value: 'Telegram Desktop' },
+    { key: 'Time of export', value: 'Dec 15, 2018 at 11:29PM, PDT' },
+    { key: 'SHA-256 checksum', value: 'b687214e4a58897395a86d161fd9addc36b2077e302660cc0bbccac0da28611a' },
+    { key: 'First publication', value: 'Dec 18, 2018 at 3:22PM, PDT' }
+]} />
+
+<Image src="archive-post.webp" caption="https://discord.com/channels/214191305927032833/452943006949965825/524728116795408394" />
+
+
+## Disclosure of archive modification
+
+- Messages: Redacted the following messages:
+09/03/2018 11:32 PM (page 2), Lyric’s phone number,
+10/27/2018 02:09 AM (page 8), Lyric’s phone number
+- Code: Added index.html
+- Code: Appended the following style rules to increase clarity of cited messages.
+
+```css
+/* Fixes an issue where the cited message will appear behind the title bar */
+.message {
+    scroll-margin-block-start: 80px;
+}
+/* Highlights the cited message */
+div:target {
+    background-color: rgba(242, 246, 250, 255);
+}
+```

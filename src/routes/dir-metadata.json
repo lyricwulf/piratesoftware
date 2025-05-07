@@ -6,5 +6,13 @@
   "background": {
     "name": "Background",
     "order": 3
+  },
+  "sources": {
+    "name": "Sources",
+    "order": 8
+  },
+  "asides": {
+    "name": "Asides",
+    "order": 9
   }
 }

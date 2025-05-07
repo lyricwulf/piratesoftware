@@ -131,7 +131,7 @@ li p {
   text-decoration: none;
 }
 
-table {
+/* table {
   border: 2px solid hsla(var(--muted-foreground));
   border-radius: 8px;
   border-collapse: separate;
@@ -139,7 +139,7 @@ table {
 
 table * {
   padding: 1rem;
-}
+} */
 
 .advisory {
   padding: 1rem;

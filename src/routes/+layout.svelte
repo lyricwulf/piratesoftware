@@ -43,7 +43,7 @@
   .markdown {
     padding: 20px;
 
-    max-width: 800px;
+    max-width: min(800px, 100vw);
     justify-self: center;
 
     color: hsla(var(--foreground) / 80%);
