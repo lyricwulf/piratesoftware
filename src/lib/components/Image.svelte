@@ -64,6 +64,10 @@
     justify-content: center;
     align-items: center;
   }
+  .image-large img {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
 
   .image-container:has(input:checked) .image-large {
     display: grid;
