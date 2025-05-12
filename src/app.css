@@ -203,3 +203,7 @@ mark[area] {
   margin: 0.25rem 0;
   border-radius: var(--radius);
 }
+
+hr {
+  margin-block: 0.5rem 1rem ;
+}
