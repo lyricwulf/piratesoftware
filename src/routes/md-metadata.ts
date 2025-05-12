@@ -34,9 +34,6 @@ for (const [filePath, fileModule] of Object.entries(svxFiles)) {
       }
 
       cur.children.push(found);
-      // technically more efficient to sort after all children are added
-      // but at that point we should do this at build time
-      cur.children.sort((a, b) => a.order - b.order);
     }
 
     cur = found;
@@ -46,3 +43,12 @@ for (const [filePath, fileModule] of Object.entries(svxFiles)) {
   cur.href = pagePath;
   cur.order = order;
 }
+
+// recursively sort the children of each item
+const sortChildren = (item: any) => {
+  item.children.sort((a: any, b: any) => a.order - b.order);
+  for (const child of item.children) {
+    sortChildren(child);
+  }
+};
+sortChildren(NAV_ITEMS);
