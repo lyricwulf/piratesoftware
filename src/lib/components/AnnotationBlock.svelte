@@ -26,7 +26,6 @@
 
   $effect(() => {
     if (typeof extOpen === "boolean") {
-      console.log("extOpen", extOpen, open);
       open = extOpen;
     }
   });

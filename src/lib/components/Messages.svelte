@@ -22,8 +22,6 @@
     acc[date].push(message);
     return acc;
   }, {});
-
-  console.log(partitionedMessages);
 </script>
 
 <div class="messages">
