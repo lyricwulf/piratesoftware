@@ -16,6 +16,7 @@
     key,
     file,
     dialog = true,
+    children,
   } = $props();
 
   const inProps = { from, text, dt, id, withDate, media, key, file, dialog };
@@ -40,6 +41,7 @@
 
   let timeStr = $derived(
     (() => {
+      if (!dt) return "";
       let date = new Date(dt * 1000);
       if (!withDate) {
         return date.toLocaleTimeString("en-US", {
@@ -62,6 +64,11 @@
   let open = $state(annotation?.comment ? true : (null as boolean));
   let chatBubble = $state<HTMLDivElement>(null);
 
+  const clickHandler = () => {
+    open = !open;
+    navigator.clipboard.writeText(`annotation-${id}`); // TEMP!~
+  };
+
   $effect(() => {});
 </script>
 
@@ -71,15 +78,13 @@
   class:hasAnnotation
   class:dialog
   style="background: {background}"
-  onclick={() => {
-    open = !open;
-    navigator.clipboard.writeText(`annotation-${id}`);
-  }}
+  onclick={clickHandler}
+  onkeypress={clickHandler}
   role="button"
+  tabindex="-1"
   bind:this={chatBubble}
 >
   <div>
-    ({id})
     {#if useAnnotated}
       {@html annotation?.message}
     {:else if text}
@@ -88,12 +93,17 @@
     {#if media}
       <Media {media} {key} />
     {/if}
+    {#if children}
+      {@render children()}
+    {/if}
   </div>
-  <div class="chat-time text-xs text-gray-400 text-right">
-    <a href="/archive/telegram/{link}" rel="external" target="_blank">
-      {timeStr}
-    </a>
-  </div>
+  {#if timeStr}
+    <div class="chat-time text-xs text-gray-400 text-right">
+      <a href="/archive/telegram/{link}" rel="external" target="_blank">
+        {timeStr}
+      </a>
+    </div>
+  {/if}
   {#if annotation?.comment}
     <div
       class="annotation-comment w-full"

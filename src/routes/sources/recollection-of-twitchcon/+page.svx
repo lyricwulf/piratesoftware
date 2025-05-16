@@ -1,0 +1,26 @@
+---
+title: Recollection of TwitchCon
+order: 7
+---
+
+<script>
+   import ChatBubble from '$lib/components/ChatBubble.svelte';
+   import Message from '$lib/components/Message.svelte';
+   import Image from '$lib/components/Image.svelte';
+   import texts from "./texts.ts";
+</script>
+
+# Recollection of TwitchCon
+
+This is a stream of messages I wrote to a friend on Oct 29, 2018. I have only included messages from myself.
+
+{#each texts as text}
+   {#if text.startsWith("image:")}
+      {@const src = text.replace("image:", "")}
+      <ChatBubble from="Lyric">
+         <Image src={src} />
+      </ChatBubble>
+   {:else}
+      <ChatBubble text={text} from="Lyric" />
+   {/if}
+{/each}
