@@ -9,7 +9,7 @@ function get_headings() {
   let tree_to_string;
   let GithubSlugger;
   return async function transformer(tree, vFile) {
-    if (!visit) {
+    if (!visit || !GithubSlugger) {
       tree_to_string = (await import("mdast-util-to-string")).toString;
       visit = (await import("unist-util-visit")).visit;
       GithubSlugger = (await import("github-slugger")).default;

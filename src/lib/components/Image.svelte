@@ -3,8 +3,7 @@
   const { src: srcProp, caption } = $$props;
 
   const pathname = page.url.pathname;
-  console.log("test", pathname, srcProp);
-  const src = `/src/routes${pathname}/${srcProp}`;
+  const src = `${pathname}/${srcProp}`;
 </script>
 
 <div class="image-container">
@@ -35,6 +34,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    border-radius: 5px;
+    overflow: hidden;
   }
 
   .image-small .caption {
