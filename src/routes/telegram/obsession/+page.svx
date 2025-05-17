@@ -7,6 +7,8 @@ order: 5
    import Messages from '$lib/components/Messages.svelte';
 </script>
 
+# Obsession
+
 This is a direct continuation of Thor’s Goals.
 
 No intro can do this justice. Do note that this is after weeks of manipulation and tearing down Lyric’s defenses. At this point Jason is able to speak to Lyric without a mask and Lyric thinks nothing of it.

@@ -7,7 +7,7 @@ order: 10
   import Messages from "$lib/components/Messages.svelte";
 </script>
 
-## "Dating" Thor
+# "Dating" Thor
 
 Following Jason’s abandonment after the last discussion, Lyric finally
 formulates something Jason can work with.

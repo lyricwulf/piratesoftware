@@ -10,7 +10,7 @@ order: 3
   import Messages from "$lib/components/Messages.svelte";
 </script>
 
-## Thor’s Goals
+# Thor’s Goals
 
 This page is a direct continuation of 10/1 Commitment, which I trust you read
 because it has a ❗.
