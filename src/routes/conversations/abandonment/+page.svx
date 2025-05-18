@@ -1,0 +1,32 @@
+---
+title: "Abandonment"
+order: 6
+---
+
+<script>
+   import Messages from "$lib/components/Messages.svelte";  
+</script>
+
+Thor asks “You said you have a better idea of what you want for your future. **What is it you want?**”. He is presenting me with another opportunity to say what he wants to hear, **“I will devote myself only to you”**.
+
+With this statement as the goal for him, **we engage in a little game of “guess what Thor wants to hear”:**
+
+<Messages from="67083" to="67089" />
+
+Take note of how Thor framed the conversation as benign and caring: **“What is it you want?”** Meanwhile, he is attempting to guide me closer to the answer he wants to hear. Thor is fixated on having me come to the conclusion myself because he knows the effect of self-persuasion, and that I am more likely to truly believe I want to be devoted to Thor if I come up with the answer by myself.
+
+---
+
+<Messages from="67090" to="67094" />
+
+Thor disengages the conversation, **punishing** me by **abandoning me and denying me conversation, engagement, and attention**. 
+
+He blames me for being unclear, rather than asking them for clarity, because that would be guiding me too closely. So, rather than asking me, which would cause me to think it’s Thor’s desire (he wants me to believe it’s my own desire), Thor victimizes himself. **By framing Lyric as responsible for Thor’s emotions**, he further encourages me to say things that align with his expectations. 
+
+**Overall, his behaviors continue to reinforce my dependence on his attention and approval. It also furthers his goal of having me say “the magic sentence”.**
+
+---
+
+## Annotated Transcript
+
+<Messages from="67006" to="67094" />

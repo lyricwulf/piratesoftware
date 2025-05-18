@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/state";
-  const { src: srcProp, caption } = $$props;
+  const { src: srcProp, caption } = $props();
 
   const pathname = page.url.pathname;
   const src = `${pathname}/${srcProp}`;
@@ -9,9 +9,9 @@
 <div class="image-container">
   <label>
     <div class="image-small">
-      <img {src} alt={caption} width="auto" height="auto" />
+      <img {src} alt={caption} width="300" height="300" />
       {#if caption}
-        <div class="caption">{caption}</div>
+        <div class="caption">{@html caption}</div>
       {/if}
     </div>
     <input type="checkbox" />
@@ -40,6 +40,7 @@
   }
 
   .image-small:has(.caption) {
+    margin-block: 1px; /* or the box shadow may cut off */
     box-shadow: 0 0 2px 0.4px white;
   }
 

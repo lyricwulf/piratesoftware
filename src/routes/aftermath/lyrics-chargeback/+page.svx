@@ -1,0 +1,51 @@
+---
+title: "Lyric's Chargeback"
+order: 1
+---
+
+<script>
+    import Image from '$lib/components/Image.svelte';
+    import Timeline from '$lib/components/Timeline.svelte';
+</script>
+
+# Chargeback
+
+## c. Feb 2 to March 22, 2019
+
+**In February 2019, I lied to PayPal, saying that an $800 donation was intended to be $8.00**. I explained that there was a technical issue that led to this
+incident. I pointed to all the small donations I made at the time, and
+established that as a pattern for my spending. I additionally included that I
+[contacted the recipient](?tab=t.wb8cb954sq8w) to try to resolve the issue.
+
+**I felt like I had completed a heist.**
+
+I was granted a payment reversal. And I just knew that this was one of many victories **because “I was right and the world knew it”.** In reality, it was a short-lived victory, as this would prove to be valuable ammunition for Jason to use against me, saying that I am “scamming \[small indie studios\] out of \[their\] income” in response to [my post on Twitter](?tab=t.t9c4gzm4gu6f).
+
+## Reflection
+
+At the age of 20, I was a full time student and paying my own college tuition, funded by my career as a content creator.
+
+At the time, my understanding of money was that it is essentially life blood. I
+thought of it as **an expression of care and intimacy, putting another’s
+financial needs over my own.** My main regret about this situation is that this
+behavior **forms a transactional relationship**.
+
+This paired with the financial pressure from Jason would ultimately cause me to make unreasonably large donations.
+
+If you asked me then, I would say the chargeback was justified because Jason didn’t deserve anything from me. Today I can understand the chargeback was most likely motivated by both the pain, in addition to that flawed view: **what I was doing was simply right.** **By virtue of simply knowing that I am a victim, I put myself above all moral standards.** I felt like I was justified in both giving money and taking it away.
+
+---
+
+## Public References
+
+<Image src="tweet.png"
+caption={"<a target=\"_blank\" href=\"https://x.com/PirateSoftware/status/1114240256042098688\">https://x.com/PirateSoftware/status/1114240256042098688</a> replying to a <a>now deleted</a> post"} />
+
+
+## Timeline of Transactions
+
+<Timeline items={[
+    ["08/26/2018", "Donation", "Lyric made a donation of $800 USD to gopiratesoftware through a donation link listed on their Twitch channel. (Transaction 3FL860057N135114D)"],
+    ["02/02/2019", "Refund request", "Lyric sent a message to Thor requesting a refund of the donation, under the pretense that “there seemed to be a technical issue at the time of the donation”"],
+    ["03/22/2019", "Payment reversal", "The payment reversal process was completed, and Lyric was credited $792 USD. (Transaction 0K0466718P850823L)"]
+]} />
