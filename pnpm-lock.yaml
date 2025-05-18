@@ -60,6 +60,9 @@ importers:
       svelte-check:
         specifier: ^4.0.0
         version: 4.1.4(picomatch@4.0.2)(svelte@5.20.2)(typescript@5.7.3)
+      svelte-vertical-timeline:
+        specifier: ^2.0.0
+        version: 2.0.0(svelte@5.20.2)
       tailwind-merge:
         specifier: ^3.0.1
         version: 3.0.1
@@ -1443,6 +1446,11 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.0
       typescript: '>=5.0.0'
 
+  svelte-vertical-timeline@2.0.0:
+    resolution: {integrity: sha512-I2Lb+J23mhG8Vf4dLi/qXEo3hVBG2+xilCXpGazMPze8Dhdwad0W+EqxRDvXmlkEdF5HdI+nizO5bNVRe+IgYA==}
+    peerDependencies:
+      svelte: ^5.0.0
+
   svelte@5.20.2:
     resolution: {integrity: sha512-aYXJreNUiyTob0QOzRZeBXZMGeFZDch6SrSRV8QTncZb6zj0O3BEdUzPpojuHQ1pTvk+KX7I6rZCXPUf8pTPxA==}
     engines: {node: '>=18'}
@@ -2766,6 +2774,10 @@ snapshots:
       typescript: 5.7.3
     transitivePeerDependencies:
       - picomatch
+
+  svelte-vertical-timeline@2.0.0(svelte@5.20.2):
+    dependencies:
+      svelte: 5.20.2
 
   svelte@5.20.2:
     dependencies:

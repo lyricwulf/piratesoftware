@@ -28,6 +28,7 @@
 		"rehype-slug": "^6.0.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
+		"svelte-vertical-timeline": "^2.0.0",
 		"tailwind-merge": "^3.0.1",
 		"tailwind-variants": "^0.3.1",
 		"tailwindcss": "^4.0.0",

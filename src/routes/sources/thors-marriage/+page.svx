@@ -3,20 +3,38 @@ title: Thor's Marriage
 ---
 <script>
    import Image from '$lib/components/Image.svelte';
+   import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
 # Thor’s Marriage
 
 Jason Thor Hall was married to Nicole Gillett **from October 17, 2015 to August 19, 2020**.
 
-**October 17, 2015**: Jason Hall marries Nicole Gillett.  
+<Timeline items={[
+["October 17, 2015", "Marriage", "Jason Thor Hall marries Nicole Gillett"],
+["February 21, 2019", "Separation", "Jason and Nicole no longer live in the same house"],
+["February 18, 2020", "Filing", "Jason and Nicole file for divorce at the Lamoraux Justice Center in Orange County, California. The court assigns case number 200001318."],
+["August 19, 2020", "Divorce", "Marriage dissolved after a mandatory 6-month \"Cooling Off\" period."]
+]} />
+
+> Note: for the majority of this document, we will refer to the marriage as
+> spanning from **October 17, 2015 to February 18, 2020**, from the date of
+> marriage to the date of divorce filing.
+>
+> To avoid misrepresenting the intent to divorce, we will assume in good faith
+> that divorce intent was shown on the date of filing, and we will ignore the
+> 6-month "Cooling Off" period which is specific to California Law. 
+
+<!-- **October 17, 2015**: Jason Hall marries Nicole Gillett.  
 **February 21, 2019**: Jason and Nicole no longer live in the same house.  
 **February 18, 2020**: Filed for divorce.  
-**August 19, 2020**: Marriage dissolved.
+**August 19, 2020**: Marriage dissolved. -->
 
-The public records for Case 200001318, provided by the clerk of the Superior Court of Orange County, are shown below.
+## Public Records for Marriage and Divorce
 
-## Petition for Divorce
+The public records for Case 200001318, provided by the clerk of the Superior
+Court of Orange County, are shown below.
+
 <Image src="court-petition.png" caption="Divorce filing, married on 10/17/2015" />
 
 ---

@@ -9,14 +9,14 @@
 <div class="image-container">
   <label>
     <div class="image-small">
-      <img {src} />
+      <img {src} alt={caption} width="auto" height="auto" />
       {#if caption}
         <div class="caption">{caption}</div>
       {/if}
     </div>
     <input type="checkbox" />
     <div class="image-large">
-      <img {src} alt="large image" class="large-image" />
+      <img {src} alt={caption} class="large-image" />
     </div>
   </label>
 </div>
@@ -35,17 +35,16 @@
     display: flex;
     flex-direction: column;
 
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
   }
 
+  .image-small:has(.caption) {
+    box-shadow: 0 0 2px 0.4px white;
+  }
+
   .image-small .caption {
-    background-color: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.8) 100%
-    );
-    color: white;
+    background: hsl(var(--accent));
     padding: 5px;
     text-align: center;
 
