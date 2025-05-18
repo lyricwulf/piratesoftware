@@ -1,11 +1,15 @@
 {
-  "telegram": {
-    "name": "Telegram",
-    "order": 4
-  },
   "background": {
     "name": "Background",
     "order": 3
+  },
+  "conversations": {
+    "name": "Conversations",
+    "order": 4
+  },
+  "aftermath": {
+    "name": "Aftermath",
+    "order": 6
   },
   "sources": {
     "name": "Sources",
