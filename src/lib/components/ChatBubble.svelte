@@ -8,15 +8,15 @@
 
   let {
     from = "",
-    text,
+    text = "",
     dt = 0,
-    id,
+    id = null,
     withDate = false,
-    media,
-    key,
-    file,
+    media = null,
+    key = null,
+    file = null,
     dialog = true,
-    children,
+    children = null,
   } = $props();
 
   const inProps = { from, text, dt, id, withDate, media, key, file, dialog };

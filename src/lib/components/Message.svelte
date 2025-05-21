@@ -4,9 +4,11 @@
 
   let { n } = $props();
   let message = $derived(MESSAGES_BY_ID.get(Number(n)));
-  if (!message) {
-    throw new Error(`Message with ID ${n} not found`);
-  }
+  $effect(() => {
+    if (!message) {
+      throw new Error(`Message with ID ${n} not found`);
+    }
+  });
 </script>
 
 <ChatBubble {...message} />

@@ -17,7 +17,7 @@
   // NOTE: avoid setting the initial open state to true.
   // When open state is initially true, the dialog will be open at the start
   // but closing that dialog will cause the main body to be unscrollable.
-  let open = $state(null as boolean);
+  let open = $state<boolean | null>(null);
 
   // setting the state after mount to circumvent the above issue
   onMount(() => {
@@ -87,14 +87,3 @@
     </Dialog.Header>
   </Dialog.Content>
 </Dialog.Root>
-
-<style>
-  .annotation-block {
-    padding: 20px;
-    max-width: 800px;
-    justify-self: center;
-    /* color: hsla(var(--foreground) / 80%); */
-
-    background: hsl(var(--popover));
-  }
-</style>
