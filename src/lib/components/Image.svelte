@@ -69,9 +69,21 @@
   .image-large img {
     max-width: 100vw;
     max-height: 100vh;
+    animation: pop-up 0.3s var(--ease-out-expo);
   }
 
   .image-container:has(input:checked) .image-large {
     display: grid;
+  }
+
+  @keyframes pop-up {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 </style>
