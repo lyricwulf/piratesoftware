@@ -1,0 +1,30 @@
+---
+title: Thor's Publicisation
+order: 2
+---
+
+<script>
+   import Image from '$lib/components/Image.svelte';
+</script>
+
+Thor would talk about the chargeback on his streams and in his community, specifically calling me out by name.
+
+On social media, starting on 25-28 March 2019
+
+<Image src="tweet.png" />
+
+2019-03-26 T01:42:53Z
+March 26, 2019 he mentions it on stream:
+
+https://clips.twitch.tv/PoorZealousKumquatCharlieBitMe
+
+Backup: https://thor.pc.dev/twitch/AT-cm_425767110.mp4
+
+> Do you guys remember LyricWulf? He donated $800 to us, in a donation. He just
+> reversed it. It was in August of last year. He just charged back to our
+> PayPal, putting our PayPal into negative balance, and they've locked our
+> PayPal account. Yeah. I don't know how he was able to charge back from last
+> year, because they're supposed to have a limit of 120 days, and it's
+> definitely past that limit, and PayPal still... So I'm trying to contact
+> PayPal but I can't do anything about this.
+
