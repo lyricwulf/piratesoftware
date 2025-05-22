@@ -1,0 +1,436 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:ac9:5ad1:0:0:0:0:0 with SMTP id o17csp115489ocp;
+        Sat, 2 Feb 2019 23:40:21 -0800 (PST)
+X-Received: by 2002:a63:30c8:: with SMTP id w191mr8908506pgw.120.1549179621451;
+        Sat, 02 Feb 2019 23:40:21 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1549179621; cv=none;
+        d=google.com; s=arc-20160816;
+        b=a2q8vmZoMeo4LE0o0ItU+fMMssaenkAIzwczPbuXMe4q55Dq6se4/Np4rFFkokv/Qq
+         pHiE12nNcWuAdEN/N8VqEUOWER0rHXDvNbp4CvNkJ77lzT51eHXZDi7H9N7hInA14jtw
+         GSapML91U/NtrLOy7SQ3sd+uEmHQ41bAH8av3yu8ikdmIzWxf5oIa1Jt+y6C1pAH6LAo
+         J5jyJ15VcqDh7EGe6uahdwUPUg/H1htgkSJ+9w/TrLV5lFSJylXAdGDP6s7I3ksrs10e
+         +jIh+fYaF9rxb/tjdSX/80ylaYScFaioTcfsozF6pOlM09w3jpWrl+gUc+YwVcQFYsh+
+         vipQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=AVsW55kVpdUz+BQl64RpWbv8wP4K/jdFhXa2cem1yTA=;
+        b=HPjTptcR2rg1J5tc1yLO+kG/rCGDlErtL5hdT6nPt5qnC1Tr2JfEMdbaeQ9h/cjTdj
+         R2UnUpP9F1SfGt8wIYgkdY+HimxCSnLmUoh2hCfsoP6rfg1njxRTsFboEKYL3MLZ56tF
+         Wxs4cgFYc5kSUSxaqTTWFeLr1fPBjCs+dG0B2Shvqnx/gw01vFuEZi+YYKoDX7fHaO6g
+         n62nMit3XVEGyNL7b3DthAkiFXzrWDX2GCkshZR/3KUy2sZdOoq22MdBtPot968GKJ6x
+         aXPPrjP/Ytj25a0JDcBhnsYxalNlV2qMu+XTFFasktK0+0IOqPMTUevJ9wSe/5IiC9Ku
+         dfTg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Gwb529jI;
+       spf=pass (google.com: domain of gopiratesoftware@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=gopiratesoftware@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <gopiratesoftware@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id l20sor20552836pgj.4.2019.02.02.23.40.21
+        for <lyricwulf@gmail.com>
+        (Google Transport Security);
+        Sat, 02 Feb 2019 23:40:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of gopiratesoftware@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=Gwb529jI;
+       spf=pass (google.com: domain of gopiratesoftware@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=gopiratesoftware@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=AVsW55kVpdUz+BQl64RpWbv8wP4K/jdFhXa2cem1yTA=;
+        b=Gwb529jIjT85qd8Ohy3WVBwkCn1xnU+QK9GJzoZv7EY/sK/bFdK/S8dvhK0PPaUoGQ
+         LeVb39f/H0LQAXM9SrMmInTIS7kLlS/l9D/GnTi8QazMDGYLbozGmmXj7lOLmu8l92YZ
+         dt6bcStSoF1K2A6SoYILjp5dQIRc+HnSj17X3KpEWwaIRUnlQQ1WbVx/1r7A8H9PqTpf
+         dj8Y7dJC5UWnmjghIvYHPUEdGGzJqiyk1651GtqSUHDB7zjUqZ5pyeE5M43vzR+E54+m
+         g9Fdd/iu7xAB5st0OJm0LDsADmcxh7/8QLf4bqOOW+NeY9z76XZ8LLYb4xbmdYxwG06e
+         C/aA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=AVsW55kVpdUz+BQl64RpWbv8wP4K/jdFhXa2cem1yTA=;
+        b=ovfKMjhXl3GuO358AyhVn2fJGg/GI4RUxTZnsBqA1T5vdvtvagG6WNncbbgjFX+RQG
+         TY9lcX8qQWc2a9W48xRA4Jfln4WQLei7NZUf7bjEvRL4URu3laNt9R0Fd3zYwy8fIK7X
+         HUSdbSoCiFLRmoR+ao2nU7heZ1T9JbFTMUTtGyAOIADeQKbrwtSVEVWVNFLd9ftcRnKv
+         jpCMeGbMZYEs9xyzYM7pasUgDCvLDjY4q+KPYfcP+6DailBE8lGD9pNNP5T3LKI6cWr+
+         6Z5ZVQ/lrx3ws+sahE1ngjvs6f2P+TUJJ3ddc7o7FzT/slVhz2p/+olBprpchsv1qm2Z
+         yPqQ==
+X-Gm-Message-State: AHQUAuZ+1y1WlKvnctj8I2wP/FJ1lVYvPvVtnEcQbPZMRiIzt3kMQHDn
+	LRX0QSLxIUbnvZnk0uAIG1b7eO5IhMU/HhJPBbfWZQ==
+X-Google-Smtp-Source: AHgI3IZfbRnzsofdbu0c9rXOBULLonJpuQ9YwX0/ipb/dqe61PFNjQyIwZYXH8Ral+b63LwCt7Q6RFldl3Sr0N7WQQU=
+X-Received: by 2002:a65:434d:: with SMTP id k13mr8685748pgq.269.1549179620911;
+ Sat, 02 Feb 2019 23:40:20 -0800 (PST)
+MIME-Version: 1.0
+References: <CAGCs2dxQ+qgnOeTCiCqVp0Vxd_Thwi39Gyu4G4Z969h4fQkX0A@mail.gmail.com>
+ <CAPPV3fiQhmcbhQmkaGp5_3JTsdVn4vcaA1dnP7V+vXXo53N3BQ@mail.gmail.com>
+ <CAGCs2dxAV7u2MrfPT3EG7HJ1L7emVEmDymLaNea1NWzF9aORbA@mail.gmail.com>
+ <CAPPV3finc8ieu0zNuOcjzrgU2Yb_RZEsRXV=H5D04VzPdAXrpw@mail.gmail.com> <DM6PR07MB6362FF795257BE4202D0CDEFF26C0@DM6PR07MB6362.namprd07.prod.outlook.com>
+In-Reply-To: <DM6PR07MB6362FF795257BE4202D0CDEFF26C0@DM6PR07MB6362.namprd07.prod.outlook.com>
+From: Pirate Software <gopiratesoftware@gmail.com>
+Date: Sat, 2 Feb 2019 23:40:09 -0800
+Message-ID: <CAPPV3fjq==Akj3_DXq2pb5VDoyXSEPGSHgO3zJE1pLwymq8GVA@mail.gmail.com>
+Subject: Re: Donation Refund
+To: LyricWulf <lyricwulf@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000ff6ddc0580f87c3a"
+
+--000000000000ff6ddc0580f87c3a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+You are welcome to attempt a chargeback and I will be disputing it if you
+do so. Have a nice day.
+
+Thanks,
+
+-Thor
+
+On Sat, Feb 2, 2019, 11:36 PM LyricWulf <lyricwulf@gmail.com wrote:
+
+> Hello,
+>
+>
+>
+> The donation webpage did not confirm with me the amount. To my
+> recollection nothing was out of the ordinary with the PayPal payment wind=
+ow.
+>
+>
+>
+> The chargeback window for PayPal Credit is 6 months. I am still eligible
+> to file a chargeback if I desire to.
+>
+>
+>
+> An entry in your live donation banner is in NO way, in ANY form, a
+> substitute for a payment confirmation at the point of sale. I hope you co=
+me
+> to understand that.
+>
+>
+>
+> As I said, I=E2=80=99d rather not make this a headache for either of us. =
+Don=E2=80=99t get
+> stuck on this level.
+>
+>
+>
+> Thanks,
+>
+> LyricWulf
+>
+>
+>
+>
+>
+> *From: *Pirate Software <gopiratesoftware@gmail.com>
+> *Sent: *Saturday, February 2, 2019 23:25
+> *To: *LyricWulf <lyricwulf@gmail.com>
+> *Subject: *Re: Donation Refund
+>
+>
+>
+> Hello,
+>
+> The page carries a confirmation prompt with every donation.
+> As you paid via PayPal they have a mandatory checkout page for every
+> donation.
+>
+> Further, your name was displayed in the donation banner with 800$ next to
+> it for the next several months.
+>
+>
+> PayPal allows 120 days for chargebacks.
+> You waited 159 days to bring this to our attention and are no longer
+> eligible to chargeback this donation.
+>
+> As per the public policy that you agreed to when making this donation we
+> will not be refunding your donation.
+>
+> Thanks,
+>
+> -Pirate Software
+>
+>
+>
+> On Sat, Feb 2, 2019 at 10:35 PM LyricWulf <lyricwulf@gmail.com> wrote:
+>
+> Thank you for your response.
+>
+>
+>
+> The amount donated was not the intended donation amount (intended to be
+> $8.00). In addition, there was no confirmation on the donation page for t=
+he
+> amount in question. As you may see from my donation history, I do like to
+> support the streamers that I love, but this amount is completely absurd. =
+I
+> did not agree to donate in that amount.
+>
+>
+>
+> I hope that you understand that I am not remorseful for donating to you,
+> rather there seemed to be a technical issue at the time of the donation.
+>
+>
+>
+> I've thought this through and I would rather not make this a headache for
+> either of us. I will gladly donate the correct amount once this issue is
+> corrected.
+>
+>
+>
+> Thank you,
+>
+> LyricWulf
+>
+>
+>
+> On Sat, Feb 2, 2019 at 12:29 PM Pirate Software <
+> gopiratesoftware@gmail.com> wrote:
+>
+> Hello,
+>
+> As listed on our donation page this isn't something that we do.
+>
+> All donations are final.
+> There are no products or services rendered or exchanged for your
+> donations.
+> By donating, you agree to not charge back or refund any donations made an=
+d
+> are paying for a virtual product not covered with buyer protection.
+>
+> Thanks,
+>
+>
+>
+> -Pirate Software
+>
+>
+>
+> On Sat, Feb 2, 2019 at 12:58 AM LyricWulf <lyricwulf@gmail.com> wrote:
+>
+> Dear Pirate Software,
+>
+> I am writing to request a refund on the donation placed by LyricWulf on 2=
+7
+> Aug 2018 in the amount of $800.
+>
+> Please process the refund as soon as possible. Thank you for your
+> cooperation, and have a nice day.
+>
+> Sincerely,
+>
+> LyricWulf
+>
+>
+>
+
+--000000000000ff6ddc0580f87c3a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hello,=C2=A0<div dir=3D"auto"><br></div><div dir=3D"auto"=
+>You are welcome to attempt a chargeback and I will be disputing it if you =
+do so. Have a nice day.</div><div dir=3D"auto"><br></div><div dir=3D"auto">=
+Thanks,</div><div dir=3D"auto"><br></div><div dir=3D"auto">-Thor</div></div=
+><br><div class=3D"gmail_quote"><div dir=3D"ltr">On Sat, Feb 2, 2019, 11:36=
+ PM LyricWulf &lt;<a href=3D"mailto:lyricwulf@gmail.com" target=3D"_blank" =
+rel=3D"noreferrer">lyricwulf@gmail.com</a> wrote:<br></div><blockquote clas=
+s=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;pad=
+ding-left:1ex">
+
+
+
+
+
+<div lang=3D"EN-US" link=3D"blue" vlink=3D"#954F72">
+<div class=3D"m_3382626794719778700m_30888915946880110WordSection1">
+<p class=3D"MsoNormal">Hello,</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">The donation webpage did not confirm with me the amo=
+unt. To my recollection nothing was out of the ordinary with the PayPal pay=
+ment window.</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">The chargeback window for PayPal Credit is 6 months.=
+ I am still eligible to file a chargeback if I desire to.</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">An entry in your live donation banner is in NO way, =
+in ANY form, a substitute for a payment confirmation at the point of sale. =
+I hope you come to understand that.</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">As I said, I=E2=80=99d rather not make this a headac=
+he for either of us. Don=E2=80=99t get stuck on this level.</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Thanks,</p>
+<p class=3D"MsoNormal">LyricWulf</p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<div style=3D"border:none;border-top:solid #e1e1e1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal" style=3D"border:none;padding:0in"><b>From: </b><a hr=
+ef=3D"mailto:gopiratesoftware@gmail.com" rel=3D"noreferrer noreferrer" targ=
+et=3D"_blank">Pirate Software</a><br>
+<b>Sent: </b>Saturday, February 2, 2019 23:25<br>
+<b>To: </b><a href=3D"mailto:lyricwulf@gmail.com" rel=3D"noreferrer norefer=
+rer" target=3D"_blank">LyricWulf</a><br>
+<b>Subject: </b>Re: Donation Refund</p>
+</div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<p class=3D"MsoNormal">Hello,<br>
+<br>
+The page carries a confirmation prompt with every donation.<br>
+As you paid via PayPal they have a mandatory checkout page for every donati=
+on. <u></u>
+<u></u></p>
+<div>
+<p class=3D"MsoNormal">Further, your name was displayed in the donation ban=
+ner with 800$ next to it for the next several months.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><br>
+PayPal allows 120 days for chargebacks.<br>
+You waited 159 days to bring this to our attention and are no longer eligib=
+le=C2=A0to chargeback this donation.<br>
+<br>
+As per the public policy that you agreed to when making this donation we wi=
+ll not be refunding your donation.<br>
+<br>
+Thanks,<br>
+<br>
+-Pirate Software<u></u><u></u></p>
+</div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal">On Sat, Feb 2, 2019 at 10:35 PM LyricWulf &lt;<a hre=
+f=3D"mailto:lyricwulf@gmail.com" rel=3D"noreferrer noreferrer" target=3D"_b=
+lank">lyricwulf@gmail.com</a>&gt; wrote:<u></u><u></u></p>
+</div>
+<blockquote style=3D"border:none;border-left:solid #cccccc 1.0pt;padding:0i=
+n 0in 0in 6.0pt;margin-left:4.8pt;margin-right:0in">
+<div>
+<div>
+<p class=3D"MsoNormal">Thank you for your response. <u></u><u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">The amount donated was not the intended donation amo=
+unt (intended to be $8.00). In addition, there was no confirmation on the d=
+onation page for the amount in question. As you may see from my donation hi=
+story, I do like to support the streamers
+ that I love, but this amount is completely absurd. I did not agree to dona=
+te in that amount.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">I hope that you understand that I am not remorseful =
+for donating to you, rather there seemed to be a technical issue at the tim=
+e of the donation.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">I&#39;ve thought this through and I would rather not=
+ make this a headache for either of us. I will gladly donate the correct am=
+ount once this issue is corrected.<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">Thank you,<u></u><u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">LyricWulf<u></u><u></u></p>
+</div>
+</div>
+</div>
+</div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal">On Sat, Feb 2, 2019 at 12:29 PM Pirate Software &lt;=
+<a href=3D"mailto:gopiratesoftware@gmail.com" rel=3D"noreferrer noreferrer"=
+ target=3D"_blank">gopiratesoftware@gmail.com</a>&gt; wrote:<u></u><u></u><=
+/p>
+</div>
+<blockquote style=3D"border:none;border-left:solid #cccccc 1.0pt;padding:0i=
+n 0in 0in 6.0pt;margin-left:4.8pt;margin-right:0in">
+<div>
+<p class=3D"MsoNormal">Hello,<br>
+<br>
+As listed on our donation page this isn&#39;t something that we do.<br>
+<span style=3D"font-size:10.0pt;font-family:Roboto;color:#0a0a0a;background=
+:#f9fafa"><br>
+All donations are final. <br>
+There are no products or services rendered or exchanged for your donations.=
+ <br>
+By donating, you agree to not charge back or refund any donations made and =
+are paying for a virtual product not covered with buyer protection.<br>
+</span><br>
+Thanks, <u></u><u></u></p>
+<div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+<div>
+<p class=3D"MsoNormal">-Pirate Software<u></u><u></u></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+<div>
+<div>
+<p class=3D"MsoNormal">On Sat, Feb 2, 2019 at 12:58 AM LyricWulf &lt;<a hre=
+f=3D"mailto:lyricwulf@gmail.com" rel=3D"noreferrer noreferrer" target=3D"_b=
+lank">lyricwulf@gmail.com</a>&gt; wrote:<u></u><u></u></p>
+</div>
+<blockquote style=3D"border:none;border-left:solid #cccccc 1.0pt;padding:0i=
+n 0in 0in 6.0pt;margin-left:4.8pt;margin-right:0in">
+<div>
+<p style=3D"margin-right:0in;margin-bottom:12.0pt;margin-left:0in;box-sizin=
+g:border-box;white-space:pre-line">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#595959">Dear=
+ Pirate Software,</span><span style=3D"color:#595959"><u></u><u></u></span>=
+</p>
+<p style=3D"margin-right:0in;margin-bottom:12.0pt;margin-left:0in;box-sizin=
+g:border-box;white-space:pre-line">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#595959">I am=
+ writing to request a refund on the donation placed by LyricWulf on 27 Aug =
+2018 in the amount of $800.</span><span style=3D"color:#595959"><u></u><u><=
+/u></span></p>
+<p style=3D"margin-right:0in;margin-bottom:12.0pt;margin-left:0in;box-sizin=
+g:border-box;white-space:pre-line">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#595959">Plea=
+se process the refund as soon as possible. Thank you for your cooperation, =
+and have a nice day.</span><span style=3D"color:#595959"><u></u><u></u></sp=
+an></p>
+<p style=3D"margin-right:0in;margin-bottom:12.0pt;margin-left:0in;box-sizin=
+g:border-box;white-space:pre-line">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#595959">Sinc=
+erely,</span><span style=3D"color:#595959"><u></u><u></u></span></p>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+<p style=3D"margin-right:0in;margin-bottom:12.0pt;margin-left:.2in;box-sizi=
+ng:border-box;white-space:pre-line">
+<span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#595959">Lyri=
+cWulf</span><span style=3D"color:#595959"><u></u><u></u></span></p>
+<p class=3D"MsoNormal"><u></u>=C2=A0<u></u></p>
+</div>
+</div>
+
+</blockquote></div>
+
+--000000000000ff6ddc0580f87c3a--

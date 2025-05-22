@@ -6,15 +6,21 @@ order: 1
 <script>
     import Image from '$lib/components/Image.svelte';
     import Timeline from '$lib/components/Timeline.svelte';
+    import Email from '$lib/components/Email.svelte';
 </script>
 
 
 ## c. Feb 2 to March 22, 2019
 
-**In February 2019, I lied to PayPal, saying that an $800 donation was intended to be $8.00**. I explained that there was a technical issue that led to this
+**On March 6, 2019, I lied to PayPal, saying that an $800 donation was intended to be $8.00**. I explained that there was a technical issue that led to this
 incident. I pointed to all the small donations I made at the time, and
 established that as a pattern for my spending. I additionally included that I
 [contacted the recipient](?tab=t.wb8cb954sq8w) to try to resolve the issue.
+
+<Email eml="Donation Refund.eml" open={false} />
+<Email eml="Your PayPal case PP-D-25583925.eml" open={false} />
+<Email eml="Your PayPal case PP-D-25583925_ we are seeking additional information from Pirate Software.eml" open={false} />
+<Email eml="Your PayPal case_ PP-D-25583925.eml"/>
 
 **I felt like I had completed a heist.**
 

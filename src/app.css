@@ -127,7 +127,7 @@ li p {
   display: inline;
 }
 
-.markdown a {
+.markdown a:not(:has(*)) {
   color: hsla(var(--primary));
   text-decoration: none;
 }
