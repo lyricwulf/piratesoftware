@@ -11,9 +11,10 @@
   import KvTable from "$lib/components/KvTable.svelte";
   import { iter } from "$lib/util/iter";
   import * as Tooltip from "$lib/components/ui/tooltip";
-  import { ChevronDown } from "@lucide/svelte";
+  import Button from "$lib/components/ui/button/button.svelte";
+  import { ChevronDown, Download } from "@lucide/svelte";
 
-  const { eml } = $props();
+  const { eml, open: openProp } = $props();
 
   const pathname = page.url.pathname;
   const emailUrl = `${pathname}/${eml}`;
@@ -37,67 +38,81 @@
     })();
   });
 
-  let open = $state(true);
+  let open = $state(openProp ?? true);
 </script>
 
-<div
-  class="email flex flex-col gap-1 w-full bg-gray-800 rounded-lg overflow-hidden"
->
+<div class="email flex flex-col w-full rounded-lg overflow-hidden">
   {#if email}
-    <div class="flex flex-col w-full h-fit p-4 items-start">
-      <span class="shrink-0 font-bold">{email.subject}</span>
-      <span class="text-sm text-gray-400">
-        {email.date
-          ? new Date(email.date).toLocaleString("en-US", {
-              dateStyle: "long",
-              timeStyle: "short",
-              timeZone: "PST",
-            })
-          : ""}
-      </span>
-      <span class="text-sm flex flex-row gap-2">
-        {#each iter(email.from) as from}
+    <div class="bg-gray-800 flex flex-row items-center p-4 gap-2">
+      <div class="flex flex-col w-full h-fit items-start">
+        <span class="shrink-0 font-bold">{email.subject}</span>
+        <span class="text-sm text-gray-400">
+          {email.date
+            ? new Date(email.date).toLocaleString("en-US", {
+                dateStyle: "long",
+                timeStyle: "short",
+                timeZone: "PST",
+              })
+            : ""}
+        </span>
+        <span class="text-sm flex flex-row gap-2">
+          {#each iter(email.from) as from}
+            <Tooltip.Root openDelay={100}>
+              <Tooltip.Trigger class="hover:bg-gray-200/20">
+                {from.name || from.email}
+              </Tooltip.Trigger>
+              <Tooltip.Content
+                class="bg-popover text-popover-foreground softborder"
+              >
+                <p>{from.email}</p>
+              </Tooltip.Content>
+            </Tooltip.Root>
+          {/each}
+          <span> -> </span>
+          {#each iter(email.to) as to}
+            <Tooltip.Root openDelay={100}>
+              <Tooltip.Trigger class="hover:bg-gray-200/20">
+                {to.name || to.email}
+              </Tooltip.Trigger>
+              <Tooltip.Content
+                class="bg-popover text-popover-foreground softborder"
+              >
+                <p>{to.email}</p>
+              </Tooltip.Content>
+            </Tooltip.Root>
+          {/each}
+        </span>
+      </div>
+      <div>
+        <span class="text-sm flex flex-col">
           <Tooltip.Root openDelay={100}>
-            <Tooltip.Trigger class="hover:bg-gray-200/20">
-              {from.name}
+            <Tooltip.Trigger>
+              <Button href={emailUrl} variant="ghost" size="icon">
+                <Download />
+              </Button>
             </Tooltip.Trigger>
             <Tooltip.Content
               class="bg-popover text-popover-foreground softborder"
             >
-              <p>{from.email}</p>
+              <p>Download as .eml</p>
             </Tooltip.Content>
           </Tooltip.Root>
-        {/each}
-        <span> -> </span>
-        {#each iter(email.to) as from}
-          <Tooltip.Root openDelay={100}>
-            <Tooltip.Trigger class="hover:bg-gray-200/20">
-              {from.name}
-            </Tooltip.Trigger>
-            <Tooltip.Content
-              class="bg-popover text-popover-foreground softborder"
+
+          <Button onclick={() => (open = !open)} variant="ghost" size="icon">
+            <span
+              class="transition"
+              class:rotate-360={!open}
+              class:rotate-180={open}
             >
-              <p>{from.email}</p>
-            </Tooltip.Content>
-          </Tooltip.Root>
-        {/each}
-      </span>
-      <span class="text-sm flex flex-row justify-between w-full">
-        <span></span>
-        <button
-          onclick={() => (open = !open)}
-          class="transition"
-          class:rotate-360={!open}
-          class:rotate-180={open}
-        >
-          <ChevronDown />
-        </button>
-        <a href={emailUrl}>Download as .eml</a>
-      </span>
+              <ChevronDown />
+            </span>
+          </Button>
+        </span>
+      </div>
     </div>
     {#if email.html}
       <iframe
-        class="collapsible w-full h-96 bg-gray-200"
+        class="collapsible w-full h-96 bg-white"
         title={email.headers.Subject}
         srcdoc={email.html}
         class:open
