@@ -1,0 +1,1334 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:ac9:959:0:0:0:0:0 with SMTP id c25csp862637ocb;
+        Fri, 5 Apr 2019 13:16:33 -0700 (PDT)
+X-Received: by 2002:ac8:3328:: with SMTP id t37mr12727906qta.246.1554495393783;
+        Fri, 05 Apr 2019 13:16:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1554495393; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ekFJ3kAlc2UPEcxCW3aEdXBXrqv8uL1q8gQLJCOmiQyqiz66j8b58+Q9vfUUWjRX85
+         h0YEsQRfXebcPpILcYn8/VLaf391hBUECYfsM46FFSDiH27Lxa+2Fi1jiTJiLjETMCzE
+         tphA59iMhnu1225fwNAV93sMVXAqfoi4yiq3HB4amvTNovExUVtSTHB7F3xy2DxHeIOk
+         VFg3eANUICE4PhsN9pHuVYQAiYzQHIzsoy5UrGi5DPdooGYpa9T9n3F0J46qS3FjA3fP
+         Ab49Q4EVKVGA2WaYnt7cula0gNLQ6dUvRy8TsloeXPfLwnV+RIwAIk3xOY1oTL0sgMoO
+         5A4g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:reply-to:references:date:mime-version
+         :dkim-signature;
+        bh=FsrvHspVPDgIKZPv+yIs+GrbeLmMqm5nOrwQ+HSzdgg=;
+        b=spoYuWb1U0r8ld48IbJxJnIuR0RnmSRrpvDIyp2+LNo+TagCc9tMgDyxE8RFxg8YVg
+         PrPwgGTfayZzw9vjPJpma96Fo3/uyKF23QyrxDv0klCRFUwj27MPOVeJkicA4/6opG2N
+         kQ3bRWvYkdAETZAFurZDnToBJ2ZWEqTEUbbLhAeH6nyJszuJHHg9QXiA8MOA9Aaze1c3
+         5BsUv9Zn5s+mVm0H4/SfrlAOzjGY1uroZNpePymuR80bKLf4XsM2VKgHKTkZjpxIIfl/
+         zJI5HwV+c6yUXJnWLbTaV6YSlj0xr2i/vXy0sBouMjTH37aGWlf1J0no75xXHHoDF8P3
+         Y71g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@docs.google.com header.s=20161025 header.b=IEipfB0I;
+       spf=pass (google.com: domain of 3obenxbapczo6igg8hnm-hil8jfs7i6m.aiiaf8.6igfslc6qof9ag4cf.6ig@docos.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3obenXBAPCZo6IGG8HNM-HIL8JFS7I6M.AIIAF8.6IGFSLC6QOF9AG4CF.6IG@docos.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=docs.google.com
+Return-Path: <3obenXBAPCZo6IGG8HNM-HIL8JFS7I6M.AIIAF8.6IGFSLC6QOF9AG4CF.6IG@docos.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id m17sor31991680qtb.39.2019.04.05.13.16.33
+        for <lyricwulf@gmail.com>
+        (Google Transport Security);
+        Fri, 05 Apr 2019 13:16:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3obenxbapczo6igg8hnm-hil8jfs7i6m.aiiaf8.6igfslc6qof9ag4cf.6ig@docos.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@docs.google.com header.s=20161025 header.b=IEipfB0I;
+       spf=pass (google.com: domain of 3obenxbapczo6igg8hnm-hil8jfs7i6m.aiiaf8.6igfslc6qof9ag4cf.6ig@docos.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3obenXBAPCZo6IGG8HNM-HIL8JFS7I6M.AIIAF8.6IGFSLC6QOF9AG4CF.6IG@docos.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=docs.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=docs.google.com; s=20161025;
+        h=mime-version:date:references:reply-to:message-id:subject:from:to;
+        bh=FsrvHspVPDgIKZPv+yIs+GrbeLmMqm5nOrwQ+HSzdgg=;
+        b=IEipfB0IUfXAZ3jAAPnEt0JIFV1LGMm6NW/rA8Y4daQ/3zkZx+Dcu5+9tftOtzZ6Qi
+         e3BhvQPzVsNEqc5NjxBnXE8m5MHTFgbhSZHT8jTUEFlX6Xhrf+9rTo/Hxrup69A+hmV5
+         JwZXfdBr5dP79rms7R4nXqVkd3eHNbxB5ddLt5Pn878Nj4cCJh/zARciL80stjlF5BOz
+         1gbZAlK+9K0MvQTIDqb/DSIUIjk/9g/gvTgNOrbcc5VXFxKboh0CgAXVv7qG7f2f9ajV
+         87QA1dD4sfaGAHGo3yJnweL54xOaafDHpYtwEJaYfMlFJ+XWziUSViwRkeYQAM/n7TdB
+         Be3w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:references:reply-to:message-id
+         :subject:from:to;
+        bh=FsrvHspVPDgIKZPv+yIs+GrbeLmMqm5nOrwQ+HSzdgg=;
+        b=Aj1Pnr11iMNXw/Ritu9PeDOxeWLUc1TUEpYLH3SByOY8BT1SuJ5yvG5jlB0exRL/t6
+         qLUOZME0TbOrVes8cOciakrx6y7HcwT9YMIg+ZyT3sJUB9Z7xn8wd+hpxA0Wi/58mJbx
+         KHVym4uNpqI1mle1mflFP9HctIOGxSiVzG4HzMlj7cbKJaGlEsp97izI5RqwmL2eJcbZ
+         BKE++r8Zx4c4hOCtlM0BsThkuAEiKehNIL4du138lrfjE2K4xp/hn0PD10LxDpSD4ODJ
+         xgc1/tfzbLQR/9Ma7oZLU1mXLa4ndMFrwM3w8Fpz67/8Sq0tAYDumWdswijPLKHhDdvf
+         auVQ==
+X-Gm-Message-State: APjAAAX+leXxlb/791GjvVFsy7qjXD57g9+sNE2pJDLCdWqEfUvEk0Hz
+	7Yvz8Z8XiA==
+X-Google-Smtp-Source: APXvYqwUQs2ouVQIPxU2opvEHo5nPgaHSNynueHWq6IW8RWlFaWTnIvDgP49Twih97b1qtoirg==
+MIME-Version: 1.0
+X-Received: by 2002:ac8:341a:: with SMTP id u26mr2091525qtb.36.1554495393479;
+ Fri, 05 Apr 2019 13:16:33 -0700 (PDT)
+Date: Fri, 05 Apr 2019 13:16:33 -0700
+X-Document-ID: sRTY0WIOfmhHo7VV0uTn-JA
+References: <d+c1JUWTBXSU9mbWhIbzdWVjB1VG4tSkE6@docs.google.com>
+X-No-Auto-Attachment: 1
+Reply-to: No Reply <d+noreply@docs.google.com>
+X-Notifications: 05bc5c47e3000000
+Message-ID: <XM2zQCElduHQaOqh5T-1mQ.0@notifications.google.com>
+Subject: A Great Heartbound Adventure
+From: Google Docs <comments-noreply@docs.google.com>
+To: lyricwulf@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000bbc44c0585ce29b5"
+
+--000000000000bbc44c0585ce29b5
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+SnVsaWFuIFN0ZXBoZW5zLCBWZXNwdWxhLCBSaXZlciBGYWNlLCBhbmQgNiBvdGhlcnMgYWRkZWQg
+c3VnZ2VzdGlvbnMgdG8gQSAgDQpHcmVhdCBIZWFydGJvdW5kIEFkdmVudHVyZSAgDQooaHR0cHM6
+Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkxM0RUdkxXMXRndmMybHppTXlUdFpDTGtz
+cjRITUJkMXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFDNDVmMUlZJnRzPTVjYTdiN2ExJnVzcD1j
+b21tZW50X2VtYWlsX2RvY3VtZW50JnVzcF9kbT1mYWxzZSkNCg0KTmV3OiAyNiBzdWdnZXN0aW9u
+cw0KDQoNCk5ldyBTdWdnZXN0aW9ucw0KDQouDQpSaXZlciBGYWNlDQpGb3JtYXQ6IGZvbnQgc2l6
+ZQ0KDQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSY2hxZWh5QU5kY1J3RDZDOGdZZ05ZOXB2NzVX
+YXNQeUtERmVXODUtdzhkeEY5YTRiaHUxYXp6YTlaX084dUlCX1I3Y0lfZnRFNEROLXVwQkt5dkRN
+eE1NR0VmcUxRQkpwM3ZvQVhrVThrUnFZNmNxS2NAZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0K
+KGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15
+VHRaQ0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFJWSZ1c3A9c3VnZ2Vz
+dGlvbl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KSnVs
+aWFuIFN0ZXBoZW5zDQpBZGQ6IOKAnFdoYXQgaXMgdGhpcyBmdXJyeSBidWxsc2hpdOKAnQ0KDQpS
+ZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSZXNRT2hpMkFEeWZrLW42N2hfbW0wcjVJZk5XWENqekJV
+VFBsYlFIZnRLYVhJM0VYV2t1dzg1NjlEbXo2RFhpbmxKcmxnYThxZWM3UnpXRG9LRS00LWtHOUR2
+Q2x0OUFVMDJrUWxkR2tpUHVscjdZOHdAZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0dHBz
+Oi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRaQ0xr
+c3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFJVSZ1c3A9c3VnZ2VzdGlvbl9l
+bWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KVmVzcHVsYQ0K
+QWRkOiDigJxmdWNraW5nIGVwaWPigJ0NCg0KUmVwbHkgKFJlcGx5ICANCjxkK0FPUkdwUmMxdm9u
+TWJGY3phVlhvaHVmTU9sRERDUE4teFZXTklTTkxfU3hUMkxoMkJMcENrYjNTQk5MczZnNVF1Yl83
+TG8tNVJWaW9aMklPXzRsOURJZXlVLTlmbExhcFpReXRmMTFSX1RmX3M1QnVuRXRVQlZFQGRvY3Mu
+Z29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9kb2N1bWVudC9k
+LzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZSNUtnWV84L2VkaXQ/ZGlzY289
+QUFBQUM0NWYxSVEmdXNwPXN1Z2dlc3Rpb25fZW1haWxfZGlzY3Vzc2lvbiZ1c3BfZG09ZmFsc2Um
+dHM9NWNhN2I3YTEpDQoNCi4NCkFub255bW91cw0KQWRkOiDigJxub+KAnQ0KDQpSZXBseSAoUmVw
+bHkgIA0KPGQrQU9SR3BSYzZmNTJGanBOSFdvVG9fYWRYVWdMa1phWlZDb2tsQVdyakFXMmVFRE9l
+TXVFR1BxSi11eXdrRk9nRzB5ME1lYk13eUxBX3c2Z01YMDk5Y1FtRmNtenk1bjA1aHVwcDZ4N21B
+ajZQbUlQUmFiaUlOSU1AZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0dHBzOi8vZG9jcy5n
+b29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRaQ0xrc3I0SE1CZDFw
+VlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFJTSZ1c3A9c3VnZ2VzdGlvbl9lbWFpbF9kaXNj
+dXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KQW5vbnltb3VzDQpBZGQ6IOKA
+nGhlcyBhIGZ1Y2tpbmcgbGlhciEhISBLaWxsIGhpbSBMb2wgaSBiZXQgaGUgbGlrZXMgaGlzIGZl
+ZXQgbGlja2Vk4oCdDQoNClJlcGx5IChSZXBseSAgDQo8ZCtBT1JHcFJkSzFlM05iN0pDdVBwSi1q
+QTZPX0tsMWlXdmNnQTY2R01aZTJlQ3ZMa0dZM09Nak8yb09BQ1NLWl8zWFgyXzJDU3FqTkxMcGw5
+bEVza2RLZTJ2RHBWS0dSTDAyd1pQckMxTDQwbmdNUUN2eWw3Y1pLTUBkb2NzLmdvb2dsZS5jb20+
+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkxM0RUdkxX
+MXRndmMybHppTXlUdFpDTGtzcjRITUJkMXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFDNDVmMUlJ
+JnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rpc2N1c3Npb24mdXNwX2RtPWZhbHNlJnRzPTVjYTdiN2Ex
+KQ0KDQouDQpBbm9ueW1vdXMNCkFkZDog4oCcdGhlIGltYWdlcyBpbiB0aGUg4oCcZXhwb3J04oCd
+IHdlcmUgbGFzdCBlZGl0ZWQgaW4gMjAxOCB0b3UgRlVDS0lORyBMSUFS4oCdDQoNClJlcGx5IChS
+ZXBseSAgDQo8ZCtBT1JHcFJlU00tUzRoYnhaNkVsdVlzVTlKT251Qi1JenhZQlNwMGhxWWppblYw
+cnpIY0p2SExhNEVPejBtMTFaRWFOYk9USlo3ZkNyTEpVcW90bFViekNoRllBLUlJdThfdi04RUI3
+MXV5S21aYVJRamZFUWU3a0Bkb2NzLmdvb2dsZS5jb20+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2Nz
+Lmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkxM0RUdkxXMXRndmMybHppTXlUdFpDTGtzcjRITUJk
+MXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFDNDVmMUg4JnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rp
+c2N1c3Npb24mdXNwX2RtPWZhbHNlJnRzPTVjYTdiN2ExKQ0KDQouDQpMb3VkU29uaWNCdWcNCkFk
+ZDog4oCcU3RvcCBlZGl0aW5nIHBsc+KAnQ0KDQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSYzdo
+MEVFbzlRdWtQQ2pvYko2SFB4clp1amFnUmZBc29ZSEZocHExVHY5dGZRZGtSb3JSWkQzTTg1YUpr
+a2pYcEY1Nk5fb3dvaEdoVTEwRWdwc1RjX01tWHdCN19PSmhtQnlVdzFKb3F0VmdIOHB6M2NAZG9j
+cy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50
+L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRaQ0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNj
+bz1BQUFBQzQ1ZjFINCZ1c3A9c3VnZ2VzdGlvbl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxz
+ZSZ0cz01Y2E3YjdhMSkNCg0KLg0KTWFiZWwgUGVuZGVycw0KQWRkOiDigJxJZGsgZXZlbiBrbm93
+IHdoYXQgdGhpcyBpcyBFcGljIDogMGPigJ0NCg0KUmVwbHkgKFJlcGx5ICANCjxkK0FPUkdwUmZB
+Zk8yek9TLWVqWmE3TmVDWTNNcloxcVVFa09yRW5KdlFFa3hoN0FhWmY4NXZIVmRCcDJNaGUzRVRW
+YzJZV05pTlNZYW00NmhhbExySkhZd0RzN2J4d0h0eFpjdnFHMzFGal9DLVdadEprUWdCNU5NQGRv
+Y3MuZ29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9kb2N1bWVu
+dC9kLzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZSNUtnWV84L2VkaXQ/ZGlz
+Y289QUFBQUM0NWYxSHcmdXNwPXN1Z2dlc3Rpb25fZW1haWxfZGlzY3Vzc2lvbiZ1c3BfZG09ZmFs
+c2UmdHM9NWNhN2I3YTEpDQoNCi4NClJhbGNvcmUNCkFkZDog4oCc4qCA4qCA4qCA4qOA4qO24qOA
+IOKggOKggOKggOKgkuKjm+KjrSDioIDioIDioIDio4DioL/io7/io7Yg4qCA4qOk4qO/4qCk4qOt
+4qO/4qO/IOKjpOKjv+Kjv+Kjv+Kgm+Kjv+Kjv+KggOKjgCDioIDio4DioKTio7/io7/io7bio6Ti
+o5Lio5sg4qCJ4qCA4qOA4qO/4qO/4qO/4qO/4qOt4qCJIOKggOKggOKjreKjv+Kjv+Kgv+Kgv+Kj
+vyAgDQrioIDio7bio7/io7/ioJvioIDio7/io78g4qOk4qO/4qO/4qCJ4qCk4qO/4qO/4qC/IOKj
+v+Kjv+Kgm+KggOKgv+Kjv+KjvyDio7/io7/io6TioIDio7/igKbigJ0NCg0KUmVwbHkgKFJlcGx5
+ICANCjxkK0FPUkdwUmZyTmZBa3I0b3hrUXVKNmZFYzdUUi1DUnFDRTlaM3BIb3ZDZVhiZDRxX2d5
+OTkyekllMWt0UkdaeEhma2UzYnh5TnBhUGFPNG5VUWRKU1gzLUxseFRrbkh5Ulp1cDV6c1kxWHNm
+YkRpNXJZM1ByRF9NQGRvY3MuZ29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2RvY3MuZ29v
+Z2xlLmNvbS9kb2N1bWVudC9kLzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZS
+NUtnWV84L2VkaXQ/ZGlzY289QUFBQUM0NWYxSHMmdXNwPXN1Z2dlc3Rpb25fZW1haWxfZGlzY3Vz
+c2lvbiZ1c3BfZG09ZmFsc2UmdHM9NWNhN2I3YTEpDQoNCi4NCkFsbGlzb24gQW5kZXJzb24NCkFk
+ZCBpbWFnZQ0KDQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSZV93aGVrMnJ4QWV2WDVfTkhCaXBw
+SXV3T3lxeWQ2Q2FQelVKSlFnOE1SZHlhSFRadzlqRFBXNEVmSXFIZ21BcFhGYmcwSGNkSV9ic3hG
+ZHQwYkMwekZaZWo0RFBJNWVLYVd2LVR0UUMyQ2VCT3ZjV1FAZG9jcy5nb29nbGUuY29tPikNCk9w
+ZW4gIA0KKGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3Zj
+Mmx6aU15VHRaQ0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFIbyZ1c3A9
+c3VnZ2VzdGlvbl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0K
+Lg0KQW5vbnltb3VzDQpBZGQ6IOKAnFdlIEHigJ0NCg0KUmVwbHkgKFJlcGx5ICANCjxkK0FPUkdw
+UmZvMW8wZDE4QU5qRGl2Q2Vsb3Jkc2hvdWFTcHoycmZiQTN2RWJfN2UxRDUyU3ZiRU9WVVpOX05w
+SUUxcGt3aXVTbjc0UUVLVnJscWF6SExsUFFBQjhNdi1QekVyaUxrcENkLUN6dmdlb2p4cWdUekhv
+QGRvY3MuZ29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9kb2N1
+bWVudC9kLzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZSNUtnWV84L2VkaXQ/
+ZGlzY289QUFBQUM0NWYxSGsmdXNwPXN1Z2dlc3Rpb25fZW1haWxfZGlzY3Vzc2lvbiZ1c3BfZG09
+ZmFsc2UmdHM9NWNhN2I3YTEpDQoNCi4NCkplYW4gQmF4dGVyDQpGb3JtYXQ6IGZvbnQgc2l6ZQ0K
+DQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSZDFpanctYjc2WUpoY041UEYyQ3I4U0FoTTNvcHg4
+cU9mX3FWY2tkTzFUbk1pX0x6M1E4ZzhIWGkzaFpZMFpseERTMl96NXhSTEZ0ODRERko3LVpmWWhh
+bFpMZnFNQklFd0tiWGJWYUxpUXJLN2ZJd0lAZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0
+dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRa
+Q0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFIZyZ1c3A9c3VnZ2VzdGlv
+bl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KQW5vbnlt
+b3VzDQpSZXBsYWNlOiDigJxUaGUgcmVhc29uIHRoYXQgVGhvciBhbmQgSSBjdXJyZW50bHkgaGF2
+ZSBhbiBpc3N1ZSB3aXRoIGVhY2ggIA0Kb3RoZXIgaXMgZHVlIHRvIG91ciBpbnRlcmFjdGlvbiBh
+dCBUd2l04oCm4oCdIHdpdGgg4oCcQmFkIEx5cmljIEZ1Y2sgdGhlbSBIZSAgDQp3YW50cyB0aG9y
+ZGlja+KAnQ0KDQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSZFltQzNaRUdFZldZci03bkJRNVFo
+X3lGdTQ5NlpiVlJ5LTdYOG15clFmRGpYb19ycmJUVE5CZVpqTVQxNXlSTGw4cHVPZ0U1YlpMd0lu
+RmtCR0ttd3hmS1lVRzFhck8wanBqRDBqVEhTcWZMbjMxN3dAZG9jcy5nb29nbGUuY29tPikNCk9w
+ZW4gIA0KKGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3Zj
+Mmx6aU15VHRaQ0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFIYyZ1c3A9
+c3VnZ2VzdGlvbl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0K
+Lg0KTWFiZWwgUGVuZGVycw0KQWRkOiDigJw6IOKAmCnigJ0NCg0KUmVwbHkgKFJlcGx5ICANCjxk
+K0FPUkdwUmNxbmM1Rms5UWViQ3MwbGNlVTdaSWd6ZUFZbHhjaUdTVXhCX2hvSHJBNlcyZFFQSmlH
+UTJVQVpCNnZWZlFWS01sbXZsaGpVVVZ1WVBNWWJ3YzBUaU11Tk5JVXMtdFFEYS1XZW5EVEt4OW5I
+LThyeWMwQGRvY3MuZ29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2RvY3MuZ29vZ2xlLmNv
+bS9kb2N1bWVudC9kLzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZSNUtnWV84
+L2VkaXQ/ZGlzY289QUFBQUM0NWYxSFkmdXNwPXN1Z2dlc3Rpb25fZW1haWxfZGlzY3Vzc2lvbiZ1
+c3BfZG09ZmFsc2UmdHM9NWNhN2I3YTEpDQoNCi4NClZlc3B1bGENCkFkZDog4oCcVGhhbmsgeW91
+4oCdDQoNClJlcGx5IChSZXBseSAgDQo8ZCtBT1JHcFJjUFVpUDVRR1JJbjdjNHNfekI2SkRFRjIz
+TmJFWF9YUkpCMTVSdEQwUnBjX1Ywb295RDRoVnN0Zi03S2FnckNWX3BSOGlrN1ZaNnNDRjdWaTFG
+NWdkUExaNktNU3Y0a1JHRURYVDZMb2N5NUtHNm1TRUBkb2NzLmdvb2dsZS5jb20+KQ0KT3BlbiAg
+DQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkxM0RUdkxXMXRndmMybHpp
+TXlUdFpDTGtzcjRITUJkMXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFDNDVmMUhVJnVzcD1zdWdn
+ZXN0aW9uX2VtYWlsX2Rpc2N1c3Npb24mdXNwX2RtPWZhbHNlJnRzPTVjYTdiN2ExKQ0KDQouDQpB
+bm9ueW1vdXMNCkZvcm1hdDogZm9udCBzaXplDQoNClJlcGx5IChSZXBseSAgDQo8ZCtBT1JHcFJm
+Y1hRZUFlS2FWTjBOeV9XckhlNzhBT1laaS1XRV8wdWNUTmQ1RFhiZFRqQXktRnl5R3dWMTQ4c3VZ
+R2NCSWM5ZHNQSGt6UjdtaE9oeUdwaGdranIyYWswZG9MclpHbU9pZm1VV1hIeFJuRXprWTJ0a0Bk
+b2NzLmdvb2dsZS5jb20+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1l
+bnQvZC8xNXkxM0RUdkxXMXRndmMybHppTXlUdFpDTGtzcjRITUJkMXBWUjVLZ1lfOC9lZGl0P2Rp
+c2NvPUFBQUFDNDVmMUhRJnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rpc2N1c3Npb24mdXNwX2RtPWZh
+bHNlJnRzPTVjYTdiN2ExKQ0KDQouDQpNYWJlbCBQZW5kZXJzDQpGb3JtYXQ6IGZvbnQgc2l6ZQ0K
+DQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BSY0dHTjhZS0FPQU96VWV4UDEzQ1JyM2FZODY1eGND
+akRVWmZjYzROS25NcHVzNzRadnpZWDFpRF9ZWHkwTnFQa0tRWmVqU2t0dV9ITUZUZWFxR29RSzNh
+Z3V0MVUweFItVnRhcG1vYm9BTERuVXItRE1AZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0
+dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRa
+Q0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFITSZ1c3A9c3VnZ2VzdGlv
+bl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KQW5vbnlt
+b3VzDQpBZGQ6IOKAnEhlIHdhbnRzIHRoZSBkdWMgTE9MIENPTUlDIFNFTlNFIExZUklDIEdPTiBI
+QVYgQkFEIFRPTSEhISEh4oCdDQoNClJlcGx5IChSZXBseSAgDQo8ZCtBT1JHcFJlU3RBN1pUeElZ
+UEg3UTQwWHIxM2JCbFQ2Nl9vclFJMDFvNHR3MldVd0pLV28tczJnQjRZRVhpRGFQZGVwak9VMXdy
+S3BYS0NfSUxCZ1FiaEVlRVhBVjhFUVJYTmhFXzFsV2pRZHlBNU1TSlpyUkdhWUBkb2NzLmdvb2ds
+ZS5jb20+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkx
+M0RUdkxXMXRndmMybHppTXlUdFpDTGtzcjRITUJkMXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFD
+NDVmMUhJJnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rpc2N1c3Npb24mdXNwX2RtPWZhbHNlJnRzPTVj
+YTdiN2ExKQ0KDQouDQpNYWJlbCBQZW5kZXJzDQpGb3JtYXQ6IGJvbGQsIGZvbnQNCg0KUmVwbHkg
+KFJlcGx5ICANCjxkK0FPUkdwUmRxSHlIZ3dNd2xKdHJpcVhnelpBblAzNTlvUEgtVWp1cGJrVVd1
+cGV4T2RhVmpWdVNLeWdxRmRPYXBPZVBoYlpLenlvVXRWVlExMWJOWWNyNExidHpJNkFXUHdHQWcy
+VmxFMDNtaWU5OFRrSzc0alRVQGRvY3MuZ29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2Rv
+Y3MuZ29vZ2xlLmNvbS9kb2N1bWVudC9kLzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhN
+QmQxcFZSNUtnWV84L2VkaXQ/ZGlzY289QUFBQUM0NWYxSEUmdXNwPXN1Z2dlc3Rpb25fZW1haWxf
+ZGlzY3Vzc2lvbiZ1c3BfZG09ZmFsc2UmdHM9NWNhN2I3YTEpDQoNCi4NCkFub255bW91cw0KQWRk
+OiDigJxoZSB3YW50cyB0aGUgdGhvcmRpY2tz4oCdDQoNClJlcGx5IChSZXBseSAgDQo8ZCtBT1JH
+cFJjYk05U0pndDJMd2NPTkJOVGJsZWNSRWRRNDdRMktQRzBjZlRFWXUzNHFRMjhSSWJCb1lLWU1o
+UlJXOFIycFY2TDIxd3NZLUZfcjljTWpkVUlQNTdKOEQ2VHNxNnQwVHlFQlo0dW9jYUI3NGx0SUp2
+c0Bkb2NzLmdvb2dsZS5jb20+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9j
+dW1lbnQvZC8xNXkxM0RUdkxXMXRndmMybHppTXlUdFpDTGtzcjRITUJkMXBWUjVLZ1lfOC9lZGl0
+P2Rpc2NvPUFBQUFDNDVmMUhBJnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rpc2N1c3Npb24mdXNwX2Rt
+PWZhbHNlJnRzPTVjYTdiN2ExKQ0KDQouDQpBbm9ueW1vdXMNCkFkZDog4oCcaGVzIHNvIGJhZCBm
+cmUydHlpZ2RyaHNidmxvbGxvbG9sb2xsb+KAnQ0KDQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BS
+ZFczN1BtMndBd2NNLUJMSHpuLUprdXhkQ1NWOHBTSkdDMkhKSVU3SDVPX09tNHNRR1otNGdIbHZp
+R00ySnpXUlJLN0I4WUk3N3JWRDlaVEdsQ0dtVl94a2FoQlVuX1RmMTEyeDBmWGxpSzZPVXdVVmNA
+ZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3Vt
+ZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRaQ0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9k
+aXNjbz1BQUFBQzQ1ZjFHOCZ1c3A9c3VnZ2VzdGlvbl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1m
+YWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KQW5vbnltb3VzDQpSZXBsYWNlOiDigJxMZWFkaW5nIHVw
+IHRvIHRoaXMgZW5jb3VudGVyLCBUaG9yIGFuZCBJIHNoYXJlZCBtYW55IGludGltYXRlICANCnJl
+bGF0aW9ucyB0aHJvdWdoIG91ciBUZWxlZ3JhbSBjaGF0LuKAnSB3aXRoICANCuKAnHJmZWdld3Jn
+cnQ1c2E0ZTU2eWhlNGV3cmh2dHJ5ZXNyZHRzYXJkdGdlcmdyZXl2NGdicnRoM+KAnQ0KDQpSZXBs
+eSAoUmVwbHkgIA0KPGQrQU9SR3BSZU4zT2NJeW9ZdFpVeUFEaG16VjBKU2lsSHZ4ei1ONm94Wl9S
+WGZfak9tOVBVRVZaeEVNVnUwOGFPc1U0N0wyZi1Jb2w5dVVxc3NPbEs3QWRwbWx3cHlvUi1za0Ny
+RFdONE5yZENkMFNNdURkR3dWQ2dAZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0dHBzOi8v
+ZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRaQ0xrc3I0
+SE1CZDFwVlI1S2dZXzgvZWRpdD9kaXNjbz1BQUFBQzQ1ZjFHdyZ1c3A9c3VnZ2VzdGlvbl9lbWFp
+bF9kaXNjdXNzaW9uJnVzcF9kbT1mYWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KQW5vbnltb3VzDQpB
+ZGQ6IOKAnE1pbmVjcmFmdCBzZXggUG9ybuKAnQ0KDQpSZXBseSAoUmVwbHkgIA0KPGQrQU9SR3BS
+Y0Z4NzJza1NBZmduRXc4NVVWZE4zRDByWmhRTG5wR09kZkh6bEZBS3pfUl94UFdLMUxyZ0Q3a0li
+ZTVqd1dOT3VyMFZjZm5xTTdFUGFWZi1FMDJKcWJoVHE0Q19STzV4aU1rZU5vTG0yOW01RUsxemdA
+ZG9jcy5nb29nbGUuY29tPikNCk9wZW4gIA0KKGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3Vt
+ZW50L2QvMTV5MTNEVHZMVzF0Z3ZjMmx6aU15VHRaQ0xrc3I0SE1CZDFwVlI1S2dZXzgvZWRpdD9k
+aXNjbz1BQUFBQzQ1ZjFHcyZ1c3A9c3VnZ2VzdGlvbl9lbWFpbF9kaXNjdXNzaW9uJnVzcF9kbT1m
+YWxzZSZ0cz01Y2E3YjdhMSkNCg0KLg0KQW5vbnltb3VzDQpBZGQ6IOKAnFdhbnQgc29tZSBzdWNr
+IHdvbGYgYm954oCdDQoNClJlcGx5IChSZXBseSAgDQo8ZCtBT1JHcFJkTmppX3BjajZqZXRvV0lN
+bnNlX1FVajdpTkNFaFpEbG40OHBsb3dVbm1TdHMwb1Q3dzRyemw5dEJkaWNYTGJIYkVCRVZRWjFx
+MjhzOGtCOVlGVU80WDNZY0d6TFNaUDlyZmJTN3k0aXRYY3Zxb1RxZ0Bkb2NzLmdvb2dsZS5jb20+
+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkxM0RUdkxX
+MXRndmMybHppTXlUdFpDTGtzcjRITUJkMXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFDNDVmMUdv
+JnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rpc2N1c3Npb24mdXNwX2RtPWZhbHNlJnRzPTVjYTdiN2Ex
+KQ0KDQouDQpBbm9ueW1vdXMNCkFkZDog4oCcVGltZSBmb3IgcGVlcGVl4oCdDQoNClJlcGx5IChS
+ZXBseSAgDQo8ZCtBT1JHcFJkT0FxNU15S3loSW1ONkZSSWRFOV9xZUQtZDBMYXFLcEMwN1JIcVA3
+NVEzdGZwUGFncTNPdFJ0T2pTME1PMy04RjBxZFQwMmhPYWFXZC10YkFnX29JbDhpbXF4Q2pHNFI3
+NWtOMm1WX1RDSjhJZkJ4SUBkb2NzLmdvb2dsZS5jb20+KQ0KT3BlbiAgDQooaHR0cHM6Ly9kb2Nz
+Lmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xNXkxM0RUdkxXMXRndmMybHppTXlUdFpDTGtzcjRITUJk
+MXBWUjVLZ1lfOC9lZGl0P2Rpc2NvPUFBQUFDNDVmMUdrJnVzcD1zdWdnZXN0aW9uX2VtYWlsX2Rp
+c2N1c3Npb24mdXNwX2RtPWZhbHNlJnRzPTVjYTdiN2ExKQ0KDQouDQpKZWFuIEJheHRlcg0KQWRk
+OiDigJxCSUcgU1RVUElEIEJJRyBTVFVQSUTigJ0NCg0KUmVwbHkgKFJlcGx5ICANCjxkK0FPUkdw
+UmRZMXdLQUh2cGVPQzJMLXNHRHNXV1pjUUM5NlVwRkQ0Wmh4aWt2RjY3NUJfMmVyRllCdTUyazZY
+bWFFeU9GMlVDemMxZDJEcE9JbUJ1Y1ZuYWZMbmdWV19kUHdGMGQ3WUdvaDFSXzRNeW9wMHpfbHlB
+QGRvY3MuZ29vZ2xlLmNvbT4pDQpPcGVuICANCihodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9kb2N1
+bWVudC9kLzE1eTEzRFR2TFcxdGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZSNUtnWV84L2VkaXQ/
+ZGlzY289QUFBQUM0NWYxR2cmdXNwPXN1Z2dlc3Rpb25fZW1haWxfZGlzY3Vzc2lvbiZ1c3BfZG09
+ZmFsc2UmdHM9NWNhN2I3YTEpDQoNCg0KR29vZ2xlIExMQywgMTYwMCBBbXBoaXRoZWF0cmUgUGFy
+a3dheSwgTW91bnRhaW4gVmlldywgQ0EgOTQwNDMsIFVTQQ0KDQpZb3UgaGF2ZSByZWNlaXZlZCB0
+aGlzIGVtYWlsIGJlY2F1c2UgeW91IGFyZSBhIHBhcnRpY2lwYW50IGluIHRoZSB1cGRhdGVkICAN
+CmNvbW1lbnQgdGhyZWFkcy4NCkNoYW5nZSAgDQooaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9j
+dW1lbnQvdS8xMDYzMTk0ODE0MDE0OTg2MTQ5NDcvZG9jb3Mvbm90aWZ5P2lkPTE1eTEzRFR2TFcx
+dGd2YzJsemlNeVR0WkNMa3NyNEhNQmQxcFZSNUtnWV84JnRpdGxlPUErR3JlYXQrSGVhcnRib3Vu
+ZCtBZHZlbnR1cmUpICANCndoYXQgR29vZ2xlIHNlbmRzIHlvdS4NCllvdSBjYW5ub3QgcmVwbHkg
+dG8gdGhpcyBlbWFpbC4NCg==
+--000000000000bbc44c0585ce29b5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div itemscope itemtype=3D"http://schema.org/EmailMessage" style=3D"font: 1=
+3px Roboto, Arial;"><div itemprop=3D"about" itemscope itemtype=3D"http://sc=
+hema.org/CreativeWork"><meta itemprop=3D"name" content=3D"A Great Heartboun=
+d Adventure"><meta itemprop=3D"url" content=3D"https://docs.google.com/docu=
+ment/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1I=
+Y&amp;ts=3D5ca7b7a1&amp;usp=3Dcomment_email_document"><div style=3D"width: =
+100%; padding: 24px 0 16px 0; background-color: #f5f5f5; text-align: center=
+;"><div style=3D"display: inline-block; width: 90%; max-width: 680px;min-wi=
+dth: 280px; text-align: left; font-family: Roboto,Arial,Helvetica,sans-seri=
+f;"><div style=3D"height: 0px;" dir=3D"ltr"></div><div style=3D"display: bl=
+ock; padding: 0 2px;"><div style=3D"display: block; background: #fff; heigh=
+t: 2px;"></div></div><div style=3D"border-left: 1px solid #f0f0f0; border-r=
+ight: 1px solid #f0f0f0;"><div style=3D"padding: 24px 32px 24px 32px; backg=
+round:#fff; border-right: 1px solid #eaeaea; border-left: 1px solid #eaeaea=
+;" dir=3D"ltr"><h2 style=3D"font-size: 14px; font-weight: normal; display: =
+inline; margin: 0px; line-height: 18px; color: #222;">Julian Stephens, Vesp=
+ula, River Face, and 6 others added suggestions to <span class=3D"notransla=
+te"><a href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZC=
+Lksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1IY&amp;ts=3D5ca7b7a1&amp;usp=3Dco=
+mment_email_document&amp;usp_dm=3Dfalse" target=3D"_blank" style=3D"color:#=
+36c;text-decoration:none">A Great Heartbound Adventure</a></span></h2><div =
+style=3D"height: 16px;"></div><div style=3D"height: 1px; background-color: =
+#eee;"></div><div style=3D"height: 24px;"></div><table role=3D"presentation=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td><table=
+ role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0"><tr><td><strong =
+style=3D"font-size: 13px; font-weight: normal; color: #777;">New</strong></=
+td></tr><tr><td height=3D"6" style=3D"height: 6px;" colspan=3D"0"></td></tr=
+><tr><td><span style=3D"font-size: 13px; font-weight: normal; color: #222;"=
+>26 suggestions</span></td></tr></table></td></tr></table></div></div><tabl=
+e style=3D"width: 100%; border-collapse: collapse;" role=3D"presentation"><=
+tr><td style=3D"padding: 0px;"><table style=3D"border-collapse: collapse; w=
+idth: 3px;" role=3D"presentation"><tr height=3D"1"><td width=3D"1" bgcolor=
+=3D"#f0f0f0" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#eaeae=
+a" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#e5e5e5" style=
+=3D"padding: 0px;"></td></tr><tr height=3D"1"><td width=3D"1" bgcolor=3D"#f=
+0f0f0" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#eaeaea" sty=
+le=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#eaeaea" style=3D"padd=
+ing: 0px;"></td></tr><tr height=3D"1"><td width=3D"1" bgcolor=3D"#f5f5f5" s=
+tyle=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"pa=
+dding: 0px;"></td><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px=
+;"></td></tr></table></td><td style=3D"width: 100%; padding: 0px;"><div sty=
+le=3D"height: 1px; width: auto; border-top: 1px solid #ddd; background:#eae=
+aea; border-bottom: 1px solid #f0f0f0;"></div></td><td style=3D"padding: 0p=
+x;"><table style=3D"border-collapse: collapse; width: 3px;" role=3D"present=
+ation"><tr height=3D"1"><td width=3D"1" bgcolor=3D"#e5e5e5" style=3D"paddin=
+g: 0px;"></td><td width=3D"1" bgcolor=3D"#eaeaea" style=3D"padding: 0px;"><=
+/td><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"></td></tr><=
+tr height=3D"1"><td width=3D"1" bgcolor=3D"#eaeaea" style=3D"padding: 0px;"=
+></td><td width=3D"1" bgcolor=3D"#eaeaea" style=3D"padding: 0px;"></td><td =
+width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"></td></tr><tr heigh=
+t=3D"1"><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"></td><t=
+d width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"></td><td width=3D=
+"1" bgcolor=3D"#f5f5f5" style=3D"padding: 0px;"></td></tr></table></td></tr=
+></table><div style=3D"height: 50px;" dir=3D"ltr"><h1 style=3D"color: #777;=
+ font-size: 13px; margin: 0px; padding: 16px 2px 16px 2px; font-weight: nor=
+mal;">New</h1></div><div style=3D"display: block; padding: 0 2px;"><div sty=
+le=3D"display: block; background: #fff; height: 2px;"></div></div><div styl=
+e=3D"border-left: 1px solid #f0f0f0; border-right: 1px solid #f0f0f0;"><div=
+ style=3D"padding: 24px 32px 24px 32px; background:#fff; border-right: 1px =
+solid #eaeaea; border-left: 1px solid #eaeaea;" dir=3D"ltr"><div style=3D""=
+><h2 style=3D"font-size: 14px; font-weight: normal; display: inline; margin=
+: 0px; line-height: 18px; color: #222;">Suggestions</h2><div style=3D"heigh=
+t: 16px;"></div><div style=3D"height: 1px; background-color: #eee;"></div><=
+div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"=
+><meta itemprop=3D"url" content=3D"https://docs.google.com/document/d/15y13=
+DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1IY&amp;usp=3D=
+suggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" cont=
+ent=3D"Open Discussion"></div><div style=3D"line-height: 21px; padding-top:=
+ 16px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24p=
+x; word-break: break-word; word-wrap: break-word;"><table role=3D"presentat=
+ion" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td sty=
+le=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 77px; pad=
+ding: 0 15px 0 0;"><img src=3D"https://lh3.googleusercontent.com/a-/AAuE7mC=
+FAwfQuzNQCkAYEm_LVwQrBef-qF8sQKo_lvuJew=3Ds96-k-no" style=3D"height: 48px; =
+width: 48px;" alt=3D"River Face"></div></td><td style=3D"vertical-align: to=
+p;"><div style=3D"display: inline-block; padding: 0 15px 0 0; font-size: 13=
+px; line-height: 18px; width: 100%;"><strong style=3D"font-size: 13px; font=
+-weight: bolder; color: #222;">River Face</strong><p style=3D"margin: 0px;"=
+><span class=3D"notranslate" style=3D"font-size: 13px; font-weight: normal;=
+ color: #222;"><div style=3D"font-size:13px;color:#333"><span style=3D"font=
+-weight:bold">Format:</span> font size</div></span></p></div></td></tr></ta=
+ble></div><table role=3D"presentation" style=3D"padding-left: calc(48px + 1=
+5px);"><td><a style=3D"background-color: whitesmoke;border: 1px solid gains=
+boro; border-radius: 2px; color: #444; display: inline-block; font-size: 11=
+px; font-weight: bold; height: 27px; line-height: 27px; margin-right: 16px;=
+ min-width: 54px; outline: 0px; padding: 0 8px; text-align: center; text-de=
+coration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRchqehy=
+ANdcRwD6C8gYgNY9pv75WasPyKDFeW85-w8dxF9a4bhu1azza9Z_O8uIB_R7cI_ftE4DN-upBKy=
+vDMxMMGEfqLQBJp3voAXkU8kRqY6cqKc@docs.google.com%3E?subject=3DA%20Great%20H=
+eartbound%20Adventure">Reply</a><a style=3D"background-color: whitesmoke;bo=
+rder: 1px solid gainsboro; border-radius: 2px; color: #444; display: inline=
+-block; font-size: 11px; font-weight: bold; height: 27px; line-height: 27px=
+; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-a=
+lign: center; text-decoration: none;" target=3D"_blank" href=3D"https://doc=
+s.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?d=
+isco=3DAAAAC45f1IY&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse=
+&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24px;"></div=
+><div style=3D"height: 1px; background-color: #eee;"></div></div><div itemp=
+rop=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"><meta it=
+emprop=3D"url" content=3D"https://docs.google.com/document/d/15y13DTvLW1tgv=
+c2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1IU&amp;usp=3Dsuggestio=
+n_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Op=
+en Discussion"></div><div style=3D"line-height: 21px; padding-top: 16px;"><=
+div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24px; word-b=
+reak: break-word; word-wrap: break-word;"><table role=3D"presentation" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"ver=
+tical-align: top; width: 10%;"><div style=3D"max-height: 77px; padding: 0 1=
+5px 0 0;"><img src=3D"https://lh3.googleusercontent.com/a-/AAuE7mCX3V-nySeD=
+vcp8XUtNPTSG2ZUcYHYpTvDF1LMaDQ=3Ds96-k-no" style=3D"height: 48px; width: 48=
+px;" alt=3D"Julian Stephens"></div></td><td style=3D"vertical-align: top;">=
+<div style=3D"display: inline-block; padding: 0 15px 0 0; font-size: 13px; =
+line-height: 18px; width: 100%;"><strong style=3D"font-size: 13px; font-wei=
+ght: bolder; color: #222;">Julian Stephens</strong><p style=3D"margin: 0px;=
+"><span class=3D"notranslate" style=3D"font-size: 13px; font-weight: normal=
+; color: #222;"><div style=3D"font-size:13px;color:#333"><span style=3D"fon=
+t-weight:bold">Add:</span> <span style=3D"white-space:pre-line;color:#777;f=
+ont-style:italic">=E2=80=9CWhat is this furry bullshit=E2=80=9D</span></div=
+></span></p></div></td></tr></table></div><table role=3D"presentation" styl=
+e=3D"padding-left: calc(48px + 15px);"><td><a style=3D"background-color: wh=
+itesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; disp=
+lay: inline-block; font-size: 11px; font-weight: bold; height: 27px; line-h=
+eight: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 =
+8px; text-align: center; text-decoration: none;" target=3D"_blank" href=3D"=
+mailTo:Reply%20%3Cd+AORGpResQOhi2ADyfk-n67h_mm0r5IfNWXCjzBUTPlbQHftKaXI3EXW=
+kuw8569Dmz6DXinlJrlga8qec7RzWDoKE-4-kG9DvClt9AU02kQldGkiPulr7Y8w@docs.googl=
+e.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D=
+"background-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2=
+px; color: #444; display: inline-block; font-size: 11px; font-weight: bold;=
+ height: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outl=
+ine: 0px; padding: 0 8px; text-align: center; text-decoration: none;" targe=
+t=3D"_blank" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lzi=
+MyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1IU&amp;usp=3Dsuggestion_ema=
+il_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><d=
+iv style=3D"height: 24px;"></div><div style=3D"height: 1px; background-colo=
+r: #eee;"></div></div><div itemprop=3D"action" itemscope itemtype=3D"http:/=
+/schema.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.goog=
+le.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=
+=3DAAAAC45f1IQ&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><me=
+ta itemprop=3D"name" content=3D"Open Discussion"></div><div style=3D"line-h=
+eight: 21px; padding-top: 16px;"><div style=3D"overflow: hidden; margin-top=
+: 0px; margin-bottom: 24px; word-break: break-word; word-wrap: break-word;"=
+><table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+width: 100%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=
+=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"https://lh3.googleu=
+sercontent.com/a-/AAuE7mDBZxqABvQEfgOdD5VzBSKIWf171fW60WzmjoUWgA=3Ds96-k-no=
+" style=3D"height: 48px; width: 48px;" alt=3D"Vespula"></div></td><td style=
+=3D"vertical-align: top;"><div style=3D"display: inline-block; padding: 0 1=
+5px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><strong style=3D=
+"font-size: 13px; font-weight: bolder; color: #222;">Vespula</strong><p sty=
+le=3D"margin: 0px;"><span class=3D"notranslate" style=3D"font-size: 13px; f=
+ont-weight: normal; color: #222;"><div style=3D"font-size:13px;color:#333">=
+<span style=3D"font-weight:bold">Add:</span> <span style=3D"white-space:pre=
+-line;color:#777;font-style:italic">=E2=80=9Cfucking epic=E2=80=9D</span></=
+div></span></p></div></td></tr></table></div><table role=3D"presentation" s=
+tyle=3D"padding-left: calc(48px + 15px);"><td><a style=3D"background-color:=
+ whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; d=
+isplay: inline-block; font-size: 11px; font-weight: bold; height: 27px; lin=
+e-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding:=
+ 0 8px; text-align: center; text-decoration: none;" target=3D"_blank" href=
+=3D"mailTo:Reply%20%3Cd+AORGpRc1vonMbFczaVXohufMOlDDCPN-xVWNISNL_SxT2Lh2BLp=
+Ckb3SBNLs6g5Qub_7Lo-5RVioZ2IO_4l9DIeyU-9flLapZQytf11R_Tf_s5BunEtUBVE@docs.g=
+oogle.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a styl=
+e=3D"background-color: whitesmoke;border: 1px solid gainsboro; border-radiu=
+s: 2px; color: #444; display: inline-block; font-size: 11px; font-weight: b=
+old; height: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; =
+outline: 0px; padding: 0 8px; text-align: center; text-decoration: none;" t=
+arget=3D"_blank" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc=
+2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1IQ&amp;usp=3Dsuggestion=
+_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></tabl=
+e><div style=3D"height: 24px;"></div><div style=3D"height: 1px; background-=
+color: #eee;"></div></div><div itemprop=3D"action" itemscope itemtype=3D"ht=
+tp://schema.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.=
+google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?dis=
+co=3DAAAAC45f1IM&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><=
+meta itemprop=3D"name" content=3D"Open Discussion"></div><div style=3D"line=
+-height: 21px; padding-top: 16px;"><div style=3D"overflow: hidden; margin-t=
+op: 0px; margin-bottom: 24px; word-break: break-word; word-wrap: break-word=
+;"><table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width: 100%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div s=
+tyle=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"https://ssl.gst=
+atic.com/s2/profiles/images/silhouette96.png" style=3D"height: 48px; width:=
+ 48px;" alt=3D"Anonymous"></div></td><td style=3D"vertical-align: top;"><di=
+v style=3D"display: inline-block; padding: 0 15px 0 0; font-size: 13px; lin=
+e-height: 18px; width: 100%;"><strong style=3D"font-size: 13px; font-weight=
+: bolder; color: #222;">Anonymous</strong><p style=3D"margin: 0px;"><span c=
+lass=3D"notranslate" style=3D"font-size: 13px; font-weight: normal; color: =
+#222;"><div style=3D"font-size:13px;color:#333"><span style=3D"font-weight:=
+bold">Add:</span> <span style=3D"white-space:pre-line;color:#777;font-style=
+:italic">=E2=80=9Cno=E2=80=9D</span></div></span></p></div></td></tr></tabl=
+e></div><table role=3D"presentation" style=3D"padding-left: calc(48px + 15p=
+x);"><td><a style=3D"background-color: whitesmoke;border: 1px solid gainsbo=
+ro; border-radius: 2px; color: #444; display: inline-block; font-size: 11px=
+; font-weight: bold; height: 27px; line-height: 27px; margin-right: 16px; m=
+in-width: 54px; outline: 0px; padding: 0 8px; text-align: center; text-deco=
+ration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRc6f52Fjp=
+NHWoTo_adXUgLkZaZVCoklAWrjAW2eEDOeMuEGPqJ-uywkFOgG0y0MebMwyLA_w6gMX099cQmFc=
+mzy5n05hupp6x7mAj6PmIPRabiINIM@docs.google.com%3E?subject=3DA%20Great%20Hea=
+rtbound%20Adventure">Reply</a><a style=3D"background-color: whitesmoke;bord=
+er: 1px solid gainsboro; border-radius: 2px; color: #444; display: inline-b=
+lock; font-size: 11px; font-weight: bold; height: 27px; line-height: 27px; =
+margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-ali=
+gn: center; text-decoration: none;" target=3D"_blank" href=3D"https://docs.=
+google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?dis=
+co=3DAAAAC45f1IM&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&a=
+mp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24px;"></div><=
+div style=3D"height: 1px; background-color: #eee;"></div></div><div itempro=
+p=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"><meta item=
+prop=3D"url" content=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2=
+lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1II&amp;usp=3Dsuggestion_=
+email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open=
+ Discussion"></div><div style=3D"line-height: 21px; padding-top: 16px;"><di=
+v style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24px; word-bre=
+ak: break-word; word-wrap: break-word;"><table role=3D"presentation" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"verti=
+cal-align: top; width: 10%;"><div style=3D"max-height: 77px; padding: 0 15p=
+x 0 0;"><img src=3D"https://ssl.gstatic.com/s2/profiles/images/silhouette96=
+.png" style=3D"height: 48px; width: 48px;" alt=3D"Anonymous"></div></td><td=
+ style=3D"vertical-align: top;"><div style=3D"display: inline-block; paddin=
+g: 0 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><strong st=
+yle=3D"font-size: 13px; font-weight: bolder; color: #222;">Anonymous</stron=
+g><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"font-size:=
+ 13px; font-weight: normal; color: #222;"><div style=3D"font-size:13px;colo=
+r:#333"><span style=3D"font-weight:bold">Add:</span> <span style=3D"white-s=
+pace:pre-line;color:#777;font-style:italic">=E2=80=9Ches a fucking liar!!! =
+Kill him Lol i bet he likes his feet licked=E2=80=9D</span></div></span></p=
+></div></td></tr></table></div><table role=3D"presentation" style=3D"paddin=
+g-left: calc(48px + 15px);"><td><a style=3D"background-color: whitesmoke;bo=
+rder: 1px solid gainsboro; border-radius: 2px; color: #444; display: inline=
+-block; font-size: 11px; font-weight: bold; height: 27px; line-height: 27px=
+; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-a=
+lign: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Repl=
+y%20%3Cd+AORGpRdK1e3Nb7JCuPpJ-jA6O_Kl1iWvcgA66GMZe2eCvLkGY3OMjO2oOACSKZ_3XX=
+2_2CSqjNLLpl9lEskdKe2vDpVKGRL02wZPrC1L40ngMQCvyl7cZKM@docs.google.com%3E?su=
+bject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"background=
+-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color: =
+#444; display: inline-block; font-size: 11px; font-weight: bold; height: 27=
+px; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px; p=
+adding: 0 8px; text-align: center; text-decoration: none;" target=3D"_blank=
+" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4=
+HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1II&amp;usp=3Dsuggestion_email_discussi=
+on&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D=
+"height: 24px;"></div><div style=3D"height: 1px; background-color: #eee;"><=
+/div></div><div itemprop=3D"action" itemscope itemtype=3D"http://schema.org=
+/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.google.com/docu=
+ment/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1H=
+8&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=
+=3D"name" content=3D"Open Discussion"></div><div style=3D"line-height: 21px=
+; padding-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; marg=
+in-bottom: 24px; word-break: break-word; word-wrap: break-word;"><table rol=
+e=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%=
+;"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=3D"max-hei=
+ght: 77px; padding: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.com/s2/pro=
+files/images/silhouette96.png" style=3D"height: 48px; width: 48px;" alt=3D"=
+Anonymous"></div></td><td style=3D"vertical-align: top;"><div style=3D"disp=
+lay: inline-block; padding: 0 15px 0 0; font-size: 13px; line-height: 18px;=
+ width: 100%;"><strong style=3D"font-size: 13px; font-weight: bolder; color=
+: #222;">Anonymous</strong><p style=3D"margin: 0px;"><span class=3D"notrans=
+late" style=3D"font-size: 13px; font-weight: normal; color: #222;"><div sty=
+le=3D"font-size:13px;color:#333"><span style=3D"font-weight:bold">Add:</spa=
+n> <span style=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=
+=9Cthe images in the =E2=80=9Cexport=E2=80=9D were last edited in 2018 tou =
+FUCKING LIAR=E2=80=9D</span></div></span></p></div></td></tr></table></div>=
+<table role=3D"presentation" style=3D"padding-left: calc(48px + 15px);"><td=
+><a style=3D"background-color: whitesmoke;border: 1px solid gainsboro; bord=
+er-radius: 2px; color: #444; display: inline-block; font-size: 11px; font-w=
+eight: bold; height: 27px; line-height: 27px; margin-right: 16px; min-width=
+: 54px; outline: 0px; padding: 0 8px; text-align: center; text-decoration: =
+none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpReSM-S4hbxZ6EluYs=
+U9JOnuB-IzxYBSp0hqYjinV0rzHcJvHLa4EOz0m11ZEaNbOTJZ7fCrLJUqotlUbzChFYA-IIu8_=
+v-8EB71uyKmZaRQjfEQe7k@docs.google.com%3E?subject=3DA%20Great%20Heartbound%=
+20Adventure">Reply</a><a style=3D"background-color: whitesmoke;border: 1px =
+solid gainsboro; border-radius: 2px; color: #444; display: inline-block; fo=
+nt-size: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-r=
+ight: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: cent=
+er; text-decoration: none;" target=3D"_blank" href=3D"https://docs.google.c=
+om/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAA=
+AC45f1H8&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D=
+5ca7b7a1">Open</a></td></table><div style=3D"height: 24px;"></div><div styl=
+e=3D"height: 1px; background-color: #eee;"></div></div><div itemprop=3D"act=
+ion" itemscope itemtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"=
+url" content=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZ=
+CLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1H4&amp;usp=3Dsuggestion_email_di=
+scussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discuss=
+ion"></div><div style=3D"line-height: 21px; padding-top: 16px;"><div style=
+=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24px; word-break: bre=
+ak-word; word-wrap: break-word;"><table role=3D"presentation" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-a=
+lign: top; width: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0=
+;"><img src=3D"https://ssl.gstatic.com/s2/profiles/images/silhouette96.png"=
+ style=3D"height: 48px; width: 48px;" alt=3D"LoudSonicBug"></div></td><td s=
+tyle=3D"vertical-align: top;"><div style=3D"display: inline-block; padding:=
+ 0 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><strong styl=
+e=3D"font-size: 13px; font-weight: bolder; color: #222;">LoudSonicBug</stro=
+ng><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"font-size=
+: 13px; font-weight: normal; color: #222;"><div style=3D"font-size:13px;col=
+or:#333"><span style=3D"font-weight:bold">Add:</span> <span style=3D"white-=
+space:pre-line;color:#777;font-style:italic">=E2=80=9CStop editing pls=E2=
+=80=9D</span></div></span></p></div></td></tr></table></div><table role=3D"=
+presentation" style=3D"padding-left: calc(48px + 15px);"><td><a style=3D"ba=
+ckground-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px;=
+ color: #444; display: inline-block; font-size: 11px; font-weight: bold; he=
+ight: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outline=
+: 0px; padding: 0 8px; text-align: center; text-decoration: none;" target=
+=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRc7h0EEo9QukPCjobJ6HPxrZujagRf=
+AsoYHFhpq1Tv9tfQdkRorRZD3M85aJkkjXpF56N_owohGhU10EgpsTc_MmXwB7_OJhmByUw1Joq=
+tVgH8pz3c@docs.google.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">=
+Reply</a><a style=3D"background-color: whitesmoke;border: 1px solid gainsbo=
+ro; border-radius: 2px; color: #444; display: inline-block; font-size: 11px=
+; font-weight: bold; height: 27px; line-height: 27px; margin-right: 16px; m=
+in-width: 54px; outline: 0px; padding: 0 8px; text-align: center; text-deco=
+ration: none;" target=3D"_blank" href=3D"https://docs.google.com/document/d=
+/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1H4&amp;=
+usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Ope=
+n</a></td></table><div style=3D"height: 24px;"></div><div style=3D"height: =
+1px; background-color: #eee;"></div></div><div itemprop=3D"action" itemscop=
+e itemtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" content=
+=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1p=
+VR5KgY_8/edit?disco=3DAAAAC45f1Hw&amp;usp=3Dsuggestion_email_discussion&amp=
+;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discussion"></div><=
+div style=3D"line-height: 21px; padding-top: 16px;"><div style=3D"overflow:=
+ hidden; margin-top: 0px; margin-bottom: 24px; word-break: break-word; word=
+-wrap: break-word;"><table role=3D"presentation" cellpadding=3D"0" cellspac=
+ing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-align: top; widt=
+h: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"=
+https://lh3.googleusercontent.com/a-/AAuE7mC1hjHO-fz0LqeAgORBoMLQRnHLxai4St=
+c1zJUxGw=3Ds96-k-no" style=3D"height: 48px; width: 48px;" alt=3D"Mabel Pend=
+ers"></div></td><td style=3D"vertical-align: top;"><div style=3D"display: i=
+nline-block; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; width=
+: 100%;"><strong style=3D"font-size: 13px; font-weight: bolder; color: #222=
+;">Mabel Penders</strong><p style=3D"margin: 0px;"><span class=3D"notransla=
+te" style=3D"font-size: 13px; font-weight: normal; color: #222;"><div style=
+=3D"font-size:13px;color:#333"><span style=3D"font-weight:bold">Add:</span>=
+ <span style=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=
+=9CIdk even know what this is Epic : 0c=E2=80=9D</span></div></span></p></d=
+iv></td></tr></table></div><table role=3D"presentation" style=3D"padding-le=
+ft: calc(48px + 15px);"><td><a style=3D"background-color: whitesmoke;border=
+: 1px solid gainsboro; border-radius: 2px; color: #444; display: inline-blo=
+ck; font-size: 11px; font-weight: bold; height: 27px; line-height: 27px; ma=
+rgin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align=
+: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply%20=
+%3Cd+AORGpRfAfO2zOS-ejZa7NeCY3MrZ1qUEkOrEnJvQEkxh7AaZf85vHVdBp2Mhe3ETVc2YWN=
+iNSYam46halLrJHYwDs7bxwHtxZcvqG31Fj_C-WZtJkQgB5NM@docs.google.com%3E?subjec=
+t=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"background-col=
+or: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444=
+; display: inline-block; font-size: 11px; font-weight: bold; height: 27px; =
+line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px; paddi=
+ng: 0 8px; text-align: center; text-decoration: none;" target=3D"_blank" hr=
+ef=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd=
+1pVR5KgY_8/edit?disco=3DAAAAC45f1Hw&amp;usp=3Dsuggestion_email_discussion&a=
+mp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"hei=
+ght: 24px;"></div><div style=3D"height: 1px; background-color: #eee;"></div=
+></div><div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/Vie=
+wAction"><meta itemprop=3D"url" content=3D"https://docs.google.com/document=
+/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Hs&am=
+p;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"na=
+me" content=3D"Open Discussion"></div><div style=3D"line-height: 21px; padd=
+ing-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bot=
+tom: 24px; word-break: break-word; word-wrap: break-word;"><table role=3D"p=
+resentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr=
+><td style=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 7=
+7px; padding: 0 15px 0 0;"><img src=3D"https://lh3.googleusercontent.com/a-=
+/AAuE7mCwjYRt-0xSh9zvfjf7ZSgFj3aHgmeX5QnAOkfKbA=3Ds96-k-no" style=3D"height=
+: 48px; width: 48px;" alt=3D"Ralcore"></div></td><td style=3D"vertical-alig=
+n: top;"><div style=3D"display: inline-block; padding: 0 15px 0 0; font-siz=
+e: 13px; line-height: 18px; width: 100%;"><strong style=3D"font-size: 13px;=
+ font-weight: bolder; color: #222;">Ralcore</strong><p style=3D"margin: 0px=
+;"><span class=3D"notranslate" style=3D"font-size: 13px; font-weight: norma=
+l; color: #222;"><div style=3D"font-size:13px;color:#333"><span style=3D"fo=
+nt-weight:bold">Add:</span> <span style=3D"white-space:pre-line;color:#777;=
+font-style:italic">=E2=80=9C=E2=A0=80=E2=A0=80=E2=A0=80=E2=A3=80=E2=A3=B6=
+=E2=A3=80 =E2=A0=80=E2=A0=80=E2=A0=80=E2=A0=92=E2=A3=9B=E2=A3=AD =E2=A0=80=
+=E2=A0=80=E2=A0=80=E2=A3=80=E2=A0=BF=E2=A3=BF=E2=A3=B6 =E2=A0=80=E2=A3=A4=
+=E2=A3=BF=E2=A0=A4=E2=A3=AD=E2=A3=BF=E2=A3=BF =E2=A3=A4=E2=A3=BF=E2=A3=BF=
+=E2=A3=BF=E2=A0=9B=E2=A3=BF=E2=A3=BF=E2=A0=80=E2=A3=80 =E2=A0=80=E2=A3=80=
+=E2=A0=A4=E2=A3=BF=E2=A3=BF=E2=A3=B6=E2=A3=A4=E2=A3=92=E2=A3=9B =E2=A0=89=
+=E2=A0=80=E2=A3=80=E2=A3=BF=E2=A3=BF=E2=A3=BF=E2=A3=BF=E2=A3=AD=E2=A0=89 =
+=E2=A0=80=E2=A0=80=E2=A3=AD=E2=A3=BF=E2=A3=BF=E2=A0=BF=E2=A0=BF=E2=A3=BF =
+=E2=A0=80=E2=A3=B6=E2=A3=BF=E2=A3=BF=E2=A0=9B=E2=A0=80=E2=A3=BF=E2=A3=BF =
+=E2=A3=A4=E2=A3=BF=E2=A3=BF=E2=A0=89=E2=A0=A4=E2=A3=BF=E2=A3=BF=E2=A0=BF =
+=E2=A3=BF=E2=A3=BF=E2=A0=9B=E2=A0=80=E2=A0=BF=E2=A3=BF=E2=A3=BF =E2=A3=BF=
+=E2=A3=BF=E2=A3=A4=E2=A0=80=E2=A3=BF=E2=80=A6=E2=80=9D</span></div></span><=
+/p></div></td></tr></table></div><table role=3D"presentation" style=3D"padd=
+ing-left: calc(48px + 15px);"><td><a style=3D"background-color: whitesmoke;=
+border: 1px solid gainsboro; border-radius: 2px; color: #444; display: inli=
+ne-block; font-size: 11px; font-weight: bold; height: 27px; line-height: 27=
+px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text=
+-align: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Re=
+ply%20%3Cd+AORGpRfrNfAkr4oxkQuJ6fEc7TR-CRqCE9Z3pHovCeXbd4q_gy992zIe1ktRGZxH=
+fke3bxyNpaPaO4nUQdJSX3-LlxTknHyRZup5zsY1XsfbDi5rY3PrD_M@docs.google.com%3E?=
+subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"backgrou=
+nd-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color=
+: #444; display: inline-block; font-size: 11px; font-weight: bold; height: =
+27px; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px;=
+ padding: 0 8px; text-align: center; text-decoration: none;" target=3D"_bla=
+nk" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLks=
+r4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Hs&amp;usp=3Dsuggestion_email_discus=
+sion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=
+=3D"height: 24px;"></div><div style=3D"height: 1px; background-color: #eee;=
+"></div></div><div itemprop=3D"action" itemscope itemtype=3D"http://schema.=
+org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.google.com/d=
+ocument/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45=
+f1Ho&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itempro=
+p=3D"name" content=3D"Open Discussion"></div><div style=3D"line-height: 21p=
+x; padding-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; mar=
+gin-bottom: 24px; word-break: break-word; word-wrap: break-word;"><table ro=
+le=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=3D"max-he=
+ight: 77px; padding: 0 15px 0 0;"><img src=3D"https://lh3.googleusercontent=
+.com/a-/AAuE7mAluF9yolzq8g_0GD70o9m4Y62V3L88kXLciwUBlg=3Ds96-k-no" style=3D=
+"height: 48px; width: 48px;" alt=3D"Allison Anderson"></div></td><td style=
+=3D"vertical-align: top;"><div style=3D"display: inline-block; padding: 0 1=
+5px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><strong style=3D=
+"font-size: 13px; font-weight: bolder; color: #222;">Allison Anderson</stro=
+ng><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"font-size=
+: 13px; font-weight: normal; color: #222;"><div style=3D"font-size:13px;col=
+or:#333"><span style=3D"font-weight:bold">Add image</span></div></span></p>=
+</div></td></tr></table></div><table role=3D"presentation" style=3D"padding=
+-left: calc(48px + 15px);"><td><a style=3D"background-color: whitesmoke;bor=
+der: 1px solid gainsboro; border-radius: 2px; color: #444; display: inline-=
+block; font-size: 11px; font-weight: bold; height: 27px; line-height: 27px;=
+ margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-al=
+ign: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply=
+%20%3Cd+AORGpRe_whek2rxAevX5_NHBippIuwOyqyd6CaPzUJJQg8MRdyaHTZw9jDPW4EfIqHg=
+mApXFbg0HcdI_bsxFdt0bC0zFZej4DPI5eKaWv-TtQC2CeBOvcWQ@docs.google.com%3E?sub=
+ject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"background-=
+color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #=
+444; display: inline-block; font-size: 11px; font-weight: bold; height: 27p=
+x; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px; pa=
+dding: 0 8px; text-align: center; text-decoration: none;" target=3D"_blank"=
+ href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4H=
+MBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Ho&amp;usp=3Dsuggestion_email_discussio=
+n&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"=
+height: 24px;"></div><div style=3D"height: 1px; background-color: #eee;"></=
+div></div><div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/=
+ViewAction"><meta itemprop=3D"url" content=3D"https://docs.google.com/docum=
+ent/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Hk=
+&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D=
+"name" content=3D"Open Discussion"></div><div style=3D"line-height: 21px; p=
+adding-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-=
+bottom: 24px; word-break: break-word; word-wrap: break-word;"><table role=
+=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;=
+"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=3D"max-heig=
+ht: 77px; padding: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.com/s2/prof=
+iles/images/silhouette96.png" style=3D"height: 48px; width: 48px;" alt=3D"A=
+nonymous"></div></td><td style=3D"vertical-align: top;"><div style=3D"displ=
+ay: inline-block; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; =
+width: 100%;"><strong style=3D"font-size: 13px; font-weight: bolder; color:=
+ #222;">Anonymous</strong><p style=3D"margin: 0px;"><span class=3D"notransl=
+ate" style=3D"font-size: 13px; font-weight: normal; color: #222;"><div styl=
+e=3D"font-size:13px;color:#333"><span style=3D"font-weight:bold">Add:</span=
+> <span style=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=
+=9CWe A=E2=80=9D</span></div></span></p></div></td></tr></table></div><tabl=
+e role=3D"presentation" style=3D"padding-left: calc(48px + 15px);"><td><a s=
+tyle=3D"background-color: whitesmoke;border: 1px solid gainsboro; border-ra=
+dius: 2px; color: #444; display: inline-block; font-size: 11px; font-weight=
+: bold; height: 27px; line-height: 27px; margin-right: 16px; min-width: 54p=
+x; outline: 0px; padding: 0 8px; text-align: center; text-decoration: none;=
+" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRfo1o0d18ANjDivCelords=
+houaSpz2rfbA3vEb_7e1D52SvbEOVUZN_NpIE1pkwiuSn74QEKVrlqazHLlPQAB8Mv-PzEriLkp=
+Cd-CzvgeojxqgTzHo@docs.google.com%3E?subject=3DA%20Great%20Heartbound%20Adv=
+enture">Reply</a><a style=3D"background-color: whitesmoke;border: 1px solid=
+ gainsboro; border-radius: 2px; color: #444; display: inline-block; font-si=
+ze: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-right:=
+ 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center; t=
+ext-decoration: none;" target=3D"_blank" href=3D"https://docs.google.com/do=
+cument/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f=
+1Hk&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b=
+7a1">Open</a></td></table><div style=3D"height: 24px;"></div><div style=3D"=
+height: 1px; background-color: #eee;"></div></div><div itemprop=3D"action" =
+itemscope itemtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" =
+content=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr=
+4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Hg&amp;usp=3Dsuggestion_email_discuss=
+ion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discussion">=
+</div><div style=3D"line-height: 21px; padding-top: 16px;"><div style=3D"ov=
+erflow: hidden; margin-top: 0px; margin-bottom: 24px; word-break: break-wor=
+d; word-wrap: break-word;"><table role=3D"presentation" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-align: to=
+p; width: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0;"><img =
+src=3D"https://lh3.googleusercontent.com/a-/AAuE7mDnvVdpi99rSsjSzOLglfZncNM=
+lmbM4z5GFWhm5=3Ds96-k-no" style=3D"height: 48px; width: 48px;" alt=3D"Jean =
+Baxter"></div></td><td style=3D"vertical-align: top;"><div style=3D"display=
+: inline-block; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; wi=
+dth: 100%;"><strong style=3D"font-size: 13px; font-weight: bolder; color: #=
+222;">Jean Baxter</strong><p style=3D"margin: 0px;"><span class=3D"notransl=
+ate" style=3D"font-size: 13px; font-weight: normal; color: #222;"><div styl=
+e=3D"font-size:13px;color:#333"><span style=3D"font-weight:bold">Format:</s=
+pan> font size</div></span></p></div></td></tr></table></div><table role=3D=
+"presentation" style=3D"padding-left: calc(48px + 15px);"><td><a style=3D"b=
+ackground-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px=
+; color: #444; display: inline-block; font-size: 11px; font-weight: bold; h=
+eight: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outlin=
+e: 0px; padding: 0 8px; text-align: center; text-decoration: none;" target=
+=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRd1ijw-b76YJhcN5PF2Cr8SAhM3opx=
+8qOf_qVckdO1TnMi_Lz3Q8g8HXi3hZY0ZlxDS2_z5xRLFt84DFJ7-ZfYhalZLfqMBIEwKbXbVaL=
+iQrK7fIwI@docs.google.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">=
+Reply</a><a style=3D"background-color: whitesmoke;border: 1px solid gainsbo=
+ro; border-radius: 2px; color: #444; display: inline-block; font-size: 11px=
+; font-weight: bold; height: 27px; line-height: 27px; margin-right: 16px; m=
+in-width: 54px; outline: 0px; padding: 0 8px; text-align: center; text-deco=
+ration: none;" target=3D"_blank" href=3D"https://docs.google.com/document/d=
+/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Hg&amp;=
+usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Ope=
+n</a></td></table><div style=3D"height: 24px;"></div><div style=3D"height: =
+1px; background-color: #eee;"></div></div><div itemprop=3D"action" itemscop=
+e itemtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" content=
+=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1p=
+VR5KgY_8/edit?disco=3DAAAAC45f1Hc&amp;usp=3Dsuggestion_email_discussion&amp=
+;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discussion"></div><=
+div style=3D"line-height: 21px; padding-top: 16px;"><div style=3D"overflow:=
+ hidden; margin-top: 0px; margin-bottom: 24px; word-break: break-word; word=
+-wrap: break-word;"><table role=3D"presentation" cellpadding=3D"0" cellspac=
+ing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-align: top; widt=
+h: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"=
+https://ssl.gstatic.com/s2/profiles/images/silhouette96.png" style=3D"heigh=
+t: 48px; width: 48px;" alt=3D"Anonymous"></div></td><td style=3D"vertical-a=
+lign: top;"><div style=3D"display: inline-block; padding: 0 15px 0 0; font-=
+size: 13px; line-height: 18px; width: 100%;"><strong style=3D"font-size: 13=
+px; font-weight: bolder; color: #222;">Anonymous</strong><p style=3D"margin=
+: 0px;"><span class=3D"notranslate" style=3D"font-size: 13px; font-weight: =
+normal; color: #222;"><div style=3D"font-size:13px;color:#333"><span style=
+=3D"font-weight:bold">Replace:</span> <span style=3D"white-space:pre-line;c=
+olor:#777;font-style:italic">=E2=80=9CThe reason that Thor and I currently =
+have an issue with each other is due to our interaction at Twit=E2=80=A6=E2=
+=80=9D</span> with <span style=3D"white-space:pre-line;color:#777;font-styl=
+e:italic">=E2=80=9CBad Lyric Fuck them He wants thordick=E2=80=9D</span></d=
+iv></span></p></div></td></tr></table></div><table role=3D"presentation" st=
+yle=3D"padding-left: calc(48px + 15px);"><td><a style=3D"background-color: =
+whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; di=
+splay: inline-block; font-size: 11px; font-weight: bold; height: 27px; line=
+-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: =
+0 8px; text-align: center; text-decoration: none;" target=3D"_blank" href=
+=3D"mailTo:Reply%20%3Cd+AORGpRdYmC3ZEGEfWYr-7nBQ5Qh_yFu496ZbVRy-7X8myrQfDjX=
+o_rrbTTNBeZjMT15yRLl8puOgE5bZLwInFkBGKmwxfKYUG1arO0jpjD0jTHSqfLn317w@docs.g=
+oogle.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a styl=
+e=3D"background-color: whitesmoke;border: 1px solid gainsboro; border-radiu=
+s: 2px; color: #444; display: inline-block; font-size: 11px; font-weight: b=
+old; height: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; =
+outline: 0px; padding: 0 8px; text-align: center; text-decoration: none;" t=
+arget=3D"_blank" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc=
+2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Hc&amp;usp=3Dsuggestion=
+_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></tabl=
+e><div style=3D"height: 24px;"></div><div style=3D"height: 1px; background-=
+color: #eee;"></div></div><div itemprop=3D"action" itemscope itemtype=3D"ht=
+tp://schema.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.=
+google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?dis=
+co=3DAAAAC45f1HY&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><=
+meta itemprop=3D"name" content=3D"Open Discussion"></div><div style=3D"line=
+-height: 21px; padding-top: 16px;"><div style=3D"overflow: hidden; margin-t=
+op: 0px; margin-bottom: 24px; word-break: break-word; word-wrap: break-word=
+;"><table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width: 100%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div s=
+tyle=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"https://lh3.goo=
+gleusercontent.com/a-/AAuE7mC1hjHO-fz0LqeAgORBoMLQRnHLxai4Stc1zJUxGw=3Ds96-=
+k-no" style=3D"height: 48px; width: 48px;" alt=3D"Mabel Penders"></div></td=
+><td style=3D"vertical-align: top;"><div style=3D"display: inline-block; pa=
+dding: 0 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><stron=
+g style=3D"font-size: 13px; font-weight: bolder; color: #222;">Mabel Pender=
+s</strong><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"fo=
+nt-size: 13px; font-weight: normal; color: #222;"><div style=3D"font-size:1=
+3px;color:#333"><span style=3D"font-weight:bold">Add:</span> <span style=3D=
+"white-space:pre-line;color:#777;font-style:italic">=E2=80=9C: =E2=80=98)=
+=E2=80=9D</span></div></span></p></div></td></tr></table></div><table role=
+=3D"presentation" style=3D"padding-left: calc(48px + 15px);"><td><a style=
+=3D"background-color: whitesmoke;border: 1px solid gainsboro; border-radius=
+: 2px; color: #444; display: inline-block; font-size: 11px; font-weight: bo=
+ld; height: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; o=
+utline: 0px; padding: 0 8px; text-align: center; text-decoration: none;" ta=
+rget=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRcqnc5Fk9QebCs0lceU7ZIgzeA=
+YlxciGSUxB_hoHrA6W2dQPJiGQ2UAZB6vVfQVKMlmvlhjUUVuYPMYbwc0TiMuNNIUs-tQDa-Wen=
+DTKx9nH-8ryc0@docs.google.com%3E?subject=3DA%20Great%20Heartbound%20Adventu=
+re">Reply</a><a style=3D"background-color: whitesmoke;border: 1px solid gai=
+nsboro; border-radius: 2px; color: #444; display: inline-block; font-size: =
+11px; font-weight: bold; height: 27px; line-height: 27px; margin-right: 16p=
+x; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center; text-=
+decoration: none;" target=3D"_blank" href=3D"https://docs.google.com/docume=
+nt/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1HY&=
+amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1"=
+>Open</a></td></table><div style=3D"height: 24px;"></div><div style=3D"heig=
+ht: 1px; background-color: #eee;"></div></div><div itemprop=3D"action" item=
+scope itemtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" cont=
+ent=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMB=
+d1pVR5KgY_8/edit?disco=3DAAAAC45f1HU&amp;usp=3Dsuggestion_email_discussion&=
+amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discussion"></di=
+v><div style=3D"line-height: 21px; padding-top: 16px;"><div style=3D"overfl=
+ow: hidden; margin-top: 0px; margin-bottom: 24px; word-break: break-word; w=
+ord-wrap: break-word;"><table role=3D"presentation" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-align: top; w=
+idth: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=
+=3D"https://lh3.googleusercontent.com/a-/AAuE7mDBZxqABvQEfgOdD5VzBSKIWf171f=
+W60WzmjoUWgA=3Ds96-k-no" style=3D"height: 48px; width: 48px;" alt=3D"Vespul=
+a"></div></td><td style=3D"vertical-align: top;"><div style=3D"display: inl=
+ine-block; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; width: =
+100%;"><strong style=3D"font-size: 13px; font-weight: bolder; color: #222;"=
+>Vespula</strong><p style=3D"margin: 0px;"><span class=3D"notranslate" styl=
+e=3D"font-size: 13px; font-weight: normal; color: #222;"><div style=3D"font=
+-size:13px;color:#333"><span style=3D"font-weight:bold">Add:</span> <span s=
+tyle=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=9CThank y=
+ou=E2=80=9D</span></div></span></p></div></td></tr></table></div><table rol=
+e=3D"presentation" style=3D"padding-left: calc(48px + 15px);"><td><a style=
+=3D"background-color: whitesmoke;border: 1px solid gainsboro; border-radius=
+: 2px; color: #444; display: inline-block; font-size: 11px; font-weight: bo=
+ld; height: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; o=
+utline: 0px; padding: 0 8px; text-align: center; text-decoration: none;" ta=
+rget=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRcPUiP5QGRIn7c4s_zB6JDEF23=
+NbEX_XRJB15RtD0Rpc_V0ooyD4hVstf-7KagrCV_pR8ik7VZ6sCF7Vi1F5gdPLZ6KMSv4kRGEDX=
+T6Locy5KG6mSE@docs.google.com%3E?subject=3DA%20Great%20Heartbound%20Adventu=
+re">Reply</a><a style=3D"background-color: whitesmoke;border: 1px solid gai=
+nsboro; border-radius: 2px; color: #444; display: inline-block; font-size: =
+11px; font-weight: bold; height: 27px; line-height: 27px; margin-right: 16p=
+x; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center; text-=
+decoration: none;" target=3D"_blank" href=3D"https://docs.google.com/docume=
+nt/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1HU&=
+amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1"=
+>Open</a></td></table><div style=3D"height: 24px;"></div><div style=3D"heig=
+ht: 1px; background-color: #eee;"></div></div><div itemprop=3D"action" item=
+scope itemtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" cont=
+ent=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMB=
+d1pVR5KgY_8/edit?disco=3DAAAAC45f1HQ&amp;usp=3Dsuggestion_email_discussion&=
+amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discussion"></di=
+v><div style=3D"line-height: 21px; padding-top: 16px;"><div style=3D"overfl=
+ow: hidden; margin-top: 0px; margin-bottom: 24px; word-break: break-word; w=
+ord-wrap: break-word;"><table role=3D"presentation" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-align: top; w=
+idth: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=
+=3D"https://ssl.gstatic.com/s2/profiles/images/silhouette96.png" style=3D"h=
+eight: 48px; width: 48px;" alt=3D"Anonymous"></div></td><td style=3D"vertic=
+al-align: top;"><div style=3D"display: inline-block; padding: 0 15px 0 0; f=
+ont-size: 13px; line-height: 18px; width: 100%;"><strong style=3D"font-size=
+: 13px; font-weight: bolder; color: #222;">Anonymous</strong><p style=3D"ma=
+rgin: 0px;"><span class=3D"notranslate" style=3D"font-size: 13px; font-weig=
+ht: normal; color: #222;"><div style=3D"font-size:13px;color:#333"><span st=
+yle=3D"font-weight:bold">Format:</span> font size</div></span></p></div></t=
+d></tr></table></div><table role=3D"presentation" style=3D"padding-left: ca=
+lc(48px + 15px);"><td><a style=3D"background-color: whitesmoke;border: 1px =
+solid gainsboro; border-radius: 2px; color: #444; display: inline-block; fo=
+nt-size: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-r=
+ight: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: cent=
+er; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+A=
+ORGpRfcXQeAeKaVN0Ny_WrHe78AOYZi-WE_0ucTNd5DXbdTjAy-FyyGwV148suYGcBIc9dsPHkz=
+R7mhOhyGphgkjr2ak0doLrZGmOifmUWXHxRnEzkY2tk@docs.google.com%3E?subject=3DA%=
+20Great%20Heartbound%20Adventure">Reply</a><a style=3D"background-color: wh=
+itesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; disp=
+lay: inline-block; font-size: 11px; font-weight: bold; height: 27px; line-h=
+eight: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 =
+8px; text-align: center; text-decoration: none;" target=3D"_blank" href=3D"=
+https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5K=
+gY_8/edit?disco=3DAAAAC45f1HQ&amp;usp=3Dsuggestion_email_discussion&amp;usp=
+_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 2=
+4px;"></div><div style=3D"height: 1px; background-color: #eee;"></div></div=
+><div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewActio=
+n"><meta itemprop=3D"url" content=3D"https://docs.google.com/document/d/15y=
+13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1HM&amp;usp=
+=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" c=
+ontent=3D"Open Discussion"></div><div style=3D"line-height: 21px; padding-t=
+op: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: =
+24px; word-break: break-word; word-wrap: break-word;"><table role=3D"presen=
+tation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td =
+style=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 77px; =
+padding: 0 15px 0 0;"><img src=3D"https://lh3.googleusercontent.com/a-/AAuE=
+7mC1hjHO-fz0LqeAgORBoMLQRnHLxai4Stc1zJUxGw=3Ds96-k-no" style=3D"height: 48p=
+x; width: 48px;" alt=3D"Mabel Penders"></div></td><td style=3D"vertical-ali=
+gn: top;"><div style=3D"display: inline-block; padding: 0 15px 0 0; font-si=
+ze: 13px; line-height: 18px; width: 100%;"><strong style=3D"font-size: 13px=
+; font-weight: bolder; color: #222;">Mabel Penders</strong><p style=3D"marg=
+in: 0px;"><span class=3D"notranslate" style=3D"font-size: 13px; font-weight=
+: normal; color: #222;"><div style=3D"font-size:13px;color:#333"><span styl=
+e=3D"font-weight:bold">Format:</span> font size</div></span></p></div></td>=
+</tr></table></div><table role=3D"presentation" style=3D"padding-left: calc=
+(48px + 15px);"><td><a style=3D"background-color: whitesmoke;border: 1px so=
+lid gainsboro; border-radius: 2px; color: #444; display: inline-block; font=
+-size: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-rig=
+ht: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center=
+; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AOR=
+GpRcGGN8YKAOAOzUexP13CRr3aY865xcCjDUZfcc4NKnMpus74ZvzYX1iD_YXy0NqPkKQZejSkt=
+u_HMFTeaqGoQK3agut1U0xR-VtapmoboALDnUr-DM@docs.google.com%3E?subject=3DA%20=
+Great%20Heartbound%20Adventure">Reply</a><a style=3D"background-color: whit=
+esmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; displa=
+y: inline-block; font-size: 11px; font-weight: bold; height: 27px; line-hei=
+ght: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8p=
+x; text-align: center; text-decoration: none;" target=3D"_blank" href=3D"ht=
+tps://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY=
+_8/edit?disco=3DAAAAC45f1HM&amp;usp=3Dsuggestion_email_discussion&amp;usp_d=
+m=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24p=
+x;"></div><div style=3D"height: 1px; background-color: #eee;"></div></div><=
+div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"=
+><meta itemprop=3D"url" content=3D"https://docs.google.com/document/d/15y13=
+DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1HI&amp;usp=3D=
+suggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" cont=
+ent=3D"Open Discussion"></div><div style=3D"line-height: 21px; padding-top:=
+ 16px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24p=
+x; word-break: break-word; word-wrap: break-word;"><table role=3D"presentat=
+ion" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td sty=
+le=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 77px; pad=
+ding: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.com/s2/profiles/images/s=
+ilhouette96.png" style=3D"height: 48px; width: 48px;" alt=3D"Anonymous"></d=
+iv></td><td style=3D"vertical-align: top;"><div style=3D"display: inline-bl=
+ock; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"=
+><strong style=3D"font-size: 13px; font-weight: bolder; color: #222;">Anony=
+mous</strong><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D=
+"font-size: 13px; font-weight: normal; color: #222;"><div style=3D"font-siz=
+e:13px;color:#333"><span style=3D"font-weight:bold">Add:</span> <span style=
+=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=9CHe wants th=
+e duc LOL COMIC SENSE LYRIC GON HAV BAD TOM!!!!!=E2=80=9D</span></div></spa=
+n></p></div></td></tr></table></div><table role=3D"presentation" style=3D"p=
+adding-left: calc(48px + 15px);"><td><a style=3D"background-color: whitesmo=
+ke;border: 1px solid gainsboro; border-radius: 2px; color: #444; display: i=
+nline-block; font-size: 11px; font-weight: bold; height: 27px; line-height:=
+ 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; t=
+ext-align: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo=
+:Reply%20%3Cd+AORGpReStA7ZTxIYPH7Q40Xr13bBlT66_orQI01o4tw2WUwJKWo-s2gB4YEXi=
+DaPdepjOU1wrKpXKC_ILBgQbhEeEXAV8EQRXNhE_1lWjQdyA5MSJZrRGaY@docs.google.com%=
+3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"backg=
+round-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; co=
+lor: #444; display: inline-block; font-size: 11px; font-weight: bold; heigh=
+t: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0=
+px; padding: 0 8px; text-align: center; text-decoration: none;" target=3D"_=
+blank" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZC=
+Lksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1HI&amp;usp=3Dsuggestion_email_dis=
+cussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div sty=
+le=3D"height: 24px;"></div><div style=3D"height: 1px; background-color: #ee=
+e;"></div></div><div itemprop=3D"action" itemscope itemtype=3D"http://schem=
+a.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.google.com=
+/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC=
+45f1HE&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemp=
+rop=3D"name" content=3D"Open Discussion"></div><div style=3D"line-height: 2=
+1px; padding-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; m=
+argin-bottom: 24px; word-break: break-word; word-wrap: break-word;"><table =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 1=
+00%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=3D"max-=
+height: 77px; padding: 0 15px 0 0;"><img src=3D"https://lh3.googleuserconte=
+nt.com/a-/AAuE7mC1hjHO-fz0LqeAgORBoMLQRnHLxai4Stc1zJUxGw=3Ds96-k-no" style=
+=3D"height: 48px; width: 48px;" alt=3D"Mabel Penders"></div></td><td style=
+=3D"vertical-align: top;"><div style=3D"display: inline-block; padding: 0 1=
+5px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><strong style=3D=
+"font-size: 13px; font-weight: bolder; color: #222;">Mabel Penders</strong>=
+<p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"font-size: 1=
+3px; font-weight: normal; color: #222;"><div style=3D"font-size:13px;color:=
+#333"><span style=3D"font-weight:bold">Format:</span> bold, font</div></spa=
+n></p></div></td></tr></table></div><table role=3D"presentation" style=3D"p=
+adding-left: calc(48px + 15px);"><td><a style=3D"background-color: whitesmo=
+ke;border: 1px solid gainsboro; border-radius: 2px; color: #444; display: i=
+nline-block; font-size: 11px; font-weight: bold; height: 27px; line-height:=
+ 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; t=
+ext-align: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo=
+:Reply%20%3Cd+AORGpRdqHyHgwMwlJtriqXgzZAnP359oPH-UjupbkUWupexOdaVjVuSKygqFd=
+OapOePhbZKzyoUtVVQ11bNYcr4LbtzI6AWPwGAg2VlE03mie98TkK74jTU@docs.google.com%=
+3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"backg=
+round-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; co=
+lor: #444; display: inline-block; font-size: 11px; font-weight: bold; heigh=
+t: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0=
+px; padding: 0 8px; text-align: center; text-decoration: none;" target=3D"_=
+blank" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZC=
+Lksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1HE&amp;usp=3Dsuggestion_email_dis=
+cussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div sty=
+le=3D"height: 24px;"></div><div style=3D"height: 1px; background-color: #ee=
+e;"></div></div><div itemprop=3D"action" itemscope itemtype=3D"http://schem=
+a.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.google.com=
+/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC=
+45f1HA&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemp=
+rop=3D"name" content=3D"Open Discussion"></div><div style=3D"line-height: 2=
+1px; padding-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0px; m=
+argin-bottom: 24px; word-break: break-word; word-wrap: break-word;"><table =
+role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 1=
+00%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=3D"max-=
+height: 77px; padding: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.com/s2/=
+profiles/images/silhouette96.png" style=3D"height: 48px; width: 48px;" alt=
+=3D"Anonymous"></div></td><td style=3D"vertical-align: top;"><div style=3D"=
+display: inline-block; padding: 0 15px 0 0; font-size: 13px; line-height: 1=
+8px; width: 100%;"><strong style=3D"font-size: 13px; font-weight: bolder; c=
+olor: #222;">Anonymous</strong><p style=3D"margin: 0px;"><span class=3D"not=
+ranslate" style=3D"font-size: 13px; font-weight: normal; color: #222;"><div=
+ style=3D"font-size:13px;color:#333"><span style=3D"font-weight:bold">Add:<=
+/span> <span style=3D"white-space:pre-line;color:#777;font-style:italic">=
+=E2=80=9Che wants the thordicks=E2=80=9D</span></div></span></p></div></td>=
+</tr></table></div><table role=3D"presentation" style=3D"padding-left: calc=
+(48px + 15px);"><td><a style=3D"background-color: whitesmoke;border: 1px so=
+lid gainsboro; border-radius: 2px; color: #444; display: inline-block; font=
+-size: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-rig=
+ht: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center=
+; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AOR=
+GpRcbM9SJgt2LwcONBNTblecREdQ47Q2KPG0cfTEYu34qQ28RIbBoYKYMhRRW8R2pV6L21wsY-F=
+_r9cMjdUIP57J8D6Tsq6t0TyEBZ4uocaB74ltIJvs@docs.google.com%3E?subject=3DA%20=
+Great%20Heartbound%20Adventure">Reply</a><a style=3D"background-color: whit=
+esmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; displa=
+y: inline-block; font-size: 11px; font-weight: bold; height: 27px; line-hei=
+ght: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8p=
+x; text-align: center; text-decoration: none;" target=3D"_blank" href=3D"ht=
+tps://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY=
+_8/edit?disco=3DAAAAC45f1HA&amp;usp=3Dsuggestion_email_discussion&amp;usp_d=
+m=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24p=
+x;"></div><div style=3D"height: 1px; background-color: #eee;"></div></div><=
+div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"=
+><meta itemprop=3D"url" content=3D"https://docs.google.com/document/d/15y13=
+DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1G8&amp;usp=3D=
+suggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" cont=
+ent=3D"Open Discussion"></div><div style=3D"line-height: 21px; padding-top:=
+ 16px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24p=
+x; word-break: break-word; word-wrap: break-word;"><table role=3D"presentat=
+ion" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td sty=
+le=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 77px; pad=
+ding: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.com/s2/profiles/images/s=
+ilhouette96.png" style=3D"height: 48px; width: 48px;" alt=3D"Anonymous"></d=
+iv></td><td style=3D"vertical-align: top;"><div style=3D"display: inline-bl=
+ock; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"=
+><strong style=3D"font-size: 13px; font-weight: bolder; color: #222;">Anony=
+mous</strong><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D=
+"font-size: 13px; font-weight: normal; color: #222;"><div style=3D"font-siz=
+e:13px;color:#333"><span style=3D"font-weight:bold">Add:</span> <span style=
+=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=9Ches so bad =
+fre2tyigdrhsbvlollololollo=E2=80=9D</span></div></span></p></div></td></tr>=
+</table></div><table role=3D"presentation" style=3D"padding-left: calc(48px=
+ + 15px);"><td><a style=3D"background-color: whitesmoke;border: 1px solid g=
+ainsboro; border-radius: 2px; color: #444; display: inline-block; font-size=
+: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-right: 1=
+6px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center; tex=
+t-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRdW=
+37Pm2wAwcM-BLHzn-JkuxdCSV8pSJGC2HJIU7H5O_Om4sQGZ-4gHlviGM2JzWRRK7B8YI77rVD9=
+ZTGlCGmV_xkahBUn_Tf112x0fXliK6OUwUVc@docs.google.com%3E?subject=3DA%20Great=
+%20Heartbound%20Adventure">Reply</a><a style=3D"background-color: whitesmok=
+e;border: 1px solid gainsboro; border-radius: 2px; color: #444; display: in=
+line-block; font-size: 11px; font-weight: bold; height: 27px; line-height: =
+27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; te=
+xt-align: center; text-decoration: none;" target=3D"_blank" href=3D"https:/=
+/docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/ed=
+it?disco=3DAAAAC45f1G8&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Df=
+alse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24px;"><=
+/div><div style=3D"height: 1px; background-color: #eee;"></div></div><div i=
+temprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"><met=
+a itemprop=3D"url" content=3D"https://docs.google.com/document/d/15y13DTvLW=
+1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Gw&amp;usp=3Dsugge=
+stion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=
+=3D"Open Discussion"></div><div style=3D"line-height: 21px; padding-top: 16=
+px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24px; =
+word-break: break-word; word-wrap: break-word;"><table role=3D"presentation=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td style=
+=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 77px; paddi=
+ng: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.com/s2/profiles/images/sil=
+houette96.png" style=3D"height: 48px; width: 48px;" alt=3D"Anonymous"></div=
+></td><td style=3D"vertical-align: top;"><div style=3D"display: inline-bloc=
+k; padding: 0 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><=
+strong style=3D"font-size: 13px; font-weight: bolder; color: #222;">Anonymo=
+us</strong><p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"f=
+ont-size: 13px; font-weight: normal; color: #222;"><div style=3D"font-size:=
+13px;color:#333"><span style=3D"font-weight:bold">Replace:</span> <span sty=
+le=3D"white-space:pre-line;color:#777;font-style:italic">=E2=80=9CLeading u=
+p to this encounter, Thor and I shared many intimate relations through our =
+Telegram chat.=E2=80=9D</span> with <span style=3D"white-space:pre-line;col=
+or:#777;font-style:italic">=E2=80=9Crfegewrgrt5sa4e56yhe4ewrhvtryesrdtsardt=
+gergreyv4gbrth3=E2=80=9D</span></div></span></p></div></td></tr></table></d=
+iv><table role=3D"presentation" style=3D"padding-left: calc(48px + 15px);">=
+<td><a style=3D"background-color: whitesmoke;border: 1px solid gainsboro; b=
+order-radius: 2px; color: #444; display: inline-block; font-size: 11px; fon=
+t-weight: bold; height: 27px; line-height: 27px; margin-right: 16px; min-wi=
+dth: 54px; outline: 0px; padding: 0 8px; text-align: center; text-decoratio=
+n: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpReN3OcIyoYtZUy=
+ADhmzV0JSilHvxz-N6oxZ_RXf_jOm9PUEVZxEMVu08aOsU47L2f-Iol9uUqssOlK7AdpmlwpyoR=
+-skCrDWN4NrdCd0SMuDdGwVCg@docs.google.com%3E?subject=3DA%20Great%20Heartbou=
+nd%20Adventure">Reply</a><a style=3D"background-color: whitesmoke;border: 1=
+px solid gainsboro; border-radius: 2px; color: #444; display: inline-block;=
+ font-size: 11px; font-weight: bold; height: 27px; line-height: 27px; margi=
+n-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: c=
+enter; text-decoration: none;" target=3D"_blank" href=3D"https://docs.googl=
+e.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3D=
+AAAAC45f1Gw&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=
+=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24px;"></div><div s=
+tyle=3D"height: 1px; background-color: #eee;"></div></div><div itemprop=3D"=
+action" itemscope itemtype=3D"http://schema.org/ViewAction"><meta itemprop=
+=3D"url" content=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziM=
+yTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Gs&amp;usp=3Dsuggestion_emai=
+l_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Dis=
+cussion"></div><div style=3D"line-height: 21px; padding-top: 16px;"><div st=
+yle=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24px; word-break: =
+break-word; word-wrap: break-word;"><table role=3D"presentation" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-=
+align: top; width: 10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 =
+0;"><img src=3D"https://ssl.gstatic.com/s2/profiles/images/silhouette96.png=
+" style=3D"height: 48px; width: 48px;" alt=3D"Anonymous"></div></td><td sty=
+le=3D"vertical-align: top;"><div style=3D"display: inline-block; padding: 0=
+ 15px 0 0; font-size: 13px; line-height: 18px; width: 100%;"><strong style=
+=3D"font-size: 13px; font-weight: bolder; color: #222;">Anonymous</strong><=
+p style=3D"margin: 0px;"><span class=3D"notranslate" style=3D"font-size: 13=
+px; font-weight: normal; color: #222;"><div style=3D"font-size:13px;color:#=
+333"><span style=3D"font-weight:bold">Add:</span> <span style=3D"white-spac=
+e:pre-line;color:#777;font-style:italic">=E2=80=9CMinecraft sex Porn=E2=80=
+=9D</span></div></span></p></div></td></tr></table></div><table role=3D"pre=
+sentation" style=3D"padding-left: calc(48px + 15px);"><td><a style=3D"backg=
+round-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; co=
+lor: #444; display: inline-block; font-size: 11px; font-weight: bold; heigh=
+t: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0=
+px; padding: 0 8px; text-align: center; text-decoration: none;" target=3D"_=
+blank" href=3D"mailTo:Reply%20%3Cd+AORGpRcFx72skSAfgnEw85UVdN3D0rZhQLnpGOdf=
+HzlFAKz_R_xPWK1LrgD7kIbe5jwWNOur0VcfnqM7EPaVf-E02JqbhTq4C_RO5xiMkeNoLm29m5E=
+K1zg@docs.google.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply=
+</a><a style=3D"background-color: whitesmoke;border: 1px solid gainsboro; b=
+order-radius: 2px; color: #444; display: inline-block; font-size: 11px; fon=
+t-weight: bold; height: 27px; line-height: 27px; margin-right: 16px; min-wi=
+dth: 54px; outline: 0px; padding: 0 8px; text-align: center; text-decoratio=
+n: none;" target=3D"_blank" href=3D"https://docs.google.com/document/d/15y1=
+3DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Gs&amp;usp=
+=3Dsuggestion_email_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</=
+a></td></table><div style=3D"height: 24px;"></div><div style=3D"height: 1px=
+; background-color: #eee;"></div></div><div itemprop=3D"action" itemscope i=
+temtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" content=3D"=
+https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5K=
+gY_8/edit?disco=3DAAAAC45f1Go&amp;usp=3Dsuggestion_email_discussion&amp;ts=
+=3D5ca7b7a1"><meta itemprop=3D"name" content=3D"Open Discussion"></div><div=
+ style=3D"line-height: 21px; padding-top: 16px;"><div style=3D"overflow: hi=
+dden; margin-top: 0px; margin-bottom: 24px; word-break: break-word; word-wr=
+ap: break-word;"><table role=3D"presentation" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width: 100%;"><tr><td style=3D"vertical-align: top; width: =
+10%;"><div style=3D"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"htt=
+ps://ssl.gstatic.com/s2/profiles/images/silhouette96.png" style=3D"height: =
+48px; width: 48px;" alt=3D"Anonymous"></div></td><td style=3D"vertical-alig=
+n: top;"><div style=3D"display: inline-block; padding: 0 15px 0 0; font-siz=
+e: 13px; line-height: 18px; width: 100%;"><strong style=3D"font-size: 13px;=
+ font-weight: bolder; color: #222;">Anonymous</strong><p style=3D"margin: 0=
+px;"><span class=3D"notranslate" style=3D"font-size: 13px; font-weight: nor=
+mal; color: #222;"><div style=3D"font-size:13px;color:#333"><span style=3D"=
+font-weight:bold">Add:</span> <span style=3D"white-space:pre-line;color:#77=
+7;font-style:italic">=E2=80=9CWant some suck wolf boy=E2=80=9D</span></div>=
+</span></p></div></td></tr></table></div><table role=3D"presentation" style=
+=3D"padding-left: calc(48px + 15px);"><td><a style=3D"background-color: whi=
+tesmoke;border: 1px solid gainsboro; border-radius: 2px; color: #444; displ=
+ay: inline-block; font-size: 11px; font-weight: bold; height: 27px; line-he=
+ight: 27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8=
+px; text-align: center; text-decoration: none;" target=3D"_blank" href=3D"m=
+ailTo:Reply%20%3Cd+AORGpRdNji_pcj6jetoWIMnse_QUj7iNCEhZDln48plowUnmSts0oT7w=
+4rzl9tBdicXLbHbEBEVQZ1q28s8kB9YFUO4X3YcGzLSZP9rfbS7y4itXcvqoTqg@docs.google=
+.com%3E?subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"=
+background-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2p=
+x; color: #444; display: inline-block; font-size: 11px; font-weight: bold; =
+height: 27px; line-height: 27px; margin-right: 16px; min-width: 54px; outli=
+ne: 0px; padding: 0 8px; text-align: center; text-decoration: none;" target=
+=3D"_blank" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziM=
+yTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Go&amp;usp=3Dsuggestion_emai=
+l_discussion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table><di=
+v style=3D"height: 24px;"></div><div style=3D"height: 1px; background-color=
+: #eee;"></div></div><div itemprop=3D"action" itemscope itemtype=3D"http://=
+schema.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.googl=
+e.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3D=
+AAAAC45f1Gk&amp;usp=3Dsuggestion_email_discussion&amp;ts=3D5ca7b7a1"><meta =
+itemprop=3D"name" content=3D"Open Discussion"></div><div style=3D"line-heig=
+ht: 21px; padding-top: 16px;"><div style=3D"overflow: hidden; margin-top: 0=
+px; margin-bottom: 24px; word-break: break-word; word-wrap: break-word;"><t=
+able role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"wid=
+th: 100%;"><tr><td style=3D"vertical-align: top; width: 10%;"><div style=3D=
+"max-height: 77px; padding: 0 15px 0 0;"><img src=3D"https://ssl.gstatic.co=
+m/s2/profiles/images/silhouette96.png" style=3D"height: 48px; width: 48px;"=
+ alt=3D"Anonymous"></div></td><td style=3D"vertical-align: top;"><div style=
+=3D"display: inline-block; padding: 0 15px 0 0; font-size: 13px; line-heigh=
+t: 18px; width: 100%;"><strong style=3D"font-size: 13px; font-weight: bolde=
+r; color: #222;">Anonymous</strong><p style=3D"margin: 0px;"><span class=3D=
+"notranslate" style=3D"font-size: 13px; font-weight: normal; color: #222;">=
+<div style=3D"font-size:13px;color:#333"><span style=3D"font-weight:bold">A=
+dd:</span> <span style=3D"white-space:pre-line;color:#777;font-style:italic=
+">=E2=80=9CTime for peepee=E2=80=9D</span></div></span></p></div></td></tr>=
+</table></div><table role=3D"presentation" style=3D"padding-left: calc(48px=
+ + 15px);"><td><a style=3D"background-color: whitesmoke;border: 1px solid g=
+ainsboro; border-radius: 2px; color: #444; display: inline-block; font-size=
+: 11px; font-weight: bold; height: 27px; line-height: 27px; margin-right: 1=
+6px; min-width: 54px; outline: 0px; padding: 0 8px; text-align: center; tex=
+t-decoration: none;" target=3D"_blank" href=3D"mailTo:Reply%20%3Cd+AORGpRdO=
+Aq5MyKyhImN6FRIdE9_qeD-d0LaqKpC07RHqP75Q3tfpPagq3OtRtOjS0MO3-8F0qdT02hOaaWd=
+-tbAg_oIl8imqxCjG4R75kN2mV_TCJ8IfBxI@docs.google.com%3E?subject=3DA%20Great=
+%20Heartbound%20Adventure">Reply</a><a style=3D"background-color: whitesmok=
+e;border: 1px solid gainsboro; border-radius: 2px; color: #444; display: in=
+line-block; font-size: 11px; font-weight: bold; height: 27px; line-height: =
+27px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; te=
+xt-align: center; text-decoration: none;" target=3D"_blank" href=3D"https:/=
+/docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/ed=
+it?disco=3DAAAAC45f1Gk&amp;usp=3Dsuggestion_email_discussion&amp;usp_dm=3Df=
+alse&amp;ts=3D5ca7b7a1">Open</a></td></table><div style=3D"height: 24px;"><=
+/div><div style=3D"height: 1px; background-color: #eee;"></div></div><div i=
+temprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"><met=
+a itemprop=3D"url" content=3D"https://docs.google.com/document/d/15y13DTvLW=
+1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Gg&amp;usp=3Dsugge=
+stion_email_discussion&amp;ts=3D5ca7b7a1"><meta itemprop=3D"name" content=
+=3D"Open Discussion"></div><div style=3D"line-height: 21px; padding-top: 16=
+px;"><div style=3D"overflow: hidden; margin-top: 0px; margin-bottom: 24px; =
+word-break: break-word; word-wrap: break-word;"><table role=3D"presentation=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%;"><tr><td style=
+=3D"vertical-align: top; width: 10%;"><div style=3D"max-height: 77px; paddi=
+ng: 0 15px 0 0;"><img src=3D"https://lh3.googleusercontent.com/a-/AAuE7mDnv=
+Vdpi99rSsjSzOLglfZncNMlmbM4z5GFWhm5=3Ds96-k-no" style=3D"height: 48px; widt=
+h: 48px;" alt=3D"Jean Baxter"></div></td><td style=3D"vertical-align: top;"=
+><div style=3D"display: inline-block; padding: 0 15px 0 0; font-size: 13px;=
+ line-height: 18px; width: 100%;"><strong style=3D"font-size: 13px; font-we=
+ight: bolder; color: #222;">Jean Baxter</strong><p style=3D"margin: 0px;"><=
+span class=3D"notranslate" style=3D"font-size: 13px; font-weight: normal; c=
+olor: #222;"><div style=3D"font-size:13px;color:#333"><span style=3D"font-w=
+eight:bold">Add:</span> <span style=3D"white-space:pre-line;color:#777;font=
+-style:italic">=E2=80=9CBIG STUPID BIG STUPID=E2=80=9D</span></div></span><=
+/p></div></td></tr></table></div><table role=3D"presentation" style=3D"padd=
+ing-left: calc(48px + 15px);"><td><a style=3D"background-color: whitesmoke;=
+border: 1px solid gainsboro; border-radius: 2px; color: #444; display: inli=
+ne-block; font-size: 11px; font-weight: bold; height: 27px; line-height: 27=
+px; margin-right: 16px; min-width: 54px; outline: 0px; padding: 0 8px; text=
+-align: center; text-decoration: none;" target=3D"_blank" href=3D"mailTo:Re=
+ply%20%3Cd+AORGpRdY1wKAHvpeOC2L-sGDsWWZcQC96UpFD4ZhxikvF675B_2erFYBu52k6Xma=
+EyOF2UCzc1d2DpOImBucVnafLngVW_dPwF0d7YGoh1R_4Myop0z_lyA@docs.google.com%3E?=
+subject=3DA%20Great%20Heartbound%20Adventure">Reply</a><a style=3D"backgrou=
+nd-color: whitesmoke;border: 1px solid gainsboro; border-radius: 2px; color=
+: #444; display: inline-block; font-size: 11px; font-weight: bold; height: =
+27px; line-height: 27px; margin-right: 16px; min-width: 54px; outline: 0px;=
+ padding: 0 8px; text-align: center; text-decoration: none;" target=3D"_bla=
+nk" href=3D"https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLks=
+r4HMBd1pVR5KgY_8/edit?disco=3DAAAAC45f1Gg&amp;usp=3Dsuggestion_email_discus=
+sion&amp;usp_dm=3Dfalse&amp;ts=3D5ca7b7a1">Open</a></td></table></div></div=
+></div></div><table style=3D"width: 100%; border-collapse: collapse;" role=
+=3D"presentation"><tr><td style=3D"padding: 0px;"><table style=3D"border-co=
+llapse: collapse; width: 3px;" role=3D"presentation"><tr height=3D"1"><td w=
+idth=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"></td><td width=3D"1"=
+ bgcolor=3D"#eaeaea" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=
+=3D"#e5e5e5" style=3D"padding: 0px;"></td></tr><tr height=3D"1"><td width=
+=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"></td><td width=3D"1" bgc=
+olor=3D"#eaeaea" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#e=
+aeaea" style=3D"padding: 0px;"></td></tr><tr height=3D"1"><td width=3D"1" b=
+gcolor=3D"#f5f5f5" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"=
+#f0f0f0" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#f0f0f0" s=
+tyle=3D"padding: 0px;"></td></tr></table></td><td style=3D"width: 100%; pad=
+ding: 0px;"><div style=3D"height: 1px; width: auto; border-top: 1px solid #=
+ddd; background:#eaeaea; border-bottom: 1px solid #f0f0f0;"></div></td><td =
+style=3D"padding: 0px;"><table style=3D"border-collapse: collapse; width: 3=
+px;" role=3D"presentation"><tr height=3D"1"><td width=3D"1" bgcolor=3D"#e5e=
+5e5" style=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#eaeaea" style=
+=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"paddin=
+g: 0px;"></td></tr><tr height=3D"1"><td width=3D"1" bgcolor=3D"#eaeaea" sty=
+le=3D"padding: 0px;"></td><td width=3D"1" bgcolor=3D"#eaeaea" style=3D"padd=
+ing: 0px;"></td><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px;"=
+></td></tr><tr height=3D"1"><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"pa=
+dding: 0px;"></td><td width=3D"1" bgcolor=3D"#f0f0f0" style=3D"padding: 0px=
+;"></td><td width=3D"1" bgcolor=3D"#f5f5f5" style=3D"padding: 0px;"></td></=
+tr></table></td></tr></table><table style=3D"padding: 14px 10px 0 10px;" ro=
+le=3D"presentation" dir=3D"ltr"><tr><td style=3D"width: 100%; font-size:11p=
+x; font-family: Roboto,Arial,Helvetica,sans-serif; color:#646464; line-heig=
+ht: 20px; min-height: 40px; vertical-align: middle;"><table role=3D"present=
+ation" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color: #f5f5=
+f5; margin: 0 auto;"><tbody><tr><td style=3D"color: #646464; font: 11px Rob=
+oto, Arial; vertical-align: middle;"><span style=3D"padding-right: 5px;">Go=
+ogle LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</span><br=
+><br><span style=3D"padding-right: 5px;">You have received this email becau=
+se you are a participant in the updated discussion threads.</span><span sty=
+le=3D"padding-right: 5px;"><a href=3D"https://docs.google.com/document/u/10=
+6319481401498614947/docos/notify?id=3D15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pV=
+R5KgY_8&amp;title=3DA+Great+Heartbound+Adventure" target=3D"_blank" style=
+=3D"color: #36c; text-decoration: none;">Change what Google Docs sends you.=
+</a></span><span>You can not reply to this email.</span></td></tr></tbody><=
+/table></td><td style=3D"padding-left: 20px; vertical-align: middle;"><img =
+src=3D"https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_tm_=
+black54_color_96x40dp.png" width=3D"96" style=3D"vertical-align: middle; ma=
+rgin-left: 22px;"></td></tr></table></div></div></div></div>
+--000000000000bbc44c0585ce29b5--

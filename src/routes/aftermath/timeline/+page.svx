@@ -1,0 +1,16 @@
+---
+title: Timeline
+order: -1
+---
+<script>
+   import Timeline from '$lib/components/Timeline.svelte';
+   import Email from '$lib/components/Email.svelte';
+   import timelineItems from './timeline.json';
+</script>
+
+THIS PAGE IS A WORK IN PROGRESS
+
+<Timeline
+   title="Timeline"
+   items={timelineItems}
+/>
