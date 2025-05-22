@@ -215,14 +215,14 @@ h1 {
   background: black;
   margin-block-start: 0;
   padding-block-start: 2rem;
-  z-index: 1;
+  z-index: 5;
 }
 
  h1 ~ h2 {
   position: sticky;
   top: 5rem;
   background: black;
-  z-index: 1;
+  z-index: 5;
 }
 
 blockquote {
