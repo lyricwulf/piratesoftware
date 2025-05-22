@@ -1,9 +1,10 @@
 <script>
   let { key, media } = $props();
+  const ext = { sticker: "webp", photo: "jpg" }[media];
 </script>
 
 <div class={media}>
-  <img src="/{media}/{key}.webp" alt={media} />
+  <img src="/media/{media}/{key}.{ext}" alt={media} />
 </div>
 
 <style>
