@@ -3,8 +3,6 @@ title: Who is Lyric?
 order: 1
 ---
 
-# Who is Lyric?
-
 Hi, I'm Lyric. I was a college student, completing my undergrad requirements and
 double majoring in Mechanical Engineering and Aerospace Engineering. I was a
 full-time student taking 17 credits, equal to a minimum of 51 hours total

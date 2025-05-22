@@ -7,8 +7,6 @@ order: 3
    import Messages from "$lib/components/Messages.svelte";
 </script>
 
-# Refusing to take "no" for an answer
-
 Let’s look at the penultimate of the conversation on 10/1. At this point, the conversation has lasted **7 hours.** 
 
 ## **1\. It seemed like a healthy discussion**

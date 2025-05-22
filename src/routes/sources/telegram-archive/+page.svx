@@ -8,7 +8,6 @@ title: "Telegram Archive"
 
 </script>
 
-# Telegram Archive
 The Telegram archive uploaded https://thor.pc.dev is otherwise identical to the
 first publication on Dec 18, 2018, except as noted below.
 

@@ -6,7 +6,6 @@ title: Thor's Marriage
    import Timeline from '$lib/components/Timeline.svelte';
 </script>
 
-# Thor’s Marriage
 
 Jason Thor Hall was married to Nicole Gillett **from October 17, 2015 to August 19, 2020**.
 

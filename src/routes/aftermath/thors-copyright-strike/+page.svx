@@ -7,7 +7,6 @@ order: 2
    import Email from '$lib/components/Email.svelte';
 </script>
 
-# Copyright Strike
 Mon, Apr 1, 2019, 8:43 AM
 
 I received a copyright takedown and strike to my YouTube channel.

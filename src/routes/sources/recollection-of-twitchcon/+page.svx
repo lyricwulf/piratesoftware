@@ -10,7 +10,6 @@ order: 7
    import texts from "./texts.ts";
 </script>
 
-# Recollection of TwitchCon
 
 This is a stream of messages I wrote to a friend on Oct 29, 2018. I have only included messages from myself.
 

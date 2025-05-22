@@ -6,7 +6,6 @@ title: Moving
    import Messages from "$lib/components/Messages.svelte";
 </script>
 
-# Moving
 In this passage, Jason
 - brings up the topic of moving
 - suggests that Lyric to move close to him

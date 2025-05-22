@@ -4,8 +4,13 @@
   import SectionNav from "./SectionNav.svelte";
   import HideOnMobile from "./HideOnMobile.svelte";
   import { ListTree, TableOfContents } from "@lucide/svelte";
+  import { page } from "$app/state";
+  import { MD_METADATA } from "./md-metadata";
 
   let { children } = $props();
+
+  let clientPath = $derived(page.url.pathname);
+  let pageMetadata = $derived(MD_METADATA.get(clientPath));
 </script>
 
 <div class="x-wrapper">
@@ -17,6 +22,7 @@
   </HideOnMobile>
 
   <div class="markdown">
+    <h1>{pageMetadata.title}</h1>
     {@render children()}
   </div>
   <HideOnMobile position="right">
