@@ -48,7 +48,7 @@
         width="100%"
         height="100%"
         viewBox="0 0 100 100"
-        class="absolute left-0 top-0 w-full h-full opacity-10"
+        class="absolute left-0 top-0 w-full h-full opacity-10 pointer-events-none"
         preserveAspectRatio="none"
       >
         <polygon
