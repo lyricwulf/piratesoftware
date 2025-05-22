@@ -22,7 +22,7 @@
   </HideOnMobile>
 
   <div class="markdown">
-    <h1>{pageMetadata.title}</h1>
+    <h1>{pageMetadata?.title}</h1>
     {@render children()}
   </div>
   <HideOnMobile position="right">
