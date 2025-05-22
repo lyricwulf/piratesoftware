@@ -21,6 +21,7 @@
 		"@tailwindcss/vite": "^4.0.0",
 		"bits-ui": "0.22.0",
 		"clsx": "^2.1.1",
+		"eml-parse-js": "1.2.0-beta.0",
 		"github-slugger": "^2.0.0",
 		"mdast-util-to-string": "^4.0.0",
 		"mdsvex": "^0.12.3",

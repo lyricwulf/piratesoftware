@@ -10,7 +10,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "src/routes/**/*.(png|webp)",
+          src: "src/routes/**/*.(png|webp|eml)",
           dest: ".",
           rename: (fileName, fileExtension, fullPath) => {
             const relPath = fullPath.split(/src[\\\/]routes[\\\/]/)[1];

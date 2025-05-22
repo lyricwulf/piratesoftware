@@ -39,6 +39,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      eml-parse-js:
+        specifier: 1.2.0-beta.0
+        version: 1.2.0-beta.0
       github-slugger:
         specifier: ^2.0.0
         version: 2.0.0
@@ -748,6 +751,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@sinonjs/text-encoding@0.7.3':
+    resolution: {integrity: sha512-DE427ROAphMQzU4ENbliGYrBSYPXF+TtLg9S8vzeA+OF4ZKzoDdzfL8sxuMUGS/lgRhM6j1URSk9ghf7Xo1tyA==}
+
   '@sveltejs/adapter-auto@4.0.0':
     resolution: {integrity: sha512-kmuYSQdD2AwThymQF0haQhM8rE5rhutQXG4LNbnbShwhMO4qQGnKaaTy+88DuNSuoQDi58+thpq8XpHc1+oEKQ==}
     peerDependencies:
@@ -1023,6 +1029,9 @@ packages:
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
+  eml-parse-js@1.2.0-beta.0:
+    resolution: {integrity: sha512-fDA5OcT9DmU+6Qiv6Ki6/+fIjrZ97SE6KIB0PUK2r0nnRqBbnbaWm844l8SLTd4mc3rF0T3izc8E7E/qXFCthA==}
+
   enhanced-resolve@5.18.1:
     resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
     engines: {node: '>=10.13.0'}
@@ -1147,6 +1156,9 @@ packages:
   jiti@2.4.2:
     resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
     hasBin: true
+
+  js-base64@3.7.7:
+    resolution: {integrity: sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==}
 
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
@@ -2028,6 +2040,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.8':
     optional: true
 
+  '@sinonjs/text-encoding@0.7.3': {}
+
   '@sveltejs/adapter-auto@4.0.0(@sveltejs/kit@2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))':
     dependencies:
       '@sveltejs/kit': 2.17.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)))(svelte@5.20.2)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1))
@@ -2280,6 +2294,11 @@ snapshots:
     dependencies:
       dequal: 2.0.3
 
+  eml-parse-js@1.2.0-beta.0:
+    dependencies:
+      '@sinonjs/text-encoding': 0.7.3
+      js-base64: 3.7.7
+
   enhanced-resolve@5.18.1:
     dependencies:
       graceful-fs: 4.2.11
@@ -2433,6 +2452,8 @@ snapshots:
       '@types/estree': 1.0.6
 
   jiti@2.4.2: {}
+
+  js-base64@3.7.7: {}
 
   jsonfile@6.1.0:
     dependencies:
