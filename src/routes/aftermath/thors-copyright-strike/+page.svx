@@ -1,0 +1,15 @@
+---
+title: Thor's Copyright Strike
+order: 2
+---
+
+<script>
+   import Email from '$lib/components/Email.svelte';
+</script>
+
+# Copyright Strike
+Mon, Apr 1, 2019, 8:43 AM
+
+I received a copyright takedown and strike to my YouTube channel.
+
+<Email eml="[Copyright takedown notice] Some of your videos have been taken down from YouTube.eml" />

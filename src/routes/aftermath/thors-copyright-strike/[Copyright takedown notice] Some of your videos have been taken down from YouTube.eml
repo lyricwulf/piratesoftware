@@ -1,0 +1,354 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:ac9:1062:0:0:0:0:0 with SMTP id 89csp607013oce;
+        Mon, 1 Apr 2019 08:43:24 -0700 (PDT)
+X-Received: by 2002:a81:13d4:: with SMTP id 203mr51971952ywt.442.1554133404539;
+        Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1554133404; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=C6LHTpRl7YI25W3MxjzOrt/ekfsoOjzIOxkErzBxuxuI+7rP4G6O3b/SNrcNLtzS4Z
+         VI9oBNi+9ij4oUsNV/TAbrzLNdRuopJgtBmtPNJCUR9hWKgvuT5m0hWAzOF0+EZMKn+A
+         aN7bycEzHNvBGOlfCrqBqUr7BdrOuX1DLt8gtoomk/dYXQlY607j0VPMuIYmz9ReEEpt
+         jJ7Zzf/h7lfH1FmvG3Xnv5S3qGCuAjB1yqY6aL9KgKrGALhUxuA4vRlLzAPL52p/QjfK
+         8A7SAfuvulzvNWbRzP4MzkX2rGsO1I7IZakb23G9Ea1oVXTBrqGLlzNu/wsl24IrPsqC
+         QgIw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:date:mime-version:dkim-signature;
+        bh=M9tgvx36tnAgvCxbbH7EHrTxFs5irrCbjh1o92S/7l0=;
+        b=ryDBaOBmNq5pK+WoRBrg714RhHKsFGREnchFrTuJY2G7bJBHZ2qS6WFoxGxlNaztyN
+         rwAXVDO6lRPBtAtMmE81rw+uAY5/ipFlZ2jgcYYEn01krjVWxuFONcqpByklnSrdRhxt
+         5aj/Ku+9fBVVgyUNide5MZpu1WrjE7P3QwqXCpNUESb3gToB5mtycTouFOWfcVhxDEQE
+         XbSnvg59Bd+tiInTTxDOM4m+hVdhM2gTIssRjnrgfd0enk6R9MXcVv5t4HRjzHcx2Gw/
+         F3M7b3gEnuwuY3yMfwrqecPvrQQlLWeC42jX3UarBtLW/ixi1pfzoMBkqfFR2W4uXfwu
+         cRzA==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@youtube.com header.s=20161025 header.b=z6cFJiHA;
+       arc=pass (i=1 spf=pass spfdomain=youtube-subscriptions.bounces.google.com dkim=pass dkdomain=youtube.com dmarc=pass fromdomain=youtube.com);
+       spf=pass (google.com: domain of 3ndgixbalahmrttflekj-efivgcppflklsv.tfd@youtube-subscriptions.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3nDGiXBALAHMRTTflekj-efiVgcppflklSV.Tfd@youtube-subscriptions.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+Return-Path: <3nDGiXBALAHMRTTflekj-efiVgcppflklSV.Tfd@youtube-subscriptions.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id 188sor5809371ybl.19.2019.04.01.08.43.24
+        for <LyricWulf@gmail.com>
+        (Google Transport Security);
+        Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3ndgixbalahmrttflekj-efivgcppflklsv.tfd@youtube-subscriptions.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@youtube.com header.s=20161025 header.b=z6cFJiHA;
+       arc=pass (i=1 spf=pass spfdomain=youtube-subscriptions.bounces.google.com dkim=pass dkdomain=youtube.com dmarc=pass fromdomain=youtube.com);
+       spf=pass (google.com: domain of 3ndgixbalahmrttflekj-efivgcppflklsv.tfd@youtube-subscriptions.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3nDGiXBALAHMRTTflekj-efiVgcppflklSV.Tfd@youtube-subscriptions.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:dkim-signature:mime-version:date:message-id
+         :subject:from:to;
+        bh=M9tgvx36tnAgvCxbbH7EHrTxFs5irrCbjh1o92S/7l0=;
+        b=CrFWb7KGd4KAVZZNqghAD+wdruP764ncit1j0k8vnm6yobtNT+kp99Q36wdnc0hIcB
+         JHEr4PPO6PyeA6W56fqicKGfaxD2Up47znGgGOmlMgrrJgvlsaMp1C5pN2dXawCDjbVv
+         QxfVKgkF9vm63CJ8gfxWqkpkYtJQWXA0upmf7A9qCff1PPFtsG0+wcGn37pHaQbDbUlp
+         rNfR8whTEXmugXNL406CZywGS7Lk+1EHuvCTcI3bXgA6ftxzZoSmbq9DTQjbLWp2XehD
+         0Zyx2433JawrSeKslhaVOlYDSbG9fG/VHa0aXW0y5Ng4hvF5Mb6h1OTmCWQVjvv+s+7j
+         EsBQ==
+X-Gm-Message-State: APjAAAUkjKJOTSAVVEb8T3aglRt/lKBh5ISs7iwsXYRWQWQK/LwBRNVa
+	KpVsURxQsuGvfxmN71SggH3D
+X-Received: by 2002:a25:4f03:: with SMTP id d3mr241110ybb.4.1554133404356;
+        Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyB7D18vc7+wVvDFdfRHlit9exmEqmIUIQafZ9cbC6jRWes9YN1NMpI5CUcOJWA+ZnetOGs
+X-Received: by 2002:a25:ea4e:: with SMTP id o14mr3447156ybe.102.1554133404187;
+        Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1554133404; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zshqeVtuRZUqPG5dbvJBt3BpBzm58jigdvSQu9TQSW5oYN05IbS6qctxDUkGtOKj9s
+         QCR/h56E/ewRFF08BpL3QszTPI0VB92gP7zxrdKYXRiZo5uNArMvzuM/U+2PzpislIyX
+         +zHLUUYaQoWxgHryWqiCs4o3yMFzJxo+Hea39P66bv13sJfK0irpZLGNYy2szSgBD9Bc
+         efgXZqJ8wi1ZAz2K4m42wLrPNLmRljlXe9WRg6kh0Z683Dz3hhwC89dtN0F3MfPrkk0W
+         iqcTQxTcQmhOKUMRXTOCVyxdbcj04pNHHeFhXwoTzxQHZ4VkN1reGQ75gxDt1L+ls3zj
+         Uyhw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:date:mime-version:dkim-signature;
+        bh=M9tgvx36tnAgvCxbbH7EHrTxFs5irrCbjh1o92S/7l0=;
+        b=xc4sG3LNnOgT8rU38/KS+nbcXZdu0ZQbmCr3Cj7HuRmF+08h8jxb6gYJy2LALCEaDK
+         ObtKRTR4lkD01wGdn7ICJtDcS7MQO3CghehlKF1AfWLOSCGnRhRDU7JEXDyuYYz2KXgv
+         QS4t2KOovuyeKEpibbLARcEN8NSAqXhG/CNDulPfEwgCKayw3bhY5ZhKIa9sJf5QXELk
+         l0dsHDoH7/RucMdRaM0J17ByOQcvzlkkBbsxPTeCAhZB0G2bUVhtLoWr6wIJoskXmQtC
+         cr0gMGTJdbe8UgcQ/231GNJhvbFOpSO5Ah+8Jq2raVix13TgNuHf/QRdBcqrpWAxTLCW
+         VcYg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@youtube.com header.s=20161025 header.b=z6cFJiHA;
+       spf=pass (google.com: domain of 3ndgixbalahmrttflekj-efivgcppflklsv.tfd@youtube-subscriptions.bounces.google.com designates 2607:f8b0:4864:20::246 as permitted sender) smtp.mailfrom=3nDGiXBALAHMRTTflekj-efiVgcppflklSV.Tfd@youtube-subscriptions.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+Return-Path: <3nDGiXBALAHMRTTflekj-efiVgcppflklSV.Tfd@youtube-subscriptions.bounces.google.com>
+Received: from mail-oi1-x246.google.com (mail-oi1-x246.google.com. [2607:f8b0:4864:20::246])
+        by gmr-mx.google.com with ESMTPS id k62si530440ybb.4.2019.04.01.08.43.24
+        for <lyricwulf-3024@pages.plusgoogle.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3ndgixbalahmrttflekj-efivgcppflklsv.tfd@youtube-subscriptions.bounces.google.com designates 2607:f8b0:4864:20::246 as permitted sender) client-ip=2607:f8b0:4864:20::246;
+Received: by mail-oi1-x246.google.com with SMTP id q82so1271561oif.7
+        for <lyricwulf-3024@pages.plusgoogle.com>; Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=youtube.com; s=20161025;
+        h=mime-version:date:message-id:subject:from:to;
+        bh=M9tgvx36tnAgvCxbbH7EHrTxFs5irrCbjh1o92S/7l0=;
+        b=z6cFJiHArWxatAAitPLzww1RGwGEcPRs7HuOS8OIdobFA/RdCMtFpIi7sNO+mNGfRQ
+         Gr48PHcNmJd1UO0GOasol8JQ8yZlVVbTfO7tht0Io5gPTFAPYxd0agJCSjUNKarC2DVC
+         np5ooVXeAgXtjg2N1RFdrFvDNkx/okYYOUi7JlKnr+HoVSAShVmIImmx0TfmI5Gnc4I0
+         9DqWLIZfX85FpzrH3aLd+mfzyX3y2aK/dyQhCb75INiZXW5lHuy2ri03RHFjzRxJQbWz
+         2jsOXL0BZXrnnZXWtjfHHbHqSitBphE2egQTLJ2q6YjLtbn12e2fanTzCAWLiX4fnZzX
+         EOfw==
+MIME-Version: 1.0
+X-Received: by 2002:a9d:6e0a:: with SMTP id e10mr42158221otr.281.1554133404023;
+ Mon, 01 Apr 2019 08:43:24 -0700 (PDT)
+Date: Mon, 01 Apr 2019 08:43:24 -0700
+X-No-Auto-Attachment: 1
+Message-ID: <0000000000007afbc6058579e172@google.com>
+Subject: =?windows-1252?q?=5BCopyright_takedown_notice=5D__Some_of_your_videos_hav?=
+ =?windows-1252?q?e_been_taken_down_from_YouTube?=
+From: YouTube <accounts-noreply@youtube.com>
+To: LyricWulf <lyricwulf-3024@pages.plusgoogle.com>
+Content-Type: multipart/alternative; boundary="0000000000007afba5058579e16f"
+
+--0000000000007afba5058579e16f
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+DQpIaSBMeXJpY1d1bGYNCg0KICAgRHVlIHRvIGEgY29weXJpZ2h0IHRha2Vkb3duIG5vdGljZSB0
+aGF0IHdlIHJlY2VpdmVkLCB3ZSBoYWQgdG8gdGFrZSBkb3duICANCnRoZSBmb2xsb3dpbmcgdmlk
+ZW9zIGZyb20gWW91VHViZToNCg0KICAgICBWaWRlbyB0aXRsZTogSGVhcnRib3VuZCDCtyBPdmVy
+dHVyZSB8IEx5cmljV3VsZiBQaWFubyBUdXRvcmlhbCBvbiAgDQpTeW50aGVzaWENClZpZGVvIHVy
+bDogaHR0cDovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWtyZGtXcUwycnpVDQpUYWtlZG93biBp
+c3N1ZWQgYnk6IFBpcmF0ZSBTb2Z0d2FyZQ0KDQogICAgIFZpZGVvIHRpdGxlOiBIZWFydGJvdW5k
+IMK3IEkgQmVsaWV2ZSBJbiBZb3UgfCBMeXJpY1d1bGYgUGlhbm8gVHV0b3JpYWwgIA0Kb24gU3lu
+dGhlc2lhDQpWaWRlbyB1cmw6IGh0dHA6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1raVdqWlJT
+Vk9XSQ0KVGFrZWRvd24gaXNzdWVkIGJ5OiBQaXJhdGUgU29mdHdhcmUNCg0KICAgICBWaWRlbyB0
+aXRsZTogSGVhcnRib3VuZCDigJQgUmFtdWwgfCBMeXJpY1d1bGYgUGlhbm8gVHV0b3JpYWwgb24g
+U3ludGhlc2lhDQpWaWRlbyB1cmw6IGh0dHA6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1pcWV2
+ZUppWDFnaw0KVGFrZWRvd24gaXNzdWVkIGJ5OiBQaXJhdGUgU29mdHdhcmUNCg0KICAgVGhpcyBt
+ZWFucyB0aGF0IHlvdXIgdmlkZW8gY2FuIG5vIGxvbmdlciBiZSBwbGF5ZWQgb24gWW91VHViZS4N
+Cg0KDQpZb3UgcmVjZWl2ZWQgYSBjb3B5cmlnaHQgc3RyaWtlDQoNCllvdSBub3cgaGF2ZSAxIGNv
+cHlyaWdodCBzdHJpa2UuIElmIHlvdSBnZXQgbXVsdGlwbGUgY29weXJpZ2h0IHN0cmlrZXMsICAN
+Cndl4oCZbGwgaGF2ZSB0byBkaXNhYmxlIHlvdXIgYWNjb3VudC4gVG8gcHJldmVudCB0aGF0IGZy
+b20gaGFwcGVuaW5nLCBwbGVhc2UgIA0KZG9u4oCZdCB1cGxvYWQgdmlkZW9zIGNvbnRhaW5pbmcg
+Y29weXJpZ2h0ZWQgY29udGVudCB0aGF0IHlvdSBhcmVu4oCZdCBhbGxvd2VkICANCnRvIHVzZS4N
+Cg0KVmlldyBkZXRhaWxzIGF0Og0KICAgaHR0cDovL3d3dy55b3V0dWJlLmNvbQ0KDQoNCldoYXQg
+dG8gZG8gbmV4dA0KDQoNCg0KSWYgeW91IGJlbGlldmUgeW91J3JlIG5vdCBhdCBmYXVsdCBpbiBv
+bmUgb3IgbW9yZSBvZiB0aGUgaW5zdGFuY2VzIGFib3ZlLCAgDQp5b3UgY2FuIGFwcGVhbCB0aGlz
+IHRha2Vkb3duIGJ5IHN1Ym1pdHRpbmcgYSBjb3VudGVyIG5vdGlmaWNhdGlvbiBhdDogIA0KLy93
+d3cueW91dHViZS5jb20veXQvY29weXJpZ2h0L2NvdW50ZXItbm90aWZpY2F0aW9uLmh0bWwNCllv
+dSBjYW4gYWxzbyBjb250YWN0IHRoZSBwYXJ0eSB0aGF0IHJlbW92ZWQgeW91ciB2aWRlbyBhbmQg
+YXNrIHRoZW0gdG8gIA0KcmV0cmFjdCB0aGVpciB0YWtlZG93biBhdDogLy93d3cueW91dHViZS5j
+b20veXQvY29weXJpZ2h0L3JldHJhY3Rpb25zLmh0bWwNCg0KDQo=
+--0000000000007afba5058579e16f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+  <html lang=3D"en">
+
+  <head>
+    <title>
+        [Copyright takedown notice]
+ Some of your videos have been taken down from YouTube
+
+
+    </title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+  </head>
+
+  <body>
+    <table width=3D"620" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" a=
+lign=3D"center"><tr><td bgcolor=3D"#F0F0F0">
+      <table width=3D"578" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center">
+        <tr>
+          <td height=3D"16"></td>
+        </tr>
+        <tr>
+          <td>
+            <img src=3D"https://www.gstatic.com/youtube/img/branding/youtub=
+elogo/2x/youtubelogo_60.png" style=3D"height: 30px;">
+          </td>
+        </tr>
+        <tr>
+          <td height=3D"16"></td>
+        </tr>
+
+        <tr>
+          <td align=3D"left" bgcolor=3D"#FFFFFF">
+            <div style=3D"border-style:solid; border-width:1px; border-colo=
+r:#CCCCCC;">
+              <table width=3D"578" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" align=3D"center">
+                <tr>
+                  <td height=3D"22" colspan=3D"3"></td>
+                </tr>
+
+                <tr>
+                  <td width=3D"40"></td>
+                  <td width=3D"498">
+                    <div style=3D"
+  font-family:arial,Arial,sans-serif;
+">
+                     =20
+<h2>Hi LyricWulf:</h2>
+
+    <p>
+Due to a copyright takedown notice that we received, we had to take down th=
+e following videos from YouTube:
+  </p>
+    <p>
+Video title: Heartbound =C2=B7 Overture | LyricWulf Piano Tutorial on Synth=
+esia<br/>
+Video url: http://www.youtube.com/watch?v=3DkrdkWqL2rzU<br/>
+Takedown issued by: Pirate Software<br/>
+</p>
+
+    <p>
+Video title: Heartbound =C2=B7 I Believe In You | LyricWulf Piano Tutorial =
+on Synthesia<br/>
+Video url: http://www.youtube.com/watch?v=3DkiWjZRSVOWI<br/>
+Takedown issued by: Pirate Software<br/>
+</p>
+
+    <p>
+Video title: Heartbound =E2=80=94 Ramul | LyricWulf Piano Tutorial on Synth=
+esia<br/>
+Video url: http://www.youtube.com/watch?v=3DiqeveJiX1gk<br/>
+Takedown issued by: Pirate Software<br/>
+</p>
+
+  <p>
+  This means that your video can no longer be played on YouTube.
+
+  </p>
+
+
+
+<p><strong>You received a copyright strike</strong></p>
+<p>
+  You now have <strong>1 copyright strike</strong>. If you get multiple cop=
+yright strikes, we=E2=80=99ll have to disable your account. To prevent that=
+ from happening, please don=E2=80=99t upload videos containing copyrighted =
+content that you aren=E2=80=99t allowed to use.
+</p>
+
+
+  <p>
+      <a href=3D"https://www.youtube.com/attribution_link?a=3Du3smTSysTn_GC=
+Xee&amp;u=3D/video_copynotice%3Fv%3DkrdkWqL2rzU">
+    <button type=3D"button" style=3D"display: inline-block; height: 28px; b=
+order: solid 1px #D8D8D8; padding: 5px 10px; outline: 0; background-color: =
+#2793e6; font-weight: bold; font-size: 11px; color: #FFFFFF; text-decoratio=
+n: none; white-space: nowrap; word-wrap: normal; line-height: normal; verti=
+cal-align: middle; cursor: pointer; *overflow: visible; -moz-border-radius:=
+ 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 0 1p=
+x 0 rgba(0,0,0,0.05); -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.05); -webkit-box=
+-shadow: 0 1px 0 rgba(0,0,0,0.05); box-shadow: 0 1px 0 rgba(0,0,0,0.05); bo=
+rder-color: #1b7fcc;" onmouseover=3D"this.style.backgroundColor=3D'#3f76b7'=
+;" onmouseout=3D"this.style.backgroundColor=3D'#2793e6';">View details</but=
+ton>
+  </a>
+
+  </p>
+
+
+  <p><strong>What to do next</strong></p>
+
+  <p>
+    <ul>
+        <li>If you believe you're not at fault in one or more of the instan=
+ces above, you can appeal this takedown by submitting a <a href=3D"https://=
+www.youtube.com/attribution_link?a=3Du3smTSysTn_GCXee&amp;u=3D/yt/copyright=
+/counter-notification.html">counter notification</a>. Keep in mind that the=
+re may be severe legal consequences for submitting a counter notification w=
+ith false information.</li>
+      <li>You can also contact the party that removed your video and ask th=
+em to <a href=3D"https://www.youtube.com/attribution_link?a=3Du3smTSysTn_GC=
+Xee&amp;u=3D/yt/copyright/retractions.html">retract</a> their takedown.</li=
+>
+    </ul>
+  </p>
+
+
+  <img class=3D"open_tracking_img" src=3D"https://www.youtube.com/attributi=
+on_link?a=3Du3smTSysTn_GCXee&amp;u=3D/gen_204%3Fa%3Dem-copyright-cyc-takedo=
+wn-notice" width=3D"1" height=3D"1">
+
+
+
+                    </div>
+                  </td>
+                  <td width=3D"40"></td>
+                </tr>
+
+                <tr>
+                  <td height=3D"22" colspan=3D"3"></td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td height=3D"16"></td>
+        </tr>
+        <tr>
+          <td align=3D"center">
+            <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center">
+              <tr>
+                <td width=3D"40"></td>
+                <td width=3D"498">
+                  <div style=3D"
+  font-family:arial,Arial,sans-serif; font-size:11px; color:#999999; line-h=
+eight:14px;
+">
+                     =20
+  <a href=3D"http://support.google.com/youtube/?hl=3Den" style=3D"text-deco=
+ration:none; color:#1C62B9;">Help center</a>
+    =E2=80=A2 <a href=3D"https://www.youtube.com/attribution_link?noapp=3D1=
+&amp;a=3Du3smTSysTn_GCXee&amp;u=3D/account_notifications%3Ffeature%3Dem-" s=
+tyle=3D"text-decoration:none; color:#1C62B9;">Email options</a>
+
+
+                  </div>
+                </td>
+                <td width=3D"40"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td height=3D"16"></td>
+        </tr>
+        <tr>
+          <td align=3D"left">
+            <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center">
+              <tr>
+                <td width=3D"40"></td>
+                <td width=3D"498">
+                  <div style=3D"
+  font-family:arial,Arial,sans-serif; font-size:11px; color:#999999; line-h=
+eight:13px;
+">
+                    &copy;2019 YouTube, LLC 901 Cherry Ave, San Bruno, CA 9=
+4066, USA
+                  </div>
+                </td>
+                <td width=3D"40"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height=3D"22"></td>
+        </tr>
+      </table>
+    </td></tr></table>
+    <img class=3D"open_tracking_img" src=3D"https://www.youtube.com/attribu=
+tion_link?a=3Du3smTSysTn_GCXee&amp;u=3D/gen_204" width=3D"1" height=3D"1">
+  </body>
+  </html>
+
+--0000000000007afba5058579e16f--
