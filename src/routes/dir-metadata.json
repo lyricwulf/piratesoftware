@@ -7,6 +7,10 @@
     "name": "Conversations",
     "order": 4
   },
+  "donations": {
+    "name": "Donations",
+    "order": 4
+  },
   "aftermath": {
     "name": "Aftermath",
     "order": 6
