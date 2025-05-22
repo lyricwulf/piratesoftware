@@ -43,10 +43,32 @@
 
 <div class="email flex flex-col w-full rounded-lg overflow-hidden">
   {#if email}
-    <div class="bg-gray-800 flex flex-row items-center p-4 gap-2">
-      <div class="flex flex-col w-full h-fit items-start">
-        <span class="shrink-0 font-bold">{email.subject}</span>
-        <span class="text-sm text-gray-400">
+    <div class="email-banner bg-gray-900 flex flex-row items-center p-4 gap-2">
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 100 100"
+        class="absolute left-0 top-0 w-full h-full opacity-10"
+        preserveAspectRatio="none"
+      >
+        <polygon
+          points="0,100 100,100 50,20"
+          stroke="grey"
+          fill="none"
+          stroke-width="1"
+          stroke-linejoin="round"
+        />
+        <polygon
+          points="0,0 100,0 50,80"
+          stroke="white"
+          fill="none"
+          stroke-width="1"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <div class="flex flex-col w-full h-fit items-start z-1">
+        <span class="shrink-0 font-bold bg-gray-900">{email.subject}</span>
+        <span class="text-sm text-gray-400 bg-gray-900">
           {email.date
             ? new Date(email.date).toLocaleString("en-US", {
                 dateStyle: "long",
@@ -55,7 +77,7 @@
               })
             : ""}
         </span>
-        <span class="text-sm flex flex-row gap-2">
+        <span class="text-sm flex flex-row gap-2 bg-gray-900">
           {#each iter(email.from) as from}
             <Tooltip.Root openDelay={100}>
               <Tooltip.Trigger class="hover:bg-gray-200/20">
@@ -136,4 +158,20 @@
   .collapsible:not(.open) {
     height: 0;
   }
+
+  .email-banner {
+    position: relative;
+  }
+  /* .email-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: inherit;
+    z-index: 1;
+    transform: rotate(45deg) translate(calc(-500px - 50%), -500px);
+  } */
 </style>
