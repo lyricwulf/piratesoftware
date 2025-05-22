@@ -7,10 +7,12 @@
   let open = $state(false);
 </script>
 
-<Collapsible.Root bind:open>
-  <Collapsible.Trigger class="flex items-center gap-2">
-    <Button variant="ghost" class="softborder">{preview}</Button>
-    <span class="text-sm">{open ? "(Click to hide)" : "(Click to show)"}</span>
+<Collapsible.Root bind:open class="bg-popover p-4">
+  <Collapsible.Trigger class="flex flex-col gap-2">
+    {preview}
+    <Button variant="ghost" class="softborder"
+      >{open ? "(Click to hide)" : "(Click to show)"}</Button
+    >
   </Collapsible.Trigger>
   <Collapsible.Content>
     {@render children()}
