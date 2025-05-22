@@ -47,6 +47,10 @@
     justify-self: center;
 
     color: hsla(var(--foreground) / 80%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   @media (max-width: 1200px) {

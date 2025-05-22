@@ -14,13 +14,15 @@ order: 7
 
 This is a stream of messages I wrote to a friend on Oct 29, 2018. I have only included messages from myself.
 
-{#each texts as text}
-   {#if text.startsWith("image:")}
-      {@const src = text.replace("image:", "")}
-      <ChatBubble from="Lyric">
-         <Image src={src} />
-      </ChatBubble>
-   {:else}
-      <ChatBubble text={text} from="Lyric" />
-   {/if}
-{/each}
+<div>
+   {#each texts as text}
+      {#if text.startsWith("image:")}
+         {@const src = text.replace("image:", "")}
+         <ChatBubble from="Lyric">
+            <Image src={src} />
+         </ChatBubble>
+      {:else}
+         <ChatBubble text={text} from="Lyric" />
+      {/if}
+   {/each}
+</div>
