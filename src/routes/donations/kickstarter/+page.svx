@@ -1,0 +1,156 @@
+---
+title: Kickstarter
+order: 1
+---
+
+<script>
+   import ChatBubble from '$lib/components/ChatBubble.svelte';
+   import Message from '$lib/components/Message.svelte';
+   import Image from '$lib/components/Image.svelte';
+   import Messages from '$lib/components/Messages.svelte';
+   import Email from '$lib/components/Email.svelte';
+   import Spoiler from '$lib/components/Spoiler.svelte';
+</script>
+
+## Thor mentions the Baron plush
+<Spoiler preview="Thor mentions the Baron plush">
+   <Messages from="49035" to="49069" />
+</Spoiler>
+
+
+## Thor mentions the Kickstarter
+<Spoiler preview="Thor mentions the Kickstarter">
+   <Messages from="59509" to="59598" />
+</Spoiler>
+
+## Lyric pledges $106
+
+Within 10 minutes of Thor's message, Lyric pledges $106 to the Kickstarter. 
+
+<Email eml="You just backed Heartbound - Baron Plush!.eml" open={false} />
+
+<Spoiler preview="Thor thanks Lyric for the pledge">
+   <Messages from="59599" to="59670" />
+</Spoiler>
+
+## Thor mentions the Kickstarter might fail
+
+Thor says "Looks like the kickstarter might fail", Lyric responds with "wUH,
+It's been two days :v".
+
+This is actually insightful from Lyric: **for Thor to say that the campaign
+might fail after only two days is a bit odd. It shows that Thor is trying to
+coerce Lyric into donating more money.**
+
+<Spoiler preview="Thor mentions the Kickstarter might fail">
+   <Messages from="60329" to="60368" />
+</Spoiler>
+
+Extra: **Thor ignores Lyric after talking about Kickstarter.** After Lyric
+nudges him, he simply says "hrm?" as if Lyric was being annoying. 
+
+Thor has nothing to say to Lyric other than to let them know their
+feelings on the funding. **In addition to the fact that Thor was saying it would
+fail after two days, this abandonment of engagement shows that Thor expects
+something of Lyric at this point.**
+
+<Spoiler preview="Thor ignores Lyric after talking about Kickstarter">
+   <Messages from="60367" to="60408" />
+</Spoiler>
+
+## Lyric increases their pledge to $500
+
+<Email eml="You have successfully changed your pledge to Heartbound - Baron Plush!.eml" open={false} />
+
+After Lyric increases their pledge to $500, **Thor responds with playful
+excitement.**
+
+> AAAAAAAAAA, YOU HAVE TO PAY THEM BACK EVENTUALLY THOUGH!@,
+> D::::::::::::::::::::::
+
+Note his unserious tone in comparison to conversations
+where he is genuinely critical of Lyric's actions.
+
+**Recall that Thor was ignoring Lyric after talking about Kickstarter. But
+after Lyric pledges $500, Thor suddenly initiates sexual themes as part of his
+thanks.**
+
+<Spoiler preview="Response to Lyric's $500 pledge">
+   <Messages from="60420" to="60471" />
+</Spoiler>
+
+## Lyric increases their pledge to $3000
+
+About a month later, Lyric increases their pledge to $3000 to help the campaign
+reach its $6000 goal.
+
+<Email eml="You have successfully changed your pledge to Heartbound - Baron Plush! (1).eml" open={false} />
+
+Following this donation, the campaign reaches its goal.
+
+<Email eml="Project Update _2_ Heartbound - Baron Plush! by Pirate Software.eml" open={false} />
+
+Thor's response to this pledge is quite similar to the initial, with excitement.
+
+> WHAT, THE, FUCK, You don't have money though!!!!!!!, holy shit dude, 
+> hhhhhhhhhhhh, holy shit dude
+
+Thor also mentions that he hopes Lyric is not just donating because they are
+interested in him:
+
+> I really hope you're doing this because you believe in what I'm doing and not
+> because you're interested in me x.x;
+
+Lyric does not want to disappoint Thor, it would not be acceptable to say it is
+donated because they like Thor. So, Lyric tells Thor (and themselves) that the
+donation is made because they believe in him.
+
+<Spoiler preview="Thor thanks Lyric for the $3000 pledge">
+   <Messages from="70744" to="70790" />
+</Spoiler>
+
+## Lyric decreases their pledge to $2000
+
+Since Lyric donated the exact amount needed to push the campaign to its goal,
+Lyric adjusts their pledge down to put the campaign at its exact goal.
+
+<Email eml="You have successfully changed your pledge to Heartbound - Baron Plush! (2).eml" open={false} />
+
+> just saw that it was being like superfunded, i really just intended to push
+> the funding to the goal yknow? ^^;
+
+Thor responds with subtle disapproval.
+
+> Ah, just worried that people will back out last second and it will fail.
+> Didn't realize that was your intention. To be real around 20% of payments
+> decline on average after the fact, and the last hour fluctuates like mad.
+
+Thor mentions that about 20% of payments decline, and that he experienced it
+with the first Heartbound Kickstarter. **Thor is putting guilt on Lyric to
+make them feel bad about decreasing the pledge, when in reality it is Thor's
+responsibility to adjust their goals and expectations for his own campaign.**
+
+<Spoiler preview="Thor disapproves of the pledge decrease">
+   <Messages from="71883" to="71926" />
+</Spoiler>
+
+## Lyric decreases their pledge to $1500
+
+Since more people pledged to the Kickstarter, Lyric decreases their pledge so
+the total amount is equal to the goal.
+
+<Email eml="You have successfully changed your pledge to Heartbound - Baron Plush! (3).eml" open={false} />
+
+There is no response in the logs, presumably this time Lyric told Thor in their
+Discord calls.
+
+## Aftermath: Thor refunds Lyric's pledge
+
+Long after the fallout at TwitchCon, **Thor refunds Lyric's pledge on Dec 18,
+2018.**
+
+**Thor does not want to fulfill the pledge after the events at TwitchCon,**
+presumably because the rewards included a polaroid art piece of our OC and
+Baron.
+
+<Email eml="Your pledge has been refunded..eml" open={false} />

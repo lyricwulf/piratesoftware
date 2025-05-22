@@ -1,0 +1,443 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:a8a:124e:0:0:0:0:0 with SMTP id b14-v6csp2506695ocr;
+        Sat, 13 Oct 2018 21:44:41 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV62ggBaEOxEeVy8YRlTfsJsoOOeodBAwx/WnhpHXRSawZAzPPbB6PHGP4MO1UeiHEDprQUCa
+X-Received: by 2002:aa7:c381:: with SMTP id k1-v6mr17586640edq.170.1539492281781;
+        Sat, 13 Oct 2018 21:44:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1539492281; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BM8k2JwEGAOij49RNjOvXeysSTnxULcf9dXhhe+nY1o5ey1/Y4rdONL6qxxK7/KYGy
+         lcDhbiUNACDXAbWBfZkAqw7NMQCDTntxnHOAXM8xmVFabVs5sVSO18XX2lSkvchj/60b
+         VRYhy4kbifw+JS3gdI68OJI7EHYIgOBvukqW8N8e7n3A1BxNUXNBLdpTwutuEgiI2sL9
+         oEvTzRIUfqnDBPRmGjRWvtyIwax9To9L86iKpM+RQ/tbZX7BRicpHQPocduchdFLPJDi
+         I4Z8awjkHBD04ZUuBXxxeddXWoV296U2yJ3YBQNxszZiGRaMhY0+4jm7WWeFwfpzzEhs
+         ucOA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature:dkim-signature;
+        bh=5rbEQ1cHRQG+kz0di1vW/Vlf2BGL8Th1h3uaXmFQp58=;
+        b=E0HSPg/gZpuCKy6NZc11EUnRPyLicHCIx1iJiuqSygnLW/gHs+tz1lfl3Svt6BDl+i
+         0Elu1Ef37OFDfywYDqBbl6L/ZTyWo36y+FYghcNubd+MmpASMj2mNofbeQnvSlYH1RGq
+         1ARAi5PqWP8J6XpJ6P0JWjnmjjzqa8Dr6t9HJwRWHm2XdB5bN0k8RLPoSmXLG52jDoj6
+         Z/+mfJJOHWTGPIxD9W7I/0fcU4t7Eri4HJZiEaRnG5dvwz1A3nMvKEIrmGn7FgIqA6Ok
+         kj0zh2fjhLRNDVxJ2/YuFGCWF4fxAK3lpt8gCGdWqm9S3FOv2W/ugr3GMNXP8j9cGsiH
+         KA8Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=oDr5RiUB;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=c6KDBUrv;
+       spf=pass (google.com: domain of bounces+145129-699b-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.251 as permitted sender) smtp.mailfrom="bounces+145129-699b-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+Return-Path: <bounces+145129-699b-lyricwulf=gmail.com@sg.kickstarter.com>
+Received: from o3.email.kickstarter.com (o3.email.kickstarter.com. [167.89.20.251])
+        by mx.google.com with ESMTPS id 62-v6si3712314edl.12.2018.10.13.21.44.41
+        for <lyricwulf@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 13 Oct 2018 21:44:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+145129-699b-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.251 as permitted sender) client-ip=167.89.20.251;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=oDr5RiUB;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=c6KDBUrv;
+       spf=pass (google.com: domain of bounces+145129-699b-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.251 as permitted sender) smtp.mailfrom="bounces+145129-699b-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=kickstarter.com; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s1; bh=cOiJC36ADCePvXDrA0BHD6HlqWc=; b=oDr5RiUBwKfwDMENhcRVsRo
+	ZHne72EMjdd9bucrDmLHiE7Ie7/0U5apNbQlAGcKEFJSj8UeHZqsExVWU46+FKqR
+	sYWXGnkC7+KhaSKpMk2YV164mzCiPHmQcQtNbQ/z+MxlMm3QiqlVpgugLYX0+9Eg
+	9BZ12hl+WVDiXyexNa0I=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding:x-feedback-id; 
+	s=smtpapi; bh=cOiJC36ADCePvXDrA0BHD6HlqWc=; b=c6KDBUrv1pJdqnDwYS
+	ZoUkqSkpTCC/kxcd/NLjzrKABkYJOq44VnZLt5mKMXDdb+1K4iFmRocOyDRNxLKE
+	ATF8+8ZdFDocW40iQx0JrH3pEE/dDb9SyODhggd3shkNqQCnlrC8YIu7ATLFi7nf
+	1sbEsGV2GcH1ULB/j/kqa3m2U=
+Received: by filter1377p1mdw1.sendgrid.net with SMTP id filter1377p1mdw1-8623-5BC2C9B6-11
+        2018-10-14 04:44:38.725513854 +0000 UTC m=+810854.770125456
+Received: from kickstarter.com (ec2-54-160-192-43.compute-1.amazonaws.com [54.160.192.43])
+	by ismtpd0048p1mdw1.sendgrid.net (SG) with ESMTP id EH5J4Q2mRN-YZ0bvkl4bLA
+	for <support@kickstarter.com>; Sun, 14 Oct 2018 04:44:38.471 +0000 (UTC)
+Date: Sun, 14 Oct 2018 04:44:40 +0000 (UTC)
+From: Kickstarter <no-reply@kickstarter.com>
+Reply-to: No Reply <no-reply@kickstarter.com>
+To: lyricwulf@gmail.com
+Message-ID: <5bc2c9b63f5ef_5a963f8136afef3c79440@ip-10-234-96-189.mail>
+Subject: Project Update #2: Heartbound - Baron Plush! by Pirate Software
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bc2c9b4e143e_5a963f8136afef3c7939e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SIG: edb48e90b82cf1f14bd35926c74fb23af62b7e86
+X-SG-EID: 3ez3qlszhNOHgLySoak3j6BL5KOiPm5IZYXUV+67ztsCjNid75CEEq8aS0PdJcdmK1LWf7Vu2xBUL4
+ s0xW9NIuPpEX/aBOZWaSDx2E9EtXTppLpP2M2Esh/sZi6I6GBZxyS/+nFKenHdeN5phenBuaZLyw57
+ 7g7wMENRPg666ydngdM9Ra3VVvXKlp1ExnN3CuEGTQb1hcTZ3zBZ6bOfK6+l97Q2XSryAomi8j9nQ/
+ k=
+X-SG-ID: dlWbPJmXjj7J1J1BNRXu6wN/mwdbsHbQ72oHgFIegwAC4fg6oHXthLUCW5zwukPzWTuPi6lLBkuLQV
+ ssLkzUhonMGPA9QJrxGz/+rL/GUNPhtov9gWrFq2ZJqhnJleQ94anZIKxIDhUN1oMiD9ziC+6lncJ7
+ bbDZ+jct2adOhGgLB1l62gF5/x90U3ERyfPg1UcgXBp9hDInj6NKgyI2xGyc+HkZZlRbaAQAZjyETR
+ k2KOxVof6AELyXTU8DOZeNVuI5PejnqEzNzOfxWg7BIzuO9vfFJ5MNPwo4Z98uboMnmCiSrhX+QxGC
+ D77Je3eTxfYglEL/G2NL9NAVp9wahHoPo8BDC0U4J5dWdVyJuCsKE4dz9kh/hIfpQ3dO2w3a1K5F6T
+ AcYMQVtuXd/9ttMo+w4o3lcmw+2RCdQcyDSN1eQHTcTGWQt5GEzz9qZy59RYUNKv26sh3LQgtrEOBg
+ 3x8SPpJPo0Q2wfpsimG5Ft0NVOH8q29iQxHrxYvxYDpyeo9IK75FI+q0j+wjyJplOn2Wyvssf2g8ok
+ nwY+oRZLpg5+IqD+Ci925bDGpytu2RMlQ6SIYmQc6h6uxQpKarFzWzjpzRtlNODXYcsu7EaXvbusXS
+ WYDZLsxE6jtCDGHs63gMTuLRLw7yU3XaemSoBdBjiHkkQI1wQ4eigF4LLvxOezxE6p+FXTpMu1KSZS
+ 7/
+X-Feedback-ID: 145129:L8JlBoBrt6T/7o9oVAGbW1foqYDRj5A9BXrtEDFdvIg=:n1551fB7s8lQkj8x+e0qeCyZ6B4R5GSa07U+BaCL/OwreSPNS2C6Ie8kqT0lphwf:SG
+
+----==_mimepart_5bc2c9b4e143e_5a963f8136afef3c7939e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+WW91IERpZCBJdCEgCgpPaCBteSBzY2llbmNlIHlvdSd2ZSBkb25lIGl0LgpUaGUgS2lja3N0YXJ0
+ZXIgaXMgbm93IDEwMCUgZnVuZGVkIQoKLS0tLS0tLS0tLS0tLS0tLS0tLS0KCiAgVmlldyB0aGlz
+IHVwZGF0ZToKaHR0cHM6Ly93d3cua2lja3N0YXJ0ZXIuY29tL3Byb2plY3RzL3BpcmF0ZXNvZnR3
+YXJlL2hlYXJ0Ym91bmQtYmFyb24tcGx1c2gvcG9zdHMvMjMxNDkyMT9hdD1CQWg3Q0RvTWNHOXpk
+RjlwWkdrRHFWSWpTU0lJZFdsa0Jqb0dSVlJwQkVpU3lRRkpJZ3RsZUhCcGNua0dPd1pVU1NJWU1q
+QXhPQzB4TVMweE15QXhOem95T1RvMU5BWTdCbFElM0QtLWFiMDE0MGQxZGQzZmVlNmYzOGYyMjlk
+NjQ1YzYwODIwZjM1YTBjODAmcmVmPWJhY2tlcl9wcm9qZWN0X3VwZGF0ZQoK4oCU4oCU4oCU4oCU
+4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU
+4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCU4oCUClVuc3Vic2NyaWJl
+IGZyb20gdGhpcyBwcm9qZWN0J3MgdXBkYXRlcyB3aXRoIG9uZSBjbGljazoKaHR0cHM6Ly93d3cu
+a2lja3N0YXJ0ZXIuY29tL3Vuc3Vic2NyaWJlL0JBaDdDRG9NY0c5emRGOXBaR2tEcVZJalNTSUlk
+V2xrQmpvR1JWUnBCRWlTeVFGSklndGxlSEJwY25rR093WlVTU0lZTWpBeE9DMHhNUzB4TXlBeE56
+b3lPVG8xTkFZN0JsUSUzRC0tYWIwMTQwZDFkZDNmZWU2ZjM4ZjIyOWQ2NDVjNjA4MjBmMzVhMGM4
+MC80MTM5OTcxNDY/cmVmPWVtYWlsCg==
+
+----==_mimepart_5bc2c9b4e143e_5a963f8136afef3c7939e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title></title>
+
+</head>
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #282828; font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-size: 14px; line-height: 1.5; margin: 0; min-width: 100%; padding: 0; width: 100% !important;" bgcolor="#FBFBFA">
+<style type="text/css">
+body {
+width: 100% !important; min-width: 100%; background-color: #FBFBFA; margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif; font-size: 14px; line-height: 1.5; color: #282828; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+img {
+border: 0; -ms-interpolation-mode: bicubic; outline: none;
+}
+.link-blue:hover svg {
+fill: currentColor !important;
+}
+.link-blue:hover {
+color: #003BFF;
+}
+.link-green:hover svg {
+fill: currentColor !important;
+}
+.link-green:hover {
+color: #282828;
+}
+.link-navy:hover svg {
+fill: currentColor !important;
+}
+.link-navy:hover {
+color: #007460;
+}
+.link-red:hover svg {
+fill: currentColor !important;
+}
+.link-red:hover {
+color: #EF0707;
+}
+.link-soft-black:hover {
+color: #037362; fill: #037362; text-decoration: underline;
+}
+.link-dark-grey-500:hover {
+color: #009E74; text-decoration: underline;
+}
+.link-ksr-green-700:hover {
+color: #282828; text-decoration: underline;
+}
+@media all and (max-width: 540px) {
+  .img-responsive {
+    height: auto !important; max-width: 100%; width: 100% !important;
+  }
+  table[class*="container"] {
+    width: 320px !important;
+  }
+  .sm-col-1 {
+    width: 3.66667% !important;
+  }
+  .sm-col-2 {
+    width: 7.83333% !important;
+  }
+  .sm-col-3 {
+    width: 12% !important;
+  }
+  .sm-col-4 {
+    width: 16.16667% !important;
+  }
+  .sm-col-5 {
+    width: 20.33333% !important;
+  }
+  .sm-col-6 {
+    width: 24.5% !important;
+  }
+  .sm-col-7 {
+    width: 28.66667% !important;
+  }
+  .sm-col-8 {
+    width: 32.83333% !important;
+  }
+  .sm-col-9 {
+    width: 37% !important;
+  }
+  .sm-col-10 {
+    width: 41.16667% !important;
+  }
+  .sm-col-11 {
+    width: 45.33333% !important;
+  }
+  .sm-col-12 {
+    width: 49.5% !important;
+  }
+  .sm-col-13 {
+    width: 53.66667% !important;
+  }
+  .sm-col-14 {
+    width: 57.83333% !important;
+  }
+  .sm-col-15 {
+    width: 62% !important;
+  }
+  .sm-col-16 {
+    width: 66.16667% !important;
+  }
+  .sm-col-17 {
+    width: 70.33333% !important;
+  }
+  .sm-col-18 {
+    width: 74.5% !important;
+  }
+  .sm-col-19 {
+    width: 78.66667% !important;
+  }
+  .sm-col-20 {
+    width: 82.83333% !important;
+  }
+  .sm-col-21 {
+    width: 87% !important;
+  }
+  .sm-col-22 {
+    width: 91.16667% !important;
+  }
+  .sm-col-23 {
+    width: 95.33333% !important;
+  }
+  .sm-col-0 {
+    width: 0px !important;
+  }
+  .sm-col-24 {
+    width: 100% !important;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+}
+</style>
+<table class="mailer-body" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse; border-spacing: 0; color: #282828; font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-size: 14px; line-height: 1.5; margin: 0; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; width: 100% !important;" bgcolor="#FBFBFA" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<center>
+<table align="center" class="mx-auto container" style="border-collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;" width="540px" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+
+<table class="hide-sm" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="type-0 hide-sm" style="font-size: 0px; line-height: 0px; min-width: 540px;">
+<img height="1" style="-ms-interpolation-mode: bicubic; border: 0; height: 1px; min-width: 540px; outline: none;" src="https://d3mlfyygrfdi2i.cloudfront.net/36ab/utility-spacer.png" alt="Utility spacer">
+</td>
+</tr>
+</table>
+<table style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-center py5" style="padding-bottom: 30px; padding-top: 30px;" align="center">
+<a target="_blank" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h0/Kvh8eyEDYxccobuZZtapCapiCTt1zUTZ1STvm-2BU-2BsnNC-2FM9rJ2XaWO4WphcITkAP" style="color: inherit; text-decoration: none;"><img alt="Kickstarter" width="124" style="-ms-interpolation-mode: bicubic; border: 0; display: block; outline: none; text-decoration: none; width: 124px;" class="block" src="https://d3mlfyygrfdi2i.cloudfront.net/kickstarter-logo-color.png">
+</a>
+</td>
+</tr>
+</table>
+<table class="bg-white w100p border border-dark-grey-500 border-regular" style="border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor="#FFFFFF" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-center pt5" style="padding-top: 30px;" align="center">
+<div class="mt2 soft-black" style="color: #282828; margin-top: 12px;">
+
+<table class="section" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+
+<table align="center" class="container" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;" width="540px" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+
+<table class="row" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+
+<table align="left" class="text-left" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: left;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="content pt0 pl5 pr5 pb2 type-24 mt2 soft-black" style="color: #282828; font-size: 24px; line-height: 30px; margin-top: 12px; padding: 0px 30px 12px;">
+<a class="soft-black" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h1/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4F7Qr9M5jlaWtujig1uulUeYOUX2SOliuZVab1QJFoCmarzAt3K155UfqHwiTrm-2Bz4YZqFzh-2BPyY82EoZOlpDas-3D" style="color: #282828; text-decoration: none;">You Did It!</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class="row" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table align="left" class="col" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="content type-14 text-left pt0 pl5 pr5 dark-grey-500" style="color: #656969; font-size: 14px; line-height: 21px; padding-left: 30px; padding-right: 30px; padding-top: 0px;" align="left">
+Posted by Pirate Software (Creator)
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="bg-white w100p post-body" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor="#FFFFFF" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<div class="text-left pt3 pl5 pr5 pb2 soft-black" style="color: #282828; padding: 18px 30px 12px;" align="left">
+<p>Oh my science you've done it.<br>The Kickstarter is now 100% funded!</p>
+<div class="template asset">
+<figure style="margin: 0 0 20px; text-align: center;">
+<img alt="" style="-ms-interpolation-mode: bicubic; border: 0; height: auto; margin: 20px 0px; max-width: 100%; outline: none; vertical-align: bottom; width: 100%;" src="https://ksr-ugc.imgix.net/assets/022/886/361/c007b9f37fa5278a14caaaa93173b1d4_original.png?ixlib=rb-1.1.0&amp;w=700&amp;fit=max&amp;v=1539492233&amp;auto=format&amp;gif-q=50&amp;lossless=true&amp;s=562d7112aed849bee9de249bc67c7306">
+</figure>
+
+</div>
+
+</div>
+</td>
+</tr>
+</table>
+<table style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pl2 pr1 pb5 pt5" width="50%" style="padding: 30px 6px 30px 12px;">
+<table align="center" class="bg-white" width="90%" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#FFFFFF" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="rounded bg-ksr-green-800 white p2 text-center type-14" style="border-radius: 2px !important; color: #FFFFFF; font-size: 14px; line-height: 21px; padding: 12px;" align="center" bgcolor="#034752">
+<a target="_blank" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h2/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4F7Qr9M5jlaWtujig1uulUeLw8QIJH4R2M1dy7hAGkzIHX5-2Bk9EwqM0kMTAgeBOVqravY2nUdNqd33-2BaUgOLb-2Bw4Tnft-2BAk28w9TvPxvcUfNQAt3lpKSYnbIfoSMo-2Fx3SG7hhfz9Fkem0z-2F3X2hFQbFKw8-2BcZyVxBpHNYpg7W-2BGUVTW2XMSDvZXktrkEqNfz88I0ECCfmifPQeWR4mxXdEVaDjbJy3D4LDnhfs62G6J2eHsYVruBIiV2R1rl0ybiOZbcEb9pXU-2BsG6ICTvoN2-2B4-3D" style="color: inherit; text-decoration: none;"><div class="f5">
+<img style="-ms-interpolation-mode: bicubic; border: 0; height: 13px; outline: none; text-decoration: none; vertical-align: -8%; width: 14px;" height="13" width="14" src="https://a.kickstarter.com/assets/emails/heart-icon-1d130c283776d88cc95f47862238a91b70b510d77134546fd8f9a84ac1f88cf7.png" alt="Heart icon">
+Like
+</div>
+</a>
+</td>
+</tr>
+</table>
+</td>
+<td class="pl1 pr2 pb5 pt5" width="50%" style="padding: 30px 12px 30px 6px;">
+<table align="center" class="bg-white" width="90%" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#FFFFFF" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="rounded bg-ksr-green-800 white p2 text-center type-14" style="border-radius: 2px !important; color: #FFFFFF; font-size: 14px; line-height: 21px; padding: 12px;" align="center" bgcolor="#034752">
+<a target="_blank" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h3/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4F7Qr9M5jlaWtujig1uulUeYOUX2SOliuZVab1QJFoCmarzAt3K155UfqHwiTrm-2Bz6VPl1zaAujkkGcmcBTfOP4-3D" style="color: inherit; text-decoration: none;"><div class="f5">
+Comment on Kickstarter
+</div>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class="h2" style="border-collapse: collapse; border-spacing: 0; height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="h2 type-0" style="font-size: 0px; height: 12px; line-height: 0px;">
+<img height="12" style="-ms-interpolation-mode: bicubic; border: 0; height: 12px; outline: none;" src="https://d3mlfyygrfdi2i.cloudfront.net/36ab/utility-spacer.png" alt="Utility spacer">
+</td>
+</tr>
+</table>
+
+</div>
+</td>
+</tr>
+</table>
+<table class="w100p" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-center pt5 pl5 pr5" style="padding-left: 30px; padding-right: 30px; padding-top: 30px;" align="center">
+<div class="type-12 mt2 soft-black" style="color: #282828; font-size: 12px; line-height: 18px; margin-top: 12px;">
+Don't want to receive updates from this project? That's okay, you can <a class="ksr-green-800 text-underline" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h4/Kvh8eyEDYxccobuZZtapCTjkjtIVbC-2FcEexVC0pzQ9mz4EP-2B1cp46B2P8NvUUdnK5uqMW-2Bxj-2FNy0fnrij6XPx2ecnFaqr4uwgSF4HPxgbGfalCYM87Vqn-2Bb1n7ZlxSa9hUrYxgnk64P9TpnG-2FjDEHxXHGLXFO6Fizq26dEQ1gpMNYZMx4H2yEfXvNz4-2FLGSlI-2BX3xtek-2BJvrBzERW8tkeL-2BcmYCNGqDgcZbZb-2BIX5wlKJL41Q086MAPh6IY82HHQA9JDSk5001sJ5tBIopM7tA-3D-3D" style="color: #034752; text-decoration: underline;">unsubscribe.</a>
+</div>
+</td>
+</tr>
+</table>
+
+<table style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pt8 pb12" style="padding-bottom: 72px; padding-top: 48px;">
+<table align="center" class="col-7 sm-col-14 mx-auto" style="border-collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width: 28.66667%;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-center valign-middle" style=";" align="center" valign="middle">
+<a href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h5/XScFdUygk9lHI7pfxHKkZLxwk9SrBs7jae3h7EKt0Da83uZiy7udEwEpTsbdyfjn" style="color: inherit; text-decoration: none;"><img alt="Instagram" height="24" width="24" style="-ms-interpolation-mode: bicubic; border: 0; display: block; height: 24px; outline: none; text-decoration: none; width: 24px;" class="block" src="https://d3mlfyygrfdi2i.cloudfront.net/social-icon-ig_%281%29.png">
+</a>
+</td>
+<td class="text-center valign-middle" style=";" align="center" valign="middle">
+<a href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h6/HE2UYZIDTZxfLuJ8qHDFiE6TXyKSQfFtNvxvZHBFHED7gU76uJazXLjfF-2Fe-2Fa-2FNu" style="color: inherit; text-decoration: none;"><img alt="Facebook" height="24" width="24" style="-ms-interpolation-mode: bicubic; border: 0; display: block; height: 24px; outline: none; text-decoration: none; width: 24px;" class="block" src="https://d3mlfyygrfdi2i.cloudfront.net/social-icon-fb.png">
+</a>
+</td>
+<td class="text-center valign-middle" style=";" align="center" valign="middle">
+<a href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h7/94d0KlU9iJ-2FHN3q9PYEl6y0kdZ-2FdLLXzQqSU7OqcE1beCL034-2F4xajDXkLx4335i" style="color: inherit; text-decoration: none;"><img alt="Twitter" width="24" style="-ms-interpolation-mode: bicubic; border: 0; display: block; outline: none; text-decoration: none; width: 24px;" class="block" src="https://d3mlfyygrfdi2i.cloudfront.net/social-icon-tw.png">
+</a>
+</td>
+</tr>
+</table>
+<table style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-center pt4 type-12 soft-black" style="color: #282828; font-size: 12px; line-height: 18px; padding-top: 24px;" align="center">
+Kickstarter · 58 Kent St, Brooklyn NY 11222
+</td>
+</tr>
+</table>
+<table align="left" class="col-12 sm-col-12" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width: 49.5%;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-right type-12 soft-black px1" style="color: #282828; font-size: 12px; line-height: 18px; padding-left: 6px; padding-right: 6px;" align="right">
+<a class="soft-black text-underline" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h8/Kvh8eyEDYxccobuZZtapCdpD0L8F0NFihPji7KzNjCt8CmoT8i8Sj18lSLYclc4T" style="color: #282828; text-decoration: underline;">Contact Us</a>
+</td>
+</tr>
+</table>
+<table align="left" class="col-12 sm-col-12" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width: 49.5%;" width="100%" height="auto" cellpadding="0" cellspacing="0">
+<tr>
+<td class="text-left type-12 soft-black px1" style="color: #282828; font-size: 12px; line-height: 18px; padding-left: 6px; padding-right: 6px;" align="left">
+<a class="soft-black text-underline" href="https://emails.kickstarter.com/mpss/c/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/h9/Kvh8eyEDYxccobuZZtapCak-2BKbWeucWwDSMmrqgtqAFTWO1zQ9p4Lsdt43-2Fi53Gf" style="color: #282828; text-decoration: underline;">We're Hiring</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+
+<img src="https://emails.kickstarter.com/mpss/o/1wA/6TYCAA/t.2lp/vhzSw8LzQ1KjuTb62TDl5Q/o.gif" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_5bc2c9b4e143e_5a963f8136afef3c7939e--

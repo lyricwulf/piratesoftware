@@ -1,0 +1,819 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:ac9:50d5:0:0:0:0:0 with SMTP id w21csp4499969ock;
+        Tue, 18 Dec 2018 18:27:29 -0800 (PST)
+X-Google-Smtp-Source: AFSGD/XSArniEFfLZ+63LvnepKl0sf86rWJizxvwi7bEygD9oNQqeYT2dz/B00Asys1B55Z9TVWi
+X-Received: by 2002:a81:4412:: with SMTP id r18mr20185223ywa.204.1545186449750;
+        Tue, 18 Dec 2018 18:27:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1545186449; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hbe0lvfBxpAkJmGBqLm1RuYnzdFvyZrhpHrfYgFd+9PVFTRxDSimh1PUl766hU5YSE
+         JnlzzDhy9yEbqa6YpaYcDIPgGmA71mFVNHBL2sesyTYepebkMG2KCDWnxZqDdCdk3tb4
+         Va4H2gHD9GKFR5MFoN7+bUdproSh6HfOFPgN1p/tvZxy15d92fnpF79LwiK5mCy3YV3Y
+         Hl8C6hFDWEInJ5yF06a2Z4qOXwCneWBCIOOmuxr0nkgRwTlhjGflfmx265dvDIS0sL8D
+         0cyqlzCi17OYBnGVQoq0h9tJL6WjzQrCIKizd6zw6aC1XxePAL+4lgZA0GsNx3cKrUTE
+         i/tw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature:dkim-signature;
+        bh=v1GawOz5BU3vdiJWh2KDRDvZTLWZJYDcyZCksYA+kHM=;
+        b=II/LkhMQyYhBVKbLbX4xRDhonK4Tx+MJ1bzlTZl7AxCh8uysBYGUUghWO1nhkauD71
+         yJl2D4YLOiThgnYyZ+E5V6XAFZ1HunjqEcC0TGr1THSLUJOtZYczBVDvx5DgSL4if5Yv
+         D4t3ivR8kfTFh+HZ8xgpDC4zkrqFECVh9NVqbJjFl2woDpm5t9HBGk3UpJtV2bmPYsCG
+         qfjuzxJ4aKkUZRQ1aXJw8ZSPAGGx3X1T6nXR7eCNNopo2Zg00zYQj13ZKvoho1tUoypK
+         /m26L+vZ5IBh18JSV1NDMiMzBccWP6ljj4Wytk3hOO+FYZA0vQzr/ktbmvWD2BIwmR+7
+         pa+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=alTmxQtA;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b="yfcWXjE/";
+       spf=pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) smtp.mailfrom="bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+Return-Path: <bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com>
+Received: from o1.email.kickstarter.com (o1.email.kickstarter.com. [167.89.20.248])
+        by mx.google.com with ESMTPS id r11si10988284ywl.340.2018.12.18.18.27.29
+        for <lyricwulf@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 18 Dec 2018 18:27:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) client-ip=167.89.20.248;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=alTmxQtA;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b="yfcWXjE/";
+       spf=pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) smtp.mailfrom="bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=kickstarter.com; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s1; bh=VEGG2pu1QVcsEUcBjc1oaWpzO5k=; b=alTmxQtAGVa7zAeNXhdRjMK
+	lm44RotdKJGKLcS8imzUx7vmuCiy/m6GU60KLAFgua+zl3xu8KjsbCW08GUygEFI
+	zuXObolsjOmNPDEkGdMMXxdtlalClxOAlXQ9nfXHztC8Ae8MDD8Rj8qjkGls2Pi6
+	rNwR8HPbevLUEPZNK2O4=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding:x-feedback-id; 
+	s=smtpapi; bh=VEGG2pu1QVcsEUcBjc1oaWpzO5k=; b=yfcWXjE/W/XLLHvRTg
+	jF4v5ljUt3GyBlYGbn9rnxPUwZDIKhAD4Pc4bFEsl4dhspGH0A2h3DWWT8aofkFr
+	oP+iEjmKh3unNKXVY4KH5vTz0bcMJEW+2IFKK6D8RzrGDZPcmZv2bG8ZvEKI+aFe
+	clMOjvWTHrB3yWu59OWa86/zM=
+Date: Wed, 19 Dec 2018 02:27:28 +0000 (UTC)
+From: Kickstarter <no-reply@kickstarter.com>
+Reply-to: No Reply <no-reply@kickstarter.com>
+To: lyricwulf@gmail.com
+Message-ID: <5c19ac908f596_1dc3ff17bdeae70106615@ip-10-144-242-48.mail>
+Subject: Your pledge has been refunded.
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c19ac8f66201_1dc3ff17bdeae7010654b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SIG: 57752f3b260764ce7f7d6c129153287c5733029f
+X-SG-EID: 3ez3qlszhNOHgLySoak3j6BL5KOiPm5IZYXUV+67ztsUZUJwGkHnd+3EiAKCMSprvS23wlcPS9Ny20
+ traTKGmBG5YZK5+5/nn5VZnnaUH9+vKS6lh9J1cbtrZvNQ6kG7VyDW9rj5KgJULqeqleR1S4bAYIOr
+ Zua0HtEQ5aJN13M5wacT9iYiqBFQ1P1FQ+WtXWtLj1T5JMDbaAuV+GY13Gbnq0WRwj6j1PQvWFFkfB
+ 8=
+X-SG-ID: dlWbPJmXjj7J1J1BNRXu62DLXGSLtEFyNwNl7qAYWGj6lwRa5RUef9Of50FhDYGBTYn+1Tjo6c6Ju3
+ qrHCzxYeIIQssA2gmUaJ/UwwcgfTx+BV7AZP+v64diK5XnR9hhk6BChtGx3tsTjNV8eGNwiSZ2Mf0T
+ e8bmRoSDATd2e6jzlJDghwOOHEQI7f/r5Wj5ONE7S/GMEw2e0ydzV8qzZXstan8CpMs7NZNjqtLkhu
+ p5Nl7lUzhn+IvACoHYfzMxEUJahMzp034d8K9ct25n/yKoDswJ30ncrpVl/pW1+n3ZepwTkDPLO/6W
+ vqibsYg+S0KDpI1z6VMSDylxP7pX99DMl5ghioQjCQnewvLxbFyqcvjQlP5XEhhcRONtrCt4t+tv0M
+ hXDsG11yMmpyir1fMeCYzNBwlDPXCCVYp2ZpHyPpEg3YAZOWYdAWAOGHUiZZs8rkGbLdsvNrwHbqxE
+ jekE1y4BhdRC9hwM+h+fKHBDzqhTyhhSiZQxbWVvCGxkNHc9/ALN/8K19lo9ICpq2cjWajUhIzjBaC
+ +aCoCdBL7nJ+Va39fWwhjID0zj997piO29oBpILzvfJlzd2YAJNJ33EDZvLSN3sPVUUKHDNlKhYqhS
+ Z5lG63VRetZUenbZUI4Zh8Y79L2votkqkPhUy1v1wtE8T5nGTCeLZc2+wl4fQDckrDpdV3n3qfTdwH
+ WbHNV2a+o9UB3ffR3gJ5TgMRJ+nsGBeFtc2+QyV+xaUHNENMxQ63TUEBKb3+QTmvo+ZarJC7VaUTzK
+ 2HLE1SSkPynx9uKWx2REGaTRiuJG8NA=
+X-Feedback-ID: 11322:jYl07xhGb2sxj66AT/m387ocPCwcM55fqeezk738bfo=:5XdApDywyeHxFUMSE0M4sWlM5RC9/ZX2m0zbbreoi20=:SG
+
+----==_mimepart_5c19ac8f66201_1dc3ff17bdeae7010654b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Your pledge has been refunded.
+
+The creator of Heartbound - Baron Plush! has issued a refund of $1,506.00 t=
+o your original payment method. Please allow up to ten business days for th=
+is refund to reflect on your bank account.
+
+
+Heartbound - Baron Plush! (https://www.kickstarter.com/projects/piratesoftw=
+are/heartbound-baron-plush?ref=3Dksr_email_backer_refund_success)
+
+by Pirate Software
+
+Funding successful  Project ended on October, 18 2018
+
+
+Refund details
+Backer name
+LyricWulf
+Original pledge amount
+$1,506.00
+
+$1,500.00 pledge=20
+ $6.00 shipping (United States)
+
+Refunded amount
+$1,506.00
+Date issued
+December, 19 2018
+Payment method
+VisaCard ending in 5444
+
+
+What=E2=80=99s next?
+=E2=80=A2  If you do not receive your refund within ten business days, plea=
+se reach out to your bank.
+=E2=80=A2  Refunds can only be issued to the original payment method used f=
+or the pledge. If the original card is no longer valid, your bank will rout=
+e the credit to the appropriate account. Please reach out to your bank for =
+more details.
+=E2=80=A2 Send a message (https://www.kickstarter.com/projects/piratesoftwa=
+re/heartbound-baron-plush/messages/new?message%5Bto%5D=3Dpiratesoftware&amp=
+;ref=3Dksr_email_backer_refund_success) to the creator if you have any ques=
+tions about the project.
+
+
+
+----==_mimepart_5c19ac8f66201_1dc3ff17bdeae7010654b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t">
+<title></title>
+
+</head>
+<body style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; =
+color: #282828; font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberatio=
+n Sans', FreeSans, sans-serif; font-size: 14px; line-height: 1.5; margin: 0=
+; min-width: 100%; padding: 0; width: 100% !important;" bgcolor=3D"#F0F0F0">
+<style type=3D"text/css">
+@font-face {
+font-family: "Cooper Light"; font-weight: normal; font-style: normal; src: =
+url("https://d207bzo2lz83l1.cloudfront.net/cooper-light-webfont.woff2") for=
+mat("woff2"),url("https://d207bzo2lz83l1.cloudfront.net/cooper-light-webfon=
+t.woff") format("woff");
+}
+body {
+width: 100% !important; min-width: 100%; background-color: #F0F0F0; margin:=
+ 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, "Liberatio=
+n Sans", FreeSans, sans-serif; font-size: 14px; line-height: 1.5; color: #2=
+82828; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+img {
+border: 0; -ms-interpolation-mode: bicubic; outline: none;
+}
+@media all and (max-width: 540px) {
+  .img-responsive {
+    height: auto !important; max-width: 100%; width: 100% !important;
+  }
+  table[class*=3D"container"] {
+    width: 320px !important;
+  }
+  .sm-col-1 {
+    width: 3.66667% !important;
+  }
+  .sm-col-2 {
+    width: 7.83333% !important;
+  }
+  .sm-col-3 {
+    width: 12% !important;
+  }
+  .sm-col-4 {
+    width: 16.16667% !important;
+  }
+  .sm-col-5 {
+    width: 20.33333% !important;
+  }
+  .sm-col-6 {
+    width: 24.5% !important;
+  }
+  .sm-col-7 {
+    width: 28.66667% !important;
+  }
+  .sm-col-8 {
+    width: 32.83333% !important;
+  }
+  .sm-col-9 {
+    width: 37% !important;
+  }
+  .sm-col-10 {
+    width: 41.16667% !important;
+  }
+  .sm-col-11 {
+    width: 45.33333% !important;
+  }
+  .sm-col-12 {
+    width: 49.5% !important;
+  }
+  .sm-col-13 {
+    width: 53.66667% !important;
+  }
+  .sm-col-14 {
+    width: 57.83333% !important;
+  }
+  .sm-col-15 {
+    width: 62% !important;
+  }
+  .sm-col-16 {
+    width: 66.16667% !important;
+  }
+  .sm-col-17 {
+    width: 70.33333% !important;
+  }
+  .sm-col-18 {
+    width: 74.5% !important;
+  }
+  .sm-col-19 {
+    width: 78.66667% !important;
+  }
+  .sm-col-20 {
+    width: 82.83333% !important;
+  }
+  .sm-col-21 {
+    width: 87% !important;
+  }
+  .sm-col-22 {
+    width: 91.16667% !important;
+  }
+  .sm-col-23 {
+    width: 95.33333% !important;
+  }
+  .sm-col-0 {
+    width: 0px !important;
+  }
+  .sm-col-24 {
+    width: 100% !important;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+}
+@media all and (min-width: 540px) {
+  .hide-lg {
+    display: none !important;
+  }
+}
+</style>
+<table class=3D"mailer-body" style=3D"-ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; border-collapse: collapse; border-spacing: 0; color:=
+ #282828; font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans=
+', FreeSans, sans-serif; font-size: 14px; line-height: 1.5; margin: 0; min-=
+width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; widt=
+h: 100% !important;" bgcolor=3D"#F0F0F0" width=3D"100%" height=3D"auto" cel=
+lpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<center>
+<table align=3D"center" class=3D"mx-auto container" style=3D"border-collaps=
+e: collapse; border-spacing: 0; margin-left: auto; margin-right: auto; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px;" width=3D"600px" he=
+ight=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+
+<table class=3D"hide-sm" style=3D"border-collapse: collapse; border-spacing=
+: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=
+=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-0 hide-sm" style=3D"font-size: 0px; line-height: 0px; min=
+-width: 540px;">
+<img height=3D"1" style=3D"-ms-interpolation-mode: bicubic; border: 0; heig=
+ht: 1px; min-width: 540px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cl=
+oudfront.net/36ab/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center py4" style=3D"padding-bottom: 24px; padding-top: 2=
+4px;" align=3D"center">
+<a target=3D"_blank" href=3D"https://emails.kickstarter.com/mpss/c/FgE/Oiw/=
+t.2nj/FdaeycXWTXOqfVgJtZNibw/h0/Kvh8eyEDYxccobuZZtapCapiCTt1zUTZ1STvm-2BU-2=
+BsnMG1pW6mPuUzYz6NUb-2F3JMulwyPaJCrdLEOafGii8CTDg-3D-3D" style=3D"color: in=
+herit; text-decoration: none;"><img alt=3D"Kickstarter" height=3D"13" width=
+=3D"120" style=3D"-ms-interpolation-mode: bicubic; border: 0; display: bloc=
+k; height: 13px; outline: none; text-decoration: none; width: 120px;" class=
+=3D"block" src=3D"https://a.kickstarter.com/assets/emails/kickstarter-104db=
+23b8b0f5ed120ff707e8e5990d7259aad6ec6e00929220d59d15a16bf82.png">
+</a>
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center pt5" style=3D"padding-top: 30px;" align=3D"center">
+<img alt=3D"=E2=9C=85" height=3D"30" width=3D"30" style=3D"-ms-interpolatio=
+n-mode: bicubic; border: 0; display: block; height: 30px; outline: none; wi=
+dth: 30px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/d2=
+56/green-circle--w-check3x.png">
+<div class=3D"type-24 mt2" style=3D"font-size: 24px; line-height: 30px; mar=
+gin-top: 12px;">
+Your pledge has been refunded.
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<table align=3D"center" class=3D"col-16 sm-col-20 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 66.16667%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"type-14 text-center pt2 pb5" style=3D"font-size: 14px; line-he=
+ight: 21px; padding-bottom: 30px; padding-top: 12px;" align=3D"center">
+The creator of Heartbound - Baron Plush! has issued a refund of <span class=
+=3D"bold" style=3D"font-weight: 700;"><span>$1,506.00</span></span> to your=
+ original payment method. Please allow up to ten business days for this ref=
+und to reflect on your bank account.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr1 pb1 pl1 pt2" style=3D"padding: 12px 6px 6px;">
+<table align=3D"left" class=3D"col-8 sm-col-24" style=3D"border-collapse: c=
+ollapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; t=
+able-layout: fixed; width: 32.83333%;" width=3D"100%" height=3D"auto" cellp=
+adding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr2 pb2 pl2 pt1" style=3D"padding: 6px 12px 12px;">
+<a href=3D"https://emails.kickstarter.com/mpss/c/FgE/Oiw/t.2nj/FdaeycXWTXOq=
+fVgJtZNibw/h1/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jS=
+jary0sSY9Y9bsiR0ZDOXNJXtTI-2F4KepLrqRFIm9OykHdpyXiNF9dkiAVaDY7eljvXaXA-2FHG=
+rJp66DOWeSkdi-2BxkWrYa7w-3D-3D" style=3D"color: inherit; text-decoration: n=
+one;"><img alt=3D"Heartbound - Baron Plush!" style=3D"-ms-interpolation-mod=
+e: bicubic; border: 0; display: block; outline: none; text-decoration: none=
+; width: 148px;" class=3D"block img-responsive" src=3D"https://ksr-ugc.imgi=
+x.net/assets/022/591/254/d3ddfdd2cbde711f6b9450b96793168c_original.png?ixli=
+b=3Drb-1.1.0&amp;crop=3Dfaces&amp;w=3D576&amp;h=3D324&amp;fit=3Dcrop&amp;v=
+=3D1537268557&amp;auto=3Dformat&amp;frame=3D1&amp;q=3D92&amp;s=3D5b1b64bf11=
+e27135525a6c191cc7720f" width=3D"148" height=3D"83"></a>
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-16 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 66.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr2 pb2 pl2 pt1" style=3D"padding: 6px 12px 12px;">
+<div class=3D"type-16" style=3D"font-size: 16px; line-height: 24px;">
+<a class=3D"navy-700" href=3D"https://emails.kickstarter.com/mpss/c/FgE/Oiw=
+/t.2nj/FdaeycXWTXOqfVgJtZNibw/h2/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH=
+2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4KepLrqRFIm9OykHdpyXiNF9dki=
+AVaDY7eljvXaXA-2FHGrJp66DOWeSkdi-2BxkWrYa7w-3D-3D" style=3D"color: #282828;=
+ text-decoration: none;">Heartbound - Baron Plush!</a>
+</div>
+<div class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; l=
+ine-height: 18px;">
+by Pirate Software
+</div>
+<div class=3D"mt1" style=3D"margin-top: 6px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr3 type-12 text-nowrap" style=3D"font-size: 12px; line-height=
+: 18px; padding-right: 18px; white-space: nowrap;">
+<div class=3D"green-700" style=3D"color: #007460;">
+Funding successful
+<div class=3D"navy-500" style=3D"color: #95959E;">
+Project ended on October, 18 2018
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table align=3D"center" class=3D"col-20 sm-col-20 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 82.83333%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"type-24 py4" style=3D"font-size: 24px; line-height: 30px; padd=
+ing-bottom: 24px; padding-top: 24px;">
+Refund details
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Backer name
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+LyricWulf
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Original pledge amount
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<div class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+$1,506.00
+</div>
+<div class=3D"type-14 navy-600 mt1" style=3D"color: #656969; font-size: 14p=
+x; line-height: 21px; margin-top: 6px;">
+$1,500.00
+pledge
+<br>
+$6.00
+shipping
+(United States)
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Refunded amount
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+$1,506.00
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Date issued
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+December, 19 2018
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Payment method
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<div class=3D"type-18 display-inline valign-top" style=3D"display: inline; =
+font-size: 18px; line-height: 30px; vertical-align: top;">
+<span class=3D"bg-navy-300 p1 type-10 text-uppercase rounded" style=3D"back=
+ground: #EFEFF3; border-radius: 2px !important; font-size: 10px; line-heigh=
+t: 12px; padding: 6px; text-transform: uppercase;">Visa</span>
+<span>Card ending in 5444</span>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table align=3D"center" class=3D"col-20 sm-col-20 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 82.83333%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"pb5 pt2" style=3D"padding-bottom: 30px; padding-top: 12px;">
+<table align=3D"left" class=3D"col-9 sm-col-24" style=3D"border-collapse: c=
+ollapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; t=
+able-layout: fixed; width: 37%;" width=3D"100%" height=3D"auto" cellpadding=
+=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-700 bold pt3" style=3D"color: #282828; font-size:=
+ 12px; font-weight: 700; line-height: 18px; padding-top: 18px;">
+What=E2=80=99s next?
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-15 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 62%;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"col-2 pt3 text-nowrap navy-600 valign-top" valign=3D"top" styl=
+e=3D"color: #656969; padding-top: 18px; white-space: nowrap; width: 7.83333=
+%;">
+=E2=80=A2
+</td>
+<td class=3D"w100p pt3 type-14 navy-600 valign-top" valign=3D"top" style=3D=
+"color: #656969; font-size: 14px; line-height: 21px; padding-top: 18px; wid=
+th: 100%;">
+If you do not receive your refund within ten business days, please reach ou=
+t to your bank.
+</td>
+</tr>
+<tr>
+<td class=3D"col-2 pt2 text-nowrap navy-600 valign-top" valign=3D"top" styl=
+e=3D"color: #656969; padding-top: 12px; white-space: nowrap; width: 7.83333=
+%;">
+=E2=80=A2
+</td>
+<td class=3D"w100p pt2 type-14 navy-600 valign-top" valign=3D"top" style=3D=
+"color: #656969; font-size: 14px; line-height: 21px; padding-top: 12px; wid=
+th: 100%;">
+Refunds can only be issued to the original payment method used for the pled=
+ge. If the original card is no longer valid, your bank will route the credi=
+t to the appropriate account. Please reach out to your bank for more detail=
+s.
+</td>
+</tr>
+<tr>
+<td class=3D"col-2 pt2 text-nowrap navy-600 valign-top" valign=3D"top" styl=
+e=3D"color: #656969; padding-top: 12px; white-space: nowrap; width: 7.83333=
+%;">
+=E2=80=A2
+</td>
+<td class=3D"w100p pt2 type-14 navy-600 valign-top" valign=3D"top" style=3D=
+"color: #656969; font-size: 14px; line-height: 21px; padding-top: 12px; wid=
+th: 100%;">
+<a class=3D"text-underline navy-600" href=3D"https://emails.kickstarter.com=
+/mpss/c/FgE/Oiw/t.2nj/FdaeycXWTXOqfVgJtZNibw/h3/Kvh8eyEDYxccobuZZtapCUX-2Bu=
+yj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4ATpXM0H92CT=
+vG4Rli-2B7lfH2AEW3s-2Fb0uzm3SIpMR1V4KR6IQlJ3wsw-2FN69gZEJYOAPvRqTf1dylQwzdM=
+0JwrUfAXUOT6hCt6vr7KoZ3qOsAdhuTosbugm-2BUjVSCckfb7g-3D-3D" style=3D"color: =
+#656969; text-decoration: underline;">Send a message</a> to the creator if =
+you have any questions about the project.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pt8 pb12" style=3D"padding-bottom: 72px; padding-top: 48px;">
+<table align=3D"center" class=3D"col-7 sm-col-14 mx-auto" style=3D"border-c=
+ollapse: collapse; border-spacing: 0; margin-left: auto; margin-right: auto=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width:=
+ 28.66667%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"text-center valign-middle" style=3D";" align=3D"center" valign=
+=3D"middle">
+<a href=3D"https://emails.kickstarter.com/mpss/c/FgE/Oiw/t.2nj/FdaeycXWTXOq=
+fVgJtZNibw/h4/XScFdUygk9lHI7pfxHKkZLxwk9SrBs7jae3h7EKt0Da83uZiy7udEwEpTsbdy=
+fjn" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Instagram=
+" height=3D"24" width=3D"24" style=3D"-ms-interpolation-mode: bicubic; bord=
+er: 0; display: block; height: 24px; outline: none; text-decoration: none; =
+width: 24px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/=
+963c/instagram-h4-black@4x.png">
+</a>
+</td>
+<td class=3D"text-center valign-middle" style=3D";" align=3D"center" valign=
+=3D"middle">
+<a href=3D"https://emails.kickstarter.com/mpss/c/FgE/Oiw/t.2nj/FdaeycXWTXOq=
+fVgJtZNibw/h5/HE2UYZIDTZxfLuJ8qHDFiE6TXyKSQfFtNvxvZHBFHED7gU76uJazXLjfF-2Fe=
+-2Fa-2FNu" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Fac=
+ebook" height=3D"24" width=3D"24" style=3D"-ms-interpolation-mode: bicubic;=
+ border: 0; display: block; height: 24px; outline: none; text-decoration: n=
+one; width: 24px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront=
+.net/a93d/facebook-h4-facebookblue@4x.png">
+</a>
+</td>
+<td class=3D"text-center valign-middle" style=3D";" align=3D"center" valign=
+=3D"middle">
+<a href=3D"https://emails.kickstarter.com/mpss/c/FgE/Oiw/t.2nj/FdaeycXWTXOq=
+fVgJtZNibw/h6/94d0KlU9iJ-2FHN3q9PYEl6y0kdZ-2FdLLXzQqSU7OqcE1beCL034-2F4xajD=
+XkLx4335i" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Twi=
+tter" height=3D"24" width=3D"30" style=3D"-ms-interpolation-mode: bicubic; =
+border: 0; display: block; height: 24px; outline: none; text-decoration: no=
+ne; width: 30px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront.=
+net/c8d4/twitter-h4-twitterblue@4x.png">
+</a>
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center pt4 type-12 soft-black" style=3D"color: #282828; f=
+ont-size: 12px; line-height: 18px; padding-top: 24px;" align=3D"center">
+Kickstarter =C2=B7 58 Kent St, Brooklyn NY 11222
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-12 sm-col-12" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-right type-12 soft-black px1" style=3D"color: #282828; fo=
+nt-size: 12px; line-height: 18px; padding-left: 6px; padding-right: 6px;" a=
+lign=3D"right">
+<a class=3D"soft-black" href=3D"https://emails.kickstarter.com/mpss/c/FgE/O=
+iw/t.2nj/FdaeycXWTXOqfVgJtZNibw/h7/Kvh8eyEDYxccobuZZtapCdpD0L8F0NFihPji7KzN=
+jCsF8z1kELc7si8W6NEH3fb2HvRMN1mJzvJnEk8tXmFU-2BQBjhRol-2FuBcaoFHOJzSOhM-3D"=
+ style=3D"color: #282828; text-decoration: none;">Contact us</a>
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-12 sm-col-12" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-left type-12 soft-black px1" style=3D"color: #282828; fon=
+t-size: 12px; line-height: 18px; padding-left: 6px; padding-right: 6px;" al=
+ign=3D"left">
+<a class=3D"soft-black" href=3D"https://emails.kickstarter.com/mpss/c/FgE/O=
+iw/t.2nj/FdaeycXWTXOqfVgJtZNibw/h8/Kvh8eyEDYxccobuZZtapCak-2BKbWeucWwDSMmrq=
+gtqAFDnpc9TwG8QDzEEuWBY3TZ7wq8xkGEro7txqcY3SrQgSyal7MEc-2BOTB9vIovNQSq4-3D"=
+ style=3D"color: #282828; text-decoration: none;">We're hiring</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+
+<img src=3D"https://emails.kickstarter.com/mpss/o/FgE/Oiw/t.2nj/FdaeycXWTXO=
+qfVgJtZNibw/o.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"=
+height:1px !important;width:1px !important;border-width:0 !important;margin=
+-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;marg=
+in-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;p=
+adding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_5c19ac8f66201_1dc3ff17bdeae7010654b--

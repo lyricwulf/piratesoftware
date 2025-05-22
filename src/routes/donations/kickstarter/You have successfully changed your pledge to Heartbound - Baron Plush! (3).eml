@@ -1,0 +1,1338 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:a8a:124e:0:0:0:0:0 with SMTP id b14-v6csp1685719ocr;
+        Thu, 18 Oct 2018 00:31:50 -0700 (PDT)
+X-Google-Smtp-Source: ACcGV63tj8R/2CwqjUgofaLX16fMLtrMRMLv9W2Cb1Sc+eN8kspSRXLzGgIs9NqO0+oV3Q9j+GKs
+X-Received: by 2002:a25:bc02:: with SMTP id i2-v6mr17514657ybh.277.1539847910216;
+        Thu, 18 Oct 2018 00:31:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1539847910; cv=none;
+        d=google.com; s=arc-20160816;
+        b=K3xP+L+2nw/niIk7Nbvvq0r9R+ZVb7PwpEwmK9FuyOPf4HjWjLrqY/o3/0DBbU93DP
+         i7q+eVLNLEVBN+3bIdRFtBzC8dbM6QHl+F34NgZgO/koMsKitn4TEKIBvqRbKNkquPzt
+         TYx++dke5y+E7XeV2Bxmml5qbwyX7jueeXXCaMFE2ZDUbY9vSlVbkLeaepMes26oOKaW
+         QLGT0B9rqiu7q1516h2A9DJaqZh9BlAYNM4HjkriL3/SWKleawT6YMIcO5O+3Tyx7Yjz
+         YsP5jP0WhQyp4d5mntJzJkd0htDxb7s3o3zfKqxjJUxls4KIpkmv9esU2/y6kfrT1zAu
+         QTOA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature:dkim-signature;
+        bh=vY0/uWn4Qa5Ub4g6IGQb7OyC/dl8dBJCSjojIm4dHoo=;
+        b=wnVTJ73ftof4YnMz7QS8k48QCrgrrf0qrCqQYoZ7cCieAVWdV/k8AbDdytTiJ0cbpj
+         xqQn7IVgq6ufskdxTyTAahMc1Gxvw7R/mVqxjJQ3xJrLKwv8dPo0au05/ecmMwT4SK6Z
+         vOIHREhIvqiAP+RhpQDorZ879JvKUad8/8Qxca13C9syP9ovo6YdXI13JVCTTT9KZayL
+         f3xXCE0CE3snT8z6gceWF/ZxYWZJfduH47WWKHSLdeXcl8My78EPafPlwUZQHwlpYkaU
+         i0tjHmC6V01JQOJZHmK7D8AlCUuI+fgiKdNi6xnrjiBkuUzrN7+umVTwfJVDd3X9uwhM
+         HaVw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=pKFhjWhT;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=lu7LcuHz;
+       spf=pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) smtp.mailfrom="bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+Return-Path: <bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com>
+Received: from o1.email.kickstarter.com (o1.email.kickstarter.com. [167.89.20.248])
+        by mx.google.com with ESMTPS id 129-v6si6194847ybt.452.2018.10.18.00.31.49
+        for <lyricwulf@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 18 Oct 2018 00:31:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) client-ip=167.89.20.248;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=pKFhjWhT;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=lu7LcuHz;
+       spf=pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) smtp.mailfrom="bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=kickstarter.com; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s1; bh=pKet4iQBvp8uEQOhmhcvWAHPrvc=; b=pKFhjWhTesTWa3j946/VvNt
+	j/2ioKq8gi/mKaHjtYiN7S7O0vTXSX1t6ugIoc1tJEIgO57oINpvgYVsJg8YVc9i
+	P7TOpWzWClf+d3e165AtZn7C6TSskkkx1j3P+LmweJON94OTc3CrEGNDLFvS6z8A
+	iS8vPBcl0ViAL7q3lvfc=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding:x-feedback-id; 
+	s=smtpapi; bh=pKet4iQBvp8uEQOhmhcvWAHPrvc=; b=lu7LcuHzGJ8EXZw24U
+	X+CdUfTkhRAoYqClG9fk1pQgacijzK29wPujui2yNxMAlRCHZAG2yBRn1wAXFUmH
+	cGCQF5vHSXoLqXwgXIOJaYZDaWpfOyBUo64fKC3sf15N6eeGT2bmnd5cQxd9PGMp
+	KyDA2rqtJr3vV/MQbUxDAXr2Y=
+Received: by filter0778p1las1.sendgrid.net with SMTP id filter0778p1las1-21422-5BC836E4-12
+        2018-10-18 07:31:48.841749681 +0000 UTC m=+257387.442849259
+Received: from ip-10-234-96-189.ec2.internal (ec2-54-160-192-43.compute-1.amazonaws.com [54.160.192.43])
+	by ismtpd0010p1iad1.sendgrid.net (SG) with ESMTP id NViasK2XQS-yg7X6CsVayg
+	for <lyricwulf@gmail.com>; Thu, 18 Oct 2018 07:31:48.781 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by ip-10-234-96-189.ec2.internal (Postfix) with ESMTP id AE438A0A01
+	for <lyricwulf@gmail.com>; Thu, 18 Oct 2018 07:31:48 +0000 (UTC)
+Date: Thu, 18 Oct 2018 07:31:48 +0000 (UTC)
+From: Kickstarter <no-reply@kickstarter.com>
+Reply-to: No Reply <no-reply@kickstarter.com>
+To: lyricwulf@gmail.com
+Message-ID: <5bc836e4ac547_1e893fb24e6027ec121645@ip-10-234-96-189.mail>
+Subject: You have successfully changed your pledge to Heartbound - Baron Plush!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bc836e3ddd10_1e893fb24e6027ec1215d5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SIG: bypass
+X-SG-EID: 3ez3qlszhNOHgLySoak3j6BL5KOiPm5IZYXUV+67ztv0bYGfItdX5JneU+H28xCWKI6yeJL6FB4oSQ
+ ZPp25YohgrOXK2o1xyF6N0RyxdAeAlKB+NpFMVSXoDQYIWOHv4pOBFjLxHhDfn9re+WR2P8jMt5kU3
+ i2X0JIAMYmmXuUJDUuj9st8BTjk2SOV+ue9JA9NG/T1GY421S4te9a65JHzDzHqrwfbhXgaRJHvyG9
+ I=
+X-SG-ID: dlWbPJmXjj7J1J1BNRXu62DLXGSLtEFyNwNl7qAYWGgD/1ZfWxJ1GilCdkQ+rC6hOhPiBybNMYkEH2
+ AV/G6pDPGZYAuDmPyOdUXPJYvBdeMB3cmLeP3xS11IaZ7iXamL+6MSuG1Gv0ARx93V2dM3suG6rYv5
+ r0USR2jYlL/mxUh7FlFxA/9h6X1Ywi168XgCmqQGoaz9zx97hHLwahYzrAEbtcDjUEVQ5b4XMDiFAw
+ CrNsL3a0KJFxXIhM1GvBCKmTfZPqCgHMEdkvG8npOmOyYd4zjZoik610fNrGezatwYOo1hphXRxtsG
+ 1SwjFKXPYcW8PcP3GWhUVu7NNjR6gLx9iobd2jzeFoK2GJawUHnsZCg0AHc/oF1FDaJ5ud8aCv7kj5
+ GSWZNS2DK5Q6pIHG+rlhR4mRNmZdjcklnEfplWbyAGBlpwXB7oVdRih76QT1VJr7tGY64k6Asda9ZY
+ KNDNOHsgJDkqVgSnE9IrRW4o1N6p9DGtuG0kRR6wOQvsOMmsYqNYsVMEaNUgFfQ5O3khvwAG+t6UF/
+ 1nFj74z1WS7+VzcaiaffBXv9It2pnWcNfBM4h4MSyBDJN5mv2lp00GzofuA2EL4YgiRwntodtf9UIf
+ SDHenrnU2vh0r8UMIQe8SecGHyJkUKHUASrGQDBUJouxBtkOZ8axvvQcpMjmDT8hN3lC6FMF8r9zBy
+ c6tnkRqapHNH+XphSMW5kyGZl8xJXXbBEr12MV1K/LP6t/Xs0DcYSKeWq0NB3htrUffZ7yv8owlG3x
+ dZkOXv+ekk2Jdyp8JqMyKtv6llnP5tfKFO27dXTH89lrpQ+DKNl1
+X-Feedback-ID: 11322:jYl07xhGb2sxj66AT/m387ocPCwcM55fqeezk738bfo=:S9vzr4UoYhkQHA4eVVrJ5xzobADMMY1T5MB8sRM+Sqk=:SG
+
+----==_mimepart_5bc836e3ddd10_1e893fb24e6027ec1215d5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi LyricWulf,
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+
+
+-------------------------
+
+Your pledge has been successfully changed from $2,006.00 to $1,506.00.
+----------------------------------------------------------------------
+
+
+Heartbound - Baron Plush! (https://www.kickstarter.com/projects/piratesoftw=
+are/heartbound-baron-plush?ref=3Demail)
+
+by Pirate Software
+
+Visit project (https://www.kickstarter.com/projects/piratesoftware/heartbou=
+nd-baron-plush?ref=3Demail)
+
+-------------------------
+
+Amount pledged=20
+ $1,506.00
+
+Reward
+
+Are you sure? ($500)
+
+2 Baron plush toys, 18 Stickers, 8 Pins, 2 Heartbound Steam Keys, A secret =
+letter from Pirate Software, your name in the credits under a title of your=
+ choosing, and Shaye will draw you or your OC in a custom Polaroid style ph=
+oto with Baron. Nothing offensive or copyrighted will be accepted for your =
+chosen title!
+
+Includes:* 2x Baron Plush
+* 2x Heartbound Steam Key
+* Secret Letter
+* 18x Heartbound Stickers
+* 8x Heartbound Pins
+* Preferred Title Credit in Heartbound
+* Custom Baron Photo
+
+Estimated delivery=20
+Dec 2018
+
+Shipping to=20
+ United States ($6)
+
+
+
+-------------------------
+
+If this project is successfully funded, we will process your payment to Pir=
+ate Software on:
+---------------------------------------------------------------------------=
+----------------
+
+Thu, Oct 18 2018 5:31 am PDT
+----------------------------
+
+If you have opted to receive a reward, Pirate Software will send you a surv=
+ey to request any info needed to deliver it (mailing address, t-shirt size,=
+ etc).
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+------
+
+If this is not your desired reward or pledge amount, please readjust it by =
+visiting the project page (https://www.kickstarter.com/projects/piratesoftw=
+are/heartbound-baron-plush?ref=3Demail) and clicking the =E2=80=98Manage Pl=
+edge=E2=80=99 button.
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+---------------------------------------------------------------------------=
+---
+
+
+
+-------------------------
+
+
+
+Kickstarter
+
+
+----==_mimepart_5bc836e3ddd10_1e893fb24e6027ec1215d5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, user-scalable=3Dno, initial-scale=3D=
+1.0, minimum-scale=3D1.0, maximum-scale=3D1.0" name=3D"viewport">
+<title></title>
+
+<style data-premailer=3D"ignore">
+
+</style>
+</head>
+<body style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; color=
+: #020621; display: block; font-family: 'Maison Neue Book', 'Helvetica Neue=
+', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-size: 16=
+px; height: 100%; margin: 0; padding: 0; width: 100%;">
+<style type=3D"text/css">
+@media (max-width: 640px) {
+  .mega {
+    font-size: 40px;
+  }
+  .mega {
+    font-size: 40px;
+  }
+  .mobile-block {
+    display: block;
+  }
+  .mobile-show {
+    display: block;
+  }
+  .mobile-full-width {
+    width: 100%;
+  }
+  .mobile-inline-block {
+    display: inline-block;
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+  .mobile-left-align {
+    text-align: left;
+  }
+  .mobile-right {
+    float: right;
+  }
+  .mobile-left {
+    float: left;
+  }
+  .mobile-clear {
+    float: none;
+  }
+  .mobile-inline {
+    display: inline;
+  }
+  .mobile-static {
+    position: static !important;
+  }
+}
+@media (min-width: 640px) {
+  .mega {
+    font-size: 60px; line-height: 60px; font-weight: 200;
+  }
+  h1 {
+    font-size: 48px; line-height: 50px;
+  }
+  .f1 {
+    font-size: 48px; line-height: 50px;
+  }
+  h2 {
+    font-size: 32px; line-height: 40px;
+  }
+  .f2 {
+    font-size: 32px; line-height: 40px;
+  }
+  h3 {
+    font-size: 22px; line-height: 30px;
+  }
+  .f3 {
+    font-size: 22px; line-height: 30px;
+  }
+  .col {
+    float: left;
+  }
+  .col-right {
+    float: right;
+  }
+  .col-center {
+    margin-right: auto; margin-left: auto;
+  }
+  .col-1 {
+    width: 8.33333%;
+  }
+  .col-pre-1 {
+    margin-left: 8.33333%;
+  }
+  .col-post-1 {
+    margin-right: 8.33333%;
+  }
+  .col-2 {
+    width: 16.66667%;
+  }
+  .col-pre-2 {
+    margin-left: 16.66667%;
+  }
+  .col-post-2 {
+    margin-right: 16.66667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-pre-3 {
+    margin-left: 25%;
+  }
+  .col-post-3 {
+    margin-right: 25%;
+  }
+  .col-4 {
+    width: 33.33333%;
+  }
+  .col-pre-4 {
+    margin-left: 33.33333%;
+  }
+  .col-post-4 {
+    margin-right: 33.33333%;
+  }
+  .col-5 {
+    width: 41.66667%;
+  }
+  .col-pre-5 {
+    margin-left: 41.66667%;
+  }
+  .col-post-5 {
+    margin-right: 41.66667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-pre-6 {
+    margin-left: 50%;
+  }
+  .col-post-6 {
+    margin-right: 50%;
+  }
+  .col-7 {
+    width: 58.33333%;
+  }
+  .col-pre-7 {
+    margin-left: 58.33333%;
+  }
+  .col-post-7 {
+    margin-right: 58.33333%;
+  }
+  .col-8 {
+    width: 66.66667%;
+  }
+  .col-pre-8 {
+    margin-left: 66.66667%;
+  }
+  .col-post-8 {
+    margin-right: 66.66667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-pre-9 {
+    margin-left: 75%;
+  }
+  .col-post-9 {
+    margin-right: 75%;
+  }
+  .col-10 {
+    width: 83.33333%;
+  }
+  .col-pre-10 {
+    margin-left: 83.33333%;
+  }
+  .col-post-10 {
+    margin-right: 83.33333%;
+  }
+  .col-11 {
+    width: 91.66667%;
+  }
+  .col-pre-11 {
+    margin-left: 91.66667%;
+  }
+  .col-post-11 {
+    margin-right: 91.66667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-pre-12 {
+    margin-left: 100%;
+  }
+  .col-post-12 {
+    margin-right: 100%;
+  }
+  .table {
+    display: table; table-layout: fixed; width: 100%;
+  }
+  .table-layout-auto {
+    table-layout: auto;
+  }
+  .table-cell {
+    display: table-cell; vertical-align: middle;
+  }
+  .mega {
+    font-size: 60px; line-height: 60px; font-weight: 200;
+  }
+  h1 {
+    font-size: 48px; line-height: 50px;
+  }
+  .f1 {
+    font-size: 48px; line-height: 50px;
+  }
+  h2 {
+    font-size: 32px; line-height: 40px;
+  }
+  .f2 {
+    font-size: 32px; line-height: 40px;
+  }
+  h3 {
+    font-size: 22px; line-height: 30px;
+  }
+  .f3 {
+    font-size: 22px; line-height: 30px;
+  }
+}
+.clearfix:before {
+content: " "; display: table;
+}
+.row:before {
+content: " "; display: table;
+}
+.clearfix:after {
+content: " "; display: table;
+}
+.row:after {
+content: " "; display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.row:after {
+clear: both;
+}
+ul.menu-tabs a:hover {
+background: #009E74; border-color: #009E74;
+}
+ul.menu-tabs a:focus {
+background: #009E74; border-color: #009E74;
+}
+ul.menu-tabs a:active {
+background: #009E74; border-color: #009E74;
+}
+ul.menu-tabs .tab_label:hover {
+background: #009E74; border-color: #009E74;
+}
+ul.menu-tabs .tab_label:focus {
+background: #009E74; border-color: #009E74;
+}
+ul.menu-tabs .tab_label:active {
+background: #009E74; border-color: #009E74;
+}
+ul.menu-tabs li.selected a:hover .count {
+background: #020621;
+}
+.ksr-select .ss-delete:hover {
+color: #009E74; cursor: pointer;
+}
+body.native-app-request .readability p {
+font-family: "Cooper Light", Georgia, serif; font-weight: 400; font-style: =
+normal; font-size: 1.8rem;
+}
+body.native-app-request .readability div {
+font-family: "Cooper Light", Georgia, serif; font-weight: 400; font-style: =
+normal; font-size: 1.8rem;
+}
+body.native-app-request .readability li {
+font-family: "Cooper Light", Georgia, serif; font-weight: 400; font-style: =
+normal; font-size: 1.8rem;
+}
+body.native-app-request .readability h1 {
+font-size: 2.2rem; font-family: "Maison Neue Book", "Helvetica Neue", Helve=
+tica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+body.native-app-request .readability h2 {
+font-size: 2.2rem; font-family: "Maison Neue Book", "Helvetica Neue", Helve=
+tica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+body.native-app-request .readability h3 {
+font-size: 2.2rem; font-family: "Maison Neue Book", "Helvetica Neue", Helve=
+tica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+body.native-app-request .readability h4 {
+font-size: 2.2rem; font-family: "Maison Neue Book", "Helvetica Neue", Helve=
+tica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+body.native-app-request .readability h5 {
+font-size: 2.2rem; font-family: "Maison Neue Book", "Helvetica Neue", Helve=
+tica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+body.native-app-request .readability h6 {
+font-size: 2.2rem; font-family: "Maison Neue Book", "Helvetica Neue", Helve=
+tica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+body.native-app-request.ipad .readability p {
+font-size: 1.8rem;
+}
+body.native-app-request.ipad .readability div {
+font-size: 1.8rem;
+}
+body.native-app-request.ipad .readability li {
+font-size: 1.8rem;
+}
+body.native-app-request.iphone .readability p {
+font-size: 1.6rem;
+}
+body.native-app-request.iphone .readability div {
+font-size: 1.6rem;
+}
+body.native-app-request.iphone .readability li {
+font-size: 1.6rem;
+}
+.hover-group:hover .hover-zoomout {
+-webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale=
+(1); -o-transform: scale(1); transform: scale(1);
+}
+.hover-group:hover .hover-zoomin {
+-webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform:=
+ scale(1.05); -o-transform: scale(1.05); transform: scale(1.05);
+}
+body .native-show {
+display: none;
+}
+body.native-app-request .native-show {
+display: block;
+}
+body.native-app-request .native-hide {
+display: none;
+}
+body.native-app-request.android .native-android-hide {
+display: none;
+}
+body.not-ipad .ipad-show {
+display: none;
+}
+body.ipad .ipad-show {
+display: block;
+}
+body.ipad .ipad-hide {
+display: none;
+}
+.button:hover .grey-light {
+color: inherit;
+}
+.button:hover .grey {
+color: inherit;
+}
+.button:hover .grey-dark {
+color: inherit;
+}
+.flag-btn:hover .grey-light {
+color: inherit;
+}
+.flag-btn:hover .grey {
+color: inherit;
+}
+.flag-btn:hover .grey-dark {
+color: inherit;
+}
+.hover-bg-color-art:hover {
+background-color: #ffbdab;
+}
+.hover-bg-color-civic:hover {
+background-color: #ffb36a;
+}
+.hover-bg-color-comedy:hover {
+background-color: #5ef3db;
+}
+.hover-bg-color-comics:hover {
+background-color: #fffb78;
+}
+.hover-bg-color-crafts:hover {
+background-color: #ff81ac;
+}
+.hover-bg-color-dance:hover {
+background-color: #a695f9;
+}
+.hover-bg-color-design:hover {
+background-color: #2752ff;
+}
+.hover-bg-color-fashion:hover {
+background-color: #ff9fd6;
+}
+.hover-bg-color-film:hover {
+background-color: #ff596e;
+}
+.hover-bg-color-food:hover {
+background-color: #ff3642;
+}
+.hover-bg-color-games:hover {
+background-color: #00c9ab;
+}
+.hover-bg-color-journalism:hover {
+background-color: #12bcea;
+}
+.hover-bg-color-music:hover {
+background-color: #a5ffd3;
+}
+.hover-bg-color-photography:hover {
+background-color: #00e3e5;
+}
+.hover-bg-color-publishing:hover {
+background-color: #e2dcd0;
+}
+.hover-bg-color-technology:hover {
+background-color: #6396fc;
+}
+.hover-bg-color-theater:hover {
+background-color: #ff7d5f;
+}
+.hover-bg-blue-light:hover {
+background-color: #F8F9FD;
+}
+.hover-bg-grey-light:hover {
+background-color: rgba(240,240,240,0.6);
+}
+.hover-bg-black-40:hover {
+background-color: rgba(0,0,0,0.4);
+}
+.hover-opacity-50:hover {
+opacity: 0.5;
+}
+.white_link:hover {
+color: #2752ff;
+}
+a.white_link:hover {
+color: #2752ff;
+}
+.link-grey-dark:hover {
+color: #020621;
+}
+.link-white:hover {
+color: #2752ff;
+}
+.progress_bar_dark:hover .progress_bar_handle {
+opacity: 1;
+}
+.progress_bar_dark .progress_bar_handle:focus {
+opacity: 1;
+}
+.progress_bar_light:hover .progress_bar_handle {
+opacity: 1;
+}
+.progress_bar_light .progress_bar_handle:focus {
+opacity: 1;
+}
+.tab-nav-green a:hover {
+color: #020621;
+}
+.tab-nav-green a.current:hover {
+color: #020621;
+}
+.tab-nav-green li.selected a:hover {
+color: #020621;
+}
+.ksr-select-light.has-options:hover {
+background-color: rgba(0,0,0,0.05);
+}
+.ksr-dropdown .title:hover {
+background-color: #F7F7F9;
+}
+.ksr-dropdown-nojs .title:hover {
+background-color: #F7F7F9;
+}
+.ksr-dropdown ul.dropdown li a:hover {
+background: #F0F0F0;
+}
+.ksr-dropdown ul.dropdown li button:hover {
+background: #F0F0F0;
+}
+.ksr-dropdown-nojs ul.dropdown li a:hover {
+background: #F0F0F0;
+}
+.ksr-dropdown-nojs ul.dropdown li button:hover {
+background: #F0F0F0;
+}
+.clearfix:before {
+content: " "; display: table;
+}
+.clearfix:after {
+content: " "; display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.button_icon_resize:hover .ss-icon {
+-webkit-transform: scale(1.2); -moz-transform: scale(1.2); -ms-transform: s=
+cale(1.2); -o-transform: scale(1.2); transform: scale(1.2);
+}
+.button_green:hover {
+color: #fff; background-color: #009E74;
+}
+.button_blue:hover {
+color: #fff; background-color: #2752ff;
+}
+.button_red:hover {
+color: #fff; background-color: #fd003b;
+}
+.button_dark:hover {
+color: #fff; background-color: #009E74;
+}
+.button_light:hover {
+color: #020621; background: #F1EEEA;
+}
+.button_grey:hover {
+color: #fff; background-color: #F1EEEA;
+}
+.button_facebook:hover {
+color: #fff; background-color: #020621;
+}
+.button_twitter:hover {
+color: #fff; background-color: #020621;
+}
+.button.disabled:hover {
+color: #d2c9bc; background-color: #F1EEEA;
+}
+.button_action:hover {
+color: #020621; background-color: #F0F0F0; border-color: #F1EEEA;
+}
+.button_action.on:hover {
+background-color: #009E74; border-color: #009E74;
+}
+.button_action_text:hover {
+color: #020621;
+}
+.button_action_text.on:hover {
+color: #009E74;
+}
+.button_blue_light:hover {
+color: #fff; background-color: #2752ff;
+}
+.button_icon_red_hover:hover .ss-icon {
+color: #fd003b;
+}
+.button_icon_white:hover {
+color: #009E74;
+}
+.facebook_login_wrap a.facebook_login:hover {
+color: #fff; background-color: #30487b;
+}
+.facebook_login_wrap .button_facebook:hover {
+color: #fff; background-color: #30487b;
+}
+.button_outline_grey:hover {
+border-color: #020621;
+}
+.button_outline_green:hover {
+color: #020621; border-color: #020621;
+}
+.button_outline_green:focus {
+color: #020621; border-color: #020621;
+}
+body {
+font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, "Liber=
+ation Sans", FreeSans, sans-serif; color: #020621; margin: 0px;
+}
+body {
+width: 100%; height: 100%; padding: 0; margin: 0; font-size: 16px; display:=
+ block;
+}
+@media screen and (min-width: 570px) {
+  .table_grid_1 {
+    width: 40px;
+  }
+  .table_grid_2 {
+    width: 100px;
+  }
+  .table_grid_4 {
+    width: 220px;
+  }
+  .table_grid_5 {
+    width: 280px;
+  }
+  .blur {
+    -ms-filter: blur(6px); -webkit-filter: blur(6px); -moz-filter: blur(6px=
+); -o-filter: blur(6px); filter: blur(6px);
+  }
+}
+@media screen and (min-width: 640px) {
+  body .ksr-popover {
+    -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.15); -moz-box-shadow: 0px =
+2px 8px rgba(0,0,0,0.15); -ms-box-shadow: 0px 2px 8px rgba(0,0,0,0.15); -o-=
+box-shadow: 0px 2px 8px rgba(0,0,0,0.15); box-shadow: 0px 2px 8px rgba(0,0,=
+0,0.15); border-radius: 6px; display: none; border: 1px solid #F1EEEA; posi=
+tion: absolute; background: #fff; padding: 30px;
+  }
+  body .ksr-popover.visible {
+    display: block;
+  }
+  body .ksr-popover .arrow {
+    width: 0; height: 0; border-left: 10px solid transparent; border-right:=
+ 10px solid transparent; position: absolute; top: -10px; left: 50%; margin-=
+left: -10px;
+  }
+  body .ksr-popover .arrow-grey {
+    border-bottom: 10px solid #F1EEEA;
+  }
+  body .ksr-popover .arrow-white {
+    border-bottom: 10px solid #fff; margin-top: 1px;
+  }
+  body .ksr-popover .close {
+    display: none;
+  }
+  body .ksr-popover .ksr-popover-title {
+    display: none;
+  }
+  .hover-group:hover .hover-zoomout {
+    opacity: 1;
+  }
+  .button_outline {
+    border-width: 2px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body .ksr-popover {
+    -webkit-overflow-scrolling: touch; overflow: auto; display: none; posit=
+ion: fixed; background-color: #fff; padding: 7.2rem 1.6rem 1.6rem; box-sizi=
+ng: border-box; top: 0px !important; left: 0px !important; height: 100% !im=
+portant; width: 100% !important;
+  }
+  body .ksr-popover.visible {
+    display: block;
+  }
+  body .ksr-popover .arrow {
+    display: none;
+  }
+  body .ksr-popover .close {
+    position: absolute; top: 1rem; right: 1.6rem;
+  }
+  body .ksr-popover .ksr-popover-title {
+    display: block; position: absolute; top: 0px; left: 0px; padding: 1.6re=
+m;
+  }
+  .mobile-scroll-container {
+    padding-left: 0px !important; padding-right: 0px !important;
+  }
+  .mobile-scroll-row.mobile-scroll-row {
+    white-space: nowrap; overflow-y: hidden; overflow-x: auto; -webkit-over=
+flow-scrolling: touch; width: 100%; margin-left: 0px; margin-right: 0px;
+  }
+  .mobile-scroll-row.mobile-scroll-row .mobile-scroll-row-item {
+    display: inline-block; width: 90%; padding-right: 0px; float: none; ver=
+tical-align: top; position: relative;
+  }
+  .mobile-scroll-row.mobile-scroll-row .mobile-scroll-row-item:first-child {
+    margin-left: 0px;
+  }
+  .mobile-scroll-row.mobile-scroll-row .mobile-scroll-row-item:last-child {
+    margin-right: 20px;
+  }
+  .mobile-scroll-row.mobile-scroll-row.mobile-scroll-row-small .mobile-scro=
+ll-row-item {
+    width: 14%;
+  }
+  .readability h1 {
+    font-size: 2rem; line-height: 2rem; margin-bottom: 2rem;
+  }
+  .readability h2 {
+    font-size: 2rem; line-height: 2rem; margin-bottom: 2rem;
+  }
+  .readability h3 {
+    font-size: 2rem; line-height: 2rem; margin-bottom: 2rem;
+  }
+  .readability h4 {
+    font-size: 2rem; line-height: 2rem; margin-bottom: 2rem;
+  }
+  .readability h5 {
+    font-size: 2rem; line-height: 2rem; margin-bottom: 2rem;
+  }
+  .readability h6 {
+    font-size: 2rem; line-height: 2rem; margin-bottom: 2rem;
+  }
+  .readability p {
+    font-size: 1.6rem;
+  }
+  .responsive-media .template {
+    margin-left: -18px; margin-right: -18px;
+  }
+}
+</style>
+<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"email-=
+wrap" height=3D"auto" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; border: 0 none transparent; border-collapse: collapse; border-sp=
+acing: 0; margin: 0 auto 100px; max-width: 500px; padding: 0; width: 95%;" =
+width=3D"90%" bgcolor=3D"#ffffff">
+<tbody style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"content logo pt3 pt5-sm" style=3D"-webkit-margin-after: 0em; -=
+webkit-margin-before: 0em; padding-top: 18px;">
+<a target=3D"_blank" href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oiw/=
+t.2lt/DLwbDSQoR-e-nCecKQn22A/h0/Kvh8eyEDYxccobuZZtapCapiCTt1zUTZ1STvm-2BU-2=
+BsnNC-2FM9rJ2XaWO4WphcITkAP" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #2752ff; text-decoration: none;"><img alt=3D"Kicks=
+tarter" width=3D"130" border=3D"0" class=3D"block" style=3D"-webkit-margin-=
+after: 0em; -webkit-margin-before: 0em; display: block; width: 130px;" src=
+=3D"https://a.kickstarter.com/assets/emails/kickstarter-logo-130-a43d928649=
+83960e9e4db685f9d38edce7d85884afd4dc5f18dfddc12f9cca91.png">
+</a>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm" style=3D"-webkit-margin-after: 0em; -webkit-margin=
+-before: 0em; padding-top: 18px;">
+<h1 class=3D"mb0 f2 normal" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetic=
+a Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-si=
+ze: 24px; font-weight: normal; line-height: 30px; margin: 0px;">
+Hi LyricWulf,
+</h1>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"pt3" colspan=3D"3" style=3D"-webkit-margin-after: 0em; -webkit=
+-margin-before: 0em; padding-top: 18px;">
+<hr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; backgro=
+und: #F1EEEA; border: 0; color: #F1EEEA; height: 1px; margin: 0px; width: 1=
+00%;">
+</td>
+</tr>
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm" style=3D"-webkit-margin-after: 0em; -webkit-margin=
+-before: 0em; padding-top: 18px;">
+<h2 class=3D"mb0 f3 normal" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; font-size: 20px; font-weight: normal; line-height: 24px; m=
+argin: 0px;">
+Your pledge has been successfully changed from $2,006.00 to $1,506.00.
+</h2>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm pb3 pb7-sm" style=3D"-webkit-margin-after: 0em; -we=
+bkit-margin-before: 0em; padding-bottom: 18px; padding-top: 18px;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" class=3D"mr3" style=3D=
+"-webkit-margin-after: 0em; -webkit-margin-before: 0em; margin-bottom: 0px;=
+ margin-right: 18px; max-width: 200px; width: 100%;">
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<a href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oiw/t.2lt/DLwbDSQoR-e-=
+nCecKQn22A/h1/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jS=
+jary0sSY9Y9bsiR0ZDOXNJXtTI-2F4JqGj-2BBX3u9fHmpbQqmaYi-2B0jRKuKBTTNzg3f4VWj-=
+2Bvr" style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; color=
+: #2752ff; text-decoration: none;"><img alt=3D"Heartbound - Baron Plush!" s=
+tyle=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; border-radiu=
+s: 6px; height: 113px; width: 200px;" class=3D"rounded" src=3D"https://ksr-=
+ugc.imgix.net/assets/022/591/254/d3ddfdd2cbde711f6b9450b96793168c_original.=
+png?ixlib=3Drb-1.1.0&amp;crop=3Dfaces&amp;w=3D208&amp;h=3D117&amp;fit=3Dcro=
+p&amp;v=3D1537268557&amp;auto=3Dformat&amp;frame=3D1&amp;q=3D92&amp;s=3D33f=
+845a4b1153a4697a05861bcf3ef2b" width=3D"208" height=3D"117"></a>
+</td>
+</tr>
+</table>
+<table align=3D"left" border=3D"0" cellpadding=3D"0" style=3D"-webkit-margi=
+n-after: 0em; -webkit-margin-before: 0em; margin-bottom: 0px; max-width: 20=
+0px; width: 100%;">
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<p class=3D"f4 m0 bold" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Ne=
+ue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-size: =
+16px; font-weight: bold; line-height: 20px; margin: 0px;">
+<a class=3D"green-dark" href=3D"https://emails.kickstarter.com/mpss/c/_gA/O=
+iw/t.2lt/DLwbDSQoR-e-nCecKQn22A/h2/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7E=
+UH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4JqGj-2BBX3u9fHmpbQqmaYi-=
+2B0jRKuKBTTNzg3f4VWj-2Bvr" style=3D"-webkit-margin-after: 0em; -webkit-marg=
+in-before: 0em; color: #020621; text-decoration: none;">Heartbound - Baron =
+Plush!</a>
+</p>
+<p class=3D"f5 m0 pt2" style=3D"-webkit-margin-after: 0em; -webkit-margin-b=
+efore: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neu=
+e', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-size: 1=
+4px; line-height: 16px; margin: 0px; padding-top: 12px;">
+by Pirate Software
+</p>
+<a class=3D"block button button_green mt3" href=3D"https://emails.kickstart=
+er.com/mpss/c/_gA/Oiw/t.2lt/DLwbDSQoR-e-nCecKQn22A/h3/Kvh8eyEDYxccobuZZtapC=
+UX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4JqGj-=
+2BBX3u9fHmpbQqmaYi-2B0jRKuKBTTNzg3f4VWj-2Bvr" style=3D"-moz-appearance: non=
+e; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-=
+out; -o-transition: all 0.2s ease-in-out; -webkit-appearance: none; -webkit=
+-font-smoothing: antialiased; -webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; -webkit-transition: all 0.2s ease-in-out; appearance: none; backg=
+round: #009E74; border: none; border-radius: 0; color: #ffffff; cursor: poi=
+nter; display: inline-block; font-size: 14px; font-style: normal; font-vari=
+ant: normal; font-weight: bold; height: auto; line-height: 40px; margin-top=
+: 18px; min-height: 40px; padding: 0 20px; text-align: center; text-decorat=
+ion: none; transition: all 0.2s ease-in-out;">Visit project</a>
+</td>
+</tr>
+</table>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td colspan=3D"3" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em;">
+<hr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; backgro=
+und: #F1EEEA; border: 0; color: #F1EEEA; height: 1px; margin: 0px; width: 1=
+00%;">
+</td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm pb3 pb7-sm" style=3D"-webkit-margin-after: 0em; -we=
+bkit-margin-before: 0em; padding-bottom: 18px; padding-top: 18px;">
+<p class=3D"lh24" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neue', H=
+elvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 24px=
+; margin: 0px;">
+<span class=3D"bold" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-weight: bold;">
+Amount pledged
+</span>
+<br style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+$1,506.00
+</p>
+<p class=3D"lh24" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neue', H=
+elvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 24px=
+; margin: 20px 0px 0px;">
+<span class=3D"bold" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-weight: bold;">
+Reward
+</span>
+</p>
+<p class=3D"mt1" style=3D"-webkit-margin-after: 0em; -webkit-margin-before:=
+ 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neue', He=
+lvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 24px;=
+ margin: 6px 0px 0px;">Are you sure? ($500)</p>
+<div class=3D"type-14" style=3D"-webkit-margin-after: 0em; -webkit-margin-b=
+efore: 0em;"><p style=3D"-webkit-margin-after: 0em; -webkit-margin-before: =
+0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neue', Hel=
+vetica, Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 24px; =
+margin: 0px;">2 Baron plush toys, 18 Stickers, 8 Pins, 2 Heartbound Steam K=
+eys, A secret letter from Pirate Software, your name in the credits under a=
+ title of your choosing, and Shaye will draw you or your OC in a custom Pol=
+aroid style photo with Baron. Nothing offensive or copyrighted will be acce=
+pted for your chosen title!</p></div>
+<div class=3D"mt2" style=3D"-webkit-margin-after: 0em; -webkit-margin-befor=
+e: 0em; margin-top: 12px;">
+<span class=3D"itemization-includes text-uppercase c-navy-light type-10 med=
+ium track-loose block" style=3D"-webkit-margin-after: 0em; -webkit-margin-b=
+efore: 0em; color: #80809E; display: block; font-size: 10px; font-weight: 5=
+00; letter-spacing: 0.1rem; text-transform: uppercase;">Includes:</span>
+<ul class=3D"type-14 ml3 green-dark mb2 pl2" style=3D"-webkit-margin-after:=
+ 0em; -webkit-margin-before: 0em; color: #020621; list-style: none; margin-=
+bottom: 12px; margin-left: 18px; padding-left: 12px;">
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+2x Baron Plush
+</li>
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+2x Heartbound Steam Key
+</li>
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+Secret Letter
+</li>
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+18x Heartbound Stickers
+</li>
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+8x Heartbound Pins
+</li>
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+Preferred Title Credit in Heartbound
+</li>
+<li class=3D"list-disc" style=3D"-webkit-margin-after: 0em; -webkit-margin-=
+before: 0em; list-style: disc;">
+Custom Baron Photo
+</li>
+</ul>
+</div>
+
+<p class=3D"lh24" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neue', H=
+elvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 24px=
+; margin: 0px;">
+<span class=3D"bold" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-weight: bold;">
+Estimated delivery
+</span>
+<br style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<time datetime=3D"2018-12-01" data-format=3D"MMM YYYY" class=3D"invisible-i=
+f-js js-adjust-time" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em;">Dec 2018</time>
+</p>
+<p class=3D"lh24" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em; color: #020621; font-family: 'Maison Neue Book', 'Helvetica Neue', H=
+elvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 24px=
+; margin: 20px 0px 0px;">
+<span class=3D"bold" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-weight: bold;">
+Shipping to
+</span>
+<br style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+United States ($6)
+</p>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td colspan=3D"3" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em;">
+<hr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; backgro=
+und: #F1EEEA; border: 0; color: #F1EEEA; height: 1px; margin: 0px; width: 1=
+00%;">
+</td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm pb3 pb7-sm" style=3D"-webkit-margin-after: 0em; -we=
+bkit-margin-before: 0em; padding-bottom: 18px; padding-top: 18px;">
+<h5 class=3D"normal" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-size: 14px; font-weight: normal; line-height: 20px; margin: =
+0px;">
+If this project is successfully funded, we will process your payment to Pir=
+ate Software on:
+</h5>
+<h5 class=3D"center" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-size: 14px; line-height: 20px; margin: 10px 0px 0px;" align=
+=3D"center">
+<time datetime=3D"2018-10-18T05:31:51-07:00" data-format=3D"llll z" class=
+=3D"invisible-if-js js-adjust-time" style=3D"-webkit-margin-after: 0em; -we=
+bkit-margin-before: 0em;">Thu, Oct 18 2018 5:31 am PDT</time>
+</h5>
+
+<h5 class=3D"normal" style=3D"-webkit-margin-after: 0em; -webkit-margin-bef=
+ore: 0em; font-size: 14px; font-weight: normal; line-height: 20px; margin: =
+10px 0px 0px;">
+If you have opted to receive a reward, Pirate Software will send you a surv=
+ey to request any info needed to deliver it (mailing address, t-shirt size,=
+ etc).
+</h5>
+<h5 class=3D"normal mb0" style=3D"-webkit-margin-after: 0em; -webkit-margin=
+-before: 0em; font-size: 14px; font-weight: normal; line-height: 20px; marg=
+in: 10px 0px 0px;">
+If this is not your desired reward or pledge amount, please readjust it by =
+visiting the <a href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oiw/t.2lt=
+/DLwbDSQoR-e-nCecKQn22A/h4/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZ=
+jbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4JqGj-2BBX3u9fHmpbQqmaYi-2B0jRKuK=
+BTTNzg3f4VWj-2Bvr" style=3D"-webkit-margin-after: 0em; -webkit-margin-befor=
+e: 0em; color: #2752ff; text-decoration: none;">project page</a> and clicki=
+ng the =E2=80=98Manage Pledge=E2=80=99 button.
+</h5>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td colspan=3D"3" style=3D"-webkit-margin-after: 0em; -webkit-margin-before=
+: 0em;">
+<hr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; backgro=
+und: #F1EEEA; border: 0; color: #F1EEEA; height: 1px; margin: 0px; width: 1=
+00%;">
+</td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm" style=3D"-webkit-margin-after: 0em; -webkit-margin=
+-before: 0em; padding-top: 18px;">
+<div class=3D"inline-block align-middle" style=3D"-webkit-margin-after: 0em=
+; -webkit-margin-before: 0em; display: inline-block; vertical-align: middle=
+;">
+<img alt=3D"&lt;3" width=3D"17" style=3D"-webkit-margin-after: 0em; -webkit=
+-margin-before: 0em; width: 17px;" src=3D"https://d3mlfyygrfdi2i.cloudfront=
+.net/18fb/heart-icon.png">
+</div>
+<div class=3D"inline-block align-middle bold" style=3D"-webkit-margin-after=
+: 0em; -webkit-margin-before: 0em; display: inline-block; font-weight: bold=
+; vertical-align: middle;">
+Kickstarter
+</div>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"pt3 pt7-sm" colspan=3D"3" style=3D"-webkit-margin-after: 0em; =
+-webkit-margin-before: 0em; padding-top: 18px;">
+<hr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; backgro=
+und: #F1EEEA; border: 0; color: #F1EEEA; height: 1px; margin: 0px; width: 1=
+00%;">
+</td>
+</tr>
+
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+<td class=3D"pt3 pt7-sm" style=3D"-webkit-margin-after: 0em; -webkit-margin=
+-before: 0em; padding-top: 18px;">
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"mb0" style=3D"-webkit-m=
+argin-after: 0em; -webkit-margin-before: 0em; border: 0 none transparent; b=
+order-collapse: collapse; border-spacing: 0; margin-bottom: 0px; width: 100=
+%;" width=3D"100%">
+<tr style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;">
+<td align=3D"right" style=3D"-webkit-margin-after: 0em; -webkit-margin-befo=
+re: 0em; align: left; height: 25px; padding-right: 1px; width: 25px;" valig=
+n=3D"top">
+<a href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oiw/t.2lt/DLwbDSQoR-e-=
+nCecKQn22A/h5/HE2UYZIDTZxfLuJ8qHDFiE6TXyKSQfFtNvxvZHBFHED7gU76uJazXLjfF-2Fe=
+-2Fa-2FNu" style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em; =
+color: #2752ff; text-decoration: none;"><img alt=3D"Facebook" height=3D"25"=
+ width=3D"25" style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0e=
+m; height: 25px; width: 25px;" src=3D"https://a.kickstarter.com/assets/emai=
+ls/facebook-social-a1f64bda2f572b5699b8c469d458ac62998e943b3fa0809aab60d9ad=
+fd548c0a.png">
+</a>
+</td>
+<td align=3D"right" class=3D"pr2" style=3D"-webkit-margin-after: 0em; -webk=
+it-margin-before: 0em; align: left; height: 25px; padding-right: 12px; widt=
+h: 25px;" valign=3D"top">
+<a href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oiw/t.2lt/DLwbDSQoR-e-=
+nCecKQn22A/h6/VE2atosPJwyp5yA4oN-2FSao8Yww7d9kTjS12d6H439Eg-3D" style=3D"-w=
+ebkit-margin-after: 0em; -webkit-margin-before: 0em; color: #2752ff; text-d=
+ecoration: none;"><img alt=3D"Twitter" height=3D"25" width=3D"25" style=3D"=
+-webkit-margin-after: 0em; -webkit-margin-before: 0em; height: 25px; width:=
+ 25px;" src=3D"https://a.kickstarter.com/assets/emails/twitter-social-bd29c=
+b4f734ec4c129914434d0a9a2c591c8261af3ebb649946337fcc361678a.png">
+</a>
+</td>
+<td style=3D"-webkit-margin-after: 0em; -webkit-margin-before: 0em;" valign=
+=3D"top">
+<div class=3D"inline-block" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; display: inline-block;">
+<p class=3D"f6 grey-dark m0" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #3D3D66; font-family: 'Maison Neue Book', 'Helveti=
+ca Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-s=
+ize: 12px; line-height: 16px; margin: 0px; vertical-align: middle;">
+Kickstarter   =C2=B7
+</p>
+</div>
+<div class=3D"inline-block" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; display: inline-block;">
+<p class=3D"f6 grey-dark m0" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #3D3D66; font-family: 'Maison Neue Book', 'Helveti=
+ca Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-s=
+ize: 12px; line-height: 16px; margin: 0px; vertical-align: middle;">
+58 Kent St, Brooklyn NY 11222   =C2=B7
+</p>
+</div>
+<div class=3D"inline-block" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; display: inline-block;">
+<p class=3D"f6 grey-dark m0" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #3D3D66; font-family: 'Maison Neue Book', 'Helveti=
+ca Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-s=
+ize: 12px; line-height: 16px; margin: 0px; vertical-align: middle;">
+<a class=3D"grey-dark" href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oi=
+w/t.2lt/DLwbDSQoR-e-nCecKQn22A/h7/Kvh8eyEDYxccobuZZtapCapiCTt1zUTZ1STvm-2BU=
+-2BsnNC-2FM9rJ2XaWO4WphcITkAP" style=3D"-webkit-margin-after: 0em; -webkit-=
+margin-before: 0em; color: #3D3D66; text-decoration: none;">www.kickstarter=
+.com</a>
+=C2=B7
+</p>
+</div>
+<div class=3D"inline-block" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; display: inline-block;">
+<p class=3D"f6 grey-dark m0" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #3D3D66; font-family: 'Maison Neue Book', 'Helveti=
+ca Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-s=
+ize: 12px; line-height: 16px; margin: 0px; vertical-align: middle;">
+<a class=3D"grey-dark" href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oi=
+w/t.2lt/DLwbDSQoR-e-nCecKQn22A/h8/Kvh8eyEDYxccobuZZtapCdpD0L8F0NFihPji7KzNj=
+Ct8CmoT8i8Sj18lSLYclc4T" style=3D"-webkit-margin-after: 0em; -webkit-margin=
+-before: 0em; color: #3D3D66; text-decoration: none;">Contact Us</a>
+=C2=B7
+</p>
+</div>
+<div class=3D"inline-block" style=3D"-webkit-margin-after: 0em; -webkit-mar=
+gin-before: 0em; display: inline-block;">
+<p class=3D"f6 grey-dark m0" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #3D3D66; font-family: 'Maison Neue Book', 'Helveti=
+ca Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; font-s=
+ize: 12px; line-height: 16px; margin: 0px; vertical-align: middle;">
+<a class=3D"grey-dark" href=3D"https://emails.kickstarter.com/mpss/c/_gA/Oi=
+w/t.2lt/DLwbDSQoR-e-nCecKQn22A/h9/Kvh8eyEDYxccobuZZtapCak-2BKbWeucWwDSMmrqg=
+tqAFTWO1zQ9p4Lsdt43-2Fi53Gf" style=3D"-webkit-margin-after: 0em; -webkit-ma=
+rgin-before: 0em; color: #3D3D66; text-decoration: none;">We're Hiring</a>
+</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class=3D"padding" style=3D"-webkit-margin-after: 0em; -webkit-margin-be=
+fore: 0em; width: 30px;"></td>
+</tr>
+
+</tbody>
+</table>
+
+<img src=3D"https://emails.kickstarter.com/mpss/o/_gA/Oiw/t.2lt/DLwbDSQoR-e=
+-nCecKQn22A/o.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"=
+height:1px !important;width:1px !important;border-width:0 !important;margin=
+-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;marg=
+in-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;p=
+adding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_5bc836e3ddd10_1e893fb24e6027ec1215d5--

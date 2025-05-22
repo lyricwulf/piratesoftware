@@ -1,0 +1,1197 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 2002:ac9:5744:0:0:0:0:0 with SMTP id i4-v6csp5940615ocp;
+        Tue, 18 Sep 2018 14:34:01 -0700 (PDT)
+X-Google-Smtp-Source: ANB0VdbL2RUMG+/hPB9nrxAhuinO53WdcOWmEcTExIFsKjkqQFNaxNhVFuwvzA7qvY2sTR4O6zRF
+X-Received: by 2002:a50:e885:: with SMTP id f5-v6mr1005869edn.117.1537306441127;
+        Tue, 18 Sep 2018 14:34:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1537306441; cv=none;
+        d=google.com; s=arc-20160816;
+        b=F0+32/7J6L6C0R+IhJ8oWN8flVDvEOMDorKoMhQGfav3+OIDQ9kyG3hMxl2UGJ5n1X
+         ykR00Ie1sgWL9AbFuuRK0yLecqeqEOvO9mvlgD6d/rvKip7xvG5iWeHrrjAV2yEPzp4n
+         /Y3Jung6SwBCOEQFdOyr94boI9/hoAh8K2Q9inbMr61Jm/zfxw0KXmhjUIWhC6SG1yGm
+         STAe+xL2j/QsAR6wM+fhIxSXIJ951x5KfST+cwmhWe4qa9/aO4dDD9n98KRpqTFFbuHs
+         PAQgg1JcNo+V0osOZGmuwqFtxuDH5Ese8C5T3erGQ9Wp2g98VvGn4R8CvEWd7u4/DC0Q
+         LjqQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature:dkim-signature;
+        bh=m4n3tRsQzSmzVRJPVJcZ78DgM9J5NNnuk57HdtlKN3s=;
+        b=TRzC4p27vdZnOgX+iYSLexBzhIs08J9aCB+Mo+UepOdeeCeD9OvI1hkQqNBaAdEp8j
+         m8IZXOKpA8S/DFCWaTmF4B/eoNG7w3Aqz53ltQOWIH07qrW2zIwWp0OPeJLBWYcgDPrt
+         4AvPgvNx0fVIE0PseVnq8dmrQ5FAp7MgRnmuXPSWLyiMOXjtqOfB0mvgoojyD3n8c8NE
+         /VytLG4l6KqeJCaOWRTOck3uF8LmPyFIXssXfvf3Z2Hn9EzK16xeApVNt3pW0Y7PTeiV
+         NDqhpxTlgFPBpLNwCK4+ZbWyM8TXRHVjavWvy8EMO1b9vrrZXHMvyyx7HYjfyz56IXe3
+         fweg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=pxgODDsy;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=Kyam8xdq;
+       spf=pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) smtp.mailfrom="bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+Return-Path: <bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com>
+Received: from o1.email.kickstarter.com (o1.email.kickstarter.com. [167.89.20.248])
+        by mx.google.com with ESMTPS id g3-v6si8593461ede.139.2018.09.18.14.33.59
+        for <lyricwulf@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 18 Sep 2018 14:34:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) client-ip=167.89.20.248;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kickstarter.com header.s=s1 header.b=pxgODDsy;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=Kyam8xdq;
+       spf=pass (google.com: domain of bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com designates 167.89.20.248 as permitted sender) smtp.mailfrom="bounces+11322-7b47-lyricwulf=gmail.com@sg.kickstarter.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kickstarter.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=kickstarter.com; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s1; bh=Vu2qQpSKU3J06GhRJqhXsK/AtKk=; b=pxgODDsy/Dg2e6Zb8TtWE0s
+	6nNrhGrUcA+J/TlSNqOg2OL0QWfbMwK0njpUpiABHf743K6JdgbCzzCmdw/EPEhA
+	lZ7xgYmLPh2BbBbnOHdJ594OUMP62v6kY9rZvHsetb8koGzUsgmkBdMAgh+DVHMa
+	mJeX4y9WNQa3jC4TIy0Y=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; 
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding:x-feedback-id; 
+	s=smtpapi; bh=Vu2qQpSKU3J06GhRJqhXsK/AtKk=; b=Kyam8xdqscRSBTr0i7
+	Yoar4QP7reFvK+cxRlBNQrYkNl1iX51u0HFKG6gs/PQ7RBKKWvgAoUxZQSXfqKPY
+	oBQjaziIcSUhs29V06XwL8wEc4PngIaJE5VzzWST9cSHD6rEHOhDw2t2dvDCX2Rv
+	brdxc5BUcKHRZi2tWFPXoqgxs=
+Received: by filter0560p1iad2.sendgrid.net with SMTP id filter0560p1iad2-16801-5BA16F44-1F
+        2018-09-18 21:33:56.331722989 +0000 UTC m=+606304.348590625
+Received: from ip-10-63-111-138.ec2.internal (ec2-54-234-167-107.compute-1.amazonaws.com [54.234.167.107])
+	by ismtpd0003p1iad1.sendgrid.net (SG) with ESMTP id tGdFbc5tT1m7UrhQDGhjPA
+	for <lyricwulf@gmail.com>; Tue, 18 Sep 2018 21:33:56.286 +0000 (UTC)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by ip-10-63-111-138.ec2.internal (Postfix) with ESMTP id 2B045A159F
+	for <lyricwulf@gmail.com>; Tue, 18 Sep 2018 21:33:56 +0000 (UTC)
+Date: Tue, 18 Sep 2018 21:33:58 +0000 (UTC)
+From: Kickstarter <no-reply@kickstarter.com>
+Reply-to: No Reply <no-reply@kickstarter.com>
+To: lyricwulf@gmail.com
+Message-ID: <5ba16f4427b09_35243ff9617b0378359c3@ip-10-63-111-138.mail>
+Subject: You just backed Heartbound - Baron Plush!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ba16f4276e5c_35243ff9617b037835857";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-SIG: 9612587f068819d0c03907830aa003902c01879f
+X-SG-EID: 3ez3qlszhNOHgLySoak3j6BL5KOiPm5IZYXUV+67ztu0doc6VrkHLkVaPrBOUDPgYWp8mTpY7G5aoi
+ gXjtHBWQfYMc/jP9HNuBOvs8QqDIKaRu2JNzAkhy2oY2TtECZDY4pET334w+kYTnNCCKdzEhVJQio+
+ iLv34J9Lz5SCUAabOuLjwKSFOcxHN30jOW576EWWT2xfbE6aQblAzNmN/fw2swg0GHlrkSpEvud8jU
+ c=
+X-SG-ID: dlWbPJmXjj7J1J1BNRXu62DLXGSLtEFyNwNl7qAYWGgD/1ZfWxJ1GilCdkQ+rC6hOhPiBybNMYkEH2
+ AV/G6pDPGZYAuDmPyOdUXPJYvBdeMB3cmLeP3xS11IaZ7iXamLMyT+arQI6Dct3dL3QJY/qujS9NOr
+ 4a2kYQx1HHLEfRj9yrmgc8WZkDcGfYEakV0LCycVkHF2bNYqa1SkCTlrCuKz9rQN3Vq1sl/Mn/piHl
+ ge0JobpqL2Zr26czgJffjNDsEcrCSF2oVPwGK25c2DxYLnStpdCAuFLJELsQJ01Rjr3K+gzn57/PKB
+ FXKhRlfSUFL41FcdTp1Mx75/Doh+MKFbSq/aApfXKUjl/7QJ647nl2F9Nqzqrp4w0rT99INWzIV/fb
+ ImzcO2391bNAYit0zjaayPUd+lXUeSkM4f5fCOtvWTWyptbiMDFLnjaXbcG9aSviq5fsn9p7Oo0Zbn
+ BTa46CJRH9PoU9nrjmmiisTl9AOmameVlBd0U+2K9l0A7HCYqkzJKoPAvy8MxDiCuZDqJI0hHGClPA
+ G8TyXyuBv2Z1LUcuTT+/iJswsvirEUJpNKYhl4kOicM+ycTqclKRPviKu6WK8TuxSNvFVGOkt7sM8r
+ 0XLCBLYbSZiKkvukwtUoyuDwTEc5+uZlY+4U9buICQv/H99BnKLVLScPtr8k3SMsUCgqu4S3yuBFIF
+ SF88u1ffqHHufjFbu+ux3dE/q6EOOA7vMr0vRw4WF7Qk/lsQfOFkXsDEbPzFqhNmbSUusyUDZXvExO
+ E3cEU1BmHgAPm2dvcgUFJ1BkMyiGnSde0vzJT4J2dTKPzlvAHcQn
+X-Feedback-ID: 11322:jYl07xhGb2sxj66AT/m387ocPCwcM55fqeezk738bfo=:xR8pp9RgzClCpbhkKF6UQTTvKbSlvkGop+47Q1djvq0=:SG
+
+----==_mimepart_5ba16f4276e5c_35243ff9617b037835857
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+You're backer 27.
+
+You have successfully pledged $106.00 to Heartbound - Baron Plush! (https:/=
+/www.kickstarter.com/projects/piratesoftware/heartbound-baron-plush?ref=3De=
+mail). This project is now one step closer to becoming a reality.
+Confirmation number: 3d3c0fe36c52cfd4ef450fcd9e5584ca
+
+
+Heartbound - Baron Plush! (https://www.kickstarter.com/projects/piratesoftw=
+are/heartbound-baron-plush?ref=3Demail)
+
+by Pirate Software
+
+
+
+18%  funded  29  days left  27  backers
+
+Share (https://www.facebook.com/share.php?u=3Dhttps://www.kickstarter.com/p=
+rojects/piratesoftware/heartbound-baron-plush?ref=3Dthanks_email_share&amp;=
+t=3DKickstarter - Heartbound+-+Baron+Plush%21&amp;v=3D4)
+Tweet (https://twitter.com/intent/tweet?text=3DI just backed Heartbound+-+B=
+aron+Plush%21 on @Kickstarter http%3A%2F%2Fkck.st%2F2NmsUf9)
+
+
+One step closer.
+Gain access to backer-only project updates, send messages to the creator, l=
+eave comments on the project, and more.
+Complete your account (https://www.kickstarter.com/password/new?at=3DBAh7CD=
+oNdmVyaWZpZXJJIi1kODYwOTIyNTFlNjM4MDg5ODliMjA3NmYyZDA0ZTliMzAzZDVlMjcyBjoGR=
+UZJIgh1aWQGOwZUaQRIkskBSSILZXhwaXJ5BjsGVEkiGDIwMTgtMDktMTkgMjE6MzM6NTQGOwZU=
+--4d6d1e962ccbe09022a2beaef027c059c88e2bef&amp;ref=3Demail&amp;user_uid=3D5=
+54047059)
+
+Pledge details Manage (https://www.kickstarter.com/projects/piratesoftware/=
+heartbound-baron-plush/pledge?at=3DBAh7B0kiCHVpZAY6BkVUaQRIkskBSSILZXhwaXJ5=
+BjsAVEkiGDIwMTgtMTAtMTggMTI6MzE6NTEGOwBU--09f39b64586f4d537f188187fe4343ddb=
+cd6cf9e&amp;ref=3Demail)
+Amount pledged
+$106.00
+
+$100.00 pledge=20
+ $6.00 shipping (United States)
+
+Reward
+Official Dog Atomizer
+
+A Baron plush, Stickers, Pins, a Heartbound Steam Key, your name in the Hea=
+rtbound credits as an Official Dog Atomizer, and a secret letter from Pirat=
+e Software. How could you? I mean really.
+
+Estimated delivery
+Dec 2018
+
+What=E2=80=99s next?
+=E2=80=A2  If this project is successfully funded, your card will be charge=
+d $106.00 on October 18, 2018 at 8:31 am.
+=E2=80=A2  Keep checking your inbox. The creator will send project updates =
+periodically.
+=E2=80=A2  When the reward you=E2=80=99ve chosen is ready for delivery, the=
+ creator will reach out to get your mailing address and other details if ne=
+cessary.
+You=E2=80=99ll love these projects, too:
+
+by Taco Pizza Cats
+DON'T GIVE UP: A Cynical Tale: A comedic retro inspired RPG about the cynic=
+al and hilarious realities of social i... (https://www.kickstarter.com/proj=
+ects/1296644525/dont-give-up-a-cynical-tale?ref=3Demail_guestconfirm_rec1)
+89% funded  Ending September 27
+
+by Dharker Studios Ltd
+My Senpai - Yuri Visual Novel: A Yuri love story about two young women who =
+find themselves living together as the... (https://www.kickstarter.com/proj=
+ects/dharkerfigurine/mysenpai?ref=3Demail_guestconfirm_rec2)
+187% funded  Ending September 28
+Explore more recommended projects (https://www.kickstarter.com/recommendati=
+ons?ref=3Demail_backerconfirm)
+
+
+----==_mimepart_5ba16f4276e5c_35243ff9617b037835857
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t">
+<title></title>
+
+</head>
+<body style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; =
+color: #282828; font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberatio=
+n Sans', FreeSans, sans-serif; font-size: 14px; line-height: 1.5; margin: 0=
+; min-width: 100%; padding: 0; width: 100% !important;" bgcolor=3D"#FBFBFA">
+<style type=3D"text/css">
+body {
+width: 100% !important; min-width: 100%; background-color: #FBFBFA; margin:=
+ 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, "Liberatio=
+n Sans", FreeSans, sans-serif; font-size: 14px; line-height: 1.5; color: #2=
+82828; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+img {
+border: 0; -ms-interpolation-mode: bicubic; outline: none;
+}
+@media all and (max-width: 540px) {
+  .img-responsive {
+    height: auto !important; max-width: 100%; width: 100% !important;
+  }
+  table[class*=3D"container"] {
+    width: 320px !important;
+  }
+  .sm-col-1 {
+    width: 3.66667% !important;
+  }
+  .sm-col-2 {
+    width: 7.83333% !important;
+  }
+  .sm-col-3 {
+    width: 12% !important;
+  }
+  .sm-col-4 {
+    width: 16.16667% !important;
+  }
+  .sm-col-5 {
+    width: 20.33333% !important;
+  }
+  .sm-col-6 {
+    width: 24.5% !important;
+  }
+  .sm-col-7 {
+    width: 28.66667% !important;
+  }
+  .sm-col-8 {
+    width: 32.83333% !important;
+  }
+  .sm-col-9 {
+    width: 37% !important;
+  }
+  .sm-col-10 {
+    width: 41.16667% !important;
+  }
+  .sm-col-11 {
+    width: 45.33333% !important;
+  }
+  .sm-col-12 {
+    width: 49.5% !important;
+  }
+  .sm-col-13 {
+    width: 53.66667% !important;
+  }
+  .sm-col-14 {
+    width: 57.83333% !important;
+  }
+  .sm-col-15 {
+    width: 62% !important;
+  }
+  .sm-col-16 {
+    width: 66.16667% !important;
+  }
+  .sm-col-17 {
+    width: 70.33333% !important;
+  }
+  .sm-col-18 {
+    width: 74.5% !important;
+  }
+  .sm-col-19 {
+    width: 78.66667% !important;
+  }
+  .sm-col-20 {
+    width: 82.83333% !important;
+  }
+  .sm-col-21 {
+    width: 87% !important;
+  }
+  .sm-col-22 {
+    width: 91.16667% !important;
+  }
+  .sm-col-23 {
+    width: 95.33333% !important;
+  }
+  .sm-col-0 {
+    width: 0px !important;
+  }
+  .sm-col-24 {
+    width: 100% !important;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+}
+</style>
+<table class=3D"mailer-body" style=3D"-ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; border-collapse: collapse; border-spacing: 0; color:=
+ #282828; font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans=
+', FreeSans, sans-serif; font-size: 14px; line-height: 1.5; margin: 0; min-=
+width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; widt=
+h: 100% !important;" bgcolor=3D"#FBFBFA" width=3D"100%" height=3D"auto" cel=
+lpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<center>
+<table align=3D"center" class=3D"mx-auto container" style=3D"border-collaps=
+e: collapse; border-spacing: 0; margin-left: auto; margin-right: auto; mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;" width=3D"540px" he=
+ight=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+
+<table class=3D"hide-sm" style=3D"border-collapse: collapse; border-spacing=
+: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=
+=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-0 hide-sm" style=3D"font-size: 0px; line-height: 0px; min=
+-width: 540px;">
+<img height=3D"1" style=3D"-ms-interpolation-mode: bicubic; border: 0; heig=
+ht: 1px; min-width: 540px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cl=
+oudfront.net/36ab/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center py4" style=3D"padding-bottom: 24px; padding-top: 2=
+4px;" align=3D"center">
+<a target=3D"_blank" href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/=
+t.2kz/QCJWifrYSYGhGFQs6XvdTw/h0/Kvh8eyEDYxccobuZZtapCapiCTt1zUTZ1STvm-2BU-2=
+BsnNC-2FM9rJ2XaWO4WphcITkAP" style=3D"color: inherit; text-decoration: none=
+;"><img alt=3D"Kickstarter" height=3D"13" width=3D"120" style=3D"-ms-interp=
+olation-mode: bicubic; border: 0; display: block; height: 13px; outline: no=
+ne; text-decoration: none; width: 120px;" class=3D"block" src=3D"https://st=
+atic.kickstarter.com/assets/emails/kickstarter-104db23b8b0f5ed120ff707e8e59=
+90d7259aad6ec6e00929220d59d15a16bf82.png">
+</a>
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center pt5" style=3D"padding-top: 30px;" align=3D"center">
+<img alt=3D"=E2=9C=85" height=3D"30" width=3D"30" style=3D"-ms-interpolatio=
+n-mode: bicubic; border: 0; display: block; height: 30px; outline: none; wi=
+dth: 30px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/d2=
+56/green-circle--w-check3x.png">
+<div class=3D"type-24 mt2" style=3D"font-size: 24px; line-height: 30px; mar=
+gin-top: 12px;">
+You're backer 27.
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<table align=3D"center" class=3D"col-16 sm-col-20 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 66.16667%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"type-14 text-center pt2 pb5" style=3D"font-size: 14px; line-he=
+ight: 21px; padding-bottom: 30px; padding-top: 12px;" align=3D"center">
+You have successfully pledged <span class=3D"bold navy-700" style=3D"color:=
+ #282828; font-weight: 700;">$106.00</span> to <a class=3D"bold" href=3D"ht=
+tps://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h1=
+/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bs=
+iR0ZDOXNJXtTI-2F4JqGj-2BBX3u9fHmpbQqmaYi-2B0jRKuKBTTNzg3f4VWj-2Bvr" style=
+=3D"color: inherit; font-weight: 700; text-decoration: none;">Heartbound - =
+Baron Plush!</a>. This project is now one step closer to becoming a reality.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table align=3D"center" class=3D"col-24 border-top mx-auto" style=3D"border=
+-collapse: collapse; border-spacing: 0; border-top-color: #DCDEDD; border-t=
+op-style: solid; border-top-width: 1px; margin-left: auto; margin-right: au=
+to; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; widt=
+h: 100%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0=
+">
+<tr>
+<td class=3D"col-20 sm-col-20 type-14 text-center pt4 pb4" style=3D"font-si=
+ze: 14px; line-height: 21px; padding-bottom: 24px; padding-top: 24px; width=
+: 82.83333%;" align=3D"center">
+Confirmation number: <span class=3D"bold navy-700" style=3D"color: #282828;=
+ font-weight: 700;">3d3c0fe36c52cfd4ef450fcd9e5584ca</span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr1 pb1 pl1 pt2" style=3D"padding: 12px 6px 6px;">
+<table align=3D"left" class=3D"col-8 sm-col-24" style=3D"border-collapse: c=
+ollapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; t=
+able-layout: fixed; width: 32.83333%;" width=3D"100%" height=3D"auto" cellp=
+adding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr2 pb2 pl2 pt1" style=3D"padding: 6px 12px 12px;">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h2/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGZjbG8NsO1Ll3jS=
+jary0sSY9Y9bsiR0ZDOXNJXtTI-2F4JqGj-2BBX3u9fHmpbQqmaYi-2B0jRKuKBTTNzg3f4VWj-=
+2Bvr" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Heartbou=
+nd - Baron Plush!" style=3D"-ms-interpolation-mode: bicubic; border: 0; dis=
+play: block; outline: none; text-decoration: none; width: 148px;" class=3D"=
+block img-responsive" src=3D"https://ksr-ugc.imgix.net/assets/022/591/254/d=
+3ddfdd2cbde711f6b9450b96793168c_original.png?ixlib=3Drb-1.1.0&amp;crop=3Dfa=
+ces&amp;w=3D576&amp;h=3D324&amp;fit=3Dcrop&amp;v=3D1537268557&amp;auto=3Dfo=
+rmat&amp;q=3D92&amp;s=3D920629351942b90612afa2d6a189810c" width=3D"148" hei=
+ght=3D"83"></a>
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-16 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 66.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr2 pb2 pl2 pt1" style=3D"padding: 6px 12px 12px;">
+<div class=3D"type-16" style=3D"font-size: 16px; line-height: 24px;">
+<a class=3D"navy-700" href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw=
+/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h3/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH=
+2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4JqGj-2BBX3u9fHmpbQqmaYi-2B=
+0jRKuKBTTNzg3f4VWj-2Bvr" style=3D"color: #282828; text-decoration: none;">H=
+eartbound - Baron Plush!</a>
+</div>
+<div class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; l=
+ine-height: 18px;">
+by Pirate Software
+</div>
+<div class=3D"mt3" style=3D"margin-top: 18px;">
+<div class=3D"bg-navy-300 h1_2 w100p rounded-bold block" style=3D"backgroun=
+d: #EFEFF3; display: block; height: 3px; width: 100%;">
+<div class=3D"bg-green-400 h1_2 block rounded-bold" style=3D"background: #0=
+09E74; display: block; height: 3px; width: 18.26%;"></div>
+</div>
+</div>
+<div class=3D"mt1" style=3D"margin-top: 6px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pr3 green-700 type-12 text-nowrap" style=3D"color: #007460; fo=
+nt-size: 12px; line-height: 18px; padding-right: 18px; white-space: nowrap;=
+">
+<span class=3D"bold" style=3D"font-weight: 700;">
+18%
+</span>
+funded
+</td>
+<td class=3D"pr3 type-12 text-nowrap" style=3D"font-size: 12px; line-height=
+: 18px; padding-right: 18px; white-space: nowrap;">
+<span class=3D"bold" style=3D"font-weight: 700;">
+29
+</span>
+<span class=3D"navy-500" style=3D"color: #95959E;">
+days left
+</span>
+</td>
+<td class=3D"pr3 type-12 text-nowrap" style=3D"font-size: 12px; line-height=
+: 18px; padding-right: 18px; white-space: nowrap;">
+<span class=3D"bold" style=3D"font-weight: 700;">
+27
+</span>
+<span class=3D"navy-500" style=3D"color: #95959E;">
+backers
+</span>
+</td>
+<td class=3D"w100p" style=3D"width: 100%;">
+=C2=A0
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border-bottom border-right border-left borde=
+r-navy-400 border-regular" style=3D"border-bottom-color: #DCDEDD; border-bo=
+ttom-style: solid; border-bottom-width: 1px; border-collapse: collapse; bor=
+der-left-color: #DCDEDD; border-left-style: solid; border-left-width: 1px; =
+border-right-color: #DCDEDD; border-right-style: solid; border-right-width:=
+ 1px; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; widt=
+h: 100%;" bgcolor=3D"#FFFFFF" width=3D"100%" height=3D"auto" cellpadding=3D=
+"0" cellspacing=3D"0">
+<tr>
+<td>
+<table align=3D"left" class=3D"col-12 sm-col-12" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center border-right border-regular py2 type-14 bold" styl=
+e=3D"border-right-color: #DCDEDD; border-right-style: solid; border-right-w=
+idth: 1px; font-size: 14px; font-weight: 700; line-height: 21px; padding-bo=
+ttom: 12px; padding-top: 12px;" align=3D"center">
+<a class=3D"navy-700" href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw=
+/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h4/HE2UYZIDTZxfLuJ8qHDFiF0Zq-2FRWIVN2pUHREloF=
+SDsp4lru0Ln0PDwIuMj24qwwJttwcTpscOxD7HBWDOHh8EdyhvwjG-2BOFhq3dtinU038NsF1rs=
+MIpVxWGqPLxiiDdqeh6qoEsocjnuiPR-2FQxkLL1prI3heSct6aXeiEjqJT5Xm4CfdCeDZQRe1Z=
+BE1pLBRUCOu7cQCXGoTgfW-2F9kTtYu1PZdEBA6Ex-2B6BwXcX3B3mmgnbV4PoGbuNU6wGHgwO"=
+ style=3D"color: #282828; text-decoration: none;"><img style=3D"-ms-interpo=
+lation-mode: bicubic; border: 0; height: 12px; outline: none; text-decorati=
+on: none; vertical-align: -5%; width: 12px;" height=3D"12" width=3D"12" src=
+=3D"https://d3mlfyygrfdi2i.cloudfront.net/e71f/facebook-h2-navy-700@4x.png"=
+ alt=3D"Facebook h2 navy 700@4x">
+Share
+</a>
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-12 sm-col-12" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center py2 type-14 bold" style=3D"font-size: 14px; font-w=
+eight: 700; line-height: 21px; padding-bottom: 12px; padding-top: 12px;" al=
+ign=3D"center">
+<a class=3D"navy-700" href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw=
+/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h5/VE2atosPJwyp5yA4oN-2FSarAaKxHd2Ns-2Fy6obzb=
+5E-2FfJO5N8ClekiHGJy1smR0IoZF-2FYOOKZy8o6GJVNAvlApqpseA-2BG4ujK8A-2BvwdVzN3=
+l8e-2Bdxg8kKaoUlVZYxpfH9ZFLHOETEtE-2F9sP-2BMF1DXJLuTnREYQs68iEUiWdHubdvzd2e=
+-2FUUemaEluExfO6x5On" style=3D"color: #282828; text-decoration: none;"><img=
+ style=3D"-ms-interpolation-mode: bicubic; border: 0; height: 12px; outline=
+: none; text-decoration: none; vertical-align: -5%; width: 15px;" height=3D=
+"12" width=3D"15" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/c2c9/twitter=
+-h2-navy-700@4x.png" alt=3D"Twitter h2 navy 700@4x">
+Tweet
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-grey-100 w100p col-24" style=3D"border-collapse: collaps=
+e; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: =
+100%;" bgcolor=3D"#FBFBFA" width=3D"100%" height=3D"auto" cellpadding=3D"0"=
+ cellspacing=3D"0">
+<tr>
+<td class=3D"pt10 pb10" style=3D"padding-bottom: 60px; padding-top: 60px;">
+<table align=3D"center" class=3D"col-18 sm-col-24 text-center" style=3D"bor=
+der-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; table-layout: fixed; text-align: center; width: 74.5%;" width=
+=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<img style=3D"-ms-interpolation-mode: bicubic; border: 0; outline: none; wi=
+dth: 100%;" width=3D"100%" src=3D"https://d3vv6lp55qjaqc.cloudfront.net/ite=
+ms/3g2w040a3a0l3K3a2R28/guest-confirmation-mailer-path.png" alt=3D"Guest co=
+nfirmation mailer path">
+</td>
+</tr>
+</table>
+<table align=3D"center" class=3D"col-18 sm-col-20 mt4 mb4 mx-auto" style=3D=
+"border-collapse: collapse; border-spacing: 0; margin: 24px auto; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width: 74.5%;" wi=
+dth=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-21 text-center pb1 black" style=3D"color: #000000; font-s=
+ize: 21px; line-height: 30px; padding-bottom: 6px;" align=3D"center">
+One step closer.
+</td>
+</tr>
+<tr>
+<td class=3D"type-14 text-center navy-700" style=3D"color: #282828; font-si=
+ze: 14px; line-height: 21px;" align=3D"center">
+Gain access to backer-only project updates, send messages to the creator, l=
+eave comments on the project, and more.
+</td>
+</tr>
+</table>
+<table align=3D"center" class=3D"col-10 sm-col-14 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 41.16667%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"type-14 text-center bg-black white p2 rounded" style=3D"border=
+-radius: 2px !important; color: #FFFFFF; font-size: 14px; line-height: 21px=
+; padding: 12px;" align=3D"center" bgcolor=3D"#000000">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h6/Kvh8eyEDYxccobuZZtapCXwZTt54Rkbuz7aOGBL9mYd29PQ20lqyUgFj0gOHK=
+76KgSgF1-2BZWVPuIC5ZmRNpKS9tarqQHg8ajzhktCdC12-2B6cKUKOpvI0wsRU8gAIZUS-2BTr=
+FzQtU-2FTLGbUVAFAUHMjZc-2B8vFQbehGJOU-2FCSPCOMRMY6IRZVS9TJioePFwqQjZEA2Y1Ki=
+gRbKIoUhSb5Y8u2WD04KJFnNuaWhwBcwHYRaNFPcsvMhscp1vELlF3R-2BGrTUdiabkeYLgxH2M=
+sI5vMDsgNIm5bQ8yX2tc24xEF8Iclq9ghLpLONXc-2FN5FMJy9ojvZE1QUbn5yA-2FeqWS8Oads=
+rQPGZLiJNGBP6Q13bTO4-3D" style=3D"color: inherit; text-decoration: none;">C=
+omplete your account</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table align=3D"center" class=3D"col-20 sm-col-20 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 82.83333%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"type-24 py4" style=3D"font-size: 24px; line-height: 30px; padd=
+ing-bottom: 24px; padding-top: 24px;">
+Pledge details
+<span class=3D"type-12 green-700 normal" style=3D"color: #007460; font-size=
+: 12px; font-weight: 400; line-height: 18px;">
+<a class=3D"green-700" href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oi=
+w/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h7/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EU=
+H2fWjGZjbG8NsO1Ll3jSjary0sSY9Y9bsiR0ZDOXNJXtTI-2F4BJqwN4gr1jwjADo-2BvAhKKif=
+4Ylti6DnbHqLWN-2FsHx-2BlesTfp3kJlrnFM5Mw33chI1NJ8SzWHYAzCkB06XFjlzX7v8QjvPl=
+c1lx-2FicfxzV6aj4JWNGaUpiyKVbkbLAYHuoZ2SZIh6SJh1BIRx609s713v8IawlDMpteWkQAK=
+40Avxwi-2BMSkfBtuKNA0UGv-2Fbw1WqeKwO4f4tjPiNy5-2BJpDQ-3D" style=3D"color: #=
+007460; text-decoration: none;">Manage</a>
+</span>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Amount pledged
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<div class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+$106.00
+</div>
+<div class=3D"type-14 navy-600 mt1" style=3D"color: #656969; font-size: 14p=
+x; line-height: 21px; margin-top: 6px;">
+$100.00
+pledge
+<br>
+$6.00
+shipping
+(United States)
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Reward
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<div class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+Official Dog Atomizer
+</div>
+<div class=3D"type-14 navy-600 mt1" style=3D"color: #656969; font-size: 14p=
+x; line-height: 21px; margin-top: 6px;">
+A Baron plush, Stickers, Pins, a Heartbound Steam Key, your name in the Hea=
+rtbound credits as an Official Dog Atomizer, and a secret letter from Pirat=
+e Software. How could you? I mean really.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"border-top py4 border-regular" style=3D"border-top-color: #DCD=
+EDD; border-top-style: solid; border-top-width: 1px; padding-bottom: 24px; =
+padding-top: 24px;">
+<table align=3D"left" class=3D"col-10 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 41.16667%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-500" style=3D"color: #95959E; font-size: 12px; li=
+ne-height: 18px;">
+Estimated delivery
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-14 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 57.83333%;" width=3D"100%" height=3D"auto" cell=
+padding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-18" style=3D"font-size: 18px; line-height: 30px;">
+<time datetime=3D"2018-12-01" data-format=3D"MMM YYYY" class=3D"invisible-i=
+f-js js-adjust-time">Dec 2018</time>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class=3D"h2" style=3D"border-collapse: collapse; border-spacing: 0; =
+height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width=3D"100%"=
+ height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"h2 type-0" style=3D"font-size: 0px; height: 12px; line-height:=
+ 0px;">
+<img height=3D"12" style=3D"-ms-interpolation-mode: bicubic; border: 0; hei=
+ght: 12px; outline: none;" src=3D"https://d3mlfyygrfdi2i.cloudfront.net/36a=
+b/utility-spacer.png" alt=3D"Utility spacer">
+</td>
+</tr>
+</table>
+<table class=3D"bg-white w100p border border-navy-400 border-regular" style=
+=3D"border: 1px solid #dcdedd; border-collapse: collapse; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" bgcolor=3D"#F=
+FFFFF" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table align=3D"center" class=3D"col-20 sm-col-20 mx-auto" style=3D"border-=
+collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: aut=
+o; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width=
+: 82.83333%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"pb5 pt2" style=3D"padding-bottom: 30px; padding-top: 12px;">
+<table align=3D"left" class=3D"col-9 sm-col-24" style=3D"border-collapse: c=
+ollapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; t=
+able-layout: fixed; width: 37%;" width=3D"100%" height=3D"auto" cellpadding=
+=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"type-12 navy-700 bold pt3" style=3D"color: #282828; font-size:=
+ 12px; font-weight: 700; line-height: 18px; padding-top: 18px;">
+What=E2=80=99s next?
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-15 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 62%;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"col-2 pt3 text-nowrap navy-600 valign-top" valign=3D"top" styl=
+e=3D"color: #656969; padding-top: 18px; white-space: nowrap; width: 7.83333=
+%;">
+=E2=80=A2
+</td>
+<td class=3D"w100p pt3 type-14 navy-600 valign-top" valign=3D"top" style=3D=
+"color: #656969; font-size: 14px; line-height: 21px; padding-top: 18px; wid=
+th: 100%;">
+If this project is successfully funded, your card will be charged <span cla=
+ss=3D"bold navy-700" style=3D"color: #282828; font-weight: 700;">$106.00</s=
+pan> on <span class=3D"bold navy-700" style=3D"color: #282828; font-weight:=
+ 700;">October 18, 2018 at 8:31 am</span>.
+</td>
+</tr>
+<tr>
+<td class=3D"col-2 pt2 text-nowrap navy-600 valign-top" valign=3D"top" styl=
+e=3D"color: #656969; padding-top: 12px; white-space: nowrap; width: 7.83333=
+%;">
+=E2=80=A2
+</td>
+<td class=3D"w100p pt2 type-14 navy-600 valign-top" valign=3D"top" style=3D=
+"color: #656969; font-size: 14px; line-height: 21px; padding-top: 12px; wid=
+th: 100%;">
+Keep checking your inbox. The creator will send project updates periodicall=
+y.
+</td>
+</tr>
+<tr>
+<td class=3D"col-2 pt2 text-nowrap navy-600 valign-top" valign=3D"top" styl=
+e=3D"color: #656969; padding-top: 12px; white-space: nowrap; width: 7.83333=
+%;">
+=E2=80=A2
+</td>
+<td class=3D"w100p pt2 type-14 navy-600 valign-top" valign=3D"top" style=3D=
+"color: #656969; font-size: 14px; line-height: 21px; padding-top: 12px; wid=
+th: 100%;">
+When the reward you=E2=80=99ve chosen is ready for delivery, the creator wi=
+ll reach out to get your mailing address and other details if necessary.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center py5 type-14" style=3D"font-size: 14px; line-height=
+: 21px; padding-bottom: 30px; padding-top: 30px;" align=3D"center">
+You=E2=80=99ll love these projects, too:
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<table align=3D"left" class=3D"col-12 sm-col-24" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"p1" style=3D"padding: 6px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"bg-white w100p border border-navy-400 border-regular rounded-m=
+edium" style=3D"border: 1px solid #dcdedd; border-radius: 4px !important; w=
+idth: 100%;" bgcolor=3D"#FFFFFF">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h8/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjEk3v-2FeWcLPlAq=
+92M-2B7qvRwIwlB7Px-2F7MGoYCrfIs-2FjS9h5-2FJ7bh8SUHHHW6wmsnNplm8KxdNXJS4jnca=
+FGMuKyfQm7rkv0nswjWLIFw9-2BHgg-3D-3D" style=3D"color: inherit; text-decorat=
+ion: none;"><img alt=3D"Project image" style=3D"-ms-interpolation-mode: bic=
+ubic; border: 0; border-top-left-radius: 2px; border-top-right-radius: 2px;=
+ display: block; outline: none; text-decoration: none; width: 253px;" class=
+=3D"w100p rounded-top-left rounded-top-right block img-responsive" src=3D"h=
+ttps://ksr-ugc.imgix.net/assets/022/364/046/126934472d2239f7d812371a901fc90=
+a_original.png?ixlib=3Drb-1.1.0&amp;crop=3Dfaces&amp;w=3D624&amp;h=3D351&am=
+p;fit=3Dcrop&amp;v=3D1535413971&amp;auto=3Dformat&amp;q=3D92&amp;s=3D5a8994=
+ede2c2b2b00cc7c63580324074" width=3D"253" height=3D"142">
+</a>
+</td>
+</tr>
+<tr>
+<td class=3D"pt2 px2 type-12 navy-600" style=3D"color: #656969; font-size: =
+12px; line-height: 18px; padding-left: 12px; padding-right: 12px; padding-t=
+op: 12px;">
+by <span class=3D"navy-700" style=3D"color: #282828;">Taco Pizza Cats</span>
+</td>
+</tr>
+<tr>
+<td class=3D"type-16 navy-700 pt1 px2" style=3D"color: #282828; font-size: =
+16px; line-height: 24px; padding-left: 12px; padding-right: 12px; padding-t=
+op: 6px;">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h9/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjEk3v-2FeWcLPlAq=
+92M-2B7qvRwIwlB7Px-2F7MGoYCrfIs-2FjS9h5-2FJ7bh8SUHHHW6wmsnNplm8KxdNXJS4jnca=
+FGMuKyfQm7rkv0nswjWLIFw9-2BHgg-3D-3D" style=3D"color: inherit; text-decorat=
+ion: none;">DON'T GIVE UP: A Cynical Tale:
+<span class=3D"navy-600" style=3D"color: #656969;">
+A comedic retro inspired RPG about the cynical and hilarious realities of s=
+ocial i...
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td class=3D"pt1 px2 pb2" style=3D"padding: 6px 12px 12px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"green-700 text-nowrap type-12 pr1" style=3D"color: #007460; fo=
+nt-size: 12px; line-height: 18px; padding-right: 6px; white-space: nowrap;">
+89%
+funded
+</td>
+<td class=3D"navy-500 text-nowrap type-12" style=3D"color: #95959E; font-si=
+ze: 12px; line-height: 18px; white-space: nowrap;">
+Ending September 27
+</td>
+<td class=3D"w100p" style=3D"width: 100%;">
+=C2=A0
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table align=3D"right" class=3D"col-12 sm-col-24" style=3D"border-collapse:=
+ collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpad=
+ding=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"p1" style=3D"padding: 6px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"bg-white w100p border border-navy-400 border-regular rounded-m=
+edium" style=3D"border: 1px solid #dcdedd; border-radius: 4px !important; w=
+idth: 100%;" bgcolor=3D"#FFFFFF">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td>
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h10/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGlQFn8NlOj71Qs=
+DY6asSOgANdMHeS2He4HbwXM6ZBiCcG1JqbxjCe1yayxqLjlOB-2B43ijHHvZPFA0I00xHf2WV"=
+ style=3D"color: inherit; text-decoration: none;"><img alt=3D"Project image=
+" style=3D"-ms-interpolation-mode: bicubic; border: 0; border-top-left-radi=
+us: 2px; border-top-right-radius: 2px; display: block; outline: none; text-=
+decoration: none; width: 253px;" class=3D"w100p rounded-top-left rounded-to=
+p-right block img-responsive" src=3D"https://ksr-ugc.imgix.net/assets/021/3=
+54/615/adcb61c4fafdf895aa56fed5a5120bdb_original.png?ixlib=3Drb-1.1.0&amp;c=
+rop=3Dfaces&amp;w=3D624&amp;h=3D351&amp;fit=3Dcrop&amp;v=3D1536583088&amp;a=
+uto=3Dformat&amp;q=3D92&amp;s=3D8329a6f1090f5218f94d312fa791d2ec" width=3D"=
+253" height=3D"142">
+</a>
+</td>
+</tr>
+<tr>
+<td class=3D"pt2 px2 type-12 navy-600" style=3D"color: #656969; font-size: =
+12px; line-height: 18px; padding-left: 12px; padding-right: 12px; padding-t=
+op: 12px;">
+by <span class=3D"navy-700" style=3D"color: #282828;">Dharker Studios Ltd</=
+span>
+</td>
+</tr>
+<tr>
+<td class=3D"type-16 navy-700 pt1 px2" style=3D"color: #282828; font-size: =
+16px; line-height: 24px; padding-left: 12px; padding-right: 12px; padding-t=
+op: 6px;">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h11/Kvh8eyEDYxccobuZZtapCUX-2Buyj4rUau9-2F7EUH2fWjGlQFn8NlOj71Qs=
+DY6asSOgANdMHeS2He4HbwXM6ZBiCcG1JqbxjCe1yayxqLjlOB-2B43ijHHvZPFA0I00xHf2WV"=
+ style=3D"color: inherit; text-decoration: none;">My Senpai - Yuri Visual N=
+ovel:
+<span class=3D"navy-600" style=3D"color: #656969;">
+A Yuri love story about two young women who find themselves living together=
+ as the...
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td class=3D"pt1 px2 pb2" style=3D"padding: 6px 12px 12px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"green-700 text-nowrap type-12 pr1" style=3D"color: #007460; fo=
+nt-size: 12px; line-height: 18px; padding-right: 6px; white-space: nowrap;">
+187%
+funded
+</td>
+<td class=3D"navy-500 text-nowrap type-12" style=3D"color: #95959E; font-si=
+ze: 12px; line-height: 18px; white-space: nowrap;">
+Ending September 28
+</td>
+<td class=3D"w100p" style=3D"width: 100%;">
+=C2=A0
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"px1 pt4 pb8 border-bottom border-navy-400 border-regular" styl=
+e=3D"border-bottom-color: #DCDEDD; border-bottom-style: solid; border-botto=
+m-width: 1px; padding: 24px 6px 48px;">
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"rounded bg-navy-400 navy-600 p2 text-center type-14" style=3D"=
+border-radius: 2px !important; color: #656969; font-size: 14px; line-height=
+: 21px; padding: 12px;" align=3D"center" bgcolor=3D"#DCDEDD">
+<a class=3D"navy-600" href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw=
+/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h12/Kvh8eyEDYxccobuZZtapCR8Xvonqm2D5x3JTGzXQU=
+kWIKgAghO609bu4jTqV4repq3J4oZAeIWKfMHz-2FlBCtdOEzDFCBjsUv-2FtQt-2BCVWz5c-3D=
+" style=3D"color: #656969; text-decoration: none;">Explore more recommended=
+ projects</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"pt8 pb12" style=3D"padding-bottom: 72px; padding-top: 48px;">
+<table align=3D"center" class=3D"col-7 sm-col-14 mx-auto" style=3D"border-c=
+ollapse: collapse; border-spacing: 0; margin-left: auto; margin-right: auto=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; width:=
+ 28.66667%;" width=3D"100%" height=3D"auto" cellpadding=3D"0" cellspacing=
+=3D"0">
+<tr>
+<td class=3D"text-center valign-middle" style=3D";" align=3D"center" valign=
+=3D"middle">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h13/XScFdUygk9lHI7pfxHKkZLxwk9SrBs7jae3h7EKt0Da83uZiy7udEwEpTsbd=
+yfjn" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Instagra=
+m" height=3D"24" width=3D"24" style=3D"-ms-interpolation-mode: bicubic; bor=
+der: 0; display: block; height: 24px; outline: none; text-decoration: none;=
+ width: 24px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront.net=
+/963c/instagram-h4-black@4x.png">
+</a>
+</td>
+<td class=3D"text-center valign-middle" style=3D";" align=3D"center" valign=
+=3D"middle">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h14/HE2UYZIDTZxfLuJ8qHDFiE6TXyKSQfFtNvxvZHBFHED7gU76uJazXLjfF-2F=
+e-2Fa-2FNu" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Fa=
+cebook" height=3D"24" width=3D"24" style=3D"-ms-interpolation-mode: bicubic=
+; border: 0; display: block; height: 24px; outline: none; text-decoration: =
+none; width: 24px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfron=
+t.net/a93d/facebook-h4-facebookblue@4x.png">
+</a>
+</td>
+<td class=3D"text-center valign-middle" style=3D";" align=3D"center" valign=
+=3D"middle">
+<a href=3D"https://emails.kickstarter.com/mpss/c/GgE/Oiw/t.2kz/QCJWifrYSYGh=
+GFQs6XvdTw/h15/94d0KlU9iJ-2FHN3q9PYEl6y0kdZ-2FdLLXzQqSU7OqcE1beCL034-2F4xaj=
+DXkLx4335i" style=3D"color: inherit; text-decoration: none;"><img alt=3D"Tw=
+itter" height=3D"24" width=3D"30" style=3D"-ms-interpolation-mode: bicubic;=
+ border: 0; display: block; height: 24px; outline: none; text-decoration: n=
+one; width: 30px;" class=3D"block" src=3D"https://d3mlfyygrfdi2i.cloudfront=
+.net/c8d4/twitter-h4-twitterblue@4x.png">
+</a>
+</td>
+</tr>
+</table>
+<table style=3D"border-collapse: collapse; border-spacing: 0; mso-table-lsp=
+ace: 0pt; mso-table-rspace: 0pt;" width=3D"100%" height=3D"auto" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-center pt4 type-12 soft-black" style=3D"color: #282828; f=
+ont-size: 12px; line-height: 18px; padding-top: 24px;" align=3D"center">
+Kickstarter =C2=B7 58 Kent St, Brooklyn NY 11222
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-12 sm-col-12" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-right type-12 soft-black px1" style=3D"color: #282828; fo=
+nt-size: 12px; line-height: 18px; padding-left: 6px; padding-right: 6px;" a=
+lign=3D"right">
+<a class=3D"soft-black" href=3D"https://emails.kickstarter.com/mpss/c/GgE/O=
+iw/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h16/Kvh8eyEDYxccobuZZtapCdpD0L8F0NFihPji7Kz=
+NjCt8CmoT8i8Sj18lSLYclc4T" style=3D"color: #282828; text-decoration: none;"=
+>Contact Us</a>
+</td>
+</tr>
+</table>
+<table align=3D"left" class=3D"col-12 sm-col-12" style=3D"border-collapse: =
+collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+table-layout: fixed; width: 49.5%;" width=3D"100%" height=3D"auto" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+<tr>
+<td class=3D"text-left type-12 soft-black px1" style=3D"color: #282828; fon=
+t-size: 12px; line-height: 18px; padding-left: 6px; padding-right: 6px;" al=
+ign=3D"left">
+<a class=3D"soft-black" href=3D"https://emails.kickstarter.com/mpss/c/GgE/O=
+iw/t.2kz/QCJWifrYSYGhGFQs6XvdTw/h17/Kvh8eyEDYxccobuZZtapCak-2BKbWeucWwDSMmr=
+qgtqAFTWO1zQ9p4Lsdt43-2Fi53Gf" style=3D"color: #282828; text-decoration: no=
+ne;">We're Hiring</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+
+<img src=3D"https://emails.kickstarter.com/mpss/o/GgE/Oiw/t.2kz/QCJWifrYSYG=
+hGFQs6XvdTw/o.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"=
+height:1px !important;width:1px !important;border-width:0 !important;margin=
+-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;marg=
+in-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;p=
+adding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+----==_mimepart_5ba16f4276e5c_35243ff9617b037835857--
