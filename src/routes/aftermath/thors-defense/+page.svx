@@ -1,0 +1,82 @@
+---
+title: Thor's Defense
+order: 8
+---
+
+<script>
+   import Callout from '$lib/components/Callout.svelte';
+   import Tweet from '$lib/components/Tweet.svelte';
+   import Image from '$lib/components/Image.svelte';
+</script>
+
+I do not have a copy of Thor’s message to his community regarding my document, but we can infer a few points that were made based on responses from his community and Shaye.
+
+## Thor’s Defense
+
+Let's examine how Thor defended himself against the claims made in my document.
+The statements below are Thor's claims, which can be deduced because they are
+**not** speculation, or because they are claimed by Shaye.
+
+<Callout color="sky">
+For example, it is most likely speculation to say “You must have planned this because of this information.” 
+
+However it is definitely **NOT** speculation to say “Thor is divorced”. This information cannot be produced by speculation, and would only stem from claims made by Thor toward his community.
+</Callout>
+
+### “Thor is divorced.”
+
+<Callout color="sky">
+   Thor was married to his wife, Nicole Gillett, from October 2015 to February 2020. We also know that they were living together
+   until February 2019, which is before TwitchCon in October 2018.
+   <a href="/sources/thors-marriage" target="_blank">
+   Source
+   </a>
+</Callout>
+
+<Tweet twid="1114711802259038208" bold={["Thor and I weren't together and him and his wife are divorced"]} />
+<Tweet twid="1114263398059921409" bold={["he is not with his wife"]} />
+<Tweet twid="1114266585697374208" bold={["they're divorced"]} />
+
+### “Lyric doxxed Thor.”
+
+<Callout color="sky">
+   The Telegram chat logs, which remained unchanged since December 2018, never
+   contained any personal information except for Lyric’s phone number occurring twice.
+   <a href="/sources/telegram-archive" target="_blank">
+   Source
+   </a>
+</Callout>
+
+<Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number, so he's essentially gotten doxxed, and people have already started subscribing him to shit with his number"]} />
+
+**Shaye (Telegram):** “As part of his attack messages he posted numberous chatlogs, **some of which were modified** and **contained our lead developers personal phone number / contact info**”  
+[In conversation with my partner](?tab=t.j44kr6bvmty)
+
+**Shaye (Telegram):** “The claims he's making have lead to **his community attacking** us on Twitch, YouTube, twitter, and **over Thor's personal phone number**.”  
+[In conversation with my partner](?tab=t.j44kr6bvmty)
+
+Twitter: “**Technically you're doxxing him** and generally this'll just hurt you in the end with that”  
+[Twitter DMs](?tab=t.imn40om5sp0i#heading=h.9gkhe21u5qi6)
+
+### “Lyric planned this and he is a scammer.”
+
+<Callout color="sky">
+   Thor would tell Lyric about donation oppurtunities. Thor immediately rewarded these donations with unprovoked sexual attention. 
+   <a href="/donations/kickstarter" target="_blank">
+   Source
+   </a>
+</Callout>
+
+<Tweet twid="1114368139288952832" bold={["I see very little difference between what you did and what some creepy dude does when a female streamer bans them and they start charging back donations"]} />
+
+<Tweet twid="1114302213306765313" bold={["he was very happily interacting with us and chat and soaking up praise for donating so much. He continued to visit stream every day and talk with us afterwards"]} />
+
+<Tweet twid="1114243930869063680" bold={["as if this was all premeditated in some fashion, that they knew they were going to cause trouble and needed a \"defense\""]} />
+
+<Tweet twid="1114244675240468480" bold={["Why even screen cap the day-of interactions"]} />
+
+<Image src="who-has-this-much-time.png" caption="As a full-time student who maintained content creation and livestreaming, it's clear that Lyric did not 'come up with' the chat logs" />
+
+## Public speculation
+
+Things which likely **NOT** part of Thor’s defense, these are more likely just public speculations:  
