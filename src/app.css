@@ -223,6 +223,7 @@ h1 {
   top: 5rem;
   background: black;
   z-index: 5;
+  scroll-margin-top: 5rem;
 }
 
 blockquote {
@@ -257,4 +258,8 @@ blockquote::before {
 
 .break-word {
   word-break: break-word;
+}
+
+h2:target {
+  background: hsla(var(--secondary))
 }

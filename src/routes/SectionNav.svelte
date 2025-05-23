@@ -20,6 +20,10 @@
     replaceState(location + section, { hash: section });
   }
 
+  function resetScroll() {
+    window.scroll(0, 0);
+  }
+
   let destroyCb = $state(() => {});
   function attachListener() {
     destroyCb?.();
@@ -59,6 +63,7 @@
     {#each pageMetadata?.headings as { level, title, slug }}
       <li>
         <Button
+          onclickcapture={resetScroll}
           href={`#${slug}`}
           class="justify-start"
           variant="ghost"
