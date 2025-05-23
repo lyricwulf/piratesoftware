@@ -50,10 +50,10 @@ However it is definitely **NOT** speculation to say “Thor is divorced”. This
 <Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number, so he's essentially gotten doxxed, and people have already started subscribing him to shit with his number"]} />
 
 **Shaye (Telegram):** “As part of his attack messages he posted numberous chatlogs, **some of which were modified** and **contained our lead developers personal phone number / contact info**”  
-[TODO: In conversation with my partner](?tab=t.j44kr6bvmty)
+[TODO: In conversation with my partner](/)
 
 **Shaye (Telegram):** “The claims he's making have lead to **his community attacking** us on Twitch, YouTube, twitter, and **over Thor's personal phone number**.”  
-[TODO: In conversation with my partner](?tab=t.j44kr6bvmty)
+[TODO: In conversation with my partner](/)
 
 <Image src="doxxing.png" caption="Twitter DM: ''Technically you're doxxing him''" />
 
