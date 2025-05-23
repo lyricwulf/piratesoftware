@@ -1,0 +1,86 @@
+---
+title: Lyric's Google Doc
+order: 6
+---
+
+<script>
+   import Email from '$lib/components/Email.svelte';
+   import Image from '$lib/components/Image.svelte';
+   import Spoiler from '$lib/components/Spoiler.svelte';
+   import KvTable from '$lib/components/KvTable.svelte';
+</script>
+
+On Apr 5, 2019, around 1:11 PM, I published the doc “A Great Heartbound Adventure” ([now deleted](?tab=t.j44kr6bvmty)). At this time, I do not have a copy of the original document, but we see portions of the contents in the comments.
+
+Original URL for “A Great Heartbound Adventure” ([now deleted](?tab=t.j44kr6bvmty)): [https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY\_8/view](https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/view)
+
+## Analyzing the Doc
+
+The public comments reveal two statements that I made in the original document:
+
+> The reason that Thor and I currently have an issue with each other is due to
+> our interaction at TwitchCon... Leading up to this encounter, Thor and I
+> shared many intimate relations through our Telegram chat.
+
+It is apparent to me now that **I focused on the wrong details**. At the time, I
+was hurt and wasn’t emotionally mature enough to fully comprehend why, let alone
+put it into words. I realize now that the emotional manipulation I experienced
+was far more important to share, yet I focused the details about his wife and
+about Shaye which were only at the forefront of my mind since that is when I
+felt that I was hurt. Due to that hurt, **I didn’t read the chat logs, and I
+published them in an attempt to explain what made me feel the way I did**. 
+
+Looking back, **the most important details are the interactions *before* TwitchCon, how my vulnerabilities were exploited by someone much older, and how I was manipulated to devote myself entirely to Jason.** All of that important information was reduced simply to the statement “Thor and I shared many intimate relations through our Telegram chat”.
+
+## Feedback
+
+The initial feedback I received after publishing the doc was almost entirely trolling. 
+
+At the time, **I believed leaving the document open to public comments would help** gauge what parts were unclear and refine the document over time. However, **I understand now that was not a good approach** for multiple reasons:
+
+- It nearly **guarantees that the initial document** will not be in a ready state, since there is less incentive for me to refine the document before publication.  
+- There will necessarily be **more low-quality feedback** than high-quality. The reasoning behind this is twofold:   
+  - There are *few* people that have the time to both read the document and formulate feedback.  
+  - A public forum does not put us on equal footing, considering the **imbalance of community activity** due to his large following. It is a lose-lose situation for fans to actually read the document, since they have to spend the time and energy to read it. There will necessarily be more people interested in defending him by any means than those who want to engage in reading a document which defames their idol.   
+- It is not respectful of people’s time. It is not your job as the reader to proofread my document to suggest improvements. Rather, **it is my job to ensure that I am communicating everything effectively**, especially when I am making accusations against another person.
+
+## Addressing Feedback
+
+I would like to address the only constructive comment I was able to find.
+
+> Apr 5, 2019, 1:16 PM  
+> *Anonymous comment: “the images in the “export” were last edited in 2018 tou FUCKING LIAR”*
+
+The export uses Telegram’s “Export chat history” feature.   
+All of the files are generated at the time of export, including copies of all stickers, media, and files, so **the Creation Date and Last Modified Date will both reflect the time of export**.
+
+Additionally, the entire archive does take place in 2018, between the months of August and October.
+
+## All feedback received
+
+After I published the document, I received a lot of trolling comments. The
+coherent ones are listed below.
+
+<KvTable rows={[
+{ key: "Vespula", value: "Who care t" },
+{ key: "Jean Baxter", value: "BIG STUPID BIG STUPID" },
+{ key: "Julian Stephens", value: "What is this furry bullshit" },
+{ key: "Vespula", value: "fucking epic [in response to Thor abusing Lyric]" },
+{ key: "Mabel Penders", value: "Who care t My gamer peepee Gegegegeg ooeoeoeoeoe Wolfy boy likes pepep small gegeheheehohooooo : ) u…" },
+{ key: "Ralcore", value: "[rickroll ascii art]" },
+{ key: "Mabel Penders", value: "Idk even know what this is Epic : 0c [in response to Thor abusing Lyric]" },
+{ key: "(Anonymous)", value: "hes a fucking liar!!! Kill him Lol i bet he likes his feet licked" },
+{ key: "(Anonymous)", value: "Bad Lyric Fuck them He wants thordick" },
+{ key: "(Anonymous)", value: "he wants the thordicks" },
+{ key: "(Anonymous)", value: "Bullshit byllshit ! Fuck you wolf bloddd!" },
+{ key: "(Anonymous)", value: "Gegegegeg ooeoeoeoeoe Wolfy boy likes pepep" },
+{ key: "(Anonymous)", value: "He wants the duc LOL COMIC SENSE LYRIC GON HAV BAD TOM!!!!!" },
+{ key: "(Anonymous)", value: "Want some suck wolf boy" },
+{ key: "(Anonymous)", value: "Fuck youuu" },
+{ key: "(Anonymous)", value: "Time for peepee" },
+]} />
+
+The comments were retrieved from email notifications:
+
+<Email eml="A Great Heartbound Adventure.eml" open={true} />
+<Email eml="A Great Heartbound Adventure (1).eml" open={true} />
