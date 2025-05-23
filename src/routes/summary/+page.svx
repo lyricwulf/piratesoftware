@@ -6,17 +6,17 @@ order: -1
 <script>
    import ChatBubble from '$lib/components/ChatBubble.svelte';
    import Message from '$lib/components/Message.svelte';
+   import Callout from '$lib/components/Callout.svelte';
 </script>
 
-<div class="advisory">
-
-This document contains content that may be disturbing,  
-including emotional abuse, manipulation,  
-and adult themes including sexual exploitation and infidelity.
-
-Please read at your own discretion.
-
-</div>
+<Callout color="red" icon="stop">
+   <div class="flex flex-col gap-1.5">
+      <span>
+         This document contains content that may be disturbing, including emotional abuse, manipulation, and adult themes including sexual exploitation and infidelity.
+      </span>
+      <b>Please read at your own discretion.</b> 
+   </div>
+</Callout>
 
 
 When I was 20 years old, I was emotionally abused and manipulated by **Jason Thor Hall (aka PirateSoftware)**, aged 31 at the time, for his own sexual and financial gain.
