@@ -50,13 +50,15 @@ However it is definitely **NOT** speculation to say “Thor is divorced”. This
 <Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number, so he's essentially gotten doxxed, and people have already started subscribing him to shit with his number"]} />
 
 **Shaye (Telegram):** “As part of his attack messages he posted numberous chatlogs, **some of which were modified** and **contained our lead developers personal phone number / contact info**”  
-[In conversation with my partner](?tab=t.j44kr6bvmty)
+[TODO: In conversation with my partner](?tab=t.j44kr6bvmty)
 
 **Shaye (Telegram):** “The claims he's making have lead to **his community attacking** us on Twitch, YouTube, twitter, and **over Thor's personal phone number**.”  
-[In conversation with my partner](?tab=t.j44kr6bvmty)
+[TODO: In conversation with my partner](?tab=t.j44kr6bvmty)
 
-Twitter: “**Technically you're doxxing him** and generally this'll just hurt you in the end with that”  
-[Twitter DMs](?tab=t.imn40om5sp0i#heading=h.9gkhe21u5qi6)
+<Image src="doxxing.png" caption="Twitter DM: ''Technically you're doxxing him''" />
+
+> Lyric also states here: "I just uploaded it as is because I didn't want any
+> editing or doctoring of the messages. I think my number is in there as well."
 
 ### “Lyric planned this and he is a scammer.”
 
@@ -79,7 +81,3 @@ Twitter: “**Technically you're doxxing him** and generally this'll just hurt y
 <Tweet twid="1114244675240468480" bold={["Why even screen cap the day-of interactions"]} />
 
 <Image src="who-has-this-much-time.png" caption="As a full-time student who maintained content creation and livestreaming, it's clear that Lyric did not 'come up with' the chat logs" />
-
-## Public speculation
-
-Things which likely **NOT** part of Thor’s defense, these are more likely just public speculations:  
