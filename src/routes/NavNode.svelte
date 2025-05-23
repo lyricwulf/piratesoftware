@@ -4,6 +4,8 @@
   import * as Collapsible from "$lib/components/ui/collapsible";
   import { page } from "$app/state";
   import NavNode from "./NavNode.svelte";
+  import { MD_METADATA } from "./md-metadata";
+  import { Badge } from "$lib/components/ui/badge";
 
   let { name = "", children = [], href = "" } = $props();
 
@@ -12,6 +14,8 @@
     page.url.pathname === href ||
       children.some((child) => child.href === page.url.pathname)
   );
+
+  const metadata = $derived(MD_METADATA.get(href));
 </script>
 
 {#if name}
@@ -45,6 +49,18 @@
       {href}
     >
       {name}
+      {#if metadata?.wip}
+        <Badge
+          class="ml-2 border-1 bg-yellow-600/25 text-yellow-100/90 border-yellow-600/50"
+          variant="secondary">WIP</Badge
+        >
+      {/if}
+      {#if metadata?.important}
+        <Badge
+          class="ml-2 border-1 bg-green-600/25 text-green-100/90 border-green-600/50"
+          variant="secondary">!</Badge
+        >
+      {/if}
     </Button>
   {/if}
 {:else}
