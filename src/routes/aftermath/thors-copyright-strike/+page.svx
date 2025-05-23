@@ -1,6 +1,6 @@
 ---
 title: Thor's Copyright Strike
-order: 2
+order: 3
 ---
 
 <script>

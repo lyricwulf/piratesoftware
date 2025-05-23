@@ -41,7 +41,7 @@
 
   .image-small:has(.caption) {
     margin-block: 1px; /* or the box shadow may cut off */
-    box-shadow: 0 0 2px 0.4px white;
+    box-shadow: 0 0 2px 0px white;
   }
 
   .image-small .caption {

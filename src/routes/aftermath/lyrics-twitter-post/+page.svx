@@ -1,0 +1,53 @@
+---
+title: "Lyric's Twitter Post"
+order: 4
+---
+
+<script>
+    import Image from '$lib/components/Image.svelte';
+    import Timeline from '$lib/components/Timeline.svelte';
+    import Email from '$lib/components/Email.svelte';
+    import Spoiler from '$lib/components/Spoiler.svelte'; 
+</script>
+
+In response to [Thor's Copyright Strike](/aftermath/thors-copyright-strike), Lyric posted the following on Twitter:
+
+> Bad news. Got a copyright strike for cover songs of #Heartbound
+>
+> I literally had permission from them to do all the songs so I thought it would
+> be ok. Now my YouTube account is in danger.
+> 
+> Creators, please remember to be careful about copyright. Love you all, please
+> stay ...
+
+Reading my messages surrounding this post, it's clear that I did not
+intend to post about the infidelity or publicly call out Thor, before Thor
+publicized the situation. 
+      
+I never planned to post about his infidelity when I first went public. **I just
+wanted to be left alone and move on.** My post on Twitter would focus on the
+copyright strike, because **I just wanted him to back off on [publicly calling
+me out](/aftermath/thors-publicization), and I just wanted to forget everything
+else that happened**.
+
+<Spoiler preview="Lyric's intent">
+      <Image src="lyric-1.png" caption="Lyric 1" />
+      <Image src="lyric-2.png" caption="Lyric 2" />
+      <Image src="lyric-3.png" caption="Lyric 3" />
+      <Image src="lyric-4.png" caption="Lyric 4" />
+      <Image src="lyric-5.png" caption="Lyric 5" />
+      <Image src="lyric-6.png" caption="Lyric 6" />
+      <Image src="lyric-7.png" caption="Lyric 7" />
+      <Image src="lyric-8.png" caption="Lyric 8" />
+</Spoiler>
+
+---
+
+Thor would respond to this post, making me a target of his community and several
+other streamers and creators.
+
+<Image src="thor-tweet-reply.png" caption="Thor's reply" />
+
+Following this, I would receive a lot of hate and harassment from his
+community. It was after this that I would publish my [Google
+Doc](/aftermath/lyrics-google-doc) about the events at TwitchCon.
