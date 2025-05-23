@@ -9,10 +9,6 @@ order: 8
    import Image from '$lib/components/Image.svelte';
 </script>
 
-I do not have a copy of Thor’s message to his community regarding my document, but we can infer a few points that were made based on responses from his community and Shaye.
-
-## Thor’s Defense
-
 Let's examine how Thor defended himself against the claims made in my document.
 The statements below are Thor's claims, which can be deduced because they are
 **not** speculation, or because they are claimed by Shaye.
