@@ -12,6 +12,23 @@ order: 1
    import Spoiler from '$lib/components/Spoiler.svelte';
 </script>
 
+Thor's behavior surrounding his Kickstarter campaign is a showcase of his
+tactics to manipulate Lyric into donating more money. 
+
+**Only two days after launching** his Kickstarter campaign, Thor voiced his
+concerns that it might fail. Lyric consoles him by saying **it's only been two
+days** and also suggests adding a higher tier. [(source)](#thor-mentions-the-kickstarter-might-fail)
+
+Thor tells Lyric that he made a higher tier at $500. After informing Lyric of
+the new, higher priced tier, **Thor then ignores Lyric, and when nudged, he
+responds with "hrm?" as if Lyric was being annoying.** This abandonment of
+engagement shows that Thor expects something of Lyric at this point. [(source)](#thor-mentions-the-kickstarter-might-fail)
+
+Shortly after, Lyric increases their pledge from $100 to $500. **Thor
+immediately showers Lyric with sexual attention and praise, confirming that he
+was witholding attention to Lyric until they donated the money.**
+[(source)](#lyric-increases-their-pledge-to-500)
+
 ## Thor mentions the Baron plush
 <Spoiler preview="Thor mentions the Baron plush">
    <Messages from="49035" to="49069" />
@@ -23,9 +40,9 @@ order: 1
    <Messages from="59509" to="59598" />
 </Spoiler>
 
-## Lyric pledges $106
+## Lyric pledges $100
 
-Within 10 minutes of Thor's message, Lyric pledges $106 to the Kickstarter. 
+Within 10 minutes of Thor's message, Lyric pledges $100 to the Kickstarter. 
 
 <Email eml="You just backed Heartbound - Baron Plush!.eml" open={false} />
 
