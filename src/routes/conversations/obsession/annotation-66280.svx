@@ -1,6 +1,6 @@
 ---
 color: red
-comment: "Jason is frustrated that Lyric pulled back.
+comment: "Thor is frustrated that Lyric pulled back.
 <br/><br/>
 Notice the use of sarcasm here, a defensive trait of his. Thor recognizes his comment unintentionally drove Lyric away. So, he is playing defensively in this statement, and now he is trying to convince Lyric why that statement was justified, eg “You <b>need</b> me to say things like that to keep you in check!”"
 ---

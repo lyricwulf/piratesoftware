@@ -6,7 +6,7 @@ title: Moving
    import Messages from "$lib/components/Messages.svelte";
 </script>
 
-In this passage, Jason
+In this passage, Thor
 - brings up the topic of moving
 - suggests that Lyric to move close to him
 - reinforces the idea of moving closer with a state of fact, **detached from his own desire**

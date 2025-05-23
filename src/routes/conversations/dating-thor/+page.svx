@@ -7,8 +7,8 @@ order: 10
   import Messages from "$lib/components/Messages.svelte";
 </script>
 
-Following Jason’s abandonment after the last discussion, Lyric finally
-formulates something Jason can work with.
+Following Thor’s abandonment after the last discussion, Lyric finally
+formulates something Thor can work with.
 
 <Messages from="67096" to="67102"/>
 
@@ -18,17 +18,17 @@ I believe the “o.o” face is genuine surprise. All he wants is absolute contr
 
 **Yes**, this is exactly how Thor makes the best of that situation.
 
-Jason frames previous argument as something that I personally put him through by calling them “surprises like this”. **Jason makes it Lyric’s burden to prove that they are loyal only to him, even without the label of a relationship.** 
+Thor frames previous argument as something that I personally put him through by calling them “surprises like this”. **Thor makes it Lyric’s burden to prove that they are loyal only to him, even without the label of a relationship.** 
 
-Note that it is now in Jason’s best interest to then not bring up the topic again. **The idea of complete devotion has been instilled in me**. Jason has gotten exactly what he wanted, and **he never brings up this conversation again** so as to not stir the pot.
+Note that it is now in Thor’s best interest to then not bring up the topic again. **The idea of complete devotion has been instilled in me**. Thor has gotten exactly what he wanted, and **he never brings up this conversation again** so as to not stir the pot.
 
-Recall that Jason refused to accept any answer other than complete and willing
+Recall that Thor refused to accept any answer other than complete and willing
 devotion, and forced this discussion for several days until he got me to say
-what he wanted. Jason does not give me any alternative to saying this; by
+what he wanted. Thor does not give me any alternative to saying this; by
 repeatedly initiating this discussion, he makes it so that statement is
 inevitable.
 
-**It’s suggested that this “pending relationship” is deliberately planned by Jason from the start. In the words of another victim:**
+**It’s suggested that this “pending relationship” is deliberately planned by Thor from the start. In the words of another victim:**
 
 > “He uses not being in a relationship as a reason why he should not allow others to talk about it. Which is controlling. Which is what he says is why he doesn’t want a relationship because he doesn’t want to be controlled.”
 

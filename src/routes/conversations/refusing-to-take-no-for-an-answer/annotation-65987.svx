@@ -1,7 +1,7 @@
 ---
 color: red
-comment: "Instead of disengaging the conversation after learning that Lyric does not want a committed relationship, Jason gives Lyric another opportunity to say what he wants. <b>Jason still pushes for Lyric to be committed to him.</b>
+comment: "Instead of disengaging the conversation after learning that Lyric does not want a committed relationship, Thor gives Lyric another opportunity to say what he wants. <b>Thor still pushes for Lyric to be committed to him.</b>
 <br />
 <br />
-Additionally, we can see that Lyric’s last two messages “Fair enough”, “I understand” are not satisfactory to Jason, and those were meant to give Lyric an opportunity to chase after him again."
+Additionally, we can see that Lyric’s last two messages “Fair enough”, “I understand” are not satisfactory to Thor, and those were meant to give Lyric an opportunity to chase after him again."
 ---
