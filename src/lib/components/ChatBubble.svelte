@@ -84,7 +84,7 @@
   tabindex="-1"
   bind:this={chatBubble}
 >
-  <div class="break-all">
+  <div class="break-word">
     {#if useAnnotated}
       {@html annotation?.message}
     {:else if text}
