@@ -6,6 +6,7 @@
   import { ListTree, TableOfContents } from "@lucide/svelte";
   import { page } from "$app/state";
   import { MD_METADATA } from "./md-metadata";
+  import WipNotice from "./WipNotice.svelte";
 
   let { children } = $props();
 
@@ -23,8 +24,12 @@
 
   <div class="markdown">
     <h1>{pageMetadata?.title}</h1>
+    {#if pageMetadata?.wip}
+      <WipNotice />
+    {/if}
     {@render children()}
   </div>
+
   <HideOnMobile position="right">
     {#snippet buttonContent()}
       <TableOfContents />
