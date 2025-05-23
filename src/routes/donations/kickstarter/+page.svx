@@ -10,6 +10,7 @@ order: 1
    import Messages from '$lib/components/Messages.svelte';
    import Email from '$lib/components/Email.svelte';
    import Spoiler from '$lib/components/Spoiler.svelte';
+   import Popup from '$lib/components/Popup.svelte';
 </script>
 
 Thor's behavior surrounding his Kickstarter campaign is a showcase of his
@@ -30,15 +31,15 @@ was witholding attention to Lyric until they donated the money.**
 [(source)](#lyric-increases-their-pledge-to-500)
 
 ## Thor mentions the Baron plush
-<Spoiler preview="Thor mentions the Baron plush">
+<Popup preview="Thor mentions the Baron plush">
    <Messages from="49035" to="49069" />
-</Spoiler>
+</Popup>
 
 
 ## Thor mentions the Kickstarter
-<Spoiler preview="Thor mentions the Kickstarter">
+<Popup preview="Thor mentions the Kickstarter">
    <Messages from="59509" to="59598" />
-</Spoiler>
+</Popup>
 
 ## Lyric pledges $100
 
@@ -46,9 +47,9 @@ Within 10 minutes of Thor's message, Lyric pledges $100 to the Kickstarter.
 
 <Email eml="You just backed Heartbound - Baron Plush!.eml" open={false} />
 
-<Spoiler preview="Thor thanks Lyric for the pledge">
+<Popup preview="Thor thanks Lyric for the pledge">
    <Messages from="59599" to="59670" />
-</Spoiler>
+</Popup>
 
 ## Thor mentions the Kickstarter might fail
 
@@ -59,9 +60,9 @@ This is actually insightful from Lyric: **for Thor to say that the campaign
 might fail after only two days is a bit odd. It shows that Thor is trying to
 coerce Lyric into donating more money.**
 
-<Spoiler preview="Thor mentions the Kickstarter might fail">
+<Popup preview="Thor mentions the Kickstarter might fail">
    <Messages from="60329" to="60368" />
-</Spoiler>
+</Popup>
 
 Extra: **Thor ignores Lyric after talking about Kickstarter.** After Lyric
 nudges him, he simply says "hrm?" as if Lyric was being annoying. 
@@ -71,9 +72,9 @@ feelings on the funding. **In addition to the fact that Thor was saying it would
 fail after two days, this abandonment of engagement shows that Thor expects
 something of Lyric at this point.**
 
-<Spoiler preview="Thor ignores Lyric after talking about Kickstarter">
+<Popup preview="Thor ignores Lyric after talking about Kickstarter">
    <Messages from="60367" to="60408" />
-</Spoiler>
+</Popup>
 
 ## Lyric increases their pledge to $500
 
@@ -92,9 +93,9 @@ where he is genuinely critical of Lyric's actions.
 after Lyric pledges $500, Thor suddenly initiates sexual themes as part of his
 thanks.**
 
-<Spoiler preview="Response to Lyric's $500 pledge">
+<Popup preview="Response to Lyric's $500 pledge">
    <Messages from="60420" to="60471" />
-</Spoiler>
+</Popup>
 
 ## Lyric increases their pledge to $3000
 
@@ -122,9 +123,9 @@ Lyric does not want to disappoint Thor, it would not be acceptable to say it is
 donated because they like Thor. So, Lyric tells Thor (and themselves) that the
 donation is made because they believe in him.
 
-<Spoiler preview="Thor thanks Lyric for the $3000 pledge">
+<Popup preview="Thor thanks Lyric for the $3000 pledge">
    <Messages from="70744" to="70790" />
-</Spoiler>
+</Popup>
 
 ## Lyric decreases their pledge to $2000
 
@@ -147,9 +148,9 @@ with the first Heartbound Kickstarter. **Thor is putting guilt on Lyric to
 make them feel bad about decreasing the pledge, when in reality it is Thor's
 responsibility to adjust their goals and expectations for his own campaign.**
 
-<Spoiler preview="Thor disapproves of the pledge decrease">
+<Popup preview="Thor disapproves of the pledge decrease">
    <Messages from="71883" to="71926" />
-</Spoiler>
+</Popup>
 
 ## Lyric decreases their pledge to $1500
 
