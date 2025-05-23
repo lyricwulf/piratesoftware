@@ -22,11 +22,11 @@
       <TimelineDot
         style="background-color: hsl(var(--primary)); align-self: center; width: 2px; height: 2px;"
       />
-      <TimelineConnector style="background-color: hsl(var(--primary));" />
+      <TimelineConnector style="background-color: hsl(var(--muted));" />
     </TimelineSeparator>
-    <TimelineContent style="padding-bottom: 1rem; margin: 6px 0 0 4px;">
-      <h4>{title}</h4>
-      <span>{description}</span>
+    <TimelineContent style="padding-bottom: 2rem; margin: 6px 0 0 4px; ">
+      <div class="font-bold">{title}</div>
+      <p class="text-sm">{description}</p>
     </TimelineContent>
     <!-- </TimelineItem> -->
   {/each}
@@ -41,9 +41,5 @@
     font-size: 0.8rem;
     color: hsl(var(--muted-foreground));
     font-weight: 400;
-  }
-
-  h4 {
-    margin: 0;
   }
 </style>
