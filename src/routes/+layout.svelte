@@ -38,6 +38,11 @@
   </HideOnMobile>
 </div>
 
+<svelte:head>
+  <title>PirateSoftware Sucks - {pageMetadata?.title}</title>
+  <meta name="description" content={pageMetadata?.description} />
+</svelte:head>
+
 <style>
   .x-wrapper {
     display: grid;
