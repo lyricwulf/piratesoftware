@@ -4,7 +4,7 @@ title: Letter to Thor
 
 <div class="p-4 bg-muted flex flex-col gap-4">
 
-<div class="text-sm text-muted-foreground text-center">
+<div class="text-xs/4 text-muted-foreground text-center">
  Letter to Thor <br/>1 / 2
 </div>
 
@@ -27,7 +27,7 @@ I lay awake every night wondering if you still remember me. After what you put m
 
 <div class="mt-4 p-4 bg-muted flex flex-col gap-4">
 
-<div class="text-sm text-muted-foreground text-center">
+<div class="text-xs/4 text-muted-foreground text-center">
  Letter to Thor <br/>2 / 2
 </div>
 
