@@ -172,10 +172,11 @@ After I read Thor's confirmation, I deleted all of my posts on all platforms, in
 
 At this time, I do not have original copies of my deleted posts.
 
+---
 
-## Transcript: Shaye and Partner, Apr 7
+## Transcripts
 
-These chat logs were forwarded by my partner:
+Conversations between Shaye and my partner, forwarded to me by my partner.
 
 <Popup preview="Shaye and Partner, Apr 7">
 <div>
@@ -203,8 +204,6 @@ These chat logs were forwarded by my partner:
 <Popup preview="Source of forwarded messages">
   <Image src="fwd-msgs.png"/>
 </Popup>
-
-## Transcript: Shaye and Partner, Apr 9
 
 <Popup preview="Shaye and Partner, Apr 9" >
 <div>
@@ -237,10 +236,9 @@ These chat logs were forwarded by my partner:
   <Image src="fwd-msgs-2.png"/>
 </Popup>
 
+---
 
-## Lyric and Partner, Apr 10
-
-Screenshots taken at the time of conversation.  
+Conversation between me and my partner, screenshot taken by me at that time.  
 
 <Popup preview="Lyric and Partner, Apr 10" >
   <Image src="partner-1.png"/>
@@ -258,10 +256,6 @@ Screenshots taken at the time of conversation.
   <Image src="partner-13.png"/>
 </Popup>
 
-## Lyric and Partner, Apr 13
-
-Screenshots taken at the time of conversation.
-
 <Popup preview="Lyric and Partner, Apr 13" >
   <Image src="partner-14.png"/>
   <Image src="partner-15.png"/>
@@ -270,6 +264,8 @@ Screenshots taken at the time of conversation.
   <Image src="partner-18.png"/>
 </Popup>
 
-## Jason and Partner, Apr 14
-(Time is 12:34 AM in PDT)
+---
+
+Conversation between Thor and Partner, on Apr 14m 12:34 AM PDT. Screenshot taken by my partner
+ 
 <Image src="yep.png"/>
