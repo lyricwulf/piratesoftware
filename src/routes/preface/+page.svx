@@ -3,23 +3,56 @@ title: Preface
 order: 2
 ---
 
-## Preface
+<script>
+   import Callout from '$lib/components/Callout.svelte';
+</script>
+
 This document aims to summarize all information about the interactions between myself (Lyric) and Jason Thor Hall.
 
-In pursuit of clarity, I will do my best to include as many details as I possibly can without harming others. **Any explanation of my motivations in the past should not be viewed as an excuse for the behavior.** I will try to explain everything to the best of my ability.
+<Callout>
 
-## Using the Archive
+In pursuit of clarity, I will do my best to include as many details as I
+possibly can without harming others, including those of my own behaviors and
+mistakes. **Any explanation of my actions in the past should not be viewed
+as an excuse for the behavior.**
+
+</Callout>
+
+## Patterns and Intent
+
+While I understand that there is a risk of misinterpretation when deeply
+analyzing behaviors, **we must recognize that a single occurence of a
+behavior is likely a coincidence, yet a pattern of behavior is a clear
+indication of intent**.
+
+<Callout color="sky" icon="info">
+
+**I do encourage giving all individuals the benefit of the doubt, in case things
+are taken out of context or misrepresented.** The aim of this document is NOT to
+hyperanalyze every small behavior. Rather, we will be focusing on the **patterns
+of behavior and the intent behind them**.
+
+</Callout>
+
+## Using the Telegram Archive
+
+<Callout color="red" icon="stop">
+   The archive should not be browsed if you are under the age of 18.
+</Callout>
 
 An archive of the Telegram chat between myself and Jason (“Thor”) has been
 uploaded to https://piratesoftware.sucks/archive/telegram. All transcripts will be cited with a link,
 which can be used to view additional messages before and after the transcript.
 
-The archive should not be browsed if you are under the age of 18.
+<Callout>
 
-While this document selects specific points of interaction, no messages were
-omitted from the archive. The archive is the same as uploaded by myself on Dec
-18th, 2018, and no messages have been curated or modified in any way,
-except as disclosed in the Telegram Source Info section.
+While the articles in this document analyze specific points of interaction, **in
+the archive, no messages have been omitted**. The archive is identical to the
+original upload on Dec 18th, 2018, except as disclosed.
+
+Read more about the authenticity of the [Telegram Archive](/sources/telegram-archive).
+
+</Callout>
 
 ## Document Mutability
 
