@@ -10,15 +10,14 @@ order: 7
   import Popup from '$lib/components/Popup.svelte';
 </script>
 
-## Deleted public posts
-
 Time period: April 10 - 14, 2019
 
-On April 14th, 2019, I would be convinced to delete all posts regarding this situation, through Jason and Shaye’s manipulation of my partner.
+I would be convinced to delete all posts regarding this situation, through Jason
+and Shaye’s manipulation of my partner. 
 
 ### Shaye and my partner
 
-Sometime before April 10, my partner at the time contacted Shaye through a
+On April 7th, my partner at the time contacted Shaye through a
 mutual friend.
 
 <ChatBubble html="hewwo" from="Shaye">
