@@ -1,6 +1,7 @@
 ---
 title: Thor's Defense
 order: 8
+important: true
 ---
 
 <script>

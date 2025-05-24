@@ -1,6 +1,7 @@
 ---
 title: Thor's Proxy Blackmail
 order: 7
+important: true
 ---
 
 <script>

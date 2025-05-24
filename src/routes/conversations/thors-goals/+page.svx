@@ -1,6 +1,7 @@
 ---
 title: Thor's Goals
 order: 3
+important: true
 ---
 
 <script>
