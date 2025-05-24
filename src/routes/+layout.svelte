@@ -60,7 +60,6 @@
     padding: 20px;
 
     max-width: min(800px, 100vw);
-    justify-self: center;
 
     color: hsla(var(--foreground) / 80%);
 
@@ -72,6 +71,10 @@
   @media (max-width: 1200px) {
     .x-wrapper {
       grid-template-columns: 1fr;
+    }
+
+    .markdown {
+      justify-self: center;
     }
   }
 </style>

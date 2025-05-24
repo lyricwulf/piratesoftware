@@ -32,13 +32,13 @@ All information reflects the original archive as exported.
 - Code: Added index.html
 - Code: Appended the following style rules to increase clarity of cited messages.
 
-```css
-/* Fixes an issue where the cited message will appear behind the title bar */
-.message {
-    scroll-margin-block-start: 80px;
-}
-/* Highlights the cited message */
-div:target {
-    background-color: rgba(242, 246, 250, 255);
-}
-```
+<pre>
+    /* Fixes an issue where the cited message will appear behind the title barrrrrrrrrrrrr */
+    .message &#123;
+        scroll-margin-block-start: 80px;
+    }
+    /* Highlights the cited message */
+    div:target &#123;
+        background-color: rgba(242, 246, 250, 255);
+    }
+</pre>
