@@ -142,6 +142,13 @@ table * {
   padding: 1rem;
 } */
 
+.markdown ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0rem 0.5rem 0.5rem 1rem;
+}
+
 .markdown ul li::before {
   content: "-";
   margin-right: 0.5rem;

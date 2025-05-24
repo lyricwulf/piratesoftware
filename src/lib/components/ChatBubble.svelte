@@ -17,14 +17,26 @@
     file = null,
     dialog = true,
     children = null,
+    showFrom = false,
+    comment = null,
   } = $props();
 
   const inProps = { from, text, dt, id, withDate, media, key, file, dialog };
 
-  let useRight = from === "Lyric";
-  let background = useRight
-    ? "linear-gradient(315deg, #0D47A1 25%, #1565C0 75%)"
-    : "linear-gradient(45deg, #263238 25%, #37474F 75%)";
+  let useRight = { Lyric: true, Partner: true }[from] || false;
+  let background =
+    {
+      Lyric: "linear-gradient(315deg, #0D47A1 25%, #1565C0 75%)",
+      Shaye: "linear-gradient(315deg, rgb(120 53 15) 25%, rgb(69 26 3) 75%)",
+      Partner: "linear-gradient(315deg, rgb(6 78 59) 25%, rgb(2 44 34) 75%)",
+    }[from] || "linear-gradient(45deg, #263238 25%, #37474F 75%)";
+  let showName =
+    showFrom ||
+    {
+      Shaye: true,
+      Partner: true,
+    }[from] ||
+    false;
 
   const link = `messages${file === 1 ? "" : file}.html#message${id}`;
 
@@ -84,6 +96,9 @@
   tabindex="-1"
   bind:this={chatBubble}
 >
+  {#if showName}
+    <div class="text-xs text-gray-100/60 mr-1">{from}:</div>
+  {/if}
   <div class="break-word">
     {#if useAnnotated}
       {@html annotation?.message}
@@ -104,10 +119,11 @@
       </a>
     </div>
   {/if}
-  {#if annotation?.comment}
+
+  {#if annotation?.comment || comment}
     <div
       class="annotation-comment w-full"
-      style="--comment-color: var(--{annotation.color})"
+      style="--comment-color: var(--{annotation?.color})"
     >
       <Collapsible.Root {open}>
         <div class="flex items-center gap-2 font-bold">
@@ -118,7 +134,7 @@
           <div
             class="mt-2 pt-1 border-t-1 border-solid border-muted-foreground"
           >
-            {@html annotation.comment}
+            {@html annotation?.comment || comment}
           </div>
         </Collapsible.Content>
       </Collapsible.Root>

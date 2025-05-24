@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as Dialog from "$lib/components/ui/dialog";
+  import Button from "$lib/components/ui/button/button.svelte";
   import { ScrollArea } from "$lib/components/ui/scroll-area";
 
   const { preview, children } = $props();
@@ -8,11 +9,15 @@
 </script>
 
 <div class="popup-container">
-  <div class="popup-small" on:click={() => (open = !open)}>
+  <Button
+    class="popup-small"
+    variant="secondary"
+    onclick={() => (open = !open)}
+  >
     {#if preview}
       <div class="caption">{@html preview}</div>
     {/if}
-  </div>
+  </Button>
 </div>
 
 <Dialog.Root bind:open>
@@ -27,7 +32,7 @@
   <!-- </Dialog.Trigger> -->
   <Dialog.Content class="max-w-[600px]">
     <Dialog.Header class="max-h-[calc(100vh-10rem)]">
-      {preview}
+      {@html preview}
       <ScrollArea class="pr-2 mt-1.5">
         <Dialog.Description class="markdown">
           {@render children()}
@@ -40,7 +45,6 @@
 <style>
   .popup-container {
     max-width: 300px;
-    margin-inline: auto;
   }
   .popup-container input {
     display: none;

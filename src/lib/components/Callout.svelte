@@ -1,6 +1,11 @@
 <script>
-  import { TriangleAlert, OctagonAlert, Info } from "@lucide/svelte";
-  const { color, children, icon = "info" } = $props();
+  import {
+    TriangleAlert,
+    OctagonAlert,
+    Info,
+    ChevronRight,
+  } from "@lucide/svelte";
+  const { color, children, icon } = $props();
 
   const _colorsForTailwind = {
     yellow:
@@ -11,7 +16,9 @@
     red: "text-red-400 bg-red-600/25 border-red-600/50 text-red-100/90",
   };
 
-  const Icon = { warning: TriangleAlert, stop: OctagonAlert, info: Info }[icon];
+  const Icon =
+    { warning: TriangleAlert, stop: OctagonAlert, info: Info }[icon] ||
+    ChevronRight;
 </script>
 
 <div
@@ -19,7 +26,7 @@
  rounded-xl text-sm flex items-start gap-2"
 >
   <Icon size="20" class="text-{color}-400  shrink-0" />
-  <div>
+  <div class="flex flex-col gap-1.5">
     {@render children()}
   </div>
 </div>

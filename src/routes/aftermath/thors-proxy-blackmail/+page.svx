@@ -1,0 +1,264 @@
+---
+title: Thor's Proxy Blackmail
+---
+
+<script>
+  import ChatBubble from '$lib/components/ChatBubble.svelte';
+  import Callout from '$lib/components/Callout.svelte';
+  import Image from '$lib/components/Image.svelte';
+  import Popup from '$lib/components/Popup.svelte';
+</script>
+
+## Deleted public posts
+
+Time period: April 10 - 14, 2019
+
+On April 14th, 2019, I would be convinced to delete all posts regarding this situation, through Jason and Shaye’s manipulation of my partner.
+
+### Shaye and my partner
+
+Sometime before April 10, my partner at the time contacted Shaye through a
+mutual friend.
+
+<ChatBubble html="hewwo" from="Shaye">
+
+**he has been attacking** us daily on Twitter
+
+</ChatBubble>
+
+<div>
+  <ChatBubble html="hewwo" from="Shaye">
+
+  As for the **attack messages he's been posting them as recently as yesterday** so I hope that your conversations with him will get him to stop.
+
+  </ChatBubble>
+  <ChatBubble html="hewwo" from="Shaye">
+
+  As part of **his attack messages he posted numberous chatlogs**, some of which were modified and **contained our lead developers personal phone number / contact info**
+
+  </ChatBubble>
+  <ChatBubble html="hewwo" from="Shaye">
+
+  The claims he's making have lead to **his community attacking us… over Thor's personal phone number.**
+
+  </ChatBubble>
+</div>
+
+<Callout color="sky">
+
+  Upon reviewing the archive, **no sensitive information about Jason (nor his
+  phone number) ever existed in any messages, media, code, or metadata of the
+  archive.** 
+  
+  Even though it would be trivially easy to disprove, **this lie was told with
+  such confidence that there was no thought to verify it.**
+
+  ***As for Shaye's claim that the messages were modified, the [Telegram Archive](/sources/telegram-archive) has remained unchanged since its archival date in December 2018.***
+
+</Callout>
+
+<Callout color="yellow">
+
+  Based on their claim that they were attacked "over Thor's personal phone number", along with the knowledge that Thor's phone number was **never** leaked, we can
+  come to this conclusion: **These are blatant lies, not founded in truth.** 
+  
+  Note that Shaye uses the word “attack” in **all** of their first three
+  messages. The repetition of the word "attack" intends to evoke a sense of
+  urgency and danger, and to paint Lyric as a villain.
+  
+</Callout>
+
+This conversation led my partner to sympathize with Shaye, **“I can’t forgive the fact that he basically doxxed you guys and thats a big yikes”**. 
+
+<div>
+<ChatBubble from="Partner" text="I can’t forgive the fact that he basically doxxed you guys and thats a big yikes" />
+<ChatBubble from="Shaye" text="[Lyric] can fix this on his end by deleting the posts / reversing the chargeback" />
+</div>
+
+### Me and my partner
+
+On April 10, my **partner did as they promised to Shaye; they tried to convince me** to reverse the chargeback and delete all public posts about Jason. **I expressed my distrust in them and disgust** at how they are twisting the situation. **My partner empathized with Shaye**, trying to get me to consider that I might be at fault for misunderstanding the situation, and that I should stop harassing them. 
+
+<Callout>
+
+At that point in time, I was not at all interested in deleting my posts because
+I felt I was in the right, and I would keep fighting to make it known because I
+have the proof.
+
+</Callout>
+
+<!-- There were probably more discussions before the next wave of messages, but I do not yet have access to these messages, only screenshots I took at the time. -->
+
+---
+
+On April 13th, my partner informed me 
+
+<div>
+
+> “[Shaye/Thor] are calling restraining order”
+
+> “I can’t just let them to call the lawyer on you”. 
+
+</div>
+
+I expressed that **I heavily distrust them. I pointed out that they are asking
+me to delete for their own gain**, so it would look like I deleted my posts
+because I regretted posting them (subtle foreshadowing...).
+
+<Callout>
+
+I notice how my tone shifted over, from not wanting to delete at all, to wanting
+to mutually end the “drama”. **I was motivated by having a happy life with my
+partner** at the time, free of any past burdens. 
+
+Looking back on this, **I do regret not standing my ground.** I did not have a
+good sense of boundaries at that age; if my partner told me to do something I
+would try to find a way, even giving up my own goals, and in this instance, my
+own emotional well-being. **I realize now that this is not a virtue.**
+
+</Callout>
+
+### The Deletion
+
+On Apr 14, 2019, 12:34 AM PDT, my partner spoke to Jason. 
+
+<div>
+  <ChatBubble from="Partner" text="just to make sure, if he delete every single
+  things from Twitter, Discord, and everything on YouTube community, will you do
+  the following same thing?" />
+  <ChatBubble showFrom from="Thor" text="Yep!" />
+</div>
+
+<Popup preview="Source: Thor's confirmation">
+  <Image src="yep.png"/>
+</Popup>
+
+**I took them at their word.**
+
+<Callout>
+
+It is clear to me now that in this type of situation, I should know that deleting my posts in this situation is a terrible idea. **Even without outside perspective, I should know** that
+
+- they are are not trustworthy   
+- they are manipulating my partner for the goal of manipulating me  
+  
+I led myself to believe their narrative to some extent. **I never even checked
+if there was actually personal information leaked, since I did not review any of
+the contents of the archive before posting it.**
+
+</Callout>
+
+After I read Thor's confirmation, I deleted all of my posts on all platforms, including the [Google Doc](/aftermath/lyrics-google-doc) that I wrote. 
+
+
+
+<Callout color="red">
+
+  **At the time, neither Shaye nor Thor deleted their posts on the matter until
+  years later.** All of their posts on Twitter, Discord, and YouTube remained
+  public, and they would continue to call me a scammer and a liar long after I 
+  deleted my posts.
+
+  This would confirm the foreshadowing I mentioned earlier.
+  
+  They manipulated my partner to get me to delete my posts, and then
+  they would keep their posts up, reinforcing their narrative and painting me as
+  a villain.
+
+  <Image src="twitter-up.png" />
+
+</Callout>
+
+At this time, I do not have original copies of my deleted posts.
+
+
+## Transcript: Shaye and Partner, Apr 7
+
+These chat logs were forwarded by my partner:
+
+<Popup preview="Shaye and Partner, Apr 7" >
+<div>
+  <ChatBubble from="Shaye" text="Hey , thank you very much for reaching out, this conversation will not be going anywhere outside of this, if you have concerns about that feel free to delete the conversation if you need to." />
+  <ChatBubble from="Shaye" text="We did the copyright strikes in response to the chargeback he sent as we don't want to be associated with anyone who chargebacks content creators" />
+  <ChatBubble from="Shaye" text="As for the dispute we have no intention of continuing this in public, we just want him to leave us alone" />
+  <ChatBubble from="Shaye" text="Since this began we stated our public piece and he has been attacking us daily on Twitter, and he used a second account to join our discord after being banned on his main pretending to be a different person. That account was dallasgotpaws and we have since banned it as well." comment="This recollection of the Discord account is true. I reasoned that their Discord server was the best place to get the most critical feedback, with the goal of clearing up any possible confusion about the events that happened. While I did not post anything inflammatory, I did express skepticism about blindly supporting Jason in the matter."/>
+</div>
+<div>
+  <ChatBubble from="Shaye" text="thank you very much, I'm really glad you have this stance about it." />
+  <ChatBubble from="Shaye" text="it's been really tough for us especially considering the timing and amount of the chargeback , we're still trying to fight it with PayPal but i don't know if we're going to win the case. I hope he changes his mind and reverses the chargeback." />
+  <ChatBubble from="Shaye" text="As for the attack messages he's been posting them as recently as yesterday so I hope that your conversations with him will get him to stop." />
+</div>
+<div>
+  <ChatBubble from="Shaye" text="As part of his attack messages he posted numberous chatlogs, some of which were modified and contained our lead developers personal phone number / contact info" />
+  <ChatBubble from="Shaye" text="He has also made public statements claiming that I was in a relationship with our lead developer and that he was cheating on his wife as well. He is divorced and I have never had a relationship with him." />
+  <ChatBubble from="Shaye" text="During the times he claimed he was having a relationship with Thor (the developer) , he was hanging on my arm and being overly affectionate with me at twitchcon." />
+  <ChatBubble from="Shaye" text="The claims he's making have lead to his community attacking us on Twitch, YouTube, twitter, and over Thor's personal phone number." />
+</div>
+<div>
+  <ChatBubble from="Shaye" text="We tried reaching out to twitter and Google to delete that information he posted as it contains personal contact information but they have not yet responded" />
+</div>
+</Popup>
+
+<Popup preview="Source of forwarded messages">
+  <Image src="fwd-msgs.png"/>
+</Popup>
+
+## Transcript: Shaye and Partner, Apr 9
+
+<Popup preview="Shaye and Partner, Apr 9" >
+<div>
+  <ChatBubble from="Partner" text="I hope so too but it have been putting you guys into a very bad spot and this is not ok at all. To be fair, to these kind of stuff on PayPal it’s gonna be very hard though I honestly really want you guys to get it resolved because this is a very bad timing considering that you guys are moving at the moment." />
+  <ChatBubble from="Partner" text="I can try to just find a way to convince him to repeal the case and return you the money but i am unsure if he will or not, I can’t tell but I really want to help with this because no content creators deserve this." />
+  <ChatBubble from="Shaye" text="Thank you, that's really nice to hear, while I can't ask you to do something like that, if you do end up talking to him about it, it would mean a lot to us" />
+  <ChatBubble from="Partner" text="And for this, I feel like there was some misunderstanding from his side because someone told him Thor having a wife and he told me he just went mad about it and apparently he didn’t think twice. I think he was very extremely clingy and he was thought he’s in relationship, i presume? But also I did know a little bit about it and to me i felt it wasn’t right from the start until now you gave me about this details." />
+  <ChatBubble from="Partner" text="also i know a little bit about the info on his Twitter and I can’t forgive the fact that he basically doxxed you guys and thats a big yikes. I am sorry that you have to deal with this, this is why i have to step up and get in contact with you about this because like i said, i want to get it all clear, fair and square to you both." />
+  <ChatBubble from="Shaye" text="Thank you very much, if there's anything you ever need from either of us please just let me know" />
+  <ChatBubble from="Partner" text="No problem at all! But yeah i think i just need to ask 2 more things and it is ok / possible for him to talk to you guys? He told me he very sorry about it and he want to resolve on his own, not me." />
+  <ChatBubble from="Shaye" text="Unfortunately we're not really comfortable talking with him after everything he's done. If he's remorseful than he can fix this on his end by deleting the posts / reversing the chargeback etc" />
+  <ChatBubble from="Partner" text="Ah! I respect your decision, I will do my best in my ability to convince him, I cannot promise if it will change anything but i hopefully it will bring a positive result. Thank you so much for taking so much time to reply me and I hope you both travel safe!" />
+  <ChatBubble from="Shaye" text="Again thank you very very much, if there's anything you ever need from either of us please just let me know" />
+  <ChatBubble from="Shaye" text="Again I'm sorry if this caused you any stress, none of this was your fault and you haven't done anything wrong" />
+  <ChatBubble from="Shaye" text="Thank you!!!!!" />
+</div>
+</Popup>
+
+<Popup preview="Source of forwarded messages">
+  <Image src="fwd-msgs-2.png"/>
+</Popup>
+
+
+## Lyric and Partner, Apr 10
+
+Screenshots taken at the time of conversation.  
+
+<Popup preview="Lyric and Partner, Apr 10" >
+  <Image src="partner-1.png"/>
+  <Image src="partner-2.png"/>
+  <Image src="partner-3.png"/>
+  <Image src="partner-4.png"/>
+  <Image src="partner-5.png"/>
+  <Image src="partner-6.png"/>
+  <Image src="partner-7.png"/>
+  <Image src="partner-8.png"/>
+  <Image src="partner-9.png"/>
+  <Image src="partner-10.png"/>
+  <Image src="partner-11.png"/>
+  <Image src="partner-12.png"/>
+  <Image src="partner-13.png"/>
+</Popup>
+
+## Lyric and Partner, Apr 13
+
+Screenshots taken at the time of conversation.
+
+<Popup preview="Lyric and Partner, Apr 13" >
+  <Image src="partner-14.png"/>
+  <Image src="partner-15.png"/>
+  <Image src="partner-16.png"/>
+  <Image src="partner-17.png"/>
+  <Image src="partner-18.png"/>
+</Popup>
+
+## Jason and Partner, Apr 14
+(Time is 12:34 AM in PDT)
+<Image src="yep.png"/>
