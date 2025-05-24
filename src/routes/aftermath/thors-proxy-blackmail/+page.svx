@@ -123,9 +123,8 @@ own emotional well-being. **I realize now that this is not a virtue.**
 On Apr 14, 2019, 12:34 AM PDT, my partner spoke to Jason. 
 
 <div>
-  <ChatBubble from="Partner" text="just to make sure, if he delete every single
-  things from Twitter, Discord, and everything on YouTube community, will you do
-  the following same thing?" />
+  <ChatBubble from="Partner" text="Well yeah. I'm not the aggressor here. If he calls off the attack all of this goes away pretty fast." />
+  <ChatBubble from="Partner" text="Alright, just to make sure, if he delete every single things from Twitter, Discord, and everything on YouTube community, will you do the following same thing?" />
   <ChatBubble showFrom from="Thor" text="Yep!" />
 </div>
 
