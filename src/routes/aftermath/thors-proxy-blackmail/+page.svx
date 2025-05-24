@@ -177,7 +177,7 @@ At this time, I do not have original copies of my deleted posts.
 
 These chat logs were forwarded by my partner:
 
-<Popup preview="Shaye and Partner, Apr 7" >
+<Popup preview="Shaye and Partner, Apr 7">
 <div>
   <ChatBubble from="Shaye" text="Hey , thank you very much for reaching out, this conversation will not be going anywhere outside of this, if you have concerns about that feel free to delete the conversation if you need to." />
   <ChatBubble from="Shaye" text="We did the copyright strikes in response to the chargeback he sent as we don't want to be associated with anyone who chargebacks content creators" />
@@ -225,7 +225,7 @@ These chat logs were forwarded by my partner:
   <ChatBubble from="Partner" text="Oh! I’m sorry, i just got a message from him and he said he will delete all the posts as long you both gonna do too, he doesn’t want to spread the rumors from both parties any longer, and he’d looking for resolution for the paypal case, i know it doesn’t mean much but i think it should be a positive sign from him, my apologize for unable to fully convincing him about it" />
   <ChatBubble from="Shaye" text="The PayPal case should be able to be fixed immediately by him calling PayPal and saying that he no longer wants to do the chargeback ." />
   <ChatBubble from="Shaye" text="As for the posts, if he deletes them then we can delete ours as well" />
-  <ChatBubble from="Partner" text="Ah! Gotcha, I will mind that and will let you know about the paypal if there’s any updates and the only thing i can rest assure at the moment is he will delete the posts.">
+  <ChatBubble from="Partner" text="Ah! Gotcha, I will mind that and will let you know about the paypal if there’s any updates and the only thing i can rest assure at the moment is he will delete the posts." />
   <ChatBubble from="Partner" text="But again, thank you so much for taking time about this and i hope to talk to you next time which not gonna be about this incident. But I’m glad that we are all understand." />
   <ChatBubble from="Shaye" text="Thank you very much, we're  going to be waiting for the chargeback reversal before we do anything but thank you once again for taking the time to reach out to me and help resolve the situation" />
   <ChatBubble from="Shaye" text="Again I'm sorry if this caused you any stress, none of this was your fault and it's was commendable for you to step in" />
