@@ -1,5 +1,6 @@
 ---
 title: Thor's Proxy Blackmail
+order: 7
 ---
 
 <script>
@@ -212,12 +213,22 @@ These chat logs were forwarded by my partner:
   <ChatBubble from="Shaye" text="Thank you, that's really nice to hear, while I can't ask you to do something like that, if you do end up talking to him about it, it would mean a lot to us" />
   <ChatBubble from="Partner" text="And for this, I feel like there was some misunderstanding from his side because someone told him Thor having a wife and he told me he just went mad about it and apparently he didn’t think twice. I think he was very extremely clingy and he was thought he’s in relationship, i presume? But also I did know a little bit about it and to me i felt it wasn’t right from the start until now you gave me about this details." />
   <ChatBubble from="Partner" text="also i know a little bit about the info on his Twitter and I can’t forgive the fact that he basically doxxed you guys and thats a big yikes. I am sorry that you have to deal with this, this is why i have to step up and get in contact with you about this because like i said, i want to get it all clear, fair and square to you both." />
-  <ChatBubble from="Shaye" text="Thank you very much, if there's anything you ever need from either of us please just let me know" />
-  <ChatBubble from="Partner" text="No problem at all! But yeah i think i just need to ask 2 more things and it is ok / possible for him to talk to you guys? He told me he very sorry about it and he want to resolve on his own, not me." />
-  <ChatBubble from="Shaye" text="Unfortunately we're not really comfortable talking with him after everything he's done. If he's remorseful than he can fix this on his end by deleting the posts / reversing the chargeback etc" />
-  <ChatBubble from="Partner" text="Ah! I respect your decision, I will do my best in my ability to convince him, I cannot promise if it will change anything but i hopefully it will bring a positive result. Thank you so much for taking so much time to reply me and I hope you both travel safe!" />
+  <ChatBubble from="Partner" text="Also, I will see what I can do with that" />
   <ChatBubble from="Shaye" text="Again thank you very very much, if there's anything you ever need from either of us please just let me know" />
-  <ChatBubble from="Shaye" text="Again I'm sorry if this caused you any stress, none of this was your fault and you haven't done anything wrong" />
+  <ChatBubble from="Partner" text="No problem at all! But yeah i think i just need to ask 2 more things and it is ok / possible for him to talk to you guys? He told me he very sorry about it and he want to resolve on his own, not me." />
+  <ChatBubble from="Partner" text="And also is there anywhere I can donate you both?" />
+  <ChatBubble from="Shaye" text="Unfortunately we're not really comfortable talking with him after everything he's done. If he's remorseful than he can fix this on his end by deleting the posts / reversing the chargeback etc" />
+  <ChatBubble from="Shaye" text="As for the donation, you don't have to do that and I don't want you to feel obligated to do so. This isn't your fault and you haven't done anything wrong" />
+  <ChatBubble from="Partner" text="Ah! I respect your decision, I will do my best in my ability to convince him, I cannot promise if it will change anything but i hopefully it will bring a positive result. Thank you so much for taking so much time to reply me and I hope you both travel safe!" />
+  <ChatBubble from="Shaye" text="Thank you very much!! Always here if you need anything" />
+  <ChatBubble from="Shaye"><Image src="shaye-sticker.png"/></ChatBubble>
+  <ChatBubble from="Partner" text="Oh! I’m sorry, i just got a message from him and he said he will delete all the posts as long you both gonna do too, he doesn’t want to spread the rumors from both parties any longer, and he’d looking for resolution for the paypal case, i know it doesn’t mean much but i think it should be a positive sign from him, my apologize for unable to fully convincing him about it" />
+  <ChatBubble from="Shaye" text="The PayPal case should be able to be fixed immediately by him calling PayPal and saying that he no longer wants to do the chargeback ." />
+  <ChatBubble from="Shaye" text="As for the posts, if he deletes them then we can delete ours as well" />
+  <ChatBubble from="Partner" text="Ah! Gotcha, I will mind that and will let you know about the paypal if there’s any updates and the only thing i can rest assure at the moment is he will delete the posts.">
+  <ChatBubble from="Partner" text="But again, thank you so much for taking time about this and i hope to talk to you next time which not gonna be about this incident. But I’m glad that we are all understand." />
+  <ChatBubble from="Shaye" text="Thank you very much, we're  going to be waiting for the chargeback reversal before we do anything but thank you once again for taking the time to reach out to me and help resolve the situation" />
+  <ChatBubble from="Shaye" text="Again I'm sorry if this caused you any stress, none of this was your fault and it's was commendable for you to step in" />
   <ChatBubble from="Shaye" text="Thank you!!!!!" />
 </div>
 </Popup>
