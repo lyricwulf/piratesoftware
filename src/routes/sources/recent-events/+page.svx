@@ -1,0 +1,17 @@
+---
+title: Recent Events
+order: 0
+---
+<script>
+   import Timeline from '$lib/components/Timeline.svelte';
+   import Image from '$lib/components/Image.svelte';
+</script>
+
+Events that occurred during the creation of this document.
+
+<Timeline items={[
+   ["February 21, 2025", "Shaye deletes Tweets", "Shaye deletes all Tweets and posts related to Lyric, however a screenshot of the the post was available as recent as February 11, 2025."]
+]}>
+</Timeline>
+
+<Image src="photo_2025-02-11_14-15-49.jpg" alt="Screenshot on Feb 11, 2025 of Shaye's posts" />
