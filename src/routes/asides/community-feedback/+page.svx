@@ -1,0 +1,44 @@
+---
+title: Community Feedback
+order: 99
+---
+
+<script>
+   import Tweet from '$lib/components/Tweet.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+</script>
+
+The feedback from the public really hurt me at the time. I didn’t know the
+extent of the abuse that I was a victim of. I just couldn’t understand why I
+felt the way I felt, and the community feedback, charged by Thor’s narrative,
+made me question why lies and denial could define what is real.
+
+<Callout>
+
+This language is extreme minimization of the abuse I experienced. 
+
+I recognize this is mainly due to my failure to review the chat logs and
+my own misunderstanding of what I truly experienced.
+
+</Callout>
+
+<Tweet twid="1114255613310013440" bold={["unfortunate experience of emotions"]} />
+<Tweet twid="1114272081711996929" bold={["petty revenge for a relationship you dudnt like"]} />
+<Tweet twid="1114264372132700162" bold={["unsavory drama"]} />
+
+---
+
+<Callout>
+
+I was always afraid to think of myself as a victim. The words of the online
+community made me feel like an imposter.
+
+Being accused of "appropriating the narrative" really stuck with me. I didn't
+choose to be broken apart and abused, yet I felt like not just my feelings but
+my experiences were invalidated.
+
+</Callout>
+
+<Tweet twid="1114267894492229633" bold={["You're appropriating the narrative if ppl who have actually suffered abuse to try and get false pity"]} />
+<Tweet twid="1114367908656738304" bold={["only cares about your own success", "abuse systems out of personal romantic affairs"]} />
+

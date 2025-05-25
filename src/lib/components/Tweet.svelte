@@ -9,7 +9,7 @@
   } from "@lucide/svelte";
   import { Card } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  const { twid, bold = ["Except he doesn"] } = $props();
+  const { twid, bold = [] } = $props();
   const tweet = tweets[twid];
   let tweetHtml = tweet["Tweet Text"];
   bold.forEach((word) => {
