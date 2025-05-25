@@ -10,20 +10,22 @@
   import { Card } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
   const { twid, bold = [] } = $props();
-  const tweet = tweets[twid];
-  let tweetHtml = tweet["Tweet Text"];
-  bold.forEach((word) => {
-    tweetHtml = tweetHtml.replace(
-      new RegExp(`(${word})`, "g"),
-      `<mark>$1</mark>`
-    );
-  });
-  tweetHtml = tweetHtml.replace(/^(@\w+ )+/g, (match) => {
-    return `<span class="font-light text-xs text-muted-foreground">Replying to ${match}</span><br />`;
-  });
-  tweetHtml = tweetHtml.replaceAll(/\@([a-zA-Z0-9_]+)/g, (match) => {
-    return `<a href="https://twitter.com/${match.slice(1)}" target="_blank" rel="external">${match}</a>`;
-  });
+  const tweet = $derived(tweets[twid]);
+  let tweetHtml = $derived(
+    (() => {
+      let text = tweet["Tweet Text"];
+      bold.forEach((word) => {
+        text = text.replace(new RegExp(`(${word})`, "g"), `<mark>$1</mark>`);
+      });
+      text = text.replace(/^(@\w+ )+/g, (match) => {
+        return `<span class="font-light text-xs text-muted-foreground">Replying to ${match}</span><br />`;
+      });
+      text = text.replaceAll(/\@([a-zA-Z0-9_]+)/g, (match) => {
+        return `<a href="https://twitter.com/${match.slice(1)}" target="_blank" rel="external">${match}</a>`;
+      });
+      return text;
+    })()
+  );
 </script>
 
 <Card class="p-4 flex flex-col gap-2">
