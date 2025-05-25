@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import tweets from "$lib/tweets.json";
   import {
     MessageSquare,
@@ -9,7 +9,13 @@
   } from "@lucide/svelte";
   import { Card } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  const { twid, bold = [] } = $props();
+
+  interface TweetProps {
+    twid: keyof typeof tweets;
+    bold?: string[];
+  }
+
+  const { twid, bold = [] }: TweetProps = $props();
   const tweet = $derived(tweets[twid]);
   let tweetHtml = $derived(
     (() => {
