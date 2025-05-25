@@ -1,0 +1,25 @@
+---
+title: Thor's Discord
+order: 5
+---
+
+<script>
+   import Image from '$lib/components/Image.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+</script>
+
+## Community feedback (2019)
+
+In 2019, some members of Thor's community posted in his Discord server with
+their thoughts on the controversy. Thor specifically deleted these messages from the community.
+
+<Image src="discord-1.png" caption='Fan: "How do you come up with this stuff, who has this much time?"'/>
+<Image src="discord-2.png" caption='Fan: "I couldn&apos;t care less about personal drama"' />
+<Image src="discord-3.png" caption='Fan: "Chat logs are irrelevant."' />
+<Image src="discord-4.png" caption='Thor: "People starting shit in discord."' />
+
+## Channel deletion (2022)
+
+Additionally, Thor deleted the entire channel in 2022. It was embraced by the community.
+
+<Image src="new-general.png" caption='Fan: "New general chat pog. Wipe the slate clean!"' />
