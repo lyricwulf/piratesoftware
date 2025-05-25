@@ -1,0 +1,38 @@
+---
+title: Make a Difference
+---
+
+<script>
+      import Callout from '$lib/components/Callout.svelte';
+      import Image from '$lib/components/Image.svelte';
+      import Messages from '$lib/components/Messages.svelte';
+      import Timeline from '$lib/components/Timeline.svelte';
+</script>
+
+<Messages from="49986" to="49989" />
+
+<Timeline items={[
+   ["08/30/2018 21:37:25 PDT", "Donation", "Lyric donates $50 to Thor"],
+]} />
+
+<Messages from="49990" to="50021" />
+
+<Callout color="yellow" icon="alert">
+
+Pay attention to his phrasing… 
+
+> “It would **definitely** make it so we didn’t **have to worry about shit**
+> anymore”. 
+
+Break it down: Jason **currently has
+troubles**, and donating all of your savings will **definitely make all those
+troubles go away**.
+
+At this point, **how would Jason know if Lyric’s savings would cover any of his
+expenses at all**? This statement cannot be truthful.
+
+This tells us that he knows the emotional impact of that message, and Jason is
+telling Lyric what they want to hear, in order to “help” Lyric actually decide
+to dump their entire savings into Jason’s project.
+
+</Callout>

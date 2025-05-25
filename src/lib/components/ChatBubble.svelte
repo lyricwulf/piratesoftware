@@ -4,7 +4,7 @@
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
   import * as Collapsible from "$lib/components/ui/collapsible";
-  import { Info } from "@lucide/svelte";
+  import { Info, FolderOpen } from "@lucide/svelte";
 
   let {
     from = "",
@@ -120,15 +120,17 @@
     </div>
   {/if}
 
-  {#if annotation?.comment || comment}
+  {#if dialog && (annotation?.comment || annotation?.component || comment)}
+    {@const isComment = annotation?.comment || comment}
+    {@const Icon = isComment ? Info : FolderOpen}
     <div
       class="annotation-comment w-full"
       style="--comment-color: var(--{annotation?.color})"
     >
       <Collapsible.Root {open}>
         <div class="flex items-center gap-2 font-bold">
-          <Info class="shrink-0 basis-[20px]" />
-          Comment
+          <Icon class="shrink-0 basis-[20px]" />
+          {isComment ? "Comment" : "Annotation"}
         </div>
         <Collapsible.Content>
           <div
@@ -204,7 +206,7 @@
   }
 
   .chat-bubble.dialog:not(:hover) :global(mark) {
-    --mark-opacity: 0.1;
+    --mark-opacity: 0.2;
     /* background-color: transparent; */
   }
 
@@ -241,7 +243,6 @@
   }
   .chat-bubble.hasAnnotation.dialog:hover {
     cursor: pointer;
-    transform: scale(1.01);
   }
 
   @media (max-width: 1200px) {

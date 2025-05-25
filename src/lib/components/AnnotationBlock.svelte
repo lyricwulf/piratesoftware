@@ -79,7 +79,7 @@
       {@render referenceMessage()}
       <!-- <ScrollArea> -->
       <ScrollArea class="pr-2 mt-1.5">
-        <Dialog.Description class="markdown">
+        <Dialog.Description class="markdown flex flex-col gap-2">
           {@render children()}
         </Dialog.Description>
       </ScrollArea>

@@ -4,6 +4,7 @@
     OctagonAlert,
     Info,
     ChevronRight,
+    MessageCircleWarning,
   } from "@lucide/svelte";
   const { color, children, icon } = $props();
 
@@ -17,8 +18,12 @@
   };
 
   const Icon =
-    { warning: TriangleAlert, stop: OctagonAlert, info: Info }[icon] ||
-    ChevronRight;
+    {
+      warning: TriangleAlert,
+      stop: OctagonAlert,
+      info: Info,
+      alert: MessageCircleWarning,
+    }[icon] || ChevronRight;
 </script>
 
 <div
