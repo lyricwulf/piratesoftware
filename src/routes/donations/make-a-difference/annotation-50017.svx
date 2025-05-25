@@ -1,4 +1,3 @@
 ---
-message: "<mark yellow>Yeah that's not bad at all</mark>"
 comment: "Thor remembers this for a long time."
 ---
