@@ -141,7 +141,9 @@ claimed that there were attacks on his personal phone number**.
 
 <Callout color="sky">
 
-Members of his community
+Members of his community would claim this publicly, and Shaye would
+also use this as a reason to convince my partner to convince me to delete my
+posts.
 
 <Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number"]} />
 
@@ -152,13 +154,17 @@ In reality:
 
 - [**Thor was married from October 17, 2015 to August 19, 2020**](/sources/thors-marriage).
 - **None of the published messages, images, or metadata included any personal information except for Lyric’s phone number occurring twice**. ([Telegram Source is the same as I released in 2018](/sources/telegram-archive))
-- **Thor [focused on financially exploiting me](/donations/donate-your-savings)**, **and [rewarded me with emotional and sexual attention](/donations/kickstarter) after large donations**.
+- **Thor [focused on financially exploiting me](/donations/donate-your-savings)**, **and [rewarded me with unprovoked sexual attention](/donations/kickstarter) after large donations**.
 
 ## **My Silencing**
+
+<Callout color="red">
 
 Thor was able to lie so confidently that **even I would end up believing him**.
 At the time I didn’t read back through the chat logs so I didn't know that his
 phone number wasn't actually there.
+
+</Callout>
 
 I found another romantic partner in January 2019\. Thor and Shaye would contact
 my partner to convince them of my wrongdoing. **They told my partner that I
@@ -167,7 +173,16 @@ doxxed them, attacked them, and proposed a solution**
 
 <ChatBubble from="Shaye" text="[Lyric] can fix this on his end by deleting the posts / reversing the chargeback" />
 
-Convinced by Thor and Shaye’s lies and manipulation, **my partner would give me an ultimatum**, **that I have to drop the “drama”** and delete all my posts in order to show that I care about our relationship. **My partner assured me that Shaye was trustworthy** because they are friends of a friend, and **assured me that Thor was trustworthy** because he [agreed to delete his posts](/aftermath/thors-proxy-blackmail#deleting-my-posts).
+<Callout>
+
+Convinced by Thor and Shaye’s lies and manipulation, **my partner would give me
+an ultimatum**, **that I have to drop the “drama”** and delete all my posts in
+order to show that I care about our relationship. **My partner assured me that
+Shaye was trustworthy** because they are friends of a friend, and **assured me
+that Thor was trustworthy** because he [agreed to delete his
+posts](/aftermath/thors-proxy-blackmail#deleting-my-posts).
+
+</Callout>
 
 **On April 14th 2019, I was coerced to delete all of my posts**. However, **Thor
 and Shaye did not delete any of their messages as promised**, instead leaving
