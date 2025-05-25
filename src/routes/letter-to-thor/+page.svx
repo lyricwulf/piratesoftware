@@ -2,7 +2,7 @@
 title: Letter to Thor
 ---
 
-<div class="p-4 bg-muted flex flex-col gap-4 text-sm">
+<div class="px-4 py-8 bg-muted flex flex-col gap-4 text-sm rounded-sm">
 
 <div class="text-xs/4 text-muted-foreground text-center">
  Letter to Thor <br/>1 / 2
@@ -11,12 +11,12 @@ title: Letter to Thor
 Dear Thor,
 
 I know you will be forced to defend yourself against this. Just as you did with me, you will plant
-seeds of doubt and have your audience feel like they came up with the conclusion themselves.
-Something along the lines of “he is just reading off a script” or “look at how he plays it up for
-the camera”, pointing out these small tells as if the entire thing is a convoluted fabrication for
-my own personal gain. What are you going to do when people start to realize that angle cuts both
-ways? Yes, what if they realize, that **if they looked at your actions through the same lens, then
-you would have been caught 7 years ago…**
+seeds of doubt into your audience, and make them feel like they came up with the conclusion
+themselves. Something along the lines of “he is just reading off a script” or “look at how he plays
+it up for the camera”, pointing out these small tells as if the entire thing is a convoluted
+fabrication for my own personal gain. What are you going to do when people start to realize that
+angle cuts both ways? Yes, what if they realize, that **if they looked at your actions through the
+same lens, then you would have been caught 7 years ago…**
 
 Some part of me really wants to thank you. Only recently have I learned to feel happy and content
 with my life. Off camera, my life is flourishing. But it was you who taught me this: I did not
@@ -50,7 +50,7 @@ anymore…
 
 </div>
 
-<div class="mt-4 p-4 bg-muted flex flex-col gap-4 text-sm">
+<div class="mt-4 px-4 py-8 bg-muted flex flex-col gap-4 text-sm rounded-sm">
 
 <div class="text-xs/4 text-muted-foreground text-center">
  Letter to Thor <br/>2 / 2
