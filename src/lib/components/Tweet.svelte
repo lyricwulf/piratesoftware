@@ -18,6 +18,12 @@
       `<mark>$1</mark>`
     );
   });
+  tweetHtml = tweetHtml.replace(/^(@\w+ )+/g, (match) => {
+    return `<span class="font-light text-xs text-muted-foreground">Replying to ${match}</span><br />`;
+  });
+  tweetHtml = tweetHtml.replaceAll(/\@([a-zA-Z0-9_]+)/g, (match) => {
+    return `<a href="https://twitter.com/${match.slice(1)}" target="_blank" rel="external">${match}</a>`;
+  });
 </script>
 
 <Card class="p-4 flex flex-col gap-2">
