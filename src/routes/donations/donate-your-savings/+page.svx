@@ -1,5 +1,5 @@
 ---
-title: Make a Difference
+title: Donate Your Savings
 ---
 
 <script>
@@ -7,15 +7,26 @@ title: Make a Difference
       import Image from '$lib/components/Image.svelte';
       import Messages from '$lib/components/Messages.svelte';
       import Timeline from '$lib/components/Timeline.svelte';
+      import Popup from '$lib/components/Popup.svelte';
 </script>
 
-<Messages from="49986" to="49989" />
+Thor would push Lyric to donate as much as possible to him, even encouraging
+Lyric to donate their entire savings. 
 
-<Timeline items={[
-   ["08/30/2018 21:37:25 PDT", "Donation", "Lyric donates $50 to Thor"],
-]} />
+## Donate your savings
 
-<Messages from="49990" to="50021" />
+<Callout color="red" icon="alert">
+
+Thor claimed that Lyric donating his entire savings would "definitely make it so
+we didn't have to worry about shit anymore", **despite the fact that Lyric did
+not specify how much money it would even be.**
+
+His words are not based in reality but crafted to urge Lyric to donate more
+money, convincing them that it would be impactful.
+
+</Callout>
+
+<Messages from="50017" to="50020" />
 
 <Callout color="yellow" icon="alert">
 
@@ -36,3 +47,13 @@ telling Lyric what they want to hear, in order to “help” Lyric actually deci
 to dump their entire savings into Jason’s project.
 
 </Callout>
+
+## Transcript
+
+<Messages from="49986" to="49989" />
+
+<Timeline items={[
+   ["08/30/2018 21:37:25 PDT", "Donation", "Lyric donates $50 to Thor"],
+]} />
+
+<Messages from="49990" to="50021" />
