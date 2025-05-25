@@ -3,14 +3,14 @@
   import Message from "$lib/components/Message.svelte";
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
-  let { from = 0, to = from } = $props();
+  let { from = 0, to = from, filterFrom } = $props();
 
   const messages = [];
   for (let i = Number(from); i <= Number(to); i++) {
     const message = MESSAGES_BY_ID.get(i);
-    if (message) {
-      messages.push(message);
-    }
+    if (!message) continue;
+    if (filterFrom && message.from !== filterFrom) continue;
+    messages.push(message);
   }
 
   // partition messages by date

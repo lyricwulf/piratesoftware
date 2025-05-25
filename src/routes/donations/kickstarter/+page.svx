@@ -12,6 +12,7 @@ important: true
    import Email from '$lib/components/Email.svelte';
    import Spoiler from '$lib/components/Spoiler.svelte';
    import Popup from '$lib/components/Popup.svelte';
+   import Callout from '$lib/components/Callout.svelte';
 </script>
 
 Thor's behavior surrounding his Kickstarter campaign is a showcase of his
@@ -19,17 +20,17 @@ tactics to manipulate Lyric into donating more money.
 
 **Only two days after launching** his Kickstarter campaign, Thor voiced his
 concerns that it might fail. Lyric consoles him by saying **it's only been two
-days** and also suggests adding a higher tier. [(source)](#thor-mentions-the-kickstarter-might-fail)
+days** and also suggests adding a higher tier. ([Thor mentions the Kickstarter might fail](#thor-mentions-the-kickstarter-might-fail))
 
 Thor tells Lyric that he made a higher tier at $500. After informing Lyric of
 the new, higher priced tier, **Thor then ignores Lyric, and when nudged, he
 responds with "hrm?" as if Lyric was being annoying.** This abandonment of
-engagement shows that Thor expects something of Lyric at this point. [(source)](#thor-mentions-the-kickstarter-might-fail)
+engagement shows that Thor expects something of Lyric at this point. ([Thor mentions the Kickstarter might fail](#thor-mentions-the-kickstarter-might-fail))
 
 Shortly after, Lyric increases their pledge from $100 to $500. **Thor
 immediately showers Lyric with sexual attention and praise, confirming that he
 was witholding attention to Lyric until they donated the money.**
-[(source)](#lyric-increases-their-pledge-to-500)
+([Lyric increases their pledge to $500](#lyric-increases-their-pledge-to-500))
 
 ## Thor mentions the Baron plush
 <Popup preview="Thor mentions the Baron plush">
@@ -84,11 +85,10 @@ something of Lyric at this point.**
 After Lyric increases their pledge to $500, **Thor responds with playful
 excitement.**
 
-> AAAAAAAAAA, YOU HAVE TO PAY THEM BACK EVENTUALLY THOUGH!@,
-> D::::::::::::::::::::::
+<Messages filterFrom="Thor" from="60423" to="60441" />
 
 Note his unserious tone in comparison to conversations
-where he is genuinely critical of Lyric's actions.
+where he is genuinely critical of Lyric's actions, for example in [Not Taking "No" for an Answer](/conversations/not-taking-no-for-an-answer).
 
 **Recall that Thor was ignoring Lyric after talking about Kickstarter. But
 after Lyric pledges $500, Thor suddenly initiates sexual themes as part of his
@@ -97,6 +97,11 @@ thanks.**
 <Popup preview="Response to Lyric's $500 pledge">
    <Messages from="60420" to="60471" />
 </Popup>
+
+## Thor subtly pressures Lyric to donate more
+
+<Messages from="61723" />
+<Messages from="68606" to="68607" />
 
 ## Lyric increases their pledge to $3000
 
@@ -109,10 +114,16 @@ Following this donation, the campaign reaches its goal.
 
 <Email eml="Project Update _2_ Heartbound - Baron Plush! by Pirate Software.eml" open={false} />
 
+<Callout>
+
 Thor's response to this pledge is quite similar to the initial, with excitement.
 
 > WHAT, THE, FUCK, You don't have money though!!!!!!!, holy shit dude, 
 > hhhhhhhhhhhh, holy shit dude
+
+</Callout>
+
+<Callout color="yellow">
 
 Thor also mentions that he hopes Lyric is not just donating because they are
 interested in him:
@@ -123,6 +134,8 @@ interested in him:
 Lyric does not want to disappoint Thor, it would not be acceptable to say it is
 donated because they like Thor. So, Lyric tells Thor (and themselves) that the
 donation is made because they believe in him.
+
+</Callout>
 
 <Popup preview="Thor thanks Lyric for the $3000 pledge">
    <Messages from="70744" to="70790" />
@@ -135,19 +148,26 @@ Lyric adjusts their pledge down to put the campaign at its exact goal.
 
 <Email eml="You have successfully changed your pledge to Heartbound - Baron Plush! (2).eml" open={false} />
 
-> just saw that it was being like superfunded, i really just intended to push
-> the funding to the goal yknow? ^^;
+<Callout>
 
 Thor responds with subtle disapproval.
 
-> Ah, just worried that people will back out last second and it will fail.
-> Didn't realize that was your intention. To be real around 20% of payments
-> decline on average after the fact, and the last hour fluctuates like mad.
+<Messages from="71898" to="71904" />
+
+</Callout>
+
+<Callout color="yellow">
 
 Thor mentions that about 20% of payments decline, and that he experienced it
-with the first Heartbound Kickstarter. **Thor is putting guilt on Lyric to
-make them feel bad about decreasing the pledge, when in reality it is Thor's
-responsibility to adjust their goals and expectations for his own campaign.**
+with the first Heartbound Kickstarter. 
+
+<Messages from="71906" to="71907" />
+
+**Thor is putting guilt on Lyric** about decreasing their pledge, when in
+reality **it is Thor's responsibility to adjust their goals and expectations for
+his own campaign.**
+
+</Callout>
 
 <Popup preview="Thor disapproves of the pledge decrease">
    <Messages from="71883" to="71926" />
