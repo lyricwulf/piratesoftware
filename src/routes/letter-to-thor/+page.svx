@@ -2,7 +2,7 @@
 title: Letter to Thor
 ---
 
-<div class="p-4 bg-muted flex flex-col gap-4">
+<div class="p-4 bg-muted flex flex-col gap-4 text-sm">
 
 <div class="text-xs/4 text-muted-foreground text-center">
  Letter to Thor <br/>1 / 2
@@ -50,7 +50,7 @@ anymore…
 
 </div>
 
-<div class="mt-4 p-4 bg-muted flex flex-col gap-4">
+<div class="mt-4 p-4 bg-muted flex flex-col gap-4 text-sm">
 
 <div class="text-xs/4 text-muted-foreground text-center">
  Letter to Thor <br/>2 / 2
