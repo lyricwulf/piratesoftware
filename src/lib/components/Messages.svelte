@@ -3,7 +3,7 @@
   import Message from "$lib/components/Message.svelte";
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
-  let { from = 0, to = 0 } = $props();
+  let { from = 0, to = from } = $props();
 
   const messages = [];
   for (let i = Number(from); i <= Number(to); i++) {
