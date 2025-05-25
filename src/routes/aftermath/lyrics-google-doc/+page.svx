@@ -62,22 +62,22 @@ After I published the document, I received a lot of trolling comments. The
 coherent ones are listed below.
 
 <KvTable rows={[
-{ key: "Vespula", value: "Who care t" },
-{ key: "Jean Baxter", value: "BIG STUPID BIG STUPID" },
-{ key: "Julian Stephens", value: "What is this furry bullshit" },
-{ key: "Vespula", value: "fucking epic [in response to Thor abusing Lyric]" },
-{ key: "Mabel Penders", value: "Who care t My gamer peepee Gegegegeg ooeoeoeoeoe Wolfy boy likes pepep small gegeheheehohooooo : ) u…" },
-{ key: "Ralcore", value: "[rickroll ascii art]" },
-{ key: "Mabel Penders", value: "Idk even know what this is Epic : 0c [in response to Thor abusing Lyric]" },
-{ key: "(Anonymous)", value: "hes a fucking liar!!! Kill him Lol i bet he likes his feet licked" },
-{ key: "(Anonymous)", value: "Bad Lyric Fuck them He wants thordick" },
-{ key: "(Anonymous)", value: "he wants the thordicks" },
-{ key: "(Anonymous)", value: "Bullshit byllshit ! Fuck you wolf bloddd!" },
-{ key: "(Anonymous)", value: "Gegegegeg ooeoeoeoeoe Wolfy boy likes pepep" },
-{ key: "(Anonymous)", value: "He wants the duc LOL COMIC SENSE LYRIC GON HAV BAD TOM!!!!!" },
-{ key: "(Anonymous)", value: "Want some suck wolf boy" },
-{ key: "(Anonymous)", value: "Fuck youuu" },
-{ key: "(Anonymous)", value: "Time for peepee" },
+["Jean Baxter", "BIG STUPID BIG STUPID"],
+["Julian Stephens", "What is this furry bullshit"],
+["Vespula", "fucking epic [in response to Thor abusing Lyric]"],
+["Mabel Penders", "Who care t My gamer peepee Gegegegeg ooeoeoeoeoe Wolfy boy likes pepep small gegeheheehohooooo : ) u…"],
+["Ralcore", "[rickroll ascii art]"],
+["Mabel Penders", "Idk even know what this is Epic : 0c [in response to Thor abusing Lyric]"],
+["Vespula", "Who care t"],
+["(Anonymous)", "hes a fucking liar!!! Kill him Lol i bet he likes his feet licked"],
+["(Anonymous)", "Bad Lyric Fuck them He wants thordick"],
+["(Anonymous)", "he wants the thordicks"],
+["(Anonymous)", "Bullshit byllshit ! Fuck you wolf bloddd!"],
+["(Anonymous)", "Gegegegeg ooeoeoeoeoe Wolfy boy likes pepep"],
+["(Anonymous)", "He wants the duc LOL COMIC SENSE LYRIC GON HAV BAD TOM!!!!!"],
+["(Anonymous)", "Want some suck wolf boy"],
+["(Anonymous)", "Fuck youuu"],
+["(Anonymous)", "Time for peepee"],
 ]} />
 
 The comments were retrieved from email notifications:

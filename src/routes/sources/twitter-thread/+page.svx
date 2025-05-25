@@ -10,18 +10,9 @@ order: 99
 </script>
 
 <KvTable rows={[
-   {
-      key: "Archival Software",
-      value: "TwSearchExporter"
-   },
-   {
-      key: "Exported on",
-      value: "February 27, 2025, 7:02:55 PM PST"
-   },
-   {
-      key: "Query",
-      value: "LyricWulf (since:2019-03-01) (until:2019-06-01)"
-   }
+      ["Archival Software", "TwSearchExporter"],
+      ["Exported on", "February 27, 2025, 7:02:55 PM PST"],
+      ["Query", "LyricWulf (since:2019-03-01) (until:2019-06-01)"]
 ]} />
 
 {#each Object.keys(tweets) as twid}
