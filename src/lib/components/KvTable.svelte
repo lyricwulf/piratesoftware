@@ -17,9 +17,11 @@
   </Table.Header> -->
   <Table.Body>
     {#each rows as row, i (i)}
+      {@const key = row.key || row[0]}
+      {@const value = row.value || row[1]}
       <Table.Row>
-        <Table.Cell class="font-medium text-right">{row.key}</Table.Cell>
-        <Table.Cell>{row.value}</Table.Cell>
+        <Table.Cell class="font-medium text-right">{key}</Table.Cell>
+        <Table.Cell>{value}</Table.Cell>
       </Table.Row>
     {/each}
   </Table.Body>

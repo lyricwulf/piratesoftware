@@ -1,0 +1,73 @@
+---
+title: Effects on my Life
+order: 10
+---
+
+<script>
+   import KvTable from '$lib/components/KvTable.svelte';
+   import Image from '$lib/components/Image.svelte';
+</script>
+
+I do try to keep myself from feeling and speaking like I’m a victim. But… Right
+now it really does feel like that’s what I am: a victim. I truly wish I was
+never a part of this. 
+
+**I have never, ever wanted to blame that situation for how my life turned
+out**… I never wanted to think anything like that, because **I want to believe
+that I am in control of my own life**. But… I also can’t deny the facts.
+
+## Career
+
+I was in college during these events, completing my undergrad requirements and double majoring in Mechanical Engineering and Aerospace Engineering. 
+
+Here are transcripts from the semesters before the events happened. **I maintained a GPA of 3.92 / 4. I received the Dean’s List and President’s Honor Roll accolades every semester.**
+
+<Image src="transcript-1.png" />
+<Image src="transcript-2.png" />
+
+After the events mid-Fall 2018, my academic performance plummeted. **I finished
+the Fall 2018 semester with a 2.76 GPA and was stripped of my honors
+accolades.** The following semester I finished with a **2.57 GPA**.
+
+<Image src="transcript-3.png" />
+<Image src="transcript-4.png" />
+
+After that semester, I dropped out of college. 
+
+Growing up I was always the gifted kid, the one with a bright future. I was able to maintain a 3.9 GPA, taking every summer semester too, all while maintaining my content creation.
+
+I didn’t think it affected me then… I always thought it was my own decision. I believed that I dropped out because I just couldn’t handle the pressure, that a life where I make the next big thing to improve humanity was just never in reach for me to begin with. 
+
+I thought **I just wasn’t smart enough**.
+
+After reviewing my transcripts I can see they tell a different story entirely.
+
+## YouTube
+
+Here is a table of my video and live stream counts (from here just called
+Posts).
+
+<KvTable rows={[
+   ['2016','173 Posts'],
+   ['2017','156 Posts'],
+   ['2018','162 Posts'],
+   ['2019','99 Posts'],
+   ['2020','26 Posts'],
+   ['2021','1 Post'],
+   ['2022','1 Post'],
+   ['2023','0 Posts'],
+   ['2024','0 Posts'],
+]} />
+
+
+In June 2019, I dropped out of college. I had much more time to work on creating
+content. Yet, my productivity plummeted. In April 2019, when I tried to speak
+out, you turned everyone against me. You destroyed my perception of the online
+community after.
+
+Like academics, I always thought I stopped being motivated to make content
+because that life just wasn’t meant for me. I thought I was creatively burned
+out. I felt like I had peaked, that I already created everything good that I
+will ever make.
+
+I thought **I just wasn’t creative enough.**
