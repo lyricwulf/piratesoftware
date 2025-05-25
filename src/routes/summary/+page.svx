@@ -7,6 +7,7 @@ order: -1
    import ChatBubble from '$lib/components/ChatBubble.svelte';
    import Message from '$lib/components/Message.svelte';
    import Callout from '$lib/components/Callout.svelte';
+   import Tweet from '$lib/components/Tweet.svelte';
 </script>
 
 <Callout color="red" icon="stop">
@@ -72,15 +73,30 @@ After I was manipulated into asking him to date me, **he blamed my reluctance in
 
 Throughout our conversations **he constantly pushed for us to meet at TwitchCon 2018**. He would regularly bring up how nice it would be to see me there and how we would have a lot of “fun” there.
 
-**I wanted to room with him and Shaye** since it would have cost around $500 for me to room by myself. **He would remind me almost daily to book my own hotel room**, insisting it was the only way we would have “alone time”.
+<Callout>
+
+**I wanted to room with him and Shaye** since it would have cost around $500 for
+me to room by myself. **He would remind me almost daily to book my own hotel
+room**, insisting it was the only way we would have “alone time”.
+
+</Callout>
 
 We met up at TwitchCon 2018, as planned, on October 26\.
 
 On the first day, we roamed with Shaye and some other streamers. By night, **the group went to a bar, but I could not join since I was underage**. I went back to my hotel room, and **Thor excused himself from the bar and had the promised “alone time” with me** before heading back to the bar.
 
-On the second day, Thor was feeling sick. While we were roaming and chatting, **Shaye mentioned that Thor has a “secret wife”**. After we went back to Thor’s hotel room **I messaged him asking about a wife, which he denied and blamed me** for making the situation weird. \[[source](/)\]
+On the second day, Thor was feeling sick. While we were roaming and chatting,
+**Shaye mentioned that Thor has a “secret wife”**. After we went back to Thor’s
+hotel room **I messaged him asking about a wife, which he denied and blamed me**
+for making the situation weird. \[[Final
+Conversation](/twitchcon-2018/final-conversation)\]
 
-Since Thor refused to talk, **I decided to message Shaye about it**. I explained my situation to them, and when asked if it was true, **I sent screenshots of the conversation where I guided Thor to my hotel room**. Shaye was sympathetic, and **I would learn that they were also sexual partners, and that they were in an agreement to be open at the con as long as they communicated it with each other**. \[[source: i wrote this down the day after](/)\]
+Since Thor refused to talk, **I decided to message Shaye about it**. I explained
+my situation to them, and when asked if it was true, **I sent screenshots of the
+conversation where I guided Thor to my hotel room**. Shaye was sympathetic, and
+**I would learn that they were also sexual partners, and that they were in an
+agreement to be open at the con as long as they communicated it with each
+other**. \[[Recollection of TwitchCon](/sources/recollection-of-twitchcon)\]
 
 Shaye was devastated, and messaged Thor about his uncommunicated infidelity. **Thor blamed me for “sending logs to Shaye”, saying “leave me alone” and “Why that would ever be ok is beyond me”**.
 
@@ -88,29 +104,55 @@ I left the room, and he blocked me.
 
 ## **Public Fallout**
 
-In early March 2019 I [charged back](/) a donation of $800 made in August 2018\. Thor would [publicly call me out](/) by name and make posts on Twitter, painting me as a scammer. On April 1st 2019 [Thor filed a DMCA claim](/) against my YouTube channel.
+In early March 2019 I [charged back](/aftermath/lyrics-chargeback) a donation of
+$800 made in August 2018\. Thor would [publicly call me
+out](/aftermath/thors-publicization) by name and make posts on Twitter, painting
+me as a scammer. On April 1st 2019 [Thor filed a DMCA
+claim](/aftermath/thors-copyright-strike) against my YouTube channel.
 
-On April 5th 2019, I [posted about the strike](/) on Twitter, and Thor would
-continue calling me out on the chargeback. I responded with a [Google Doc](/)
-recounting my experience with Thor at TwitchCon.
+On April 5th 2019, I [posted about the strike](/aftermath/lyrics-twitter-post)
+on Twitter, and Thor would continue calling me out on the chargeback. I
+responded with a [Google Doc](/aftermath/lyrics-google-doc) recounting my
+experience with Thor at TwitchCon.
 
-In the past 5 years he deleted his original Discord announcement addressing the situation ([as well as all messages in his Discord around that time](/)). However, considering **members of his community as well as Shaye mention these “facts” in both public and private interactions, we can infer that this information comes directly from Thor**.
+<Callout color="sky">
 
-There were three aspects to [Thor’s defense](/):
+In the past 5 years he deleted his original Discord announcement addressing the
+situation ([as well as all messages in his Discord around that
+time](/sources/thors-discord)). However, considering **members of his community
+as well as Shaye mention these “facts” in both public and private interactions,
+we can infer that this information comes directly from Thor**.
+
+</Callout>
+
+There were three aspects to [Thor’s defense](/aftermath/thors-defense):
 
 - **“Thor is divorced.”**
 - **“Lyric doxxed Thor.”**
 - **“Lyric planned this and he is a scammer.”**
 
-All of these would seem like the truth because the public has no greater knowledge about any of these facts. He had reasonable deniability for his marriage since it wasn’t publicized, and he was able to convince the public that **I publicly leaked his phone number and cited attacks via his phone**.
+All of these would seem like the truth because the public has no greater
+knowledge about any of these facts. 
 
-“**Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number**, so he's essentially gotten doxxed, and **people have already started subscribing him to shit with his number**.” \- Member of his community
+He had **reasonable deniability for his marriage** since it wasn’t publicized.
+ 
+He told the online community that **I publicly leaked his phone number. He
+claimed that there were attacks on his personal phone number**.
+
+<Callout color="sky">
+
+Members of his community
+
+<Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number"]} />
+
+</Callout>
+
 
 In reality:
 
-- [**Thor was married from October 17, 2015 to August 19, 2020**](/).
-- **None of the published messages, images, or metadata included any personal information except for Lyric’s phone number occurring twice**. ([Telegram Source is the same as I released in 2018](/))
-- **Thor [focused on financially exploiting me](/)**, **and [rewarded me with emotional and sexual attention](/) after large donations**.
+- [**Thor was married from October 17, 2015 to August 19, 2020**](/sources/thors-marriage).
+- **None of the published messages, images, or metadata included any personal information except for Lyric’s phone number occurring twice**. ([Telegram Source is the same as I released in 2018](/sources/telegram-archive))
+- **Thor [focused on financially exploiting me](/donations/donate-your-savings)**, **and [rewarded me with emotional and sexual attention](/donations/kickstarter) after large donations**.
 
 ## **My Silencing**
 
@@ -118,10 +160,19 @@ Thor was able to lie so confidently that **even I would end up believing him**.
 At the time I didn’t read back through the chat logs so I didn't know that his
 phone number wasn't actually there.
 
-I found another romantic partner in January 2019\. Thor and Shaye would contact my partner to convince them of my wrongdoing. **They told my partner that I doxxed them, attacked them, and proposed a solution** ([source](/))**:**
+I found another romantic partner in January 2019\. Thor and Shaye would contact
+my partner to convince them of my wrongdoing. **They told my partner that I
+doxxed them, attacked them, and proposed a solution**
+([source](/aftermath/thors-proxy-blackmail#shaye-lies-to-my-partner))**:**
 
-**“\[Lyric\] can fix this on his end by deleting the posts / reversing the chargeback”**. ([source](/))
+<ChatBubble from="Shaye" text="[Lyric] can fix this on his end by deleting the posts / reversing the chargeback" />
 
-Convinced by Thor and Shaye’s lies and manipulation, **my partner would give me an ultimatum**, **that I have to drop the “drama”** and delete all my posts in order to show that I care about our relationship. **My partner assured me that Shaye was trustworthy** because they are friends of a friend, and **assured me that Thor was trustworthy** because he [agreed to delete his posts](/).
+Convinced by Thor and Shaye’s lies and manipulation, **my partner would give me an ultimatum**, **that I have to drop the “drama”** and delete all my posts in order to show that I care about our relationship. **My partner assured me that Shaye was trustworthy** because they are friends of a friend, and **assured me that Thor was trustworthy** because he [agreed to delete his posts](/aftermath/thors-proxy-blackmail#deleting-my-posts).
 
-**On April 14th 2019, I was coerced to delete all of my posts**. However, **Thor and Shaye did not delete any of their messages as promised**, instead leaving all of their Twitter replies and Discord posts public, making it look like I was remorseful because my “stunt” didn’t work and further cementing the image of a “scammer”. ([Shaye deleted their replies to my tweet on Feb 22, 2025](/).)
+**On April 14th 2019, I was coerced to delete all of my posts**. However, **Thor
+and Shaye did not delete any of their messages as promised**, instead leaving
+all of their Twitter replies and Discord posts public, making it look like I was
+remorseful because my “stunt” didn’t work and further cementing the image of a
+“scammer”. 
+
+([Shaye deleted their replies to my tweet on Feb 22, 2025](/sources/recent-events).)

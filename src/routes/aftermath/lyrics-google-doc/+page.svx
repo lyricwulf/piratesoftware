@@ -10,9 +10,9 @@ order: 6
    import KvTable from '$lib/components/KvTable.svelte';
 </script>
 
-On Apr 5, 2019, around 1:11 PM, I published the doc “A Great Heartbound Adventure” ([now deleted](?tab=t.j44kr6bvmty)). At this time, I do not have a copy of the original document, but we see portions of the contents in the comments.
+On Apr 5, 2019, around 1:11 PM, I published the doc “A Great Heartbound Adventure” ([now deleted](/aftermath/thors-proxy-blackmail)). At this time, I do not have a copy of the original document, but we see portions of the contents in the comments.
 
-Original URL for “A Great Heartbound Adventure” ([now deleted](?tab=t.j44kr6bvmty)): [https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY\_8/view](https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/view)
+Original URL for “A Great Heartbound Adventure”: [https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY\_8/view](https://docs.google.com/document/d/15y13DTvLW1tgvc2lziMyTtZCLksr4HMBd1pVR5KgY_8/view)
 
 ## Analyzing the Doc
 

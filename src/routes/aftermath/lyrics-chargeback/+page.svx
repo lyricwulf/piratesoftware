@@ -12,10 +12,11 @@ order: 1
 
 ## c. Feb 2 to March 22, 2019
 
-**On March 6, 2019, I lied to PayPal, saying that an $800 donation was intended to be $8.00**. I explained that there was a technical issue that led to this
+**On March 6, 2019, I lied to PayPal, saying that an $800 donation was intended
+to be $8.00**. I explained that there was a technical issue that led to this
 incident. I pointed to all the small donations I made at the time, and
-established that as a pattern for my spending. I additionally included that I
-[contacted the recipient](?tab=t.wb8cb954sq8w) to try to resolve the issue.
+established that as a pattern for my spending. I also included that I contacted
+the recipient to try to resolve the issue.
 
 <Email eml="Donation Refund.eml" open={false} />
 <Email eml="Your PayPal case PP-D-25583925.eml" open={false} />
@@ -24,7 +25,11 @@ established that as a pattern for my spending. I additionally included that I
 
 **I felt like I had completed a heist.**
 
-I was granted a payment reversal. And I just knew that this was one of many victories **because “I was right and the world knew it”.** In reality, it was a short-lived victory, as this would prove to be valuable ammunition for Thor to use against me, saying that I am “scamming \[small indie studios\] out of \[their\] income” in response to [my post on Twitter](?tab=t.t9c4gzm4gu6f).
+I was granted a payment reversal. And I just knew that this was one of many
+victories **because “I was right and the world knew it”.** In reality, it was a
+short-lived victory, as this would prove to be valuable ammunition for Thor to
+use against me, saying that I am “scamming \[small indie studios\] out of
+\[their\] income” in response to [my post on Twitter](/aftermath/lyrics-twitter-post).
 
 ## Reflection
 
