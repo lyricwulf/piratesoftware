@@ -9,11 +9,15 @@
   },
   "donations": {
     "name": "Donations",
-    "order": 4
+    "order": 5
+  },
+  "twitchcon-2018": {
+    "name": "TwitchCon 2018",
+    "order": 6
   },
   "aftermath": {
     "name": "Aftermath",
-    "order": 6
+    "order": 7
   },
   "sources": {
     "name": "Sources",
