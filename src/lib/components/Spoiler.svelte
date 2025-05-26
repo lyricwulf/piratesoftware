@@ -2,7 +2,7 @@
   import * as Collapsible from "$lib/components/ui/collapsible";
   import { Button } from "$lib/components/ui/button";
 
-  const { preview = "Click to view.", children } = $props();
+  const { preview = "Spoiler.", children } = $props();
 
   let open = $state(false);
 </script>
