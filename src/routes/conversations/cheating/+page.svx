@@ -21,13 +21,17 @@ insecurities about my adequacy.
 
 <!-- <Messages ns={[61615, 61618, 61689, 61690, 61693, 61695, 61696, 61701, 61702]}/> -->
 
-## Cheating
+## Roleplaying
 
 I mention that I have been roleplaying with another person.
 
+<Popup preview="Messages: Roleplaying">
+    <Messages from="61820" to="61837" omit={[61824, 61825, 61829, 61831]} />
+</Popup>
+
 <Callout color="red" icon="alert">
 
-    Keep in mind at this point in time, Thor is [married to his wife](/sources/thors-marriage) and also has a [committed relationship with Shaye](/twitchcon-2018/meetup), and also lives with both of them.
+    Keep in mind at this point in time, **Thor is [married to his wife](/sources/thors-marriage)** and also **has a [committed relationship with Shaye](/twitchcon-2018/meetup)**, and also **lives with both of them**.
 
 </Callout>
 
@@ -35,22 +39,22 @@ I mention that I have been roleplaying with another person.
 
     Thor will fixate on the fact that Lyric roleplayed with his friend.
 
-    In this conversation, **Thor conflates roleplaying with cheating**.
+    In this conversation, **Thor conflates roleplaying with real-life sex and acuses Lyric of cheating on him**.
 
     Thor will later **weaponize this admission to impose guilt** on Lyric in [Not Taking No for an Answer: Thor Says Close Friends Aren't Real](/conversations/not-taking-no-for-an-answer#3-thor-says-close-friends-arent-real).
 
 </Callout>
 
-<Popup preview="Messages: Roleplaying">
-    <Messages from="61820" to="61837" omit={[61824, 61825, 61829, 61831]} />
-</Popup>
+## Shaming
 
-<Callout color="sky" icon="alert">
+Thor shames Lyric for roleplaying, **treating them like filth and accusing them
+of cheating on him**.
 
-    Thor's reaction is to conflate roleplaying with real-life sex.
+<Callout>
+
+    For further reading on shame as a tool for abuse, see the article on [Shame](/asides/shame).
 
 </Callout>
-
 
 <Messages ns={[61845, 61848, 61849, 61855, 61864, 61869, 61871, 61873, 61883,
 61908, 61911, 61917, 61921, 61922, 61923]}/>
