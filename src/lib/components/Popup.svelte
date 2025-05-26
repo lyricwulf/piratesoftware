@@ -8,16 +8,21 @@
   let open = $state(false);
 </script>
 
-<div class="popup-container">
-  <Button
-    class="popup-small"
-    variant="secondary"
+<div class="popup-container w-full">
+  <div
+    class="popup-small bg-muted px-8 py-4 text-sm rounded-lg cursor-pointer font-bold"
     onclick={() => (open = !open)}
   >
     {#if preview}
-      <div class="caption">{@html preview}</div>
+      <div class="caption">
+        {#if typeof preview === "function"}
+          {@render preview()}
+        {:else}
+          {@html preview}
+        {/if}
+      </div>
     {/if}
-  </Button>
+  </div>
 </div>
 
 <Dialog.Root bind:open>
@@ -32,7 +37,11 @@
   <!-- </Dialog.Trigger> -->
   <Dialog.Content class="max-w-[600px]">
     <Dialog.Header class="max-h-[calc(100vh-10rem)]">
-      {@html preview}
+      {#if typeof preview === "function"}
+        {@render preview()}
+      {:else}
+        {@html preview}
+      {/if}
       <ScrollArea class="pr-2 mt-1.5">
         <Dialog.Description class="markdown">
           {@render children()}
@@ -43,10 +52,6 @@
 </Dialog.Root>
 
 <style>
-  .popup-container {
-    max-width: 300px;
-  }
-
   @keyframes pop-up {
     0% {
       transform: scale(0.9);
