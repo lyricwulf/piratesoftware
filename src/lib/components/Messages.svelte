@@ -3,13 +3,26 @@
   import Message from "$lib/components/Message.svelte";
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
-  let { from = 0, to = from, filterFrom } = $props();
+  import { Badge } from "$lib/components/ui/badge";
+  import Callout from "$lib/components/Callout.svelte";
+  import * as Tooltip from "$lib/components/ui/tooltip";
+
+  let {
+    from,
+    to = from,
+    filterFrom,
+    omit,
+    ns: messageIds = Array.from({ length: to - from + 1 }).map(
+      (_, i) => i + Number(from)
+    ),
+  } = $props();
 
   const messages = [];
-  for (let i = Number(from); i <= Number(to); i++) {
+  for (const i of messageIds) {
     const message = MESSAGES_BY_ID.get(i);
     if (!message) continue;
     if (filterFrom && message.from !== filterFrom) continue;
+    if (omit && omit.includes(message.id)) continue;
     messages.push(message);
   }
 
@@ -28,6 +41,24 @@
   {#each Object.entries(partitionedMessages) as [date, messages]}
     <div class="date-group flex flex-col gap-1 px-2">
       <div class="date">{date}</div>
+      {#if omit || !from}
+        <Tooltip.Root openDelay={100}>
+          <Tooltip.Trigger>
+            <Badge class="text-xs" variant="secondary">
+              Some messages may be omitted from this excerpt.
+            </Badge>
+          </Tooltip.Trigger>
+          <Tooltip.Content
+            class="bg-popover text-popover-foreground softborder"
+          >
+            <p>Best efforts were made to maintain all necessary context.</p>
+            <p>
+              Please refer to the transcript or archive for the full
+              conversation.
+            </p>
+          </Tooltip.Content>
+        </Tooltip.Root>
+      {/if}
       {#each messages as message}
         <ChatBubble {...message} />
       {/each}
