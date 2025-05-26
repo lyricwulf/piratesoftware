@@ -78,7 +78,7 @@
 
   const clickHandler = () => {
     open = !open;
-    navigator.clipboard.writeText(`annotation-${id}`); // TEMP!~
+    navigator.clipboard.writeText(`${id}`); // TEMP!~
   };
 
   $effect(() => {});

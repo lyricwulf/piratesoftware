@@ -6,30 +6,42 @@ important: true
 
 <script>
    import Messages from "$lib/components/Messages.svelte";
+   import Spoiler from "$lib/components/Spoiler.svelte";
+   import Callout from "$lib/components/Callout.svelte";
 </script>
 
 Let’s look at the penultimate of the conversation on 10/1. At this point, the conversation has lasted **7 hours.** 
 
 ## **1\. It seemed like a healthy discussion**
 
+<Callout color="sky">
+
 This conversation goes over the goals of Lyric and Thor’s relationship. In this
 excerpt we will see that 
 
-- **Lyric states several times that they are not interested in a committed relationship**  
+- **Lyric states 4 times that they are not interested in a committed relationship**  
 - Thor states he is not interested in any arrangement where a sexual partner is not in a committed relationship with him.
 
-Keep reading, this is worth it…
+</Callout>
 
-<Messages from="65947" to="65986" />
+<!-- <Messages from="65947" to="65986" /> -->
+
+<Messages ns={[65948,65949,65956,65961,65968,65971,65974,65977,65978,65980,65983]} />
+
+<Callout>
 
 To reiterate from before:
 
 - **Lyric is not interested in a committed relationship**  
 - **Thor is only interested in a sexual partner who is in a committed relationship with him**
 
-In the above messages, we see Thor acknowledge that their goals are incompatible.
+In the above messages, we see Thor acknowledge that their goals are
+incompatible.
 
-<div class="border-1 border-muted-foreground border-solid rounded-md p-4">
+</Callout>
+
+
+<Callout color="yellow">
 
 **Let’s think about acceptable ways to proceed in this situation.** (As an
 exercise to the reader, you may think about more ways about how you might
@@ -38,34 +50,44 @@ proceed.) Try to guess which approach Thor will take.
 **Hypothetically**:
 
 - **Redefine the relationship**, eg “Alright, I respect your decision to stay single. I value our connection and honestly want to keep you in my life, but for now it would be best to **stay as friends**”  
-- **Step back to establish emotional connection,** eg “Let's try **focusing on our emotional connection**—with no sexual expectations—and then reassess how we feel.”  
-- **Cut off interaction**, eg “Alright, we clearly have different goals and I want to be respectful of both of our time. I think **it’s best if we go our separate ways**.”
+- **Step back to establish emotional connection,** eg “Let's try focusing on our emotional connection—with no sexual expectations—and then reassess how we feel.”
 
 It is at this point that I will mention again that **Thor is 31 years old and
 Lyric is 20 years old**. Think about that deeply for a moment, and then read
 each person’s goals and look at the options again. **Does this 11-year age gap
 affect your answer?**
 
-
-</div>
+</Callout>
 
 ## **2\. Thor doesn't accept Lyric's boundaries**
 
-(Because I know this next message will take you by surprise, I feel obligated to say that there are no messages between the below and the above. There is no additional conversation that you are missing.)
+<Messages from="65985" to="65994" />
 
-<Messages from="65987" to="65994" />
+<Callout color="red">
 
-By now, it’s established Thor wants a committed sexual relationship, while Lyric does not want any form of commitment. It is clear that Lyric’s wants and Thor’s wants are incompatible. It would make sense to drop it at this point. However we see **Thor is refusing to let Lyric go, still trying to convince Lyric to devote themselves to him**.
+By now, it’s established Thor wants a committed sexual relationship, while Lyric
+does not want any form of commitment. It is clear that Lyric’s wants and Thor’s
+wants are incompatible. It would make sense to drop it at this point. However we
+see **Thor is refusing to let Lyric go, still trying to convince Lyric to devote
+themselves to him**.
+
+</Callout>
 
 Read his last message again. If you think that sounds weird, and that **“not boning other peeps” is the commitment of dating**, then you would be very much correct. **Why would Thor say something so absurd?** Well, take into account the power dynamic. Lyric, at age 20 and unsure of their own stance as evidenced in the conversation prior, is in no position to challenge this statement from the older and wiser Thor. **This is not the first time Thor says something absurd with the goal of reshaping Lyric’s reality.**
 
-So, he can reshape reality, but **why make this specific leap in logic**? Thor takes this stance because **Lyric has been reiterating that they do not want a commitment**. It’s phrased so that **Thor can get what he wants (commitment) while convincing Lyric it is also what they want (not commitment).**
+<Callout>
+
+   So, he can reshape reality, but **why make this specific leap in logic**?
+   Thor takes this stance because **Lyric has been reiterating that they do not
+   want a commitment**. It’s phrased so that **Thor can get what he wants
+   (commitment) while convincing Lyric it is also what they want (not
+   commitment).**
+
+</Callout>
 
 ## **3\. Thor says "close friends" aren't real**
 
 <Messages from="65996" to="66013" />
-
-You can continue reading in the annotated transcript, but I want to **skip ahead** to some other concerning behavior.
 
 ## **4\. Thor says you are already committed**
 
@@ -89,4 +111,6 @@ In the following section, Thor continues to manipulate Lyric to date him.
 
 ## **Annotated Transcription**
 
+<Spoiler>
 <Messages from="65916" to="66250" />
+</Spoiler>

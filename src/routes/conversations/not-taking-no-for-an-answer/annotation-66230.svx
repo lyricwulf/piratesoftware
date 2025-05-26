@@ -3,10 +3,10 @@
    import Messages from '$lib/components/Messages.svelte';
 </script>
 
-Lyric has stated they will stop roleplaying:
+Lyric has stated they will stop roleplaying on 5 seperate occasions:
 
-<Messages to="65310" from="65290" />
-<Message n="65482" />
-<Message n="65503" />
-<Message n="65609" />
-<Message n="66182" />
+1. <Messages to="65310" from="65290" />
+2. <Message n="65482" />
+3. <Message n="65503" />
+3. <Message n="65609" />
+3. <Message n="66182" />
