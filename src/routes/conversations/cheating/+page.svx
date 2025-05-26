@@ -74,5 +74,11 @@ of cheating on him**.
 
 ## Transcript
 
+<Callout color="yellow" icon="alert">
+
+    The following transcript has incomplete annotations, and not all hostile behaviors will be called out.
+
+</Callout>
+
 <Messages from="61589" to="62056" />
 
