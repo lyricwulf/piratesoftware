@@ -1,0 +1,74 @@
+---
+title: Cheating
+order: 2
+---
+
+<script>
+   import Messages from '$lib/components/Messages.svelte';
+    import Message from '$lib/components/Message.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+   import Popup from '$lib/components/Popup.svelte';
+</script>
+
+## Pulling Back
+
+In this conversation, Thor notices that I've been distant. I express my
+insecurities about my adequacy.
+
+<Popup preview="Messages: Pulling Back">
+    <Messages ns={[61597, 61599, 61601, 61603, 61604, 61606, 61608]}/>
+</Popup>
+
+<!-- <Messages ns={[61615, 61618, 61689, 61690, 61693, 61695, 61696, 61701, 61702]}/> -->
+
+## Cheating
+
+I mention that I have been roleplaying with another person.
+
+<Callout color="red" icon="alert">
+
+    Keep in mind at this point in time, Thor is [married to his wife](/sources/thors-marriage) and also has a [committed relationship with Shaye](/twitchcon-2018/meetup), and also lives with both of them.
+
+</Callout>
+
+<Callout color="yellow" icon="alert">
+
+    Thor will fixate on the fact that Lyric roleplayed with his friend.
+
+    In this conversation, **Thor conflates roleplaying with cheating**.
+
+    Thor will later **weaponize this admission to impose guilt** on Lyric in [Not Taking No for an Answer: Thor Says Close Friends Aren't Real](/conversations/not-taking-no-for-an-answer#3-thor-says-close-friends-arent-real).
+
+</Callout>
+
+<Popup preview="Messages: Roleplaying">
+    <Messages from="61820" to="61837" omit={[61824, 61825, 61829, 61831]} />
+</Popup>
+
+<Callout color="sky" icon="alert">
+
+    Thor's reaction is to conflate roleplaying with real-life sex.
+
+</Callout>
+
+
+<Messages ns={[61845, 61848, 61849, 61855, 61864, 61869, 61871, 61873, 61883,
+61908, 61911, 61917, 61921, 61922, 61923]}/>
+
+<Callout color="yellow" icon="alert">
+
+    After conflating roleplaying with real-life sex, Thor accuses Lyric of cheating.
+
+</Callout>
+
+<Messages from="61960" />
+
+<Popup preview="Messages: Accusation">
+    <Messages from="61837" to="61960" />
+</Popup>
+
+
+## Transcript
+
+<Messages from="61589" to="62056" />
+
