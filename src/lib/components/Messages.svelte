@@ -25,14 +25,8 @@
 </script>
 
 <div class="messages">
-  <!-- {#each Array.from({ length: Number(to) - Number(from) + 1 }, (_, i) => Number(from) + i) as n}
-    {@const message = MESSAGES_BY_ID.get(n)}
-    {#if message}
-      <ChatBubble {...message} />
-    {/if}
-  {/each} -->
   {#each Object.entries(partitionedMessages) as [date, messages]}
-    <div class="date-group">
+    <div class="date-group flex flex-col gap-1 px-2">
       <div class="date">{date}</div>
       {#each messages as message}
         <ChatBubble {...message} />
@@ -49,12 +43,6 @@
     background: hsl(var(--popover));
     padding: 0.25rem;
     border-radius: 0.5rem;
-  }
-
-  .date-group {
-    display: flex;
-    flex-direction: column;
-    /* gap: 2px; */
   }
 
   .date {

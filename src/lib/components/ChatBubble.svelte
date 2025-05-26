@@ -89,6 +89,7 @@
   class:useRight
   class:hasAnnotation
   class:dialog
+  data-from={from}
   style="background: {background}"
   onclick={clickHandler}
   onkeypress={clickHandler}
@@ -171,7 +172,6 @@
     background-color: hsl(var(--muted));
     border-radius: 1rem 1rem 1rem 0;
     padding: 0.5rem 1rem;
-    margin: 4px;
     width: fit-content;
     max-width: 70%;
     display: flex;
@@ -179,6 +179,11 @@
     align-items: flex-end;
 
     color: hsl(var(--foreground));
+  }
+
+  :global(.chat-bubble[data-from="Thor"] + .chat-bubble[data-from="Lyric"]),
+  :global(.chat-bubble[data-from="Lyric"] + .chat-bubble[data-from="Thor"]) {
+    margin-top: 0.5rem;
   }
 
   .chat-time {
