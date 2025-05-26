@@ -9,6 +9,8 @@ important: true
   import ChatBubble from "$lib/components/ChatBubble.svelte";
   import AnnotationBlock from "$lib/components/AnnotationBlock.svelte";
   import Messages from "$lib/components/Messages.svelte";
+  import Message from "$lib/components/Message.svelte";
+  import Callout from "$lib/components/Callout.svelte";
 </script>
 
 This page is a direct continuation of 10/1 Commitment, which I trust you read
@@ -16,24 +18,37 @@ because it has a ❗.
 
 <Messages from="66251" to="66253" />
 
-We know for a fact that some of the items in this list are exactly what Thor wants:
+<Callout color="sky">
+
+We already know some of the items in this list are exactly what Thor wants:
 
 - **you loved me**
 - **wanted to live with me** (recall that Thor persuades Lyric on this, it’s not Lyric’s own idea.)
 - **wanted to be with me forever**
 
+</Callout>
+
+<Callout color="red">
+
 And then there is this item thrown right in the middle
 
 - **you would give me your entire savings**
 
-Doesn’t that seem a little strange? Usually this is not what people fixate on. **“You said that you loved me, that you want to be with me forever, that you would give me all of your money”** just seems a little unsettling to me**.** Surely this is just speculation…
+</Callout>
+
+Doesn’t that seem a little strange? Usually this is not what people fixate on.
+**“You said that you loved me, that you want to be with me forever, that you
+would give me all of your money”** just seems a little unsettling to me**.**
+Surely this is just speculation…
 
 Let’s explore this for a moment.
 
-Thor is referring to a single [message](https://thor.pc.dev/messages.html#message50017) that Lyric sent:  
-_“that one night i asked you how much to make heartbound free i was thinking about dumping my entire savings into it but what i have is nowhere compared to what those companies offered you xP”_
+Thor is referring to a single message that Lyric sent:  
+<Message n="50017" />
 
-It was only mentioned **in conversation** that one time, and Lyric also made numerous donations to Thor. But isn’t it interesting that this is one of the core facets that Thor remembers?
+It was only mentioned **in conversation** that one time, and Lyric also made
+numerous donations to Thor. But isn’t it interesting that this is one of the
+core facets that Thor remembers?
 
 He remembers that small quip. But why recount this detail specifically? Why not
 
@@ -43,9 +58,24 @@ He remembers that small quip. But why recount this detail specifically? Why not
 
 There’s something more here.
 
-This is selective memory at play. He’s not telling us what happened in the past, **he is telling us how he saw Lyric at their best.** **It’s a description of his ideal version of Lyric**.
+<Callout color="red">
 
-Not only is that his ideal version of Lyric, he **deserves** to have **that Lyric**. Sad hyena tells us that Thor is “hurt” and **sees Lyric as taking away that vulnerable and obsessed version of themselves**. You will see in these upcoming messages that Thor desperately wants to get down to the bottom of this: **why did Lyric stray from this path?** And more importantly, **what can Thor do now to keep Lyric under his control?**
+  This is selective memory at play. He’s not telling us what happened in the
+  past, **he is telling us how he saw Lyric at their best.** **It’s a
+  description of his ideal version of Lyric**.
+
+</Callout>
+
+<Callout>
+
+  Not only is that his ideal version of Lyric, he **deserves** to have **that
+  Lyric**. Sad hyena tells us that Thor is “hurt” and **sees Lyric as taking
+  away that vulnerable and obsessed version of themselves**. You will see in
+  these upcoming messages that Thor desperately wants to get down to the bottom
+  of this: **why did Lyric stray from this path?** And more importantly, **what
+  can Thor do now to keep Lyric under his control?**
+
+</Callout>
 
 <br>
 
