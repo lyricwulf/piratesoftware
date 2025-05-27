@@ -14,7 +14,7 @@ formulates something Thor can work with.
 
 I believe the “o.o” face is genuine surprise. All he wants is absolute control over Lyric and their undying devotion, but he strictly does not want the label of dating, at least not publicly. How can he pull this off? **It seems like an impossible goal, either he can say yes and have a label which he *doesn’t* want, or say no and he doesn’t get the devotion he *does* want.** Or…
 
-<Messages from="67103" to="67104"/>
+<Messages from="67103" to="67104" annotations={false} />
 
 **Yes**, this is exactly how Thor makes the best of that situation.
 

@@ -12,6 +12,7 @@
     to = from,
     filterFrom,
     omit,
+    annotations = true,
     ns: messageIds = Array.from({ length: to - from + 1 }).map(
       (_, i) => i + Number(from)
     ),
@@ -66,7 +67,7 @@
         </Tooltip.Root>
       {/if}
       {#each messages as message}
-        <ChatBubble {...message} />
+        <ChatBubble {...message} dialog={annotations} />
       {/each}
     </div>
   {/each}
