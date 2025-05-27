@@ -28,7 +28,13 @@
 
   // partition messages by date
   const partitionedMessages = messages.reduce((acc, message) => {
-    const date = new Date(message.dt * 1000).toDateString();
+    const date = new Date(message.dt * 1000).toLocaleDateString("en-US", {
+      timeZone: "America/Los_Angeles",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+      weekday: "short",
+    });
     if (!acc[date]) {
       acc[date] = [];
     }
