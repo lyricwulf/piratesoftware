@@ -13,8 +13,7 @@ important: true
   import Callout from "$lib/components/Callout.svelte";
 </script>
 
-This page is a direct continuation of 10/1 Commitment, which I trust you read
-because it has a ❗.
+This page is a direct continuation of [Not Taking "No" for an Answer](/conversations/not-taking-no-for-an-answer).
 
 <Messages from="66251" to="66253" />
 
