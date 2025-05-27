@@ -195,11 +195,11 @@
     justify-self: flex-end;
   }
 
-  .chat-bubble:global(:has(.sticker)) {
+  .chat-bubble:global(:has(.telegram-media)) {
     padding: 0.3rem;
   }
 
-  .chat-bubble:global(:has(.sticker)) a {
+  .chat-bubble:global(:has(.telegram-media)) a {
     background: #000a;
     padding: 0.2rem 0.4rem;
     position: absolute;
