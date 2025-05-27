@@ -57,12 +57,14 @@
       let date = new Date(dt * 1000);
       if (!withDate) {
         return date.toLocaleTimeString("en-US", {
+          timeZone: "America/Los_Angeles",
           hour: "numeric",
           minute: "numeric",
           hour12: true,
         });
       }
       return date.toLocaleDateString("en-US", {
+        timeZone: "America/Los_Angeles",
         month: "short",
         day: "numeric",
         year: "numeric",
