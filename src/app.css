@@ -234,10 +234,15 @@ blockquote {
   background: hsl(var(--muted));
   /* color: hsl(var(--muted-foreground)); */
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 blockquote p {
   margin-inline-start: 1rem;
+  display: block;
 }
 
 blockquote::before {
