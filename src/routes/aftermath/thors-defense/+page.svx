@@ -8,6 +8,7 @@ important: true
    import Callout from '$lib/components/Callout.svelte';
    import Tweet from '$lib/components/Tweet.svelte';
    import Image from '$lib/components/Image.svelte';
+   import ChatBubble from '$lib/components/ChatBubble.svelte';
 </script>
 
 Let's examine how Thor defended himself against the claims made in my document.
@@ -20,7 +21,31 @@ For example, it is most likely speculation to say “You must have planned this 
 However it is definitely **NOT** speculation to say “Thor is divorced”. This information cannot be produced by speculation, and would only stem from claims made by Thor toward his community.
 </Callout>
 
-### “Thor is divorced.”
+<Callout color="yellow">
+
+**DARVO**, which stands for **Deny, Attack,** and **Reverse Victim and
+Offender**, is a manipulative tactic used by abusers to deflect blame and shift
+the narrative. 
+
+Thor's defense is a textbook example of DARVO. In this case, Thor employed DARVO to:
+
+- **Deny** all allegations made against him, claiming that he is not even
+  married.
+  > "Except he doesn't and never did. Thor and I weren't together and him and his wife are divorced."
+- **Attack** Lyric, by accusing them planning the entire situation, and directly
+  communicating with Lyric's partner to attack their character.
+   > "he was very happily interacting with us and chat and soaking up praise for donating so much. He continued to visit stream every day and talk with us afterwards"
+- **Reverse Victim and Offender** by portraying himself as the victim of Lyric's
+  attacks. "They are a 'small indie studio' that Lyric scammed. They are under
+  attack because Lyric doxxed them."
+  > "Charging back... after giving it to a small indie studio... scamming us out
+  > of our income."
+  > 
+  > "As part of his attack messages he posted numberous chatlogs, **some of which were modified** and **contained our lead developers personal phone number**"
+
+</Callout>
+
+## “Thor is divorced.”
 
 <Callout color="sky">
    Thor was married to his wife, Nicole Gillett, from October 2015 to February 2020. We also know that they were living together
@@ -34,7 +59,7 @@ However it is definitely **NOT** speculation to say “Thor is divorced”. This
 <Tweet twid="1114263398059921409" bold={["he is not with his wife"]} />
 <Tweet twid="1114266585697374208" bold={["they're divorced"]} />
 
-### “Lyric doxxed Thor.”
+## “Lyric doxxed Thor.”
 
 <Callout color="sky">
    The Telegram chat logs, which remained unchanged since December 2018, never
@@ -46,18 +71,32 @@ However it is definitely **NOT** speculation to say “Thor is divorced”. This
 
 <Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number, so he's essentially gotten doxxed, and people have already started subscribing him to shit with his number"]} />
 
-**Shaye (Telegram):** “As part of his attack messages he posted numberous chatlogs, **some of which were modified** and **contained our lead developers personal phone number / contact info**”  
-[TODO: In conversation with my partner](/)
+<Callout>
 
-**Shaye (Telegram):** “The claims he's making have lead to **his community attacking** us on Twitch, YouTube, twitter, and **over Thor's personal phone number**.”  
-[TODO: In conversation with my partner](/)
+Statements made to my partner in [Thor's Proxy Blackmail](/aftermath/thors-proxy-blackmail):
+
+<ChatBubble from="Shaye">
+
+As part of his attack messages he posted
+numberous chatlogs, **some of which were modified** and **contained our lead
+developers personal phone number / contact info**
+
+</ChatBubble>
+
+<ChatBubble from="Shaye">
+
+The claims he's making have lead to **his community attacking** us on Twitch, YouTube, twitter, and **over Thor's personal phone number**.
+
+</ChatBubble>
+
+</Callout>
 
 <Image src="doxxing.png" caption="Twitter DM: ''Technically you're doxxing him''" />
 
 > Lyric also states here: "I just uploaded it as is because I didn't want any
 > editing or doctoring of the messages. I think my number is in there as well."
 
-### “Lyric planned this and he is a scammer.”
+## “Lyric planned this and he is a scammer.”
 
 <Callout color="sky">
    Thor would tell Lyric about donation oppurtunities. Thor immediately rewarded
