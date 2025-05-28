@@ -59,14 +59,16 @@ Thor's defense is a textbook example of DARVO. In this case, Thor employed DARVO
 <Tweet twid="1114263398059921409" bold={["he is not with his wife"]} />
 <Tweet twid="1114266585697374208" bold={["they're divorced"]} />
 
-## “Lyric doxxed Thor.”
+## “Lyric doxxed Thor / Altered messages.”
 
-<Callout color="sky">
-   The Telegram chat logs, which remained unchanged since December 2018, never
-   contained any personal information except for Lyric’s phone number occurring twice.
-   <a href="/sources/telegram-archive" target="_blank">
-   Source
-   </a>
+<Callout color="sky"> 
+
+   The Telegram chat logs, remaining entirely unchanged since its archive date
+   in December 2018, never contained any personal information except for Lyric’s
+   phone number occurring twice.
+
+   See [Telegram Archive](/sources/telegram-archive).
+   
 </Callout>
 
 <Tweet twid="1114386086766108672" bold={["Lyric released telegram chat logs, which include Thor's REAL PERSONAL phone number, so he's essentially gotten doxxed, and people have already started subscribing him to shit with his number"]} />
@@ -98,15 +100,15 @@ The claims he's making have lead to **his community attacking** us on Twitch, Yo
 
 ## “Lyric planned this and he is a scammer.”
 
-<Callout color="sky">
-   Thor would tell Lyric about donation oppurtunities. Thor immediately rewarded
-   these donations with "humble" concern and unprovoked sexual attention.
-   Through these manipulations, Thor would manipulate Lyric into donating more
-   and more money.
-   <a href="/donations/kickstarter" target="_blank">
-   Source
-   </a>
-</Callout>
+<Callout color="sky"> 
+
+Thor would tell Lyric about donation oppurtunities, then would withhold
+attention until Lyric donated, for example in his
+[Kickstarter](/donations/kickstarter).
+
+Money would also be one of [Thor's Primary Goals](/conversations/thors-goals#thor-wants-money).
+   
+   </Callout>
 
 <Tweet twid="1114368139288952832" bold={["I see very little difference between what you did and what some creepy dude does when a female streamer bans them and they start charging back donations"]} />
 
