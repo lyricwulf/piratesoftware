@@ -1,27 +1,52 @@
 ---
-title: TwitchCon 2018
+title: Meetup
 ---
+
+<script>
+   import Messages from '$lib/components/Messages.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+   import Popup from '$lib/components/Popup.svelte';
+</script>
 
 Throughout our conversations **he constantly pushed for us to meet at TwitchCon
 2018**. He would regularly bring up how nice it would be to see me there and how
-we would have a lot of “fun” there. 
+we would have a lot of “fun” there, even [counting down the days til we meet](/conversations/love-bombing#meeting-up).
+
+<Callout>
 
 **I wanted to room with Thor and Shaye** since it would have cost around $500
 for me to room by myself. **He would remind me almost daily to book my own hotel
 room**, insisting it was the only way we would have “alone time”.
 
-We met up at TwitchCon 2018, as planned. 
+</Callout>
 
-On the first day, we roamed with Shaye and some other streamers. By night, **the
-group went to a bar, but I could not** join since I was underage. I went back to
-my hotel room, and **Thor excused himself from the bar and had the promised
-“alone time” with me** before heading back to the bar.
+We met up at TwitchCon 2018, as planned, on October 26\.
 
-On the second day, October 27th, Thor was feeling sick. While we were roaming
-and chatting, **Shaye mentioned that Thor has a “secret wife”**. After we went
-back to Thor’s hotel room **I messaged him asking about a wife, which he denied
-and blamed me** for making the situation weird.
-\[[Final Conversation](/twitchcon-2018/final-conversation)\]
+## The First Day
+
+On the first day, we roamed with Shaye and some other streamers. At 7:30pm,
+**the group went to a bar, but I could not join since I was underage**. I went
+back to my hotel room, and messaged Thor saying I had lots of fun hanging out.
+Thor then asked when we can meet up.
+
+<Popup preview="Thor asks to meet up">
+   <Messages from="73024" to="73037" />
+</Popup>
+
+At 9pm, **Thor excused himself from the bar and had the promised
+“alone time” with me**.
+
+<Popup preview="Thor excuses himself">
+   <Messages from="73037" to="73088" />
+</Popup>
+
+## The Second Day
+
+On the second day, Thor was feeling sick. While we were roaming and chatting,
+**Shaye mentioned that Thor has a “secret wife”**. After we went back to Thor’s
+hotel room **I messaged him asking about a wife, which he denied and blamed me**
+for making the situation weird. \[[Final
+Conversation](/twitchcon-2018/final-conversation)\]
 
 Since Thor refused to talk, **I decided to message Shaye about it**. I explained
 my situation to them, and when asked if it was true, **I sent screenshots of the
@@ -30,11 +55,6 @@ conversation where I guided Thor to my hotel room**. Shaye was sympathetic, and
 agreement to be open at the con as long as they communicated it with each
 other**. \[[Recollection of TwitchCon](/sources/recollection-of-twitchcon)\]
 
-Shaye was devastated, and messaged Thor about his uncommunicated infidelity.
-**Thor blamed me for “sending logs to Shaye”, saying  “leave me alone” and “Why
-that would ever be ok is beyond me”**.
+Shaye was devastated, and messaged Thor about his uncommunicated infidelity. **Thor blamed me for “sending logs to Shaye”, saying “leave me alone” and “Why that would ever be ok is beyond me”**.
 
-I left the room, and he blocked me.
-
-The next day, I would message Shaye again, trying to comfort them since Thor
-broke their trust. ([Archived messages with Shaye](/archive/telegram-shaye/messages.html))
+I left the room, and Thor blocked me.
