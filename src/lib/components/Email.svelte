@@ -41,7 +41,7 @@
   let open = $state(openProp ?? true);
 </script>
 
-<div class="email flex flex-col w-full rounded-lg overflow-hidden">
+<div class="email flex flex-col w-full rounded-lg overflow-hidden softborder">
   {#if email}
     <div class="email-banner bg-gray-900 flex flex-row items-center p-4 gap-2">
       <svg
@@ -147,10 +147,6 @@
 </div>
 
 <style>
-  .email {
-    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1);
-  }
-
   .collapsible {
     transition: all 0.3s var(--ease-out-expo);
     overflow: hidden;
