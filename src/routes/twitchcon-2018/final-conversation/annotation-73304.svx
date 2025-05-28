@@ -1,0 +1,4 @@
+---
+color: red
+comment: "DARVO-denial: Gaslighting and dismissing Lyric’s perception of reality. Thor is saying Lyric is making problems out of nothing."
+---

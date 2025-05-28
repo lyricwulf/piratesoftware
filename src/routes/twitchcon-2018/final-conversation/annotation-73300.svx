@@ -1,0 +1,4 @@
+---
+color: red
+comment: "DARVO-attack/reverse: Accusing Lyric of malicious intent, even if there were valid reasons such as seeking clarity" 
+---

@@ -1,0 +1,4 @@
+---
+color: red
+comment: "DARVO-attack: Mirroring, trying to disengage, saying Lyric is in the wrong for bringing up the topic."
+---

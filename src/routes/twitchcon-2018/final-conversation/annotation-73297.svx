@@ -1,0 +1,4 @@
+---
+color: red
+comment: "DARVO-reverse: Thor frames Lyric as the aggressor, asking Lyric to leave him alone as if Lyric is harassing him." 
+---

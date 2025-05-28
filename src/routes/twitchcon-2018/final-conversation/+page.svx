@@ -4,30 +4,46 @@ order: 99
 wip: true
 ---
 
-## Detachment
+<script>
+   import Messages from '$lib/components/Messages.svelte';
+   import Message from '$lib/components/Message.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+   import Popup from '$lib/components/Popup.svelte';
+</script>
 
-*\[I have to add some information about this conversation. I messaged Thor first about this, then when he refused to talk about it I talked with Shaye while we were all in the same hotel room.\]*
-
-At TwitchCon, Shaye mentioned that Thor had a “secret wife”.
+At TwitchCon, Shaye mentioned that Thor had a “secret wife”. I confronted Thor
+about it.
 
 ## Confronting Thor about Wife
 
-| Thor: “As far as I knew we were fooling around and seeing if were comptaible. You've been pushing a lot for a committment kind of thing but I have a lot of work stuff going on and not a lot of time.” |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+<Callout color="red">
 
-This is in contrast to reality, where **in previous conversations I expressed that I was not ready for commitment, and Jason tells me that I must stay committed solely to him to maintain his validation and praise. (source?)**
+Thor would immediate feign ignorance, claiming that they were "just fooling
+around and seeing if [they were] compatible".
 
-After I tell him that I heard he has a wife, **he continually disengages with the conversation.**
+He would accuse Lyric as being the aggressor, saying that Lyric was pushing for
+commitment.
 
-| Lyric: and a wife apparently Thor: Is there a ring on my finger? lol *\[Mocking, denial, gaslighting: “since I have no ring you must be delusional, overreacting, or misunderstanding”.\]* Lyric: There's not. I just heard about it. That's all Thor: Neat *\[Invalidating Lyric’s feelings, disengagement\]* Lyric: I don't want to jump to conclusions so I just wanted to talk i guess I'm sorry. I don't mean to make it weird Thor: Its a bit weird *\[Shifting blame, mirroring, disengagement.\]* Lyric: It is... I guess I just feel like I'm in an awkward place right now. Thor: Nice, thanks for the giant awkward bomb *\[Shifting blame, mirroring, disengagement. He does this twice in a row.\]* Lyric: I'm sorry |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+<Message n="73263" />
+
+This is in contrast to [Thor's Love Bombing](/conversations/love-bombing) and
+Thor [Refusing to Take "No" for an
+Answer](/conversations/not-taking-no-for-an-answer).
+
+</Callout>
+
+After I tell him that I heard he has a wife, **he employs [DARVO](/asides/darvo)** to disengage
+from the conversation, shifting the blame onto me and victimizing himself.
+
+<Messages from="73263" to="73292" />
 
 ## After I spoke with Shaye
 
-Compared to just a few minutes past, after he discovers that I shared our conversations with Shaye, **he now feels he can safely re-engage with the conversation now that he can shift the blame by victimizing himself.**
+Compared to just a few minutes past, after he discovers that I shared our
+conversations with Shaye, **he now feels he can safely re-engage with the
+conversation now that he can shift the blame by victimizing himself.**
 
-| Thor: Nah dude you're not. Sending logs to Shaye? *\[Deflection of responsibility. Note that Jason has a lot to say about this, but not a lot to say on the above, as shown by his use of mirroring. Jason now feels he can safely re-engage with the conversation now that he can shift the blame.\]* Lyric: what. I don't know what you want Thor: Please leave me alone. *\[Victimizing himself\]* You showed shaye logs of our conversations And now hes talking to me about them. Why that would ever be ok is beyond me *\[Gaslighting: making Lyric question reality, even if there were valid reasons such as seeking clarity\]* Lyric: I have no words for you right now. If you would have just told me what's going on I would have been fine with it Thor: Don't really care dude, nothing is even going on. *\[Gaslighting: dismissing Lyric’s perception of reality\]* Lyric: Look When I showed shaye I had no idea how deep this ran Thor: How deep this ran? lol *\[Mocking, belittlement\]* Definitely not discussing this with you *\[Belittlement, dismissal of Lyric’s concerns\]* |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+<Messages from="73293" to="73309" />
 
 ### Annotated transcript
 
