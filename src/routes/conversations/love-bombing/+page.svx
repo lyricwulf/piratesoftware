@@ -17,9 +17,8 @@ order: 0
 
    <Messages from="73263" />
 
-   When Lyric confronts Thor about his lies, Thor tries to gaslight Lyric that
-   they are an aggressor who was pushing themself onto him. Thor plays the
-   victim.
+   When Lyric confronts Thor about his lies, Thor tries to gaslight Lyric,
+   saying that **they** are an aggressor who was pushing themself onto him.
 
 </Callout>
 
