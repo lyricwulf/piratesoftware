@@ -122,7 +122,7 @@
 
           <Button onclick={() => (open = !open)} variant="ghost" size="icon">
             <span
-              class="transition"
+              class="transition pointer-events-none"
               class:rotate-360={!open}
               class:rotate-180={open}
             >
