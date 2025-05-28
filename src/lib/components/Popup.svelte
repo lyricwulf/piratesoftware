@@ -11,8 +11,8 @@
 
 <div class="popup-container w-fit">
   <div
-    class="popup-small bg-muted px-6 py-4 text-sm rounded-lg cursor-pointer
-  font-bold flex items-center gap-2"
+    class="popup-small bg-popover px-6 py-4 text-sm rounded-lg cursor-pointer
+  font-bold flex items-center gap-2 hover:bg-muted border-1 softborder transition-colors"
     onclick={() => (open = !open)}
   >
     <SquareArrowOutUpRight size={20} />
