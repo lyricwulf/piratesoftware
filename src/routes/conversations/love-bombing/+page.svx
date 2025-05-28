@@ -4,8 +4,8 @@ order: 0
 ---
 
 <script>
-   import Messages from '$lib/components/messages.svelte';
-   import Message from '$lib/components/message.svelte';
+   import Messages from '$lib/components/Messages.svelte';
+   import Message from '$lib/components/Message.svelte';
    import Callout from '$lib/components/Callout.svelte';
    import Popup from '$lib/components/Popup.svelte';
 </script>
