@@ -23,7 +23,7 @@ accusation.
 <a href="https://www.jjfreyd.com/darvo" target="_blank">Read more about DARVO
 -></a>
 
-Thor uses DARVO heavily in [Thor's Defense](/aftermath/thors-defense) and the
+Thor employs DARVO heavily in [Thor's Defense](/aftermath/thors-defense) and the
 [Final Conversation](/twitchcon-2018/final-conversation).
 
 ## Attack vs Reverse Victim and Offender
