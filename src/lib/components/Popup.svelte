@@ -10,12 +10,13 @@
 </script>
 
 <div class="popup-container w-fit">
-  <div
-    class="popup-small bg-popover px-6 py-4 text-sm rounded-lg cursor-pointer
-  font-bold flex items-center gap-2 hover:bg-muted border-1 softborder transition-colors"
+  <Button
+    variant="ghost"
+    class="popup-small text-sm rounded-lg cursor-pointer font-bold flex items-center gap-2 softborder"
     onclick={() => (open = !open)}
+    onkeydown={() => (open = !open)}
   >
-    <SquareArrowOutUpRight size={20} />
+    <SquareArrowOutUpRight size={18} />
     {#if preview}
       <div class="caption">
         {#if typeof preview === "function"}
@@ -25,7 +26,7 @@
         {/if}
       </div>
     {/if}
-  </div>
+  </Button>
 </div>
 
 <Dialog.Root bind:open>
