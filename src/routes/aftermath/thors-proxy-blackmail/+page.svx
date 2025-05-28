@@ -27,7 +27,7 @@ mutual friend.
 
 </ChatBubble>
 
-<div>
+<div class="flex flex-col gap-1">
   <ChatBubble html="hewwo" from="Shaye">
 
   As for the **attack messages he's been posting them as recently as yesterday** so I hope that your conversations with him will get him to stop.
@@ -71,7 +71,7 @@ mutual friend.
 
 This conversation led my partner to sympathize with Shaye, **“I can’t forgive the fact that he basically doxxed you guys and thats a big yikes”**. 
 
-<div>
+<div class="flex flex-col gap-1">
 <ChatBubble from="Partner" text="I can’t forgive the fact that he basically doxxed you guys and thats a big yikes" />
 <ChatBubble from="Shaye" text="[Lyric] can fix this on his end by deleting the posts / reversing the chargeback" />
 </div>
@@ -123,8 +123,8 @@ own emotional well-being. **I realize now that this is not a virtue.**
 
 On Apr 14, 2019, 12:34 AM PDT, my partner spoke to Jason. 
 
-<div>
-  <ChatBubble from="Partner" text="Well yeah. I'm not the aggressor here. If he calls off the attack all of this goes away pretty fast." />
+<div class="flex flex-col gap-1">
+  <ChatBubble from="Thor" text="Well yeah. I'm not the aggressor here. If he calls off the attack all of this goes away pretty fast." />
   <ChatBubble from="Partner" text="Alright, just to make sure, if he delete every single things from Twitter, Discord, and everything on YouTube community, will you do the following same thing?" />
   <ChatBubble showFrom from="Thor" text="Yep!" />
 </div>
@@ -178,25 +178,27 @@ At this time, I do not have original copies of my deleted posts.
 Conversations between Shaye and my partner, forwarded to me by my partner.
 
 <Popup preview="Shaye and Partner, Apr 7">
-<div>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
   <ChatBubble from="Shaye" text="Hey , thank you very much for reaching out, this conversation will not be going anywhere outside of this, if you have concerns about that feel free to delete the conversation if you need to." />
   <ChatBubble from="Shaye" text="We did the copyright strikes in response to the chargeback he sent as we don't want to be associated with anyone who chargebacks content creators" />
   <ChatBubble from="Shaye" text="As for the dispute we have no intention of continuing this in public, we just want him to leave us alone" />
   <ChatBubble from="Shaye" text="Since this began we stated our public piece and he has been attacking us daily on Twitter, and he used a second account to join our discord after being banned on his main pretending to be a different person. That account was dallasgotpaws and we have since banned it as well." comment="This recollection of the Discord account is true. I reasoned that their Discord server was the best place to get the most critical feedback, with the goal of clearing up any possible confusion about the events that happened. While I did not post anything inflammatory, I did express skepticism about blindly supporting Jason in the matter."/>
 </div>
-<div>
+<div class="flex flex-col gap-1">
   <ChatBubble from="Shaye" text="thank you very much, I'm really glad you have this stance about it." />
   <ChatBubble from="Shaye" text="it's been really tough for us especially considering the timing and amount of the chargeback , we're still trying to fight it with PayPal but i don't know if we're going to win the case. I hope he changes his mind and reverses the chargeback." />
   <ChatBubble from="Shaye" text="As for the attack messages he's been posting them as recently as yesterday so I hope that your conversations with him will get him to stop." />
 </div>
-<div>
+<div class="flex flex-col gap-1">
   <ChatBubble from="Shaye" text="As part of his attack messages he posted numberous chatlogs, some of which were modified and contained our lead developers personal phone number / contact info" />
   <ChatBubble from="Shaye" text="He has also made public statements claiming that I was in a relationship with our lead developer and that he was cheating on his wife as well. He is divorced and I have never had a relationship with him." />
   <ChatBubble from="Shaye" text="During the times he claimed he was having a relationship with Thor (the developer) , he was hanging on my arm and being overly affectionate with me at twitchcon." />
   <ChatBubble from="Shaye" text="The claims he's making have lead to his community attacking us on Twitch, YouTube, twitter, and over Thor's personal phone number." />
 </div>
-<div>
+<div class="flex flex-col gap-1">
   <ChatBubble from="Shaye" text="We tried reaching out to twitter and Google to delete that information he posted as it contains personal contact information but they have not yet responded" />
+</div>
 </div>
 </Popup>
 
@@ -205,7 +207,7 @@ Conversations between Shaye and my partner, forwarded to me by my partner.
 </Popup>
 
 <Popup preview="Shaye and Partner, Apr 9" >
-<div>
+<div class="flex flex-col gap-1">
   <ChatBubble from="Partner" text="I hope so too but it have been putting you guys into a very bad spot and this is not ok at all. To be fair, to these kind of stuff on PayPal it’s gonna be very hard though I honestly really want you guys to get it resolved because this is a very bad timing considering that you guys are moving at the moment." />
   <ChatBubble from="Partner" text="I can try to just find a way to convince him to repeal the case and return you the money but i am unsure if he will or not, I can’t tell but I really want to help with this because no content creators deserve this." />
   <ChatBubble from="Shaye" text="Thank you, that's really nice to hear, while I can't ask you to do something like that, if you do end up talking to him about it, it would mean a lot to us" />
