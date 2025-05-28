@@ -206,7 +206,7 @@ hr {
 h1 {
   position: sticky;
   top: 0;
-  background: black;
+  background: hsl(var(--background));
   margin-block-start: 0;
   padding-block-start: 2rem;
   z-index: 5;
@@ -215,7 +215,7 @@ h1 {
 h1 ~ h2 {
   position: sticky;
   top: 5rem;
-  background: black;
+  background: hsl(var(--background));
   z-index: 5;
   scroll-margin-top: 5rem;
 }
