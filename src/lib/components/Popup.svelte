@@ -2,17 +2,20 @@
   import * as Dialog from "$lib/components/ui/dialog";
   import Button from "$lib/components/ui/button/button.svelte";
   import { ScrollArea } from "$lib/components/ui/scroll-area";
+  import { SquareArrowOutUpRight } from "@lucide/svelte";
 
   const { preview, children } = $props();
 
   let open = $state(false);
 </script>
 
-<div class="popup-container w-full">
+<div class="popup-container w-fit">
   <div
-    class="popup-small bg-muted px-8 py-4 text-sm rounded-lg cursor-pointer font-bold"
+    class="popup-small bg-muted px-6 py-4 text-sm rounded-lg cursor-pointer
+  font-bold flex items-center gap-2"
     onclick={() => (open = !open)}
   >
+    <SquareArrowOutUpRight size={20} />
     {#if preview}
       <div class="caption">
         {#if typeof preview === "function"}
