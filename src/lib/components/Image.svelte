@@ -37,6 +37,14 @@
 
     border-radius: 8px;
     overflow: hidden;
+
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: filter 0.3s var(--ease-out-expo);
+  }
+
+  .image-small:hover {
+    filter: brightness(1);
   }
 
   .image-small:has(.caption) {
