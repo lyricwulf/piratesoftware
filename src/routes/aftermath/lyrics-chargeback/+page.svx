@@ -8,6 +8,7 @@ order: 1
     import Timeline from '$lib/components/Timeline.svelte';
     import Email from '$lib/components/Email.svelte';
     import Tweet from '$lib/components/Tweet.svelte';
+    import Popup from '$lib/components/Popup.svelte';
 </script>
 
 
@@ -19,14 +20,16 @@ incident. I pointed to all the small donations I made at the time, and
 established that as a pattern for my spending. I also included that I contacted
 the recipient to try to resolve the issue.
 
-<Email eml="Your PayPal case PP-D-25583925.eml" open={false} />
-<Email eml="Your PayPal case PP-D-25583925_ we are seeking additional information from Pirate Software.eml" open={false} />
-<Email eml="Your PayPal case_ PP-D-25583925.eml"/>
+<Popup preview="Chargeback Emails">
+    <Email eml="Your PayPal case PP-D-25583925.eml" open={false} />
+    <Email eml="Your PayPal case PP-D-25583925_ we are seeking additional information from Pirate Software.eml" open={false} />
+    <Email eml="Your PayPal case_ PP-D-25583925.eml"/>
+</Popup>
 
 ## Reflection
 
 I understand now that I was put under financial pressure from Thor, both toward
-his Kickstarter and also to him directly (["Donate Your
+his [Kickstarter](/donations/kickstarter) and also to him directly (["Donate Your
 Savings"](/donations/donate-your-savings)) these pressures would coerce me to
 make unreasonably large donations.
 
