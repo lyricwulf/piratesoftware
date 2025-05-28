@@ -10,6 +10,53 @@ order: -1
    import Tweet from '$lib/components/Tweet.svelte';
 </script>
 
+When I was 20 years old, **Jason Thor Hall (aka PirateSoftware)**, aged 31 at
+the time, **emotionally abused and manipulated me for his own sexual and
+financial gain**. 
+
+Thor's actions had a severe impact on my life, causing me to give up being a
+university student and content creator.
+
+---
+
+This website details our interactions, how he manipulated me, and how I was
+coerced into silence. 
+
+<!-- Why did you write this document? -->
+
+After I was silenced in 2019, I tried to forget about him. However, I recently
+started to see Thor resurge on online platforms. I decided to write a Google Doc
+about my experience with Thor.
+
+At first, I was going to point out his hypocrisy when he accused me of cheating
+on him when I roleplayed with someone else. I documented each conversation,
+putting together my traumatic experience, bit by bit, in a way I did not
+previously comprehend. Over time, it evolved into this website.
+
+<!-- Over time I would have other victim's of Thor's abuse reach out -->
+
+<!-- i have outlined many of our interactions on this website,  -->
+
+<!-- <Callout>
+
+   I saw Thor as an older male role model in my life. **I admired him** as a
+   content creator, being an aspiring creator myself. **I viewed him as
+   trustworthy because of his large following and impressive career**.
+
+   **I was extremely honored** to have such a successful and notable figure take
+   interest in me romantically and sexually. **I felt like he was way out of my
+   league and that I couldn’t possibly do better than him**.
+
+</Callout> -->
+
+<Callout>
+
+Thor’s friend and business partner **Shaye (aka RiverMakes,
+FlSHB0NES)**, aged 22 at the time—while at first sympathetic to my
+situation—**would ultimately be a willing accomplice to Thor silencing me**.
+
+</Callout>
+
 <Callout color="red" icon="stop">
    <div class="flex flex-col gap-1.5">
       <span>
@@ -19,30 +66,20 @@ order: -1
    </div>
 </Callout>
 
+---
 
-When I was 20 years old, I was emotionally abused and manipulated by **Jason Thor Hall (aka PirateSoftware)**, aged 31 at the time, for his own sexual and financial gain.
+<!-- TODO: I met Thor, so on and so forth -->
 
-<Callout>
+## Constructing Commitment
 
-   I saw Thor as an older male role model in my life. **I admired him** as a
-   content creator, being an aspiring creator myself. **I viewed him as trustworthy
-   because of his large following and impressive career**.
+**Thor would use [love bombing](/conversations/love-bombing) and
+[withdrawl](/conversations/abandonment) to make me emotionally dependent on
+him**. 
 
-   **I was extremely honored** to have such a successful and notable figure take interest in me romantically and sexually. **I felt like he was way out of my league and that I couldn’t possibly do better than him**.
-
-</Callout>
-
-Thor’s friend and business partner **Shaye (aka RiverMakes, FlSHB0NES)**, aged
-22 at the time—while at first sympathetic to my situation—**would ultimately be
-a willing accomplice to Thor silencing me**.
-
-## **Constructing Commitment**
-
-**Thor would use [love bombing](/conversations/love-bombing) and [withdrawl](/conversations/abandonment) to make me emotionally dependent on
-him**. He would shower me with affection, praise, and attention, making me feel
+<!-- He would shower me with affection, praise, and attention, making me feel
 special and valued. However, when I would express any hesitation or reluctance
 to commit to him, he would withdraw his affection, leaving me feeling anxious
-and insecure.
+and insecure. -->
 
 <!-- <Message n="49713" />
 <Message n="49828" />
@@ -56,16 +93,23 @@ donate all of my money](/conversations/thors-goals#thor-wants-money) to him**:
 
 </Callout>
 
-When [**I told him repeatedly that I was not interested**](/conversations/not-taking-no-for-an-answer#1-it-seemed-like-a-healthy-discussion) in a committed relationship, [**Thor insisted that I change my mind**](/conversations/not-taking-no-for-an-answer#2-thor-doesnt-accept-lyrics-boundaries), and **he tried to [gaslight me into believing that I was already implicitly committed](/conversations/not-taking-no-for-an-answer#4-thor-says-you-are-already-committed)** to him by not having any other love interests.
+When [I told him repeatedly that I was not
+interested](/conversations/not-taking-no-for-an-answer#1-it-seemed-like-a-healthy-discussion)
+in a committed relationship, [Thor insisted that I change my
+mind](/conversations/not-taking-no-for-an-answer#2-thor-doesnt-accept-lyrics-boundaries),
+and he tried to [gaslight me into believing that I was already implicitly
+committed](/conversations/not-taking-no-for-an-answer#4-thor-says-you-are-already-committed)
+to him by not having any other love interests.
 
 <!-- When **he wasn’t satisfied with my response** to that conversation, [**Thor refused to interact with me**](/conversations/abandonment)**, taking advantage of my emotional dependence which he cultivated**. _\[elaborate, abandonment\]_ -->
 
 After he manipulated me into asking him to date me, **he blamed my reluctance in
 order to convince me to act my part of a committed relationship without being
-“official”**: _“As long as we don't have any more surprises like this yes. I'd
-like a week for things to calm down” ([source](/conversations/dating-thor))_
+“official”**:
 
-## **TwitchCon Meetup**
+<Message n="67103" />
+
+## TwitchCon Meetup
 
 Throughout our conversations **he constantly pushed for us to meet at TwitchCon
 2018**. He would regularly bring up how nice it would be to see me there and how
@@ -100,7 +144,7 @@ Shaye was devastated, and messaged Thor about his uncommunicated infidelity. **T
 
 I left the room, and he blocked me.
 
-## **Public Fallout**
+## Public Fallout
 
 In early March 2019 I [charged back](/aftermath/lyrics-chargeback) a donation of
 $800 made in August 2018\. Thor would [publicly call me
@@ -163,7 +207,7 @@ posts.
 </Callout>
 
 
-## **My Silencing**
+## My Silencing
 
 <Callout color="red">
 
@@ -197,6 +241,6 @@ all of their Twitter replies and Discord posts public, making it look like I was
 remorseful because my “stunt” didn’t work and further cementing the image of a
 “scammer”. 
 
-## **Recent Events**
+## Recent Events
 
 On Feb 22, 2025, [Shaye deleted their replies to my tweet](/sources/recent-events).
