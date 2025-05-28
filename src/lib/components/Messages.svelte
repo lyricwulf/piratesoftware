@@ -44,7 +44,7 @@
   }, {});
 </script>
 
-<div class="messages">
+<div class="messages softborder">
   {#each Object.entries(partitionedMessages) as [date, messages]}
     <div class="date-group flex flex-col gap-1 px-2">
       <div class="date">{date}</div>
