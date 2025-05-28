@@ -13,7 +13,19 @@ important: true
   import Callout from "$lib/components/Callout.svelte";
 </script>
 
-This page is a direct continuation of [Not Taking "No" for an Answer](/conversations/not-taking-no-for-an-answer).
+This page is a direct continuation of [Not Taking "No" for an
+Answer](/conversations/not-taking-no-for-an-answer).
+
+<Callout>
+
+   Note that this is after weeks of manipulation and tearing down Lyric’s defenses.
+
+   **At this point, Thor is able to speak to Lyric without a filter and Lyric
+   thinks nothing of it.**
+
+</Callout>
+
+## Thor Wants Money
 
 <Messages from="66251" to="66253" />
 
@@ -76,7 +88,29 @@ There’s something more here.
 
 </Callout>
 
-<br>
+## Thor Wants Obsession
+
+<Messages from="66259" to="66273" />
+
+Thor desires for Lyric to have an unhealthy obsession with him. **Sexual obsession, emotional obsession… Thor wants absolute control of Lyric.** In his mind, **Thor needs to correct this as it is the biggest threat to his goals.**
+
+<Callout color="red">
+
+   **Thor can speak plainly about his true goals** to Lyric, because any
+   “unnecessary” resistance from Lyric would lead to **more bullying and
+   beratement**.
+
+</Callout>
+
+---
+
+<Messages from="66274" to="66280" />
+
+Thor is frustrated at Lyric’s response, not just the message but also Lyric being more hesitant.
+
+Notice his use of sarcasm here: I believe this is actually a defensive trait of his. I believe **he recognizes his comment drove Lyric farther away than he wanted to, and he views it as a blunder.** So, he is playing defensively in this statement, and **now he is trying to convince Lyric why that statement was justified,** eg “You **need** me to say things like that to keep you in check!”.
+
+Thor is frustrated, because **it wasn’t a blunder, until Lyric "misinterpreted"** what Thor was saying.
 
 ---
 
