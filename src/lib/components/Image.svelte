@@ -40,15 +40,11 @@
 
     cursor: pointer;
     filter: brightness(0.9);
-    scale: 0.99;
-    transition:
-      filter 0.3s var(--ease-out-expo),
-      scale 0.3s var(--ease-out-expo);
+    transition: filter 0.3s var(--ease-out-expo);
   }
 
   .image-small:hover {
     filter: brightness(1);
-    scale: 1;
   }
 
   .image-small:has(.caption) {
