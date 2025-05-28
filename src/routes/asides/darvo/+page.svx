@@ -3,6 +3,10 @@ title: "DARVO"
 order: 3
 ---
 
+<script>
+   import Callout from '$lib/components/Callout.svelte';
+</script>
+
 ## DARVO
 
 Freyd, J.J. (1997) coined the term DARVO in her paper "Violations of power,
@@ -23,8 +27,12 @@ accusation.
 <a href="https://www.jjfreyd.com/darvo" target="_blank">Read more about DARVO
 -></a>
 
+<Callout color="sky">
+
 Thor employs DARVO heavily in [Thor's Defense](/aftermath/thors-defense) and the
 [Final Conversation](/twitchcon-2018/final-conversation).
+
+</Callout>
 
 ## Attack vs Reverse Victim and Offender
 
