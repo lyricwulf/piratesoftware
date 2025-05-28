@@ -33,15 +33,14 @@ was witholding attention to Lyric until they donated the money.**
 ([Lyric increases their pledge to $500](#lyric-increases-their-pledge-to-500))
 
 ## Thor mentions the Baron plush
+<Messages ns={[49035,49037,49042,49043]} />
 <Popup preview="Thor mentions the Baron plush">
    <Messages from="49035" to="49069" />
 </Popup>
 
 
 ## Thor mentions the Kickstarter
-<Popup preview="Thor mentions the Kickstarter">
-   <Messages from="59509" to="59598" />
-</Popup>
+<Messages from="59509" to="59598" />
 
 ## Lyric pledges $100
 
@@ -49,34 +48,45 @@ Within 10 minutes of Thor's message, Lyric pledges $100 to the Kickstarter.
 
 <Email eml="You just backed Heartbound - Baron Plush!.eml" open={false} />
 
-<Popup preview="Thor thanks Lyric for the pledge">
-   <Messages from="59599" to="59670" />
-</Popup>
+<Messages from="59626" to="59632" />
+
+<Callout color="yellow">
+
+Strangely, Thor seems almost dismissive of Lyric's donation, as opposed to other
+conversations where he shows over-the-top excitement over smaller donations,
+such as in ["Donate Your Savings"](/donations/donate-your-savings).
+
+</Callout>
 
 ## Thor mentions the Kickstarter might fail
 
-Thor says "Looks like the kickstarter might fail", Lyric responds with "wUH,
-It's been two days :v".
+<Messages from="60345" to="60348" />
 
 This is actually insightful from Lyric: **for Thor to say that the campaign
 might fail after only two days is a bit odd. It shows that Thor is trying to
 coerce Lyric into donating more money.**
 
-<Popup preview="Thor mentions the Kickstarter might fail">
-   <Messages from="60329" to="60368" />
-</Popup>
+<Callout color="yellow">
 
-Extra: **Thor ignores Lyric after talking about Kickstarter.** After Lyric
+**Thor ignores Lyric after talking about Kickstarter.** After Lyric
 nudges him, he simply says "hrm?" as if Lyric was being annoying. 
+
+<Messages from="60367" to="60408" />
+
+Notice the pattern we are seeing here: Lyric donates a small amount of money and
+Thor dismisses it. Thor then mentions that the Kickstarter might fail, adds
+a new higher tier, and again is dismissive of Lyric.
 
 Thor has nothing to say to Lyric other than to let them know their
 feelings on the funding. **In addition to the fact that Thor was saying it would
 fail after two days, this abandonment of engagement shows that Thor expects
 something of Lyric at this point.**
 
-<Popup preview="Thor ignores Lyric after talking about Kickstarter">
+</Callout>
+
+<!-- <Popup preview="Thor ignores Lyric after talking about Kickstarter">
    <Messages from="60367" to="60408" />
-</Popup>
+</Popup> -->
 
 ## Lyric increases their pledge to $500
 
@@ -94,9 +104,9 @@ where he is genuinely critical of Lyric's actions, for example in [Not Taking "N
 after Lyric pledges $500, Thor suddenly initiates sexual themes as part of his
 thanks.**
 
-<Popup preview="Response to Lyric's $500 pledge">
+<!-- <Popup preview="Response to Lyric's $500 pledge">
    <Messages from="60420" to="60471" />
-</Popup>
+</Popup> -->
 
 ## Thor subtly pressures Lyric to donate more
 
