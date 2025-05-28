@@ -120,7 +120,17 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   margin-block-start: 2rem;
+  color: hsla(var(--foreground) / 90%) !important;
 } 
+
+h1 *,
+h2 *,
+h3 *,
+h4 *,
+h5 *,
+h6 * {
+  color: hsla(var(--foreground) / 90%) !important;
+}
 
 
 li p {
@@ -130,6 +140,9 @@ li p {
 .markdown a:not(:has(*)) {
   color: hsla(var(--primary));
   text-decoration: none;
+  /* border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius); */
 }
 
 /* table {

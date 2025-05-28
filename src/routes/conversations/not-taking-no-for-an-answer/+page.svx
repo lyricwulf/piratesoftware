@@ -12,7 +12,7 @@ important: true
 
 Let’s look at the penultimate of the conversation on 10/1. At this point, the conversation has lasted **7 hours.** 
 
-## **1\. It seemed like a healthy discussion**
+## 1\. It seemed like a healthy discussion
 
 <Callout color="sky">
 
@@ -59,7 +59,7 @@ affect your answer?**
 
 </Callout>
 
-## **2\. Thor doesn't accept Lyric's boundaries**
+## 2\. Thor doesn't accept Lyric's boundaries
 
 <Messages from="65985" to="65994" />
 
@@ -85,11 +85,11 @@ Read his last message again. If you think that sounds weird, and that **“not b
 
 </Callout>
 
-## **3\. Thor says "close friends" aren't real**
+## 3\. Thor says "close friends" aren't real
 
 <Messages from="65996" to="66013" />
 
-## **4\. Thor says you are already committed**
+## 4\. Thor says you are already committed
 
 We see that Thor continues **even further** to try to convince Lyric that they
 want to date him.
@@ -103,13 +103,13 @@ It’s implicit\! So Lyric is already doing these things, eg. not having sex wit
 other people. Therefore, Lyric logically is already in a commitment with Thor.
 So now Lyric just has to **say it**.
 
-## **5\. Thor defines commitment for Lyric**
+## 5\. Thor defines commitment for Lyric
 
 In the following section, Thor continues to manipulate Lyric to date him.
 
 <Messages from="66160" to="66249" />
 
-## **Annotated Transcription**
+## Annotated Transcription
 
 <Spoiler>
 <Messages from="65916" to="66250" />
