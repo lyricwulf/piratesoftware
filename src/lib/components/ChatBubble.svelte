@@ -129,15 +129,18 @@
 
   {#if dialog && (annotation?.comment || annotation?.component || comment)}
     {@const isComment = annotation?.comment || comment}
-    {@const Icon = isComment ? ChevronRight : SquareArrowOutUpRight}
+    {@const Icon = isComment ? Info : SquareArrowOutUpRight}
     <div
       class="annotation-comment w-full text-gray-200/80"
       style="--comment-color: var(--{annotation?.color})"
     >
       <!-- unbound open to keep permanently open -->
       {#if isComment}
-        <div class="text-xs">
-          {@html annotation?.comment || comment}
+        <div class="text-xs flex items-start gap-2">
+          <Icon size={18} class="inline shrink-0" />
+          <div>
+            {@html annotation?.comment || comment}
+          </div>
         </div>
       {:else}
         <div class="flex items-center gap-1 font-bold">
