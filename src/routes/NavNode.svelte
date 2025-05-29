@@ -107,10 +107,6 @@
     padding-inline-start: 2rem;
   }
 
-  :global([data-current="true"]) {
-    background-color: hsl(var(--muted));
-  }
-
   :global(.chevron) {
     transition: transform 0.2s;
     width: 1rem;

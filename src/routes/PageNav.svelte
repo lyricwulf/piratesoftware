@@ -21,4 +21,9 @@
     border-radius: var(--radius);
     /* background: hsl(var(--popover)); */
   }
+  nav :global([data-current="true"]) {
+    color: hsl(var(--text));
+    font-weight: 600;
+    background-color: hsl(var(--muted));
+  }
 </style>

@@ -5,7 +5,7 @@
   import Button from "$lib/components/ui/button/button.svelte";
   import { onMount } from "svelte";
   import { replaceState, afterNavigate } from "$app/navigation";
-  import LightSwitch from "./LightSwitch.svelte";
+  import { ChevronRight } from "@lucide/svelte";
 
   let clientPath = $derived(page.url.pathname);
   let pageMetadata = $derived(MD_METADATA.get(clientPath));
@@ -59,17 +59,19 @@
   });
 </script>
 
-<div class="sidebar sticky-top m-2">
+<div class="sidebar sticky-top m-2 section-nav">
   <ol>
     {#each pageMetadata?.headings as { level, title, slug }}
       <li>
         <Button
           onclickcapture={resetScroll}
           href={`#${slug}`}
-          class="justify-start"
+          class="justify-start gap-1"
           variant="ghost"
           data-current={currentSection === `#${slug}`}
+          onclick={() => setSection(`#${slug}`)}
         >
+          <ChevronRight size="18" />
           {title}
         </Button>
       </li>
@@ -78,6 +80,32 @@
 </div>
 
 <style>
+  .section-nav :global([data-current]) {
+    transition:
+      color 0.2s ease-in-out,
+      background-color 0.2s ease-in-out,
+      transform 0.3s var(--ease-out-expo);
+  }
+
+  .section-nav :global([data-current] svg) {
+    transition: width 0.3s var(--ease-out-expo);
+  }
+  .section-nav :global([data-current="true"]) {
+    color: var(--color-foreground);
+    font-weight: 600;
+
+    background-color: hsl(var(--muted));
+  }
+
+  .section-nav :global([data-current="false"]) {
+    transform: scale(0.95);
+  }
+
+  .section-nav :global([data-current="false"] svg) {
+    opacity: 0;
+    width: 0;
+  }
+
   div.sidebar {
     padding: 0.5rem;
   }
