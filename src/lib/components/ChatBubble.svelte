@@ -92,7 +92,7 @@
 </script>
 
 <div
-  class="chat-bubble text-sm text-gray-200"
+  class="chat-bubble text-sm text-gray-200 font-normal"
   class:useRight
   class:hasAnnotation
   class:dialog
