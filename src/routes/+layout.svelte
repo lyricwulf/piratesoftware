@@ -12,6 +12,8 @@
 
   let clientPath = $derived(page.url.pathname);
   let pageMetadata = $derived(MD_METADATA.get(clientPath));
+
+  let hasSections = $derived(pageMetadata?.headings?.length > 0);
 </script>
 
 <div class="x-wrapper">
@@ -30,12 +32,14 @@
     {@render children()}
   </div>
 
-  <HideOnMobile position="right">
-    {#snippet buttonContent()}
-      <TableOfContents />
-    {/snippet}
-    <SectionNav />
-  </HideOnMobile>
+  {#if hasSections}
+    <HideOnMobile position="right">
+      {#snippet buttonContent()}
+        <TableOfContents />
+      {/snippet}
+      <SectionNav />
+    </HideOnMobile>
+  {/if}
 </div>
 
 <svelte:head>

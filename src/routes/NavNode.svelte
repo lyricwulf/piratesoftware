@@ -1,5 +1,10 @@
 <script lang="ts">
-  import { ChevronDown } from "@lucide/svelte";
+  import {
+    ChevronDown,
+    FolderOpen,
+    FolderClosed,
+    Folder,
+  } from "@lucide/svelte";
   import Button from "$lib/components/ui/button/button.svelte";
   import * as Collapsible from "$lib/components/ui/collapsible";
   import { page } from "$app/state";
@@ -23,12 +28,17 @@
     <Collapsible.Root bind:open>
       <div class="collapsible">
         <Button
-          class="hover:bg-transparent hover:underline justify-start font-bold text-foreground "
+          class="hover:bg-transparent hover:underline justify-start font-bold text-foreground gap-2"
           variant="ghost"
           on:click={() => (open = !open)}
         >
+          {#if open}
+            <FolderOpen size={18} />
+          {:else}
+            <Folder size={18} />
+          {/if}
           {name}
-          <ChevronDown class="chevron" />
+          <!-- <ChevronDown class="chevron" /> -->
         </Button>
         <Collapsible.Content>
           {#if open}
@@ -79,7 +89,7 @@
     align-items: stretch;
   }
   :global([data-state="open"]) > .collapsible {
-    border-block: 1px solid hsl(var(--border));
+    /* border-block: 1px solid hsl(var(--border)); */
   }
 
   .collapsible :global(a),
@@ -93,7 +103,7 @@
     flex-direction: column;
     gap: 0.25rem;
     margin-block: 0.25rem;
-    padding-inline-start: 1rem;
+    padding-inline-start: 2rem;
   }
 
   :global([data-current="true"]) {
