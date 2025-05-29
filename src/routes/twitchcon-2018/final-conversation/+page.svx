@@ -27,8 +27,7 @@ commitment.
 <Message n="73263" />
 
 This is in contrast to [Thor's Love Bombing](/conversations/love-bombing) and
-Thor [Refusing to Take "No" for an
-Answer](/conversations/not-taking-no-for-an-answer).
+Thor in ["No" Means Yes](/conversations/no-means-yes).
 
 </Callout>
 

@@ -98,7 +98,7 @@ excitement.**
 <Messages filterFrom="Thor" from="60423" to="60441" />
 
 Note his unserious tone in comparison to conversations
-where he is genuinely critical of Lyric's actions, for example in [Not Taking "No" for an Answer](/conversations/not-taking-no-for-an-answer).
+where he is genuinely critical of Lyric's actions, for example in ["No" Means Yes](/conversations/no-means-yes).
 
 **Recall that Thor was ignoring Lyric after talking about Kickstarter. But
 after Lyric pledges $500, Thor suddenly initiates sexual themes as part of his

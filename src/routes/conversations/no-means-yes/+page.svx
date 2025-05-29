@@ -1,5 +1,5 @@
 ---
-title: Not Taking "No" for an Answer
+title: "No" Means Yes
 order: 3
 important: true
 ---

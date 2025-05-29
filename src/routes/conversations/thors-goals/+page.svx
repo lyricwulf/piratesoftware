@@ -13,8 +13,7 @@ important: true
   import Callout from "$lib/components/Callout.svelte";
 </script>
 
-This page is a direct continuation of [Not Taking "No" for an
-Answer](/conversations/not-taking-no-for-an-answer).
+This page is a direct continuation of ["No" Means Yes](/conversations/no-means-yes).
 
 <Callout>
 
