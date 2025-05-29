@@ -4,7 +4,8 @@
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
   import * as Collapsible from "$lib/components/ui/collapsible";
-  import { Info, FolderOpen } from "@lucide/svelte";
+  import { Info, FolderOpen, ChevronRight } from "@lucide/svelte";
+  import Callout from "$lib/components/Callout.svelte";
 
   let {
     from = "",
@@ -87,7 +88,7 @@
 </script>
 
 <div
-  class="chat-bubble text-sm"
+  class="chat-bubble text-sm text-gray-200"
   class:useRight
   class:hasAnnotation
   class:dialog
@@ -125,19 +126,20 @@
 
   {#if dialog && (annotation?.comment || annotation?.component || comment)}
     {@const isComment = annotation?.comment || comment}
-    {@const Icon = isComment ? Info : FolderOpen}
+    {@const Icon = isComment ? ChevronRight : FolderOpen}
     <div
-      class="annotation-comment w-full"
+      class="annotation-comment w-full text-gray-200/80"
       style="--comment-color: var(--{annotation?.color})"
     >
-      <Collapsible.Root {open}>
-        <div class="flex items-center gap-2 font-bold">
-          <Icon class="shrink-0 basis-[20px]" />
-          {isComment ? "Comment" : "Annotation"}
+      <!-- unbound open to keep permanently open -->
+      <Collapsible.Root open={true}>
+        <div class="flex items-center gap-1 text-xs font-bold">
+          <Icon class="shrink-0 basis-[16px]" />
+          {annotation?.title || (isComment ? "Comment" : "Annotation")}
         </div>
         <Collapsible.Content>
           <div
-            class="mt-2 pt-1 border-t-1 border-solid border-muted-foreground"
+            class="mt-1 pt-1 border-t-1 border-solid border-muted-foreground text-xs"
           >
             {@html annotation?.comment || comment}
           </div>
@@ -162,8 +164,8 @@
 
 <style>
   :root {
-    --red: hsla(0, 100%, 20%, 0.4);
-    --yellow: hsla(45, 100%, 15%, 0.4);
+    --red: color-mix(in oklab, var(--color-red-800) 40%, transparent 0%);
+    --yellow: color-mix(in oklab, var(--color-yellow-800) 40%, transparent 0%);
   }
   a {
     color: hsl(var(--text)) !important;
@@ -171,7 +173,6 @@
 
   .chat-bubble {
     position: relative;
-    background-color: hsl(var(--muted));
     border-radius: 1rem 1rem 1rem 0;
     padding: 0.5rem 1rem;
     width: fit-content;
@@ -179,8 +180,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-
-    color: hsl(var(--foreground));
   }
 
   :global(.chat-bubble[data-from="Thor"] + .chat-bubble[data-from="Lyric"]),
@@ -222,9 +221,10 @@
   }
 
   .annotation-comment {
-    /* color: var(--comment-color); */
-    color: hsl(var(--muted-foreground));
-    background: var(--comment-color, hsla(var(--popover) / 35%));
+    background: var(
+      --comment-color,
+      color-mix(in oklab, var(--color-gray-800) 60%, transparent 0%)
+    );
     border: 1px solid hsla(var(--muted-foreground) / 10%);
     padding: 0.5rem 1rem;
     border-radius: 5px;
