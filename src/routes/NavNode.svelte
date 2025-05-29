@@ -42,7 +42,7 @@
         </Button>
         <Collapsible.Content>
           {#if open}
-            <div class="collapsible-children">
+            <div class="collapsible-children pr-2 pb-2">
               {#each children as child}
                 <NavNode {...child} />
               {/each}
@@ -89,7 +89,9 @@
     align-items: stretch;
   }
   :global([data-state="open"]) > .collapsible {
-    /* border-block: 1px solid hsl(var(--border)); */
+    background: hsl(var(--popover));
+    border-radius: 5px;
+    border: 1px solid hsl(var(--border));
   }
 
   .collapsible :global(a),
@@ -102,7 +104,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    margin-block: 0.25rem;
     padding-inline-start: 2rem;
   }
 

@@ -59,7 +59,7 @@
   });
 </script>
 
-<div class="sidebar sticky-top">
+<div class="sidebar sticky-top m-2">
   <ol>
     {#each pageMetadata?.headings as { level, title, slug }}
       <li>
@@ -79,7 +79,6 @@
 
 <style>
   div.sidebar {
-    background: hsl(var(--popover));
     padding: 0.5rem;
   }
   ol li {

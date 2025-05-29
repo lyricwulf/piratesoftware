@@ -288,7 +288,24 @@ blockquote::before {
 }
 
 h2:target {
-  background: hsla(var(--secondary))
+  font-weight: bold;
+  animation: flash 1s ease-out;
+}
+
+h2:target::after {
+  content: " 🔗";
+}
+
+@keyframes flash {
+  0% {
+    background-color: hsl(var(--muted));
+  }
+  80% {
+    background-color: hsl(var(--muted));
+  }
+  100% {
+    background-color: hsl(var(--background));
+  }
 }
 
 pre {

@@ -3,11 +3,13 @@
   import "../app.css";
   import { NAV_ITEMS } from "./md-metadata";
   import { ScrollArea } from "$lib/components/ui/scroll-area";
+
+  const { class: className = "" } = $props();
 </script>
 
-<nav class="sticky-top">
-  <ScrollArea class="h-[calc(100vh-6rem)]">
-    <div class="flex flex-col gap-1">
+<nav class="sticky-top {className}">
+  <ScrollArea class="h-[calc(100vh-6rem)] pr-3">
+    <div class="flex flex-col gap-2">
       <NavNode {...NAV_ITEMS} />
     </div>
   </ScrollArea>
@@ -17,6 +19,6 @@
   nav {
     padding: 0.5rem;
     border-radius: var(--radius);
-    background: hsl(var(--popover));
+    /* background: hsl(var(--popover)); */
   }
 </style>

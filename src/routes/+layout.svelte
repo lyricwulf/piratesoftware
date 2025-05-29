@@ -28,7 +28,7 @@
     <PageNav />
   </HideOnMobile>
 
-  <div class="markdown">
+  <div class="markdown border-l-1 border-r-1">
     <h1>{pageMetadata?.title}</h1>
     {#if pageMetadata?.wip}
       <WipNotice />
