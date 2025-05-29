@@ -1,11 +1,9 @@
-<script>
+<script lang="ts">
   import { MESSAGES_BY_ID } from "$lib/messages";
-  import Message from "$lib/components/Message.svelte";
-  import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
   import { Badge } from "$lib/components/ui/badge";
-  import Callout from "$lib/components/Callout.svelte";
   import * as Tooltip from "$lib/components/ui/tooltip";
+  import { cn } from "$lib/utils";
 
   let {
     from,
@@ -13,6 +11,7 @@
     filterFrom,
     omit,
     annotations = true,
+    scrollable = true,
     ns: messageIds = Array.from({ length: to - from + 1 }).map(
       (_, i) => i + Number(from)
     ),
@@ -28,23 +27,31 @@
   }
 
   // partition messages by date
-  const partitionedMessages = messages.reduce((acc, message) => {
-    const date = new Date(message.dt * 1000).toLocaleDateString("en-US", {
-      timeZone: "America/Los_Angeles",
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-      weekday: "short",
-    });
-    if (!acc[date]) {
-      acc[date] = [];
-    }
-    acc[date].push(message);
-    return acc;
-  }, {});
+  const partitionedMessages = messages.reduce(
+    (acc, message) => {
+      const date = new Date(message.dt * 1000).toLocaleDateString("en-US", {
+        timeZone: "America/Los_Angeles",
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        weekday: "short",
+      });
+      if (!acc[date]) {
+        acc[date] = [];
+      }
+      acc[date].push(message);
+      return acc;
+    },
+    {} as Record<string, typeof messages>
+  );
 </script>
 
-<div class="messages softborder">
+<div
+  class={cn(
+    "messages softborder",
+    scrollable && "max-h-[60vh] overflow-y-auto"
+  )}
+>
   {#each Object.entries(partitionedMessages) as [date, messages]}
     <div class="date-group flex flex-col gap-1 px-2">
       <div class="date">{date}</div>
@@ -78,7 +85,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: hsl(var(--popover));
+    background: var(--color-gray-950);
     padding: 0.25rem;
     border-radius: 0.5rem;
   }
