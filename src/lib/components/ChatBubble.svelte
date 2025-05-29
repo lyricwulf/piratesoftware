@@ -4,7 +4,12 @@
   import Media from "$lib/components/Media.svelte";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
   import * as Collapsible from "$lib/components/ui/collapsible";
-  import { Info, FolderOpen, ChevronRight } from "@lucide/svelte";
+  import {
+    Info,
+    FolderOpen,
+    ChevronRight,
+    SquareArrowOutUpRight,
+  } from "@lucide/svelte";
   import Callout from "$lib/components/Callout.svelte";
 
   let {
@@ -76,8 +81,7 @@
     })()
   );
 
-  let open = $state(annotation?.comment ? true : (null as boolean));
-  let chatBubble = $state<HTMLDivElement>(null);
+  let open = $state<boolean | null>(annotation?.comment ? true : null);
 
   const clickHandler = () => {
     open = !open;
@@ -98,7 +102,6 @@
   onkeypress={clickHandler}
   role="button"
   tabindex="-1"
-  bind:this={chatBubble}
 >
   {#if showName}
     <div class="text-xs text-gray-100/60 mr-1">{from}:</div>
@@ -126,25 +129,22 @@
 
   {#if dialog && (annotation?.comment || annotation?.component || comment)}
     {@const isComment = annotation?.comment || comment}
-    {@const Icon = isComment ? ChevronRight : FolderOpen}
+    {@const Icon = isComment ? ChevronRight : SquareArrowOutUpRight}
     <div
       class="annotation-comment w-full text-gray-200/80"
       style="--comment-color: var(--{annotation?.color})"
     >
       <!-- unbound open to keep permanently open -->
-      <Collapsible.Root open={true}>
-        <div class="flex items-center gap-1 text-xs font-bold">
-          <Icon class="shrink-0 basis-[16px]" />
+      {#if isComment}
+        <div class="text-xs">
+          {@html annotation?.comment || comment}
+        </div>
+      {:else}
+        <div class="flex items-center gap-1 font-bold">
+          <Icon class="shrink-0 basis-[18px]" />
           {annotation?.title || (isComment ? "Comment" : "Annotation")}
         </div>
-        <Collapsible.Content>
-          <div
-            class="mt-1 pt-1 border-t-1 border-solid border-muted-foreground text-xs"
-          >
-            {@html annotation?.comment || comment}
-          </div>
-        </Collapsible.Content>
-      </Collapsible.Root>
+      {/if}
     </div>
   {/if}
 </div>
@@ -153,7 +153,7 @@
   <AnnotationBlock
     {messageId}
     {open}
-    onOpenChange={(newOpen) => (open = newOpen)}
+    onOpenChange={(newOpen: boolean) => (open = newOpen)}
     children={annotation.component}
   >
     {#snippet referenceMessage()}
