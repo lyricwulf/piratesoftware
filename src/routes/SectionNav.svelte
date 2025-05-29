@@ -5,6 +5,7 @@
   import Button from "$lib/components/ui/button/button.svelte";
   import { onMount } from "svelte";
   import { replaceState, afterNavigate } from "$app/navigation";
+  import LightSwitch from "./LightSwitch.svelte";
 
   let clientPath = $derived(page.url.pathname);
   let pageMetadata = $derived(MD_METADATA.get(clientPath));

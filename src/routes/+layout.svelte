@@ -7,6 +7,8 @@
   import { page } from "$app/state";
   import { MD_METADATA } from "./md-metadata";
   import WipNotice from "./WipNotice.svelte";
+  import { ModeWatcher } from "mode-watcher";
+  import LightSwitch from "./LightSwitch.svelte";
 
   let { children } = $props();
 
@@ -16,6 +18,8 @@
   let hasSections = $derived(pageMetadata?.headings?.length > 0);
 </script>
 
+<ModeWatcher />
+<LightSwitch class="self-end" />
 <div class="x-wrapper">
   <HideOnMobile position="left">
     {#snippet buttonContent()}

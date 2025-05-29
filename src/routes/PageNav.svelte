@@ -6,7 +6,7 @@
 </script>
 
 <nav class="sticky-top">
-  <ScrollArea class="h-[calc(100vh-4rem)]">
+  <ScrollArea class="h-[calc(100vh-6rem)]">
     <div class="flex flex-col gap-1">
       <NavNode {...NAV_ITEMS} />
     </div>
