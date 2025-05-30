@@ -19,7 +19,6 @@
   nav {
     padding: 0.5rem;
     border-radius: var(--radius);
-    /* background: hsl(var(--popover)); */
   }
   nav :global([data-current="true"]) {
     color: hsl(var(--text));

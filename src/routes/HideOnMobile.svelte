@@ -69,7 +69,12 @@
       width: 300px;
 
       z-index: 11;
+
+      background: hsl(var(--background));
+      border: 1px solid hsl(var(--muted));
+      border-radius: var(--radius);
     }
+
     .hide-on-mobile.left {
       left: var(--page-padding);
       animation: from-left var(--transition);
