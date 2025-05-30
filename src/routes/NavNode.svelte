@@ -28,7 +28,7 @@
     <Collapsible.Root bind:open>
       <div class="collapsible">
         <Button
-          class="hover:bg-transparent hover:underline justify-start font-bold text-foreground gap-2"
+          class="justify-start font-bold text-foreground gap-2 cursor-pointer"
           variant="ghost"
           on:click={() => (open = !open)}
         >
@@ -53,7 +53,7 @@
     </Collapsible.Root>
   {:else}
     <Button
-      class="hover:bg-muted hover:underline justify-start text-foreground"
+      class="hover:bg-muted justify-start text-foreground"
       variant="ghost"
       data-current={current}
       {href}
