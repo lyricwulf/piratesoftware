@@ -61,13 +61,15 @@
       {name}
       {#if metadata?.wip}
         <Badge
-          class="ml-2 border-1 bg-yellow-600/25 text-yellow-100/90 border-yellow-600/50"
+          class="ml-2 border-1 bg-yellow-600/25 text-yellow-300
+        border-yellow-600/50 hover:bg-yellow-600/50"
           variant="secondary">WIP</Badge
         >
       {/if}
       {#if metadata?.important}
         <Badge
-          class="ml-2 border-1 bg-green-600/25 text-green-100/90 border-green-600/50"
+          class="ml-2 border-1 bg-green-600/25 text-green-300
+        border-green-600/50 hover:bg-green-600/50"
           variant="secondary">!</Badge
         >
       {/if}
