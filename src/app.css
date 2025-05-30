@@ -151,6 +151,10 @@ li p {
   border-radius: var(--radius); */
 }
 
+.markdown>div, .markdown > blockquote {
+  margin-inline: 0.25rem;
+}
+
 /* table {
   border: 2px solid hsla(var(--muted-foreground));
   border-radius: 8px;

@@ -41,7 +41,7 @@
   let open = $state(openProp ?? true);
 </script>
 
-<div class="email flex flex-col w-full rounded-lg overflow-hidden softborder">
+<div class="email flex flex-col rounded-lg overflow-hidden softborder">
   {#if email}
     <div class="email-banner bg-gray-900 flex flex-row items-center p-4 gap-2">
       <svg
