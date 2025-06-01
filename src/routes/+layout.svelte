@@ -28,7 +28,7 @@
     <PageNav />
   </HideOnMobile>
 
-  <div class="markdown border-l-1 border-r-1">
+  <div class="markdown">
     <h1>{pageMetadata?.title}</h1>
     {#if pageMetadata?.wip}
       <WipNotice />
@@ -53,6 +53,8 @@
 
 <style>
   .x-wrapper {
+    padding: var(--page-padding);
+
     display: grid;
     grid-template-columns:
       minmax(300px, 400px)
@@ -61,19 +63,18 @@
     flex-direction: row;
     align-items: start;
     justify-content: center;
-    padding: var(--page-padding);
   }
 
   .markdown {
-    padding: 20px;
-
     max-width: min(800px, 100vw);
-
-    color: hsla(var(--foreground) / 80%);
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    color: hsla(var(--foreground) / 80%);
+    border-inline: 1px solid hsl(var(--border));
   }
 
   @media (max-width: 1200px) {
@@ -83,6 +84,7 @@
 
     .markdown {
       justify-self: center;
+      border-inline: none;
     }
   }
 </style>
