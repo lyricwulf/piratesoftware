@@ -2,7 +2,7 @@
   import { MESSAGES_BY_ID } from "$lib/messages";
   import ChatBubble from "$lib/components/ChatBubble.svelte";
 
-  let { n } = $props();
+  let { n, dialog } = $props();
   let message = $derived(MESSAGES_BY_ID.get(Number(n)));
   $effect(() => {
     if (!message) {
@@ -11,4 +11,4 @@
   });
 </script>
 
-<ChatBubble {...message} />
+<ChatBubble {...message} {dialog} />

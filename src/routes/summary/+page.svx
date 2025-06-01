@@ -6,8 +6,10 @@ order: -1
 <script>
    import ChatBubble from '$lib/components/ChatBubble.svelte';
    import Message from '$lib/components/Message.svelte';
+   import Messages from '$lib/components/Messages.svelte';
    import Callout from '$lib/components/Callout.svelte';
    import Tweet from '$lib/components/Tweet.svelte';
+   import Popup from '$lib/components/Popup.svelte';
 </script>
 
 When I was 20 years old, **Jason Thor Hall (aka PirateSoftware)**, aged 31 at
@@ -116,32 +118,36 @@ Throughout our conversations **he constantly pushed for us to meet at TwitchCon
 2018**. He would regularly bring up how nice it would be to see me there and how
 we would have a lot of “fun” there, even [counting down the days til we meet](/conversations/love-bombing#meeting-up).
 
-<Callout>
-
-**I wanted to room with him and Shaye** since it would have cost around $500 for
-me to room by myself. **He would remind me almost daily to book my own hotel
-room**, insisting it was the only way we would have “alone time”.
-
-</Callout>
-
 We met up at TwitchCon 2018, as planned, on October 26\.
 
-On the first day, we roamed with Shaye and some other streamers. By night, **the group went to a bar, but I could not join since I was underage**. I went back to my hotel room, and **Thor excused himself from the bar and had the promised “alone time” with me** before heading back to the bar.
+On the first day, we roamed with Shaye and some other streamers. By night, **the
+group went to a bar, but I could not join since I was underage**. Later that
+night, **Thor excused himself from the bar to join me in my hotel room**.
 
-On the second day, Thor was feeling sick. While we were roaming and chatting,
-**Shaye mentioned that Thor has a “secret wife”**. After we went back to Thor’s
-hotel room **I messaged him asking about a wife, which he denied and blamed me**
-for making the situation weird. \[[Final
-Conversation](/twitchcon-2018/final-conversation)\]
+On the second day, while we were roaming without Thor, **Shaye mentioned that
+Thor has a “secret wife”**. After we went back to Thor’s hotel room **I messaged
+him asking about a wife, which he denied and blamed me** for "misunderstanding". \[[Final Conversation](/twitchcon-2018/final-conversation)\]
 
-Since Thor refused to talk, **I decided to message Shaye about it**. I explained
-my situation to them, and when asked if it was true, **I sent screenshots of the
-conversation where I guided Thor to my hotel room**. Shaye was sympathetic, and
-**I would learn that they were also sexual partners, and that they were in an
-agreement to be open at the con as long as they communicated it with each
-other**. \[[Recollection of TwitchCon](/sources/recollection-of-twitchcon)\]
+Since Thor refused to talk, **I decided to message Shaye about it**.
 
-Shaye was devastated, and messaged Thor about his uncommunicated infidelity. **Thor blamed me for “sending logs to Shaye”, saying “leave me alone” and “Why that would ever be ok is beyond me”**.
+I explained my situation to Shaye, and when asked if it was true, **I sent
+screenshots of the conversation where I guided Thor to my hotel room**. Shaye
+was sympathetic, and they would tell me that **they and Thor were sexual
+partners, and that they were in an agreement to be open at the con as long as
+they communicated it with each other**. \[[Recollection of
+TwitchCon](/sources/recollection-of-twitchcon)\]
+
+Shaye was devastated that Thor broke their trust by sleeping with me, and
+messaged Thor about his uncommunicated infidelity. **Thor blamed me and denied
+any involvement with either myself or Shaye**.
+
+<Popup>
+{#snippet preview()}
+<Message n="73304" dialog={false} />
+{/snippet}
+<Messages
+ns={[73263,73293,73294,73297,73298,73300,73302,73304,73306,73308,73309]} />
+</Popup>
 
 I left the room, and he blocked me.
 
@@ -223,7 +229,7 @@ my partner to convince them of my wrongdoing. **They told my partner that I
 doxxed them, attacked them, and proposed a solution**
 ([source](/aftermath/thors-proxy-blackmail#shaye-lies-to-my-partner))**:**
 
-<ChatBubble from="Shaye" text="[Lyric] can fix this on his end by deleting the posts / reversing the chargeback" />
+<ChatBubble from="Shaye" text="he can fix this on his end by deleting the posts / reversing the chargeback" />
 
 <Callout>
 

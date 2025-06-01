@@ -12,13 +12,14 @@
 <div class="popup-container w-fit">
   <Button
     variant="ghost"
-    class="popup-small text-sm rounded-lg cursor-pointer font-bold flex items-center gap-2 softborder"
+    class="popup-small text-sm rounded-lg cursor-pointer font-bold flex
+  items-center gap-2 softborder whitespace-normal h-auto min-h-9 text-start"
     onclick={() => (open = !open)}
     onkeydown={() => (open = !open)}
   >
     <SquareArrowOutUpRight size={18} />
     {#if preview}
-      <div class="caption">
+      <div class="caption grow shrink-0 basis-0">
         {#if typeof preview === "function"}
           {@render preview()}
         {:else}
