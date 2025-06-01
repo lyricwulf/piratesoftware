@@ -1,5 +1,5 @@
 ---
-title: "No" Means Yes
+title: "\"No\" Means Yes"
 order: 3
 important: true
 ---
