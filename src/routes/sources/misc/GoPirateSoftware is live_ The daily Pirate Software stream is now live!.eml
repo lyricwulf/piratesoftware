@@ -1,0 +1,335 @@
+Delivered-To: lyricwulf@gmail.com
+Received: by 10.12.134.162 with SMTP id 31csp3067042qvf;
+        Mon, 12 Feb 2018 11:55:14 -0800 (PST)
+X-Google-Smtp-Source: AH8x2252fNW2wgnjCGqPgAZGxeFGqLk5j5Vo40wkUWw7kN62qk8PTVj6Om/RkgjjTRB4NsQgXizL
+X-Received: by 10.99.104.194 with SMTP id d185mr10107807pgc.404.1518465314231;
+        Mon, 12 Feb 2018 11:55:14 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1518465314; cv=none;
+        d=google.com; s=arc-20160816;
+        b=j7sQvhlWrD9YDwcQWxoQTo/uwhiDhEmXqvcZTK/BAniECKZ9P4W0rNHY6OUvCcyRG4
+         y5KNSQtHCDbHaog4txykPLn7XxShtQpNXfEu9KVxK5sdu7OSu1+LiBCCH/EeE04dwALR
+         YjE2bu32bM9uzHM7gnEQVj+LM79V2XThkKzbBV6CS87NCrvNJ7sbZnQnHoVkHnN3RKev
+         aSPERZTw59BY4j6T+5md+Cnuo0QqaXSQtmNBCYuDUHg19UF8XiIwQjMKlyDycPe2oRFb
+         tYUVh8BjQFZNm1Yht+Pzq2NQKq8/M+CY8kdr4iliWIv66rjhBubWOm0aViCO7rCJVaLr
+         FesA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:date:message-id:content-transfer-encoding:mime-version
+         :subject:to:from:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=pNnCysaBbooIVV6e+eGpEVuJyX8cgK/pyxePobB8HbU=;
+        b=TRoFzzJ0QQHt832si0pQGS/Cez15YVofc1XzNa4RNFF6LkFD6woQvPZdQlZn5FenO/
+         5KoxENOeg6XWrzEtNcZjZNAG1fKwAFJlnP8ciMPpi/R3brv88LYgh1X54LnLP94n0gRh
+         WpuLS+o9GxIR/Gi/9M4nWb5STVj78lgxasF5pIHIWupbJm8beXrFcH1vAO6O030okGUn
+         iVOeCq/TTo4anf6tklHCmwp0sdOyZn0wkO0+04gNRIZQ+qE/D/ryUmWkinhDZR/POGBI
+         noVy6xiV3GOmwKfyovf5YOupkfOHlzO92FZ9lmQ8bswEfHZPuYGYnyYEN4pnn4pCdfWV
+         XLDw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@twitch.tv header.s=govl3ysp7vlzwkjl4s5ner2sjmze35mk header.b=ZBFAMvSq;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=N47aetkE;
+       spf=pass (google.com: domain of 010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@bounce-west.twitch.tv designates 54.240.26.29 as permitted sender) smtp.mailfrom=010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@bounce-west.twitch.tv;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=twitch.tv
+Return-Path: <010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@bounce-west.twitch.tv>
+Received: from a26-29.smtp-out.us-west-2.amazonses.com (a26-29.smtp-out.us-west-2.amazonses.com. [54.240.26.29])
+        by mx.google.com with ESMTPS id q24si1179458pff.249.2018.02.12.11.55.13
+        for <LyricWulf@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 12 Feb 2018 11:55:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of 010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@bounce-west.twitch.tv designates 54.240.26.29 as permitted sender) client-ip=54.240.26.29;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@twitch.tv header.s=govl3ysp7vlzwkjl4s5ner2sjmze35mk header.b=ZBFAMvSq;
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=N47aetkE;
+       spf=pass (google.com: domain of 010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@bounce-west.twitch.tv designates 54.240.26.29 as permitted sender) smtp.mailfrom=010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@bounce-west.twitch.tv;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=twitch.tv
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=govl3ysp7vlzwkjl4s5ner2sjmze35mk; d=twitch.tv; t=1518465313;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=FzufnD6eNJgq84RpoXCa0Ve8gKZCY+MIfEgIN2BfsQA=;
+	b=ZBFAMvSqlZWGJ4aTId81WJIGJtkluN2oTPNC32AyDGFNwupz5OG/iM7QV7KY1gaz
+	xzpDpQDEoSTT9TLumMjowSRZWIvzSD7GESGPwBBxFbAEE2MBbe9uuSMeTL3gLxW4Lc6
+	31SF66ObuNtefkOVVh+C6T7QZer7H/VrSqM3KmvE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1518465313;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=FzufnD6eNJgq84RpoXCa0Ve8gKZCY+MIfEgIN2BfsQA=;
+	b=N47aetkEzqHgTC+em2o+4agfagxV1G/hNFNPH3hSZRMVoghUEc/daqacqA6LasqA
+	cUwu9PAQJMZRopIwudu2JEq81ZRpDfrL/MyZEZGt0kdE/qxYFiuELWY8MIJBbfmvcpP
+	RBoSB1UoUUbrIEzlNghPBsfZaRQlOrexR5IhD9hE=
+From: Twitch <no-reply@twitch.tv>
+To: LyricWulf@gmail.com
+Subject: GoPirateSoftware is live: The daily Pirate Software stream is now
+ live!
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <010101618b95eaaf-cc9a3624-5e3c-48ad-a3ff-3ac1ccbe0023-000000@us-west-2.amazonses.com>
+Date: Mon, 12 Feb 2018 19:55:13 +0000
+X-SES-Outgoing: 2018.02.12-54.240.26.29
+Feedback-ID: 1.us-west-2.GQUtkn6AyBrN+UJ3u4IhzWUHkEBaVqQOqsCini97qFo=:AmazonSES
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+  </head>
+  <body style=3D"background-color:#eee;background-image:none;background-rep=
+eat:repeat;background-position:top left;background-attachment:scroll;color:=
+#333;font-family:Helvetica, Arial, sans-serif;line-height:1.25;-webkit-text=
+-size-adjust:100%;" >
+
+   =20
+   =20
+
+   =20
+    <div itemscope itemtype=3D"http://schema.org/EmailMessage">
+      <div itemprop=3D"potentialAction" itemscope itemtype=3D"http://schema=
+.org/ViewAction">
+        <link itemprop=3D"target" href=3D"https://www.twitch.tv/r/e/eyJjaGF=
+ubmVsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoidmlld19hY3Rpb24iLCJlbWFpbF=
+9pZCI6IjgwZDFmZDY1LWFmOTQtNGVmZC04ODU0LTVmZWVlY2JmYmY2ZiIsInNvdXJjZV9lbWFpb=
+CI6InR3aXRjaF9mYXZvcml0ZV91cCIsIm5hbWUiOiJ0d2l0Y2hfZmF2b3JpdGVfdXAiLCJsb2dp=
+biI6IiJ9/42805737/ce9ad8082c61f97c32bb279f5be29627216c9ce1/gopiratesoftware=
+?ignore_query=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_medium=3Dem=
+ail"/>
+        <link itemprop=3D"url" href=3D"https://www.twitch.tv/gopiratesoftwa=
+re"/>
+        <meta itemprop=3D"name" content=3D"Watch Now"/>
+      </div>
+      <meta itemprop=3D"description" content=3D"gopiratesoftware just went =
+live!"/>
+    </div>
+   =20
+
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%"=
+ width=3D"100%" class=3D"body-table">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <table border=3D"0" cellpadding=3D"20" cellspacing=3D"0" width=3D=
+"600" class=3D"outer-email-container">
+            <tr>
+              <td align=3D"center" valign=3D"top">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"inner-email-container" style=3D"background-color:#fff;=
+background-image:none;background-repeat:repeat;background-position:top left=
+;background-attachment:scroll;" >
+
+                 =20
+                  <tr>
+                    <td align=3D"center" valign=3D"top">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" height=3D"90" width=3D"100%" class=3D"email-logo" style=3D"background-co=
+lor:#fff;background-image:none;background-repeat:repeat;background-position=
+:top left;background-attachment:scroll;" >
+                        <tr>
+                          <td align=3D"center" valign=3D"middle">
+                            <a href=3D"https://www.twitch.tv/r/e/eyJjaGFubm=
+VsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoibG9nbyIsImVtYWlsX2lkIjoiODBkM=
+WZkNjUtYWY5NC00ZWZkLTg4NTQtNWZlZWVjYmZiZjZmIiwic291cmNlX2VtYWlsIjoidHdpdGNo=
+X2Zhdm9yaXRlX3VwIiwibmFtZSI6InR3aXRjaF9mYXZvcml0ZV91cCIsImxvZ2luIjoiIn0=3D/=
+42805737/a8b4bda18f24718f74611d37d05a0423e764958c/gopiratesoftware?ignore_q=
+uery=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_medium=3Demail">
+                              <img src=3D"http://s.jtvnw.net/jtv_user_pictu=
+res/hosted_images/twitch-email-logomark-purple.png" width=3D"102" height=3D=
+"34" alt=3D"Twitch" />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align=3D"center" valign=3D"top">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" height=3D"1" width=3D"100%" class=3D"email-divider">
+                        <tr>
+                          <td align=3D"center" valign=3D"middle" style=3D"b=
+ackground-color: #eeeeee" width=3D"249"></td>
+                          <td align=3D"center" valign=3D"middle" style=3D"b=
+ackground-color: #6441a5" width=3D"102"></td>
+                          <td align=3D"center" valign=3D"middle" style=3D"b=
+ackground-color: #eeeeee" width=3D"249"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                 =20
+
+                 =20
+                  <tr>
+                    <td align=3D"center" valign=3D"top">
+                      <table border=3D"0" cellpadding=3D"40" cellspacing=3D=
+"0" height=3D"0" width=3D"100%" class=3D"email-header">
+                        <tr>
+                          <td align=3D"center" valign=3D"middle">
+                            <div class=3D"header-message">
+                             =20
+                              Hey, lyricwulf!
+                             =20
+                              <strong style=3D"color:#6441a5;">
+                                <a href=3D"https://www.twitch.tv/r/e/eyJjaG=
+FubmVsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoiaGVhZGVyIiwiZW1haWxfaWQiO=
+iI4MGQxZmQ2NS1hZjk0LTRlZmQtODg1NC01ZmVlZWNiZmJmNmYiLCJzb3VyY2VfZW1haWwiOiJ0=
+d2l0Y2hfZmF2b3JpdGVfdXAiLCJuYW1lIjoidHdpdGNoX2Zhdm9yaXRlX3VwIiwibG9naW4iOiI=
+ifQ=3D=3D/42805737/05887599bcdd180845e93d195c1889841222ce25/gopiratesoftwar=
+e?ignore_query=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_medium=3De=
+mail" style=3D"color:#6441a5;text-decoration:none;">
+                                  gopiratesoftware just went live!
+                                </a>
+                              </strong>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                 =20
+
+                 =20
+                  <tr>
+                    <td align=3D"center" valign=3D"top">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" height=3D"0" width=3D"100%" class=3D"email-content">
+                        <tr>
+                          <td align=3D"center" valign=3D"middle">
+                            <a href=3D"https://www.twitch.tv/r/e/eyJjaGFubm=
+VsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoiY2hhbm5lbF9waWN0dXJlIiwiZW1ha=
+WxfaWQiOiI4MGQxZmQ2NS1hZjk0LTRlZmQtODg1NC01ZmVlZWNiZmJmNmYiLCJzb3VyY2VfZW1h=
+aWwiOiJ0d2l0Y2hfZmF2b3JpdGVfdXAiLCJuYW1lIjoidHdpdGNoX2Zhdm9yaXRlX3VwIiwibG9=
+naW4iOiIifQ=3D=3D/42805737/df6dc9644c882efbf97b9c4e7487ad15e7c248b2/gopirat=
+esoftware?ignore_query=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_me=
+dium=3Demail">
+                              <img src=3D"https://static-cdn.jtvnw.net/jtv_=
+user_pictures/gopiratesoftware-profile_image-fe45bd45cd6df655-70x70.jpeg" w=
+idth=3D"64" height=3D"64" />
+                            </a>
+                           =20
+                            <div class=3D"stream-status" style=3D"color:#33=
+3;font-size:18px;font-weight:bold;line-height:24px;margin-top:10px;width:70=
+%;">
+                              <a href=3D"https://www.twitch.tv/r/e/eyJjaGFu=
+bmVsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoiY2hhbm5lbF9zdGF0dXMiLCJlbWF=
+pbF9pZCI6IjgwZDFmZDY1LWFmOTQtNGVmZC04ODU0LTVmZWVlY2JmYmY2ZiIsInNvdXJjZV9lbW=
+FpbCI6InR3aXRjaF9mYXZvcml0ZV91cCIsIm5hbWUiOiJ0d2l0Y2hfZmF2b3JpdGVfdXAiLCJsb=
+2dpbiI6IiJ9/42805737/66a3b971d21e1a33006bb470364706cdcb618998/gopiratesoftw=
+are?ignore_query=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_medium=
+=3Demail" style=3D"color:#6441a5;text-decoration:none;">Heartbound - #GameD=
+ev #IndieDev #PixelArt</a>
+                            </div>
+                           =20
+                           =20
+                            <div class=3D"stream-game" style=3D"color:#999;=
+font-size:12px;line-height:16px;margin-bottom:40px;">
+                              <strong>gopiratesoftware is playing Creative<=
+/strong>
+                            </div>
+                           =20
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                 =20
+
+                 =20
+                  <tr>
+                    <td align=3D"center" valign=3D"top">
+                      <table border=3D"0" cellpadding=3D"30" cellspacing=3D=
+"0" height=3D"0" width=3D"100%" class=3D"email-action" style=3D"border-top-=
+width:1px;border-top-style:solid;border-top-color:#eee;">
+                        <tr>
+                          <td align=3D"center" valign=3D"middle">
+                            <div>
+                              <a href=3D"https://www.twitch.tv/r/e/eyJjaGFu=
+bmVsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoiYWN0aW9uIiwiZW1haWxfaWQiOiI=
+4MGQxZmQ2NS1hZjk0LTRlZmQtODg1NC01ZmVlZWNiZmJmNmYiLCJzb3VyY2VfZW1haWwiOiJ0d2=
+l0Y2hfZmF2b3JpdGVfdXAiLCJuYW1lIjoidHdpdGNoX2Zhdm9yaXRlX3VwIiwibG9naW4iOiIif=
+Q=3D=3D/42805737/3a9ad7c3308f332763df79393b8f2f3942b379f5/gopiratesoftware?=
+ignore_query=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_medium=3Dema=
+il" style=3D"background-color:#6441a5;color:#ffffff;display:inline-block;fo=
+nt-family:sans-serif;font-size:14px;line-height:40px;margin-bottom:10px;tex=
+t-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:no=
+ne;mso-hide:all;">
+                                Watch Now
+                              </a>
+                              <br />
+                              <small class=3D"alternate-link" style=3D"colo=
+r:#999;font-size:11px;margin-top:4px;margin-bottom:4px;margin-right:4px;mar=
+gin-left:4px;">
+                                Or click this link:
+                                <a href=3D"https://www.twitch.tv/r/e/eyJjaG=
+FubmVsIjoiZ29waXJhdGVzb2Z0d2FyZSIsImxvY2F0aW9uIjoiYWN0aW9uX2FsdCIsImVtYWlsX=
+2lkIjoiODBkMWZkNjUtYWY5NC00ZWZkLTg4NTQtNWZlZWVjYmZiZjZmIiwic291cmNlX2VtYWls=
+IjoidHdpdGNoX2Zhdm9yaXRlX3VwIiwibmFtZSI6InR3aXRjaF9mYXZvcml0ZV91cCIsImxvZ2l=
+uIjoiIn0=3D/42805737/45143a1db7141bea970ff5b87d9b10ebee6f5d10/gopiratesoftw=
+are?ignore_query=3Dtrue&amp;tt_content=3Dtwitch_favorite_up&amp;tt_medium=
+=3Demail" style=3D"color:#999">https://www.twitch.tv/gopiratesoftware</a>
+                              </small>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                 =20
+
+                </table>
+              </td>
+            </tr>
+
+           =20
+            <tr>
+              <td align=3D"center" valign=3D"top">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"email-footer" style=3D"color:#7F7F7F;font-size:12px;" =
+>
+                  <tr>
+                    <td valign=3D"top">
+                      <div>
+                        To stop receiving emails about gopiratesoftware, <a=
+ href=3D"https://www.twitch.tv/user/remove_me?block=3Dchannel&amp;email_id=
+=3D80d1fd65-af94-4efd-8854-5feeecbfbf6f&amp;user_id=3D42805737&amp;channel_=
+id=3D151368796&amp;validating_hash=3Dc7b5f485629eea8795c78b1080186907a75684=
+5f&amp;tt_medium=3Dtwitch_favorite_up&amp;tt_content=3Dchannel_unsubscribe"=
+>click here</a>.
+                      </div>
+                      <div>
+                        To stop receiving emails when someone you follow go=
+es live, <a href=3D"https://www.twitch.tv/user/remove_me?block=3Dkind&amp;e=
+mail_id=3D80d1fd65-af94-4efd-8854-5feeecbfbf6f&amp;email_type=3Dtwitch_favo=
+rite_up&amp;source_email=3Dtwitch_favorite_up&amp;user_id=3D42805737&amp;va=
+lidating_hash=3D4f947c9c9da1201bc07cf9c7ef1c5b21bc54a639&amp;tt_medium=3Dtw=
+itch_favorite_up&amp;tt_content=3Dkind_unsubscribe">click here</a>.
+                      </div>
+                      <div>
+                        To stop receiving email notifications, <a href=3D"h=
+ttps://www.twitch.tv/user/remove_me?block=3Dkind&amp;email_id=3D80d1fd65-af=
+94-4efd-8854-5feeecbfbf6f&amp;email_type=3Dall&amp;source_email=3Dtwitch_fa=
+vorite_up&amp;user_id=3D42805737&amp;validating_hash=3Db9b173c3999bde32891d=
+d8300b3bceda1055ccd2&amp;tt_medium=3Dtwitch_favorite_up&amp;tt_content=3Dal=
+l_unsubscribe">click here</a>
+                      </div>
+                      <div>To report this as offensive content, <a href=3D"=
+https://www.twitch.tv/gopiratesoftware/report?contentType=3DLIVE_UP_REPORT&=
+contentId=3D176bbded6ff412c9421000ccce280940c66d5ec4">click here</a>.</div>
+                    </td>
+                  </tr>
+                </table>
+                <p style=3D"color:#7f7f7f;font-size:12px;padding: 20px 0;">=
+=C2=A9 2018 Twitch. All Rights Reserved.</p>
+              </td>
+            </tr>
+           =20
+
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <img src=3D"https://spade.twitch.tv/track?data=3DeyJldmVudCI6ImVtYWlsX2=
+9wZW4iLCJwcm9wZXJ0aWVzIjp7Im5vdGlmaWNhdGlvbl9pZCI6IjgwZDFmZDY1LWFmOTQtNGVmZ=
+C04ODU0LTVmZWVlY2JmYmY2ZiJ9fQ%3D%3D&img=3D1&ua=3D1" width=3D"1" height=3D"1=
+"/>
+  </body>
+</html>

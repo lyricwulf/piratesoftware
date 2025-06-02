@@ -1,0 +1,18 @@
+---
+title: Misc. Sources
+---
+
+<script>
+   import Email from '$lib/components/Email.svelte';
+   import CsvTable from '$lib/components/CsvTable.svelte';
+
+   import PirateSoftwareBits from './PirateSoftware-bits.csv?raw';
+</script>
+
+## When I Started Watching Thor's Stream
+
+I started watching Thor's stream on Mon, Feb 12, 2018.
+
+<Email eml="GoPirateSoftware is live_ The daily Pirate Software stream is now live!.eml" open={false} />
+
+<CsvTable csv={PirateSoftwareBits} />
