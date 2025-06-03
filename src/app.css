@@ -246,7 +246,7 @@ h1 ~ h2 {
 
 @media (max-width: 1200px) {
   h1 {
-    padding-inline: 5rem;
+    padding-inline: 4rem;
     text-align: center;
   }
 }

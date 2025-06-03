@@ -36,10 +36,12 @@
   }
 
   .drawer-btn {
-    background: hsl(var(--muted));
-    padding: 1rem 1rem;
+    background: hsl(var(--background));
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
     cursor: pointer;
+
+    border: 1px solid hsl(var(--muted-foreground) / 0.3);
 
     box-shadow: 0 0 10px 0 black;
   }

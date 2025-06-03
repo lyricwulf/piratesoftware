@@ -23,7 +23,7 @@
 <div class="x-wrapper">
   <HideOnMobile position="left">
     {#snippet buttonContent()}
-      <ListTree />
+      <ListTree size={20} />
     {/snippet}
     <PageNav />
   </HideOnMobile>
@@ -39,7 +39,7 @@
   {#if hasSections}
     <HideOnMobile position="right">
       {#snippet buttonContent()}
-        <TableOfContents />
+        <TableOfContents size={20} />
       {/snippet}
       <SectionNav />
     </HideOnMobile>
