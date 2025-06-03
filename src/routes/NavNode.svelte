@@ -11,14 +11,23 @@
   import NavNode from "./NavNode.svelte";
   import { MD_METADATA } from "./md-metadata";
   import { Badge } from "$lib/components/ui/badge";
+  import { untrack } from "svelte";
 
   let { name = "", children = [], href = "" } = $props();
 
   let current = $derived(page.url.pathname === href);
-  let open = $state(
+
+  const shouldOpen = () =>
     page.url.pathname === href ||
-      children.some((child) => child.href === page.url.pathname)
-  );
+    children.some((child) => child.href === page.url.pathname);
+
+  let open = $state(shouldOpen());
+  $effect(() => {
+    void page.url;
+    untrack(() => {
+      open ||= shouldOpen();
+    });
+  });
 
   const metadata = $derived(MD_METADATA.get(href));
 </script>
