@@ -227,7 +227,7 @@ hr {
   border-color: hsl(var(--muted-foreground) / 40%);
 }
 
-h1 {
+/* h1 {
   position: sticky;
   top: 0;
   background: hsl(var(--background));
@@ -242,7 +242,7 @@ h1 ~ h2 {
   background: hsl(var(--background));
   z-index: 5;
   scroll-margin-top: 5rem;
-}
+} */
 
 @media (max-width: 1200px) {
   h1 {
