@@ -5,9 +5,21 @@
   import { ScrollArea } from "$lib/components/ui/scroll-area";
 
   const { class: className = "" } = $props();
+
+  let t = $state<NodeJS.Timeout | null>(null);
 </script>
 
-<nav class="sticky-top {className}">
+<nav
+  class="sticky-top {className}"
+  onmouseleave={() => {
+    t = setTimeout(() => {
+      window.dispatchEvent(new CustomEvent("resetNav"));
+    }, 300);
+  }}
+  onmouseenter={() => {
+    if (t) clearTimeout(t);
+  }}
+>
   <ScrollArea class="h-[calc(100vh-6rem)] pr-3">
     <div class="flex flex-col gap-2">
       <NavNode {...NAV_ITEMS} />

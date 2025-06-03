@@ -32,6 +32,12 @@
   const metadata = $derived(MD_METADATA.get(href));
 </script>
 
+<svelte:window
+  on:resetNav={() => {
+    open = shouldOpen();
+  }}
+/>
+
 {#if name}
   {#if children?.length}
     <Collapsible.Root bind:open>
