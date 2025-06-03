@@ -1,11 +1,18 @@
 <script lang="ts">
   import Button from "$lib/components/ui/button/button.svelte";
+  import { onNavigate } from "$app/navigation";
 
   let { children, buttonContent = null, position = "left" } = $props();
+
+  let input: HTMLInputElement;
+
+  onNavigate(() => {
+    if (input) input.checked = false;
+  });
 </script>
 
 <label class={position}>
-  <input type="checkbox" />
+  <input type="checkbox" bind:this={input} />
   <div class="drawer-btn">{@render buttonContent?.()}</div>
   <div class="close-shade"></div>
 </label>
