@@ -105,10 +105,19 @@
     flex-direction: column;
     align-items: stretch;
   }
+  .collapsible-children {
+    transition:
+      opacity 0.3s var(--ease-out-expo),
+      transform 0.3s var(--ease-out-expo);
+  }
   :global([data-state="open"]) > .collapsible {
     background: hsl(var(--popover));
     border-radius: 5px;
     border: 1px solid hsl(var(--border));
+  }
+  :global([data-state="closed"]) > .collapsible .collapsible-children {
+    opacity: 0;
+    transform: translateX(-20px);
   }
 
   .collapsible :global(a),
