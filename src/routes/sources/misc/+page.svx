@@ -16,3 +16,10 @@ I started watching Thor's stream on Mon, Feb 12, 2018.
 <Email eml="GoPirateSoftware is live_ The daily Pirate Software stream is now live!.eml" open={false} />
 
 <CsvTable csv={PirateSoftwareBits} />
+
+## Shaye's Age
+
+Shaye turned 27, on Jan 1, 2023, making their birthday Jan 1, 1996. So, during
+the time of the events, 2018, they were 22 years old.
+
+https://archive.ph/tAu6f
