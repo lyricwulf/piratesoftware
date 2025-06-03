@@ -10,6 +10,8 @@ order: -1
    import Callout from '$lib/components/Callout.svelte';
    import Tweet from '$lib/components/Tweet.svelte';
    import Popup from '$lib/components/Popup.svelte';
+
+   import InlineButton from '$lib/components/InlineButton.svelte';
 </script>
 
 When I was 20 years old, **Jason Thor Hall (aka PirateSoftware)**, aged 31 at
@@ -253,6 +255,29 @@ and Shaye did not delete any of their messages as promised**, instead leaving
 all of their Twitter replies and Discord posts public, making it look like I was
 remorseful because my “stunt” didn’t work and further cementing the image of a
 “scammer”. 
+
+## Effects On My Life
+
+During these events, I was in college, double majoring in Mechanical Engineering
+and Aerospace Engineering. **I maintained a 3.92 GPA over my first four
+semesters**. **After the events mid-Fall 2018, my next GPAs were 2.76 then
+2.57**. After that, **I dropped out**.
+
+In April 2019, when I tried to speak out, Thor turned everyone against me. I
+thought if I stayed honest and explained my situation that people would at least
+try to understand. Instead, I had people [vandalize my Google
+Doc](/aftermath/lyrics-google-doc), [say I was appropriating the
+narrative](/asides/community-feedback) of *real* victims, and [accuse me of
+doxxing and attacking
+Thor](/aftermath/thors-defense#lyric-doxxed-thor--altered-messages). 
+
+I felt abandoned by everyone. What was once a desire to create free educational
+content was replaced by feelings of inadequacy and abandonment. I posted less
+and less, and **I stopped making content entirely in 2023**.
+
+<InlineButton href="/aftermath/effects-on-my-life">
+   Read more on "Effects On My Life"
+</InlineButton>
 
 ## Recent Events
 
