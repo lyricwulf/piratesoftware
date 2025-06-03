@@ -85,6 +85,7 @@
     .markdown {
       justify-self: center;
       border-inline: none;
+      padding: 0px;
     }
   }
 </style>
