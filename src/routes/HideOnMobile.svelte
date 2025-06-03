@@ -70,7 +70,6 @@
 
   @media (max-width: 1200px) {
     .hide-on-mobile {
-      display: none;
       position: fixed;
       top: var(--page-padding);
       width: 300px;
@@ -80,20 +79,25 @@
       background: hsl(var(--background));
       border: 1px solid hsl(var(--muted));
       border-radius: var(--radius);
+
+      transition:
+        transform 0.3s var(--ease-out-expo),
+        opacity 0.3s var(--ease-out-expo);
     }
 
     .hide-on-mobile.left {
+      --direction: -1;
       left: var(--page-padding);
-      animation: from-left var(--transition);
     }
     .hide-on-mobile.right {
+      --direction: 1;
       right: var(--page-padding);
-      animation: from-right var(--transition);
     }
 
-    label:has(input:checked) + .hide-on-mobile {
-      display: block;
-      /* background: red; */
+    label:not(:has(input:checked)) + .hide-on-mobile {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(calc(var(--direction) * 24px));
     }
 
     .close-shade {
@@ -103,13 +107,14 @@
       width: 100vw;
       height: 100vh;
       background: rgba(0, 0, 0, 0.5);
-      display: none;
 
       z-index: 10;
+      transition: opacity 0.3s var(--ease-out-expo);
     }
 
-    label:has(input:checked) .close-shade {
-      display: block;
+    label:not(:has(input:checked)) .close-shade {
+      opacity: 0;
+      pointer-events: none;
     }
 
     /* fixes a z-index issue where the left shade will always show under the
