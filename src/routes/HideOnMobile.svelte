@@ -13,7 +13,9 @@
 
 <label class={position}>
   <input type="checkbox" bind:this={input} />
-  <div class="drawer-btn">{@render buttonContent?.()}</div>
+  <div class="drawer-btn shadow-sm h-12 w-12 grid place-content-center">
+    {@render buttonContent?.()}
+  </div>
   <div class="close-shade"></div>
 </label>
 <div class="hide-on-mobile sticky-top {position}">{@render children()}</div>
@@ -37,13 +39,10 @@
 
   .drawer-btn {
     background: hsl(var(--background));
-    padding: 0.5rem 0.5rem;
     border-radius: 8px;
     cursor: pointer;
 
     border: 1px solid hsl(var(--muted-foreground) / 0.3);
-
-    box-shadow: 0 0 10px 0 black;
   }
 
   @media (min-width: 1200px) {
