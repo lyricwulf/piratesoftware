@@ -261,18 +261,19 @@ h1 ~ h2 {
 blockquote {
   padding: 1rem;
   margin: 0.5rem 0;
-  border-radius: var(--radius);
-  background: hsl(var(--muted));
+  border-radius: 5px;
+  border: 1px solid hsla(var(--muted-foreground) / 50%);
   /* color: hsl(var(--muted-foreground)); */
   position: relative;
 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  overflow : hidden;
 }
 
 blockquote p {
-  margin-inline-start: 1rem;
+  margin-inline-start: 0.5rem;
   display: block;
 }
 
@@ -280,13 +281,14 @@ blockquote::before {
   content: "";
   width: 0.25rem;
   background: red;
-  border-radius: var(--radius);
   margin-right: 1rem;
 
   position: absolute;
-  left: 1rem;
-  top: 1rem;
-  bottom: 1rem;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  opacity: 0.6;
 }
 
 .softborder {
