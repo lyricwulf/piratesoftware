@@ -41,11 +41,10 @@
 {#if name}
   {#if children?.length}
     <Collapsible.Root bind:open>
-      <div class="collapsible">
-        <Button
-          class="justify-start font-bold text-foreground gap-2 cursor-pointer"
-          variant="ghost"
-          on:click={() => (open = !open)}
+      <div class="collapsible rounded-md">
+        <Collapsible.Trigger
+          class="flex gap-2 items-center py-2 px-4 hover:bg-muted text-sm
+        transition rounded-md"
         >
           {#if open}
             <FolderOpen size={18} />
@@ -54,7 +53,7 @@
           {/if}
           {name}
           <!-- <ChevronDown class="chevron" /> -->
-        </Button>
+        </Collapsible.Trigger>
         <Collapsible.Content>
           {#if open}
             <div class="collapsible-children pr-2 pb-2">
@@ -104,6 +103,8 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    transition: opacity 0.3s var(--ease-out-expo);
   }
   .collapsible-children {
     transition:
@@ -112,8 +113,10 @@
   }
   :global([data-state="open"]) > .collapsible {
     background: hsl(var(--popover));
-    border-radius: 5px;
     border: 1px solid hsl(var(--border));
+  }
+  :global([data-state="closed"]) > .collapsible {
+    opacity: 0.6;
   }
   :global([data-state="closed"]) > .collapsible .collapsible-children {
     opacity: 0;

@@ -6,7 +6,7 @@
 
   const { class: className = "" } = $props();
 
-  let t = $state<NodeJS.Timeout | null>(null);
+  let t = $state<number | null>(null);
 </script>
 
 <nav
@@ -32,6 +32,12 @@
     padding: 0.5rem;
     border-radius: var(--radius);
   }
+
+  nav :global([data-current="false"]) {
+    opacity: 0.6;
+    font-weight: 400;
+  }
+
   nav :global([data-current="true"]) {
     color: hsl(var(--text));
     font-weight: 600;
