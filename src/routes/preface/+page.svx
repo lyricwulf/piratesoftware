@@ -40,7 +40,7 @@ of behavior and the intent behind them**.
    The archive should not be browsed if you are under the age of 18.
 </Callout>
 
-An archive of the Telegram chat between myself and Jason (“Thor”) has been
+An archive of the Telegram chat between myself and Thor has been
 uploaded to https://piratesoftware.sucks/archive/telegram. All transcripts will be cited with a link,
 which can be used to view additional messages before and after the transcript.
 

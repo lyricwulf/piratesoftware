@@ -13,7 +13,7 @@ important: true
 
 Time period: April 10 - 14, 2019
 
-I would be convinced to delete all posts regarding this situation, through Jason
+I would be convinced to delete all posts regarding this situation, through Thor
 and Shaye’s manipulation of my partner. 
 
 ## Shaye lies to my partner
@@ -47,7 +47,7 @@ mutual friend.
 
 <Callout color="sky">
 
-  Upon reviewing the archive, **no sensitive information about Jason (nor his
+  Upon reviewing the archive, **no sensitive information about Thor (nor his
   phone number) ever existed in any messages, media, code, or metadata of the
   archive.** 
   
@@ -78,7 +78,12 @@ This conversation led my partner to sympathize with Shaye, **“I can’t forgiv
 
 ## My partner tries to convince me
 
-On April 10, my **partner did as they promised to Shaye; they tried to convince me** to reverse the chargeback and delete all public posts about Jason. **I expressed my distrust in them and disgust** at how they are twisting the situation. **My partner empathized with Shaye**, trying to get me to consider that I might be at fault for misunderstanding the situation, and that I should stop harassing them. 
+On April 10, my **partner did as they promised to Shaye; they tried to convince
+me** to reverse the chargeback and delete all public posts about Thor. **I
+expressed my distrust in them and disgust** at how they are twisting the
+situation. **My partner empathized with Shaye**, trying to get me to consider
+that I might be at fault for misunderstanding the situation, and that I should
+stop harassing them. 
 
 <Callout>
 
@@ -121,7 +126,7 @@ own emotional well-being. **I realize now that this is not a virtue.**
 
 ## Deleting my posts
 
-On Apr 14, 2019, 12:34 AM PDT, my partner spoke to Jason. 
+On Apr 14, 2019, 12:34 AM PDT, my partner spoke to Thor. 
 
 <div class="flex flex-col gap-1">
   <ChatBubble from="Thor" text="Well yeah. I'm not the aggressor here. If he calls off the attack all of this goes away pretty fast." />
@@ -183,7 +188,7 @@ Conversations between Shaye and my partner, forwarded to me by my partner.
   <ChatBubble from="Shaye" text="Hey , thank you very much for reaching out, this conversation will not be going anywhere outside of this, if you have concerns about that feel free to delete the conversation if you need to." />
   <ChatBubble from="Shaye" text="We did the copyright strikes in response to the chargeback he sent as we don't want to be associated with anyone who chargebacks content creators" />
   <ChatBubble from="Shaye" text="As for the dispute we have no intention of continuing this in public, we just want him to leave us alone" />
-  <ChatBubble from="Shaye" text="Since this began we stated our public piece and he has been attacking us daily on Twitter, and he used a second account to join our discord after being banned on his main pretending to be a different person. That account was dallasgotpaws and we have since banned it as well." comment="This recollection of the Discord account is true. I reasoned that their Discord server was the best place to get the most critical feedback, with the goal of clearing up any possible confusion about the events that happened. While I did not post anything inflammatory, I did express skepticism about blindly supporting Jason in the matter."/>
+  <ChatBubble from="Shaye" text="Since this began we stated our public piece and he has been attacking us daily on Twitter, and he used a second account to join our discord after being banned on his main pretending to be a different person. That account was dallasgotpaws and we have since banned it as well." comment="This recollection of the Discord account is true. I reasoned that their Discord server was the best place to get the most critical feedback, with the goal of clearing up any possible confusion about the events that happened. While I did not post anything inflammatory, I did express skepticism about blindly supporting Thor in the matter."/>
 </div>
 <div class="flex flex-col gap-1">
   <ChatBubble from="Shaye" text="thank you very much, I'm really glad you have this stance about it." />
