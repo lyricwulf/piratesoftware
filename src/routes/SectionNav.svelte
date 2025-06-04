@@ -84,7 +84,8 @@
     transition:
       color 0.2s ease-in-out,
       background-color 0.2s ease-in-out,
-      transform 0.3s var(--ease-out-expo);
+      transform 0.3s var(--ease-out-expo),
+      opacity 0.3s var(--ease-out-expo);
   }
 
   .section-nav :global([data-current] svg) {
@@ -99,6 +100,8 @@
 
   .section-nav :global([data-current="false"]) {
     transform: scale(0.95);
+    opacity: 0.6;
+    font-weight: 400;
   }
 
   .section-nav :global([data-current="false"] svg) {
