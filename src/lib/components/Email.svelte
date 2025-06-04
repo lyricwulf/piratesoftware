@@ -19,7 +19,16 @@
   const pathname = page.url.pathname;
   const emailUrl = `${pathname}/${eml}`;
 
-  let email = $state<ReadedEmlJson>();
+  let email = $state<ReadedEmlJson>({
+    subject: "Loading...",
+    date: "",
+    from: [],
+    to: [],
+    html: "",
+    text: "",
+    headers: {},
+  });
+
   onMount(() => {
     (async () => {
       const response = await fetch(emailUrl);
@@ -34,7 +43,6 @@
         return;
       }
       email = result;
-      console.log(email);
     })();
   });
 
