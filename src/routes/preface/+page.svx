@@ -54,6 +54,6 @@ Read more about the authenticity of the [Telegram Archive](/sources/telegram-arc
 
 </Callout>
 
-## Document Mutability
+## Changes to this Document
 
-This document is subject to change. I strongly encourage the use of archiving.
+This document is subject to change. The source files will be available on [GitHub](https://github.com/lyricwulf/piratesoftware).
