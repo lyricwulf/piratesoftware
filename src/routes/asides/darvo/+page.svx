@@ -5,27 +5,30 @@ order: 3
 
 <script>
    import Callout from '$lib/components/Callout.svelte';
+   import InlineButton from '$lib/components/InlineButton.svelte';
 </script>
 
 ## DARVO
 
-Freyd, J.J. (1997) coined the term DARVO in her paper "Violations of power,
-adaptive blindness, and betrayal trauma theory" published in the journal
-Feminism & Psychology.
+Freyd, J.J. coined the term DARVO in "Violations of power, adaptive blindness,
+and betrayal trauma theory"  published in the journal Feminism & Psychology
+(1997).
 
-DARVO refers to a reaction perpetrators of wrong doing, particularly sexual
-offenders, may display in response to being held accountable for their behavior.
-DARVO stands for "Deny, Attack, and Reverse Victim and Offender."  The
-perpetrator or offender may Deny the behavior, Attack the individual doing the
-confronting, and Reverse the roles of Victim and Offender such that the
-perpetrator assumes the victim role and turns the true victim -- or the whistle
-blower -- into an alleged offender. This occurs, for instance, when an actually
-guilty perpetrator assumes the role of "falsely accused" and attacks the
-accuser's credibility and blames the accuser of being the perpetrator of a false
-accusation.
+> DARVO refers to a reaction that perpetrators of wrong doing, particularly
+> sexual offenders, may display in response to being held accountable for their
+> behavior. DARVO stands for "Deny, Attack, and Reverse Victim and Offender."
+> The perpetrator or offender may **Deny the behavior**, **Attack the
+> individual** doing the confronting, and **Reverse the roles of Victim and
+> Offender such that the perpetrator assumes the victim role and turns the true
+> victim** -- or the whistle blower -- **into an alleged offender**. This
+> occurs, for instance, when an actually guilty perpetrator assumes the role of
+> "falsely accused" and attacks the accuser's credibility and blames the accuser
+> of being the perpetrator of a false accusation. 
+> 
+> - Jennifer J. Freyd 
+> 
+> <InlineButton href="https://www.jjfreyd.com/darvo" target="_blank">Read more about DARVO</InlineButton>
 
-<a href="https://www.jjfreyd.com/darvo" target="_blank">Read more about DARVO
--></a>
 
 <Callout color="sky">
 
