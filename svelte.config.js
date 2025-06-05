@@ -33,7 +33,7 @@ function get_headings() {
     });
 
     if (!vFile.data.fm) vFile.data.fm = {};
-    vFile.data.fm.headings = vFile.data.headings;
+    vFile.data.fm.headings = headings;
   };
 }
 
