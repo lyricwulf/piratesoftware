@@ -9,6 +9,7 @@
   import WipNotice from "./WipNotice.svelte";
   import { ModeWatcher } from "mode-watcher";
   import LightSwitch from "./LightSwitch.svelte";
+  import Search from "./Search.svelte";
 
   let { children } = $props();
 
@@ -17,6 +18,8 @@
 
   let hasSections = $derived(pageMetadata?.headings?.length > 0);
 </script>
+
+<Search />
 
 <ModeWatcher />
 <LightSwitch class="self-end" />
