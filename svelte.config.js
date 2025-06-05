@@ -17,11 +17,15 @@ function get_headings() {
 
     const slugger = new GithubSlugger();
 
-    vFile.data.headings = [];
+    const headings = [];
+
+    const fileName = vFile.filename.split(/[\\\/]/).pop();
+
+    if (fileName !== "+page.svx") return;
 
     visit(tree, "heading", (node) => {
       const title = tree_to_string(node);
-      vFile.data.headings.push({
+      headings.push({
         level: node.depth,
         title,
         slug: slugger.slug(title),
