@@ -70,6 +70,9 @@
   --page-padding: 1rem;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --transition: 0.3s var(--ease-out-expo);
+}
+
+body {
   scrollbar-gutter: stable;
 }
 
