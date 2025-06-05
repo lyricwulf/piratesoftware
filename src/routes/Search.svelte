@@ -3,6 +3,7 @@
   import { Card } from "$lib/components/ui/card";
   import { untrack } from "svelte";
   import { Search } from "@lucide/svelte";
+  import { onNavigate } from "$app/navigation";
 
   let results: SearchResults = $state([]);
 
@@ -44,6 +45,12 @@
         results = [];
       }
     })();
+  });
+
+  onNavigate(() => {
+    open = false;
+    searchQuery = "";
+    results = [];
   });
 </script>
 
@@ -126,7 +133,7 @@
   }
 
   .result-preview :global(b) {
-    /* color: hsl(var(--foreground)); */
+    color: hsl(var(--foreground));
     font-weight: bold;
   }
 
