@@ -3,7 +3,7 @@
   const { rows = [], caption } = $$props;
 </script>
 
-<Table.Root>
+<Table.Root class="kv-table">
   {#if caption}
     <Table.Caption>{caption}</Table.Caption>
   {/if}
