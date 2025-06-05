@@ -79,14 +79,8 @@ async function generateSearchIndex() {
     });
   }
 
-  fs.writeFile(
-    `${BUILD_DIR}/search-index.json`,
-    JSON.stringify(entries, null, 2)
-  );
-  fs.writeFile(
-    `${STATIC_DIR}/search-index.json`,
-    JSON.stringify(entries, null, 2)
-  );
+  fs.writeFile(`${BUILD_DIR}/search-index.json`, JSON.stringify(entries));
+  fs.writeFile(`${STATIC_DIR}/search-index.json`, JSON.stringify(entries));
 }
 
 generateSearchIndex();
