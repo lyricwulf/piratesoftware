@@ -122,7 +122,7 @@
     >
       <div class="flex gap-2 items-center">
         <label
-          class="grow-1 can-load py-2 px-4 flex items-center gap-2 rounded-full border-1 border-gray-600"
+          class="grow-1 w-0 can-load py-2 px-4 flex items-center gap-2 rounded-full border-1 border-gray-600"
           class:loading={searchState.loading}
         >
           <Search class="grow-0 shrink-0" size={20} />
