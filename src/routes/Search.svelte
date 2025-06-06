@@ -14,7 +14,7 @@
     t: undefined as ReturnType<typeof setTimeout> | undefined,
   });
 
-  let open = $state(true);
+  let open = $state(false);
 
   let inputElement: HTMLInputElement | undefined = $state();
 
@@ -42,9 +42,10 @@
 
     (async () => {
       const index = await prepareSearchData();
-      const query = searchState.query; // important: Capture the current query
+      const query = searchQuery; // important: Capture the current query
       if (!query) {
         results = [];
+        searchState.loading = false;
         return;
       }
       await new Promise(
@@ -61,8 +62,7 @@
           });
         });
 
-      console.log("Searching for:", query, searchState.query);
-      if (searchState.query !== query) return;
+      if (searchQuery !== query) return;
 
       results = index.search(query, {
         pluck: "text",
@@ -130,11 +130,13 @@
       </label>
 
       {#if searchState.loading}{:else}
-        <div class="result-count text-sm text-muted-foreground my-2">
-          {results?.length > 0
-            ? `${results.length} result${results.length > 1 ? "s" : ""} found for "${searchQuery}"`
-            : `${searchQuery ? `No results found for "${searchQuery}"` : ""}`}
-        </div>
+        {#if searchQuery}
+          <div class="result-count text-sm text-muted-foreground my-2">
+            {results?.length > 0
+              ? `${results.length} result${results.length > 1 ? "s" : ""} found for "${searchQuery}"`
+              : `${searchQuery ? `No results found for "${searchQuery}"` : ""}`}
+          </div>
+        {/if}
 
         {#if results?.length > 0}
           <div class="h-[80vh] overflow-y-auto results">
