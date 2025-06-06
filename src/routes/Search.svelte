@@ -7,9 +7,14 @@
 
   let results: SearchResults = $state([]);
 
-  let searchQuery = $state("Thor");
+  let searchQuery = $state("");
+  let searchState = $state({
+    query: "",
+    loading: false,
+    t: undefined as ReturnType<typeof setTimeout> | undefined,
+  });
 
-  let open = $state(false);
+  let open = $state(true);
 
   let inputElement: HTMLInputElement | undefined = $state();
 
@@ -23,27 +28,54 @@
   };
 
   $effect(() => {
-    if (!searchQuery) {
-      untrack(() => {
+    void searchQuery;
+    untrack(() => {
+      clearTimeout(searchState.t);
+
+      if (!searchQuery) {
         results = [];
-      });
-    }
+      } else {
+        searchState.query = searchQuery;
+        searchState.loading = true;
+      }
+    });
+
     (async () => {
       const index = await prepareSearchData();
-      if (searchQuery) {
-        results = index.search(searchQuery, {
-          pluck: "text",
-          enrich: true,
-          highlight: {
-            template: "<b>$1</b>",
-            boundary: 600,
-            merge: true,
-          },
-          suggest: true,
-        }) as SearchResults;
-      } else {
+      const query = searchState.query; // important: Capture the current query
+      if (!query) {
         results = [];
+        return;
       }
+      await new Promise(
+        (resolve) => (searchState.t = setTimeout(resolve, 500))
+      );
+      // wait for animation end
+      const loaderElement = document.querySelector(
+        ".can-load"
+      ) as HTMLLabelElement;
+      if (loaderElement)
+        await new Promise((resolve) => {
+          loaderElement.addEventListener("animationiteration", resolve, {
+            once: true,
+          });
+        });
+
+      console.log("Searching for:", query, searchState.query);
+      if (searchState.query !== query) return;
+
+      results = index.search(query, {
+        pluck: "text",
+        enrich: true,
+        highlight: {
+          template: "<b>$1</b>",
+          boundary: 600,
+          merge: true,
+        },
+        suggest: true,
+      }) as SearchResults;
+
+      searchState.loading = false;
     })();
   });
 
@@ -80,11 +112,12 @@
     tabindex="0"
   >
     <div
-      class="w-[calc(100vw-2rem)] max-w-200 bg-background rounded-xl border-1 p-4 pb-0 flex
+      class="w-[calc(100vw-2rem)] max-w-200 bg-background rounded-xl border-1 p-4 flex
   flex-col overflow-clip"
     >
       <label
-        class="py-2 px-4 flex items-center gap-2 rounded-lg border-1 border-gray-600"
+        class="can-load py-2 px-4 flex items-center gap-2 rounded-lg border-1 border-gray-600"
+        class:loading={searchState.loading}
       >
         <Search class="grow-0 shrink-0" size={20} />
         <input
@@ -96,32 +129,34 @@
         />
       </label>
 
-      <div class="result-count text-sm text-muted-foreground my-2">
-        {results?.length > 0
-          ? `${results.length} result${results.length > 1 ? "s" : ""} found for "${searchQuery}"`
-          : `${searchQuery ? `No results found for "${searchQuery}"` : ""}`}
-      </div>
-
-      {#if results?.length > 0}
-        <div class="h-[80vh] overflow-y-auto results">
-          <ul>
-            {#each results as { highlight, doc: { text, routeStr, title } }}
-              <li>
-                <Card class="mb-4 p-4">
-                  <div class="text-lg text-primary font-semibold mb-1">
-                    <a href={routeStr}>{title}</a>
-                  </div>
-                  <div
-                    class="result-preview text-sm text-muted-foreground font-normal"
-                  >
-                    {@html highlight}
-                  </div>
-                </Card>
-              </li>
-            {/each}
-          </ul>
+      {#if searchState.loading}{:else}
+        <div class="result-count text-sm text-muted-foreground my-2">
+          {results?.length > 0
+            ? `${results.length} result${results.length > 1 ? "s" : ""} found for "${searchQuery}"`
+            : `${searchQuery ? `No results found for "${searchQuery}"` : ""}`}
         </div>
-      {:else}{/if}
+
+        {#if results?.length > 0}
+          <div class="h-[80vh] overflow-y-auto results">
+            <ul>
+              {#each results as { highlight, doc: { text, routeStr, title } }}
+                <li>
+                  <Card class="mb-4 p-4">
+                    <div class="text-lg text-primary font-semibold mb-1">
+                      <a href={routeStr}>{title}</a>
+                    </div>
+                    <div
+                      class="result-preview text-sm text-muted-foreground font-normal"
+                    >
+                      {@html highlight}
+                    </div>
+                  </Card>
+                </li>
+              {/each}
+            </ul>
+          </div>
+        {/if}
+      {/if}
     </div>
   </div>
 {/if}
@@ -156,5 +191,26 @@
   label:not(:focus-within) {
     color: hsl(var(--muted-foreground));
     border-color: hsl(var(--border));
+  }
+
+  .can-load {
+    transition: box-shadow 0.3s var(--ease-out);
+    box-shadow: 0 0 0px var(--color-blue-500);
+  }
+
+  .loading {
+    animation: skeleton 0.6s infinite var(--ease-out);
+  }
+
+  @keyframes skeleton {
+    0% {
+      box-shadow: 0 0 0px var(--color-blue-500);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--color-blue-500);
+    }
+    0% {
+      box-shadow: 0 0 0px var(--color-blue-500);
+    }
   }
 </style>
