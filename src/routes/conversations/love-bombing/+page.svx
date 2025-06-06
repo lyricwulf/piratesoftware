@@ -10,15 +10,29 @@ order: 0
    import Popup from '$lib/components/Popup.svelte';
 </script>
 
+Love bombing can be described as **intense displays of affection and
+declarations of love early in the relationship**. This rapid progression can be
+overwhelming and make it difficult to see potential red flags.
+
+For abusers, love bombing can be the first phase of a cycle of abuse, and is
+**often followed by periods of devaluation and [shame](/asides/shame)**. The
+abuser may switch from intense affection to criticism, control, and even
+emotional abuse.
+
+From the abuser's perspective, **love bombing is an investment**: it is a way to
+establish rapport, and can be **later cashed out in the form of compliance,
+submission, and control**.
+
 <Callout color="red">
 
-   Notice the contrast between Thor's demeanor in these messages, as opposed to
-   their [Final Conversation](/twitchcon-2018/final-conversation):
+   The primary purpose of this article is to contrast with Thor's demeanor in
+   the [Final Conversation](/twitchcon-2018/final-conversation), where he
+   attempts to deny any advances toward Lyric:
 
    <Messages from="73263" />
 
-   When Lyric confronts Thor about his lies, Thor tries to gaslight Lyric,
-   saying that **they** are an aggressor who was pushing themself onto him.
+   <!-- When Lyric confronts Thor about his lies, Thor tries to gaslight Lyric,
+   saying that **they** are an aggressor who was pushing themself onto him. -->
 
 </Callout>
 
