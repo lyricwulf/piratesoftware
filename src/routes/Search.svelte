@@ -22,9 +22,17 @@
   searchRefs.openSearch = () => {
     resetSearch();
     open = true;
-    requestAnimationFrame(() => {
-      inputElement?.focus();
-    });
+    function focusInput() {
+      requestAnimationFrame(() => {
+        if (inputElement) {
+          inputElement.focus();
+        } else {
+          focusInput();
+        }
+      });
+    }
+
+    focusInput();
   };
 
   $effect(() => {
