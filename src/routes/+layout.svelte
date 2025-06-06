@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../app.css";
+  import "../log-message.ts";
   import PageNav from "./PageNav.svelte";
   import SectionNav from "./SectionNav.svelte";
   import HideOnMobile from "./HideOnMobile.svelte";
