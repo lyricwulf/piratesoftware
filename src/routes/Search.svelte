@@ -2,8 +2,9 @@
   import { prepareSearchData, searchRefs, type SearchResults } from "./search";
   import { Card } from "$lib/components/ui/card";
   import { untrack } from "svelte";
-  import { Search } from "@lucide/svelte";
+  import { Search, X } from "@lucide/svelte";
   import { onNavigate } from "$app/navigation";
+  import Button from "$lib/components/ui/button/button.svelte";
 
   let results: SearchResults = $state([]);
 
@@ -19,9 +20,8 @@
   let inputElement: HTMLInputElement | undefined = $state();
 
   searchRefs.openSearch = () => {
+    resetSearch();
     open = true;
-    searchQuery = "";
-    results = [];
     requestAnimationFrame(() => {
       inputElement?.focus();
     });
@@ -79,11 +79,16 @@
     })();
   });
 
-  onNavigate(() => {
+  function closeSearch() {
     open = false;
+  }
+
+  function resetSearch() {
     searchQuery = "";
     results = [];
-  });
+  }
+
+  onNavigate(closeSearch);
 </script>
 
 {#if open}
@@ -115,20 +120,29 @@
       class="w-[calc(100vw-2rem)] max-w-200 bg-background rounded-xl border-1 p-4 flex
   flex-col overflow-clip"
     >
-      <label
-        class="can-load py-2 px-4 flex items-center gap-2 rounded-lg border-1 border-gray-600"
-        class:loading={searchState.loading}
-      >
-        <Search class="grow-0 shrink-0" size={20} />
-        <input
-          class="text-xl grow-1 basis-0"
-          type="text"
-          placeholder="Search..."
-          bind:value={searchQuery}
-          bind:this={inputElement}
-        />
-      </label>
-
+      <div class="flex gap-2 items-center">
+        <label
+          class="grow-1 can-load py-2 px-4 flex items-center gap-2 rounded-full border-1 border-gray-600"
+          class:loading={searchState.loading}
+        >
+          <Search class="grow-0 shrink-0" size={20} />
+          <input
+            class="text-xl grow-1 basis-0"
+            type="text"
+            placeholder="Search..."
+            bind:value={searchQuery}
+            bind:this={inputElement}
+          />
+        </label>
+        <Button
+          class="grow-0 shrink-0 w-12 h-12 rounded-full"
+          variant="ghost"
+          size="sm"
+          onclick={closeSearch}
+        >
+          <X size="24" />
+        </Button>
+      </div>
       {#if searchState.loading}{:else}
         {#if searchQuery}
           <div class="result-count text-sm text-muted-foreground my-2">
