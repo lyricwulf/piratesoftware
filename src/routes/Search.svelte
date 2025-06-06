@@ -22,17 +22,9 @@
   searchRefs.openSearch = () => {
     resetSearch();
     open = true;
-    function focusInput() {
-      requestAnimationFrame(() => {
-        if (inputElement) {
-          inputElement.focus();
-        } else {
-          focusInput();
-        }
-      });
-    }
-
-    focusInput();
+    requestAnimationFrame(() => {
+      inputElement?.focus();
+    });
   };
 
   $effect(() => {
@@ -101,7 +93,7 @@
 
 {#if open}
   <div
-    class="fixed inset-0 z-40 bg-black/50"
+    class="fixed inset-0 z-40 bg-black/80"
     onclick={(e) => (open = false)}
     onkeypress={(e) => {
       if (e.key === "Escape") {
@@ -138,6 +130,7 @@
             class="text-xl grow-1 basis-0"
             type="text"
             placeholder="Search..."
+            autofocus
             bind:value={searchQuery}
             bind:this={inputElement}
           />
@@ -163,11 +156,13 @@
         {#if results?.length > 0}
           <div class="h-[80vh] overflow-y-auto results">
             <ul>
-              {#each results as { highlight, doc: { text, routeStr, title } }}
+              {#each results as { highlight, doc: { text, routeStr, title, external } }}
                 <li>
                   <Card class="mb-4 p-4">
                     <div class="text-lg text-primary font-semibold mb-1">
-                      <a href={routeStr}>{title}</a>
+                      <a href={routeStr} target={external ? "_blank" : ""}
+                        >{title}</a
+                      >
                     </div>
                     <div
                       class="result-preview text-sm text-muted-foreground font-normal"

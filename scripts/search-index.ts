@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import { convert } from "html-to-text";
+import type { SearchIndexEntry } from "../src/search.d.ts";
 
 const BUILD_DIR = "build";
 const STATIC_DIR = "static";
@@ -20,7 +21,7 @@ async function findAllFilesWithExtension(ext: string, dir: string = BUILD_DIR) {
 }
 
 async function generateSearchIndex() {
-  const entries: { text: string; title: string; routeStr: string }[] = [];
+  const entries: SearchIndexEntry[] = [];
 
   console.log(await fs.readdir(BUILD_DIR));
 
@@ -68,15 +69,18 @@ async function generateSearchIndex() {
 
     let title = fileContents.match(/<title>(.*?)<\/title>/)?.[1] || routeStr;
 
-    if (title === "Exported Data") {
-      title = routeStr;
+    const entry: SearchIndexEntry = {
+      text: textContent,
+      routeStr,
+      title,
+    };
+
+    if (entry.title === "Exported Data") {
+      entry.title = routeStr;
+      entry.external = true;
     }
 
-    entries.push({
-      text: textContent,
-      title,
-      routeStr,
-    });
+    entries.push(entry);
   }
 
   fs.writeFile(`${BUILD_DIR}/search-index.json`, JSON.stringify(entries));
