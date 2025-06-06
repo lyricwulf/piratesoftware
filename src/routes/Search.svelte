@@ -136,7 +136,7 @@
         </label>
         <Button
           class="grow-0 shrink-0 w-12 h-12 rounded-full text-muted-foreground"
-          variant="ghost"
+          variant="outline"
           size="sm"
           onclick={closeSearch}
         >
