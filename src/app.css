@@ -306,22 +306,31 @@ blockquote::before {
 
 h2:target {
   font-weight: bold;
-  animation: flash 1s ease-out;
+  animation: flash 1.5s ease-out forwards;
 }
 
 h2:target::after {
   content: " 🔗";
 }
 
+:target {
+  outline-offset: 2px;
+  border-radius: 5px;
+  animation: flash 1.5s ease-out forwards;
+}
+
 @keyframes flash {
   0% {
+    outline: 2px solid hsl(var(--primary));
     background-color: hsl(var(--muted));
   }
   80% {
+    outline: 2px solid hsl(var(--primary));
     background-color: hsl(var(--muted));
   }
   100% {
-    background-color: hsl(var(--background));
+    outline: 2px solid hsl(var(--primary) / 75%);
+    background-color: hsl(var(--muted) / 75%);
   }
 }
 

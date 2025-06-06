@@ -6,6 +6,7 @@
     Heart,
     Bookmark,
     ExternalLink,
+    Link,
   } from "@lucide/svelte";
   import { Card } from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
@@ -34,18 +35,27 @@
   );
 </script>
 
-<Card class="p-4 flex flex-col gap-2">
-  <div class="flex flex-col">
-    <span class="font-bold">{tweet["Author Name"]}</span>
-    <span class="text-sm text-muted-foreground">
-      <a
-        href="https://twitter.com/{tweet['Author Username']}"
-        rel="external"
-        target="_blank"
-      >
-        @{tweet["Author Username"]}
-      </a>
-    </span>
+<Card class="p-4 flex flex-col gap-2" id={`tweet-${twid}`}>
+  <div class="flex justify-between items-start">
+    <div class="flex flex-col">
+      <span class="font-bold">{tweet["Author Name"]}</span>
+      <span class="text-sm text-muted-foreground">
+        <a
+          href="https://twitter.com/{tweet['Author Username']}"
+          rel="external"
+          target="_blank"
+        >
+          @{tweet["Author Username"]}
+        </a>
+      </span>
+    </div>
+    <Button
+      variant="ghost"
+      href={`#tweet-${twid}`}
+      class="text-muted-foreground"
+    >
+      <Link size="20" />
+    </Button>
   </div>
   <div>
     {@html tweetHtml}
