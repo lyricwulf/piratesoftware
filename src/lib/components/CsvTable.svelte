@@ -16,8 +16,6 @@
       });
   });
   const headers = useHeaders && rows.shift();
-  console.log("Headers:", headers);
-  console.log("Rows:", rows);
 </script>
 
 <ScrollArea

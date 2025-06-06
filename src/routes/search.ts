@@ -10,7 +10,6 @@ async function fetchSearchData() {
 }
 
 export const prepareSearchData = promiseOnce(async () => {
-  console.log("Fetching search data...");
   const searchData = await fetchSearchData();
 
   const index = new fx.Document<DocType>({
