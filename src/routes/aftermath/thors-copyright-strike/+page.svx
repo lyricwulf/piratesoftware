@@ -10,6 +10,7 @@ order: 3
    import ChatBubble from '$lib/components/ChatBubble.svelte';
    import Popup from '$lib/components/Popup.svelte';
    import Tweet from '$lib/components/Tweet.svelte';
+   import Spoiler from '$lib/components/Spoiler.svelte';
 </script>
 
 Mon, Apr 1, 2019, 8:43 AM
@@ -84,18 +85,25 @@ though only 3 were published due to my release schedule.
 
 <Image src="arrangements.png" caption="Do every Heartbound song" />
 
+<Callout color="sky">
+
 I believe **wanting more content is generally a normal thing for a game
-developer to want**. However, it should be noted that **Thor went out of his way
+developer to want**.
+
+However, it should be noted that **Thor went out of his way
 to ensure that I was not monetizing my videos**, while **encouraging me to make
-more content for him** (which is essentially free publicity for him), all while
-placing financial pressure on me to donate to his projects like his
-[Kickstarter](/donations/kickstarter).
+more content for him** (which is essentially free publicity for him).
+
+This is all while he places financial pressure on me to donate to his projects
+like his [Kickstarter](/donations/kickstarter).
+
+</Callout>
 
 And after he got the free publicity, **he would weaponize my content by
 submitting a copyright strike** against my channel while publicly claiming that
 I was "scamming" him.
 
-<Callout>
+<Spoiler preview="Public perception">
 
    I posted that screenshot on Twitter, and it would later contribute to [Thor's
    Defense](/aftermath/thors-defense) where I was painted as a "scammer" who
@@ -107,5 +115,4 @@ I was "scamming" him.
    make a community post, which I screenshotted to show to Thor.
 
    <Image src="Screenshot_2018-08-26-23-57-03.png" caption="Lyric's community post" />
-
-</Callout>
+</Spoiler>
