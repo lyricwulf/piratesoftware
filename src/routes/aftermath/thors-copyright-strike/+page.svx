@@ -13,9 +13,8 @@ order: 3
    import Spoiler from '$lib/components/Spoiler.svelte';
 </script>
 
-Mon, Apr 1, 2019, 8:43 AM
-
-I received a copyright takedown and strike to my YouTube channel.
+I received a copyright takedown and strike to my YouTube channel on Mon, Apr 1,
+2019, 8:43 AM.
 
 <Email eml="[Copyright takedown notice] Some of your videos have been taken down from YouTube.eml" />
 
