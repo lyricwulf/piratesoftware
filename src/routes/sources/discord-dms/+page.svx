@@ -1,0 +1,45 @@
+---
+title: Discord DMs
+order: 99
+---
+
+<script>
+   import messagesTxtArchive from './Direct_Messages_-_Thor_[413580576625393664].txt?raw';
+   import KvTable from '$lib/components/KvTable.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+</script>
+
+<Callout color="yellow">
+
+   This is an incomplete archive of my Discord DMs with Thor. Soon after our
+   public falling out, Thor deleted all of his messages in our DMs. However,
+   because he cannot delete messages that I sent, I am able to provide my side
+   of our conversations.
+
+</Callout>
+
+<Callout color="red">
+
+   This chat archive archive includes sexually explicit messages. Reader discretion is advised.
+
+</Callout>
+
+<KvTable rows={[
+      ["Archival Software", "Tyrrrz/DiscordChatExporter"],
+      ["Exported on", "Wednesday, February 5, 2025, 3:01:19 PM PST"],
+      ["Query", "https://discord.com/channels/@me/1346293238008512608"]
+]} />
+
+<pre>
+{messagesTxtArchive}
+</pre>
+
+<style>
+   pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+   }
+</style>

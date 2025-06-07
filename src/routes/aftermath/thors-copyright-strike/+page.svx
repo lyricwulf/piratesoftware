@@ -5,6 +5,11 @@ order: 3
 
 <script>
    import Email from '$lib/components/Email.svelte';
+   import Image from '$lib/components/Image.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+   import ChatBubble from '$lib/components/ChatBubble.svelte';
+   import Popup from '$lib/components/Popup.svelte';
+   import Tweet from '$lib/components/Tweet.svelte';
 </script>
 
 Mon, Apr 1, 2019, 8:43 AM
@@ -12,3 +17,95 @@ Mon, Apr 1, 2019, 8:43 AM
 I received a copyright takedown and strike to my YouTube channel.
 
 <Email eml="[Copyright takedown notice] Some of your videos have been taken down from YouTube.eml" />
+
+## Thor's Public Portrayal
+
+In response to my [Twitter Post](/aftermath/lyrics-twitter-post), Thor would claim that his strike was to prevent me, a "scammer", from profiting
+off of his work.
+
+> "As someone **scamming us** out of our income I fight you into the ground to
+> **prevent you from making a single cent off of our work**."
+> 
+> <Image src="tweet.png" />
+
+Thor employs an "us vs them" narrative, where **he portrays himself as the
+victim of a scammer, and me as a villain who is trying to profit off of his
+work**. Thor small good guy, Lyric big bad guy.
+
+While his narrative would prove to be effective, the premise that I even made
+any money off of his work was unfounded. While it tends to be broadly accepted
+that YouTubers make money off of videos, **I turned off monetization on my
+videos related to Heartbound, by his own request**.
+
+## Videos Not Monetized
+
+Thor reached out to me about 24 hours after I published my first Heartbound
+video.
+
+<div class="flex flex-col gap-1">
+<ChatBubble from="Thor" text="Great cover but unfortunately you monetized the video which is against our content guidelines. Please refer to the FAQ regarding commercial use of our content. Please either contact us for a license or remove advertisements on the video." />
+<ChatBubble from="Thor" text="Aside from this nothing in the video description leads anyone to our game or company. Please add crediting to things like this to avoid users thinking that you are the original creator." />
+<ChatBubble from="Thor" text="I will check back in 24 hours to see if updates
+have been made." />
+<ChatBubble from="Lyric" text="I’ve added a more descriptive… description to the video." />
+<ChatBubble from="Lyric" text="I’ve also removed ads for the video until we can come to a licensing agreement." />
+</div>
+
+<Popup preview="Thor's Email to Lyric">
+<Email eml="RE_ Heartbound Music.eml" />
+</Popup>
+
+We never reached a licensing agreement. After I followed up with my request for
+a license, I would give Thor advice on YouTube's CMS system.
+
+<Callout color="blue">
+
+   In a screenshot I sent to Thor in our [Discord DMs](/sources/discord-dms)
+   showing him "content usage policy", it shows that I had monetization turned
+   off.
+
+   <Image src="monetization.png" caption="Monetization status: Grey (not
+   monetized)" />
+
+   <Image src="monetization-guide.png" caption="YouTube monetization symbol
+   guide shows monetization was manually disabled by the creator" />
+
+</Callout>
+
+## Thor's Free Publicity
+
+Despite the fact that he did not permit my videos to be monetized, Thor would
+encourage me to make more content with his music.
+
+<Image src="every-heartbound.png" caption="Do every Heartbound song" />
+
+Following this, I would arrange at least 20 songs from Heartbound for Thor,
+though only 3 were published due to my release schedule.
+
+<Image src="arrangements.png" caption="Do every Heartbound song" />
+
+I believe **wanting more content is generally a normal thing for a game
+developer to want**. However, it should be noted that **Thor went out of his way
+to ensure that I was not monetizing my videos**, while **encouraging me to make
+more content for him** (which is essentially free publicity for him), all while
+placing financial pressure on me to donate to his projects like his
+[Kickstarter](/donations/kickstarter).
+
+And after he got the free publicity, **he would weaponize my content by
+submitting a copyright strike** against my channel while publicly claiming that
+I was "scamming" him.
+
+<Callout>
+
+   I posted that screenshot on Twitter, and it would later contribute to [Thor's
+   Defense](/aftermath/thors-defense) where I was painted as a "scammer" who
+   premeditated this ordeal.
+
+   <Tweet twid="1114243930869063680" />
+
+   In reality, the screenshot was taken "today" because I took the screenshot to
+   make a community post, which I screenshotted to show to Thor.
+
+   <Image src="Screenshot_2018-08-26-23-57-03.png" caption="Lyric's community post" />
+
+</Callout>
