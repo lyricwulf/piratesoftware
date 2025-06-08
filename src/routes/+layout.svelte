@@ -84,12 +84,12 @@
   @media (max-width: 1200px) {
     .x-wrapper {
       grid-template-columns: 1fr;
+      padding: 0px;
     }
 
     .markdown {
       justify-self: center;
       border-inline: none;
-      padding: 0px;
     }
   }
 </style>
