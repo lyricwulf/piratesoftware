@@ -29,7 +29,7 @@
       searchRefs.openSearch();
     }}
     class="gap-2 text-muted-foreground hover:bg-muted focus:bg-muted
-  active:bg-muted border border-gray-600 justify-start mr-3"
+  active:bg-muted border border-gray-600 justify-start mr-3 rounded-full"
   >
     <Search size={16} />
     Search
