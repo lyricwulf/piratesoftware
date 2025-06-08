@@ -49,7 +49,7 @@
           minute: "2-digit",
         })}
         <a
-          href="https://github.com/lyricwulf/piratesoftware/commits/main/src/routes{clientPath}"
+          href="https://github.com/lyricwulf/piratesoftware/commits/main/src/routes{clientPath}/+page.svx"
           target="_blank"
           rel="noopener noreferrer external"
         >
