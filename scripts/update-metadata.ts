@@ -1,6 +1,7 @@
 import DIR_METADATA from "./dir-metadata.json";
 import fs from "node:fs/promises";
 import { compile } from "mdsvex";
+import cp from "node:child_process";
 
 const OUTPUT_DIR = "src/lib/__derived";
 
@@ -31,6 +32,33 @@ function get_headings() {
     vFile.data.fm ||= {};
     vFile.data.fm.headings = headings;
   };
+}
+
+function get_last_modified(filePath: string) {
+  // last modified based on git commit date
+  // return cp
+  //   .execSync(`git log -1 --format=%cd --date=iso "${filePath}"`, {
+  //     encoding: "utf-8",
+  //   })
+  //   .trim();
+
+  return new Promise((resolve, reject) => {
+    cp.exec(
+      `git log -1 --format=%cd --date=iso "${filePath}"`,
+      { encoding: "utf-8" },
+      (error, stdout, stderr) => {
+        if (error) {
+          reject(error);
+        } else if (stderr) {
+          reject(new Error(stderr));
+        } else {
+          const lastModified = stdout.trim();
+          const sinceEpoch = new Date(lastModified).getTime() / 1000;
+          resolve(sinceEpoch);
+        }
+      }
+    );
+  });
 }
 
 async function findAllFilesWithExtension(ext: string, dir: string = BUILD_DIR) {
@@ -71,6 +99,8 @@ async function generateMetadata() {
     const pathArr = pagePath.split("/").filter(Boolean);
     let title = fileModule.metadata.title;
     const order = fileModule.metadata.order || 0;
+
+    fileModule.metadata.lastModified = await get_last_modified(filePath);
 
     mdMetadata[pagePath] = fileModule.metadata;
 

@@ -4,7 +4,7 @@
   import PageNav from "./PageNav.svelte";
   import SectionNav from "./SectionNav.svelte";
   import HideOnMobile from "./HideOnMobile.svelte";
-  import { ListTree, TableOfContents } from "@lucide/svelte";
+  import { ListTree, TableOfContents, History } from "@lucide/svelte";
   import { page } from "$app/state";
   import { mdMetadata } from "$lib/__derived/metadata.json";
   import WipNotice from "./WipNotice.svelte";
@@ -33,7 +33,30 @@
   </HideOnMobile>
 
   <div class="markdown">
-    <h1>{pageMetadata?.title}</h1>
+    <span class="flex flex-col items-start">
+      <h1>{pageMetadata?.title}</h1>
+      <span
+        class="flex items-center gap-2 text-sm text-muted-foreground border py-1 px-4 rounded-full"
+      >
+        Last edited: {new Date(
+          pageMetadata?.lastModified * 1000
+        ).toLocaleString("en-US", {
+          timeZone: "America/Los_Angeles",
+          month: "short",
+          day: "numeric",
+          year: "numeric",
+          hour: "numeric",
+          minute: "2-digit",
+        })}
+        <a
+          href="https://github.com/lyricwulf/piratesoftware/commits/main/src/routes{clientPath}"
+          target="_blank"
+          rel="noopener noreferrer external"
+        >
+          <History size="16" />
+        </a>
+      </span>
+    </span>
     {#if pageMetadata?.wip}
       <WipNotice />
     {/if}
