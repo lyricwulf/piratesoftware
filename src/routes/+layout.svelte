@@ -33,11 +33,9 @@
   </HideOnMobile>
 
   <div class="markdown">
-    <span class="flex flex-col items-start">
+    <span>
       <h1>{pageMetadata?.title}</h1>
-      <span
-        class="flex items-center gap-2 text-sm text-muted-foreground border py-1 px-4 rounded-full"
-      >
+      <span class="flex items-center gap-2 text-sm text-muted-foreground">
         Last edited: {new Date(
           pageMetadata?.lastModified * 1000
         ).toLocaleString("en-US", {
