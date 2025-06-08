@@ -1,14 +1,14 @@
 <script lang="ts">
   import "../app.css";
   import { page } from "$app/state";
-  import { MD_METADATA } from "./md-metadata";
+  import { mdMetadata } from "$lib/__derived/metadata.json";
   import Button from "$lib/components/ui/button/button.svelte";
   import { onMount } from "svelte";
   import { replaceState, afterNavigate } from "$app/navigation";
   import { ChevronRight } from "@lucide/svelte";
 
   let clientPath = $derived(page.url.pathname);
-  let pageMetadata = $derived(MD_METADATA.get(clientPath));
+  let pageMetadata = $derived(mdMetadata[clientPath]);
 
   let currentSection = $state(
     typeof window !== "undefined" && window.location.hash

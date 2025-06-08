@@ -6,7 +6,7 @@
   import HideOnMobile from "./HideOnMobile.svelte";
   import { ListTree, TableOfContents } from "@lucide/svelte";
   import { page } from "$app/state";
-  import { MD_METADATA } from "./md-metadata";
+  import { mdMetadata } from "$lib/__derived/metadata.json";
   import WipNotice from "./WipNotice.svelte";
   import { ModeWatcher } from "mode-watcher";
   import LightSwitch from "./LightSwitch.svelte";
@@ -15,7 +15,7 @@
   let { children } = $props();
 
   let clientPath = $derived(page.url.pathname);
-  let pageMetadata = $derived(MD_METADATA.get(clientPath));
+  let pageMetadata = $derived(mdMetadata[clientPath]);
 
   let hasSections = $derived(pageMetadata?.headings?.length > 0);
 </script>

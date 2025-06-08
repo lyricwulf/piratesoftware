@@ -3,6 +3,7 @@ import { convert } from "html-to-text";
 import type { SearchIndexEntry } from "../src/search.d.ts";
 
 const BUILD_DIR = "build";
+const OUTPUT_DIR = "src/lib/__derived";
 const STATIC_DIR = "static";
 
 async function findAllFilesWithExtension(ext: string, dir: string = BUILD_DIR) {
@@ -84,6 +85,7 @@ async function generateSearchIndex() {
   }
 
   fs.writeFile(`${BUILD_DIR}/search-index.json`, JSON.stringify(entries));
+  fs.writeFile(`${OUTPUT_DIR}/search-index.json`, JSON.stringify(entries));
   fs.writeFile(`${STATIC_DIR}/search-index.json`, JSON.stringify(entries));
 }
 

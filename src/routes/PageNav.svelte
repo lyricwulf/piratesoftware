@@ -1,7 +1,7 @@
 <script lang="ts">
   import NavNode from "./NavNode.svelte";
   import "../app.css";
-  import { NAV_ITEMS } from "./md-metadata";
+  import { navItems } from "$lib/__derived/metadata.json";
   import { ScrollArea } from "$lib/components/ui/scroll-area";
   import { searchRefs } from "./search";
   import { Button } from "$lib/components/ui/button";
@@ -36,7 +36,7 @@
   </Button>
   <ScrollArea class="h-[calc(100vh-6rem)] pr-3">
     <div class="flex flex-col gap-2">
-      <NavNode {...NAV_ITEMS} />
+      <NavNode {...navItems} />
     </div>
   </ScrollArea>
 </nav>

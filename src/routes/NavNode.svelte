@@ -9,7 +9,7 @@
   import * as Collapsible from "$lib/components/ui/collapsible";
   import { page } from "$app/state";
   import NavNode from "./NavNode.svelte";
-  import { MD_METADATA } from "./md-metadata";
+  import { mdMetadata } from "$lib/__derived/metadata.json";
   import { Badge } from "$lib/components/ui/badge";
   import { untrack } from "svelte";
 
@@ -29,7 +29,7 @@
     });
   });
 
-  const metadata = $derived(MD_METADATA.get(href));
+  const metadata = $derived(mdMetadata[href]);
 </script>
 
 <svelte:window
