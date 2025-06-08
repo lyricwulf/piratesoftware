@@ -32,8 +32,8 @@
     <PageNav />
   </HideOnMobile>
 
-  <div class="markdown">
-    <span>
+  <div class="markdown p-5 pb-20">
+    <span class="mb-6">
       <h1>{pageMetadata?.title}</h1>
       <span class="flex items-center gap-2 text-sm text-muted-foreground">
         Last edited: {new Date(
@@ -92,7 +92,6 @@
 
   .markdown {
     max-width: min(800px, 100vw);
-    padding: 20px;
 
     display: flex;
     flex-direction: column;
