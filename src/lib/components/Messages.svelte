@@ -49,7 +49,7 @@
 <div
   class={cn(
     "messages softborder",
-    scrollable && "max-h-[60vh] overflow-y-auto"
+    scrollable && "max-h-[min(60vh,420px)] overflow-y-auto"
   )}
 >
   {#each Object.entries(partitionedMessages) as [date, messages]}
