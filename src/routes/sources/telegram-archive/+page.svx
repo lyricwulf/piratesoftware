@@ -21,7 +21,14 @@ All information reflects the original archive as exported.
     ['First publication', 'Dec 18, 2018 at 3:22PM, PDT']
 ]} />
 
-<Image src="archive-post.webp" caption="https://discord.com/channels/214191305927032833/452943006949965825/524728116795408394" />
+<Image src="archive-post.webp"
+caption="https://discord.com/channels/214191305927032833/452943006949965825/524728116795408394"
+/>
+
+A global search of the archive for phone numbers only reveals two instances of
+Lyric’s phone number.
+
+<Image src="phone-search.png" />
 
 
 ## Disclosure of archive modification
