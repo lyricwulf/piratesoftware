@@ -143,5 +143,3 @@ export async function updateMetadata() {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
   await fs.writeFile(outputPath, JSON.stringify({ navItems, mdMetadata }));
 }
-
-updateMetadata();

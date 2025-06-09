@@ -21,7 +21,7 @@ async function findAllFilesWithExtension(ext: string, dir: string = BUILD_DIR) {
   return results;
 }
 
-async function generateSearchIndex() {
+export async function generateSearchIndex() {
   const entries: SearchIndexEntry[] = [];
 
   console.log(await fs.readdir(BUILD_DIR));
@@ -88,5 +88,3 @@ async function generateSearchIndex() {
   fs.writeFile(`${OUTPUT_DIR}/search-index.json`, JSON.stringify(entries));
   fs.writeFile(`${STATIC_DIR}/search-index.json`, JSON.stringify(entries));
 }
-
-generateSearchIndex();
