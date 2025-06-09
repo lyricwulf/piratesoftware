@@ -5,8 +5,8 @@ order: 3
 
 <script>
    import Image from '$lib/components/Image.svelte';
+   import InlineButton from '$lib/components/InlineButton.svelte';
 </script>
-
 
 Jason "Thor" Hall, at the time of the incident, was a 31-year-old content
 creator and streamer.
@@ -14,17 +14,23 @@ creator and streamer.
 <Image src="thor.png" caption="Portrait of Thor" />
 
 During these events, Thor was living with his wife (referred to by Shaye as his
-"secret wife"). He was married on October 17, 2015, and lived together until
-February 21, 2019. On February 18, 2020, they filed for divorce. [Thor's
-Marriage](/sources/thors-marriage).
+"secret wife"). He was married to Nicole Gillett on October 17, 2015, whom he
+lived with until February 21, 2019. On February 18, 2020, they filed for
+divorce.
+
+<InlineButton href="/sources/thors-marriage">
+   Read more on Thor's Marriage
+</InlineButton>
+
+---
 
 His main project at the time was "Heartbound", and he streamed the development
 of this game on his Twitch channel, at the time having ~6,000 followers
 and averaging ~50 concurrent viewers.
 
 Thor worked on Heartbound with his friend and roommate Shaye (aged 22 at the
-time), who created art for the game. Thor had a committed romantic relationship
-with Shaye.
+time), who created art for the game. At the time, Thor had a committed romantic
+relationship with Shaye.
 
 ## Thor's Online Presence
 
