@@ -28,8 +28,6 @@
     comment = null,
   } = $props();
 
-  if (page.url.searchParams.get("annotations") === "false") dialog = false;
-
   const inProps = { from, text, dt, id, withDate, media, key, file, dialog };
 
   let useRight = { Lyric: true, Partner: true }[from] || false;
