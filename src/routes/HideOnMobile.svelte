@@ -11,7 +11,7 @@
   });
 </script>
 
-<label class={position}>
+<label class={position} data-nolayout>
   <input type="checkbox" bind:this={input} />
   <div class="drawer-btn shadow-sm h-12 w-12 grid place-content-center">
     {@render buttonContent?.()}

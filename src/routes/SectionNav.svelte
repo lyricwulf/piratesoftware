@@ -7,6 +7,8 @@
   import { replaceState, afterNavigate } from "$app/navigation";
   import { ChevronRight } from "@lucide/svelte";
 
+  const { class: className = "" } = $props();
+
   let clientPath = $derived(page.url.pathname);
   let pageMetadata = $derived(mdMetadata[clientPath]);
 
@@ -59,7 +61,7 @@
   });
 </script>
 
-<div class="sidebar sticky-top m-2 section-nav">
+<div class="sidebar sticky-top m-2 section-nav {className}">
   <ol>
     {#each pageMetadata?.headings as { level, title, slug }}
       <li>

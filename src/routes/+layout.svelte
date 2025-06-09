@@ -29,7 +29,7 @@
     {#snippet buttonContent()}
       <ListTree size={24} />
     {/snippet}
-    <PageNav />
+    <PageNav class="max-w-[350px]" />
   </HideOnMobile>
 
   <div class="markdown p-5 pb-20">
@@ -61,14 +61,12 @@
     {@render children()}
   </div>
 
-  {#if hasSections}
-    <HideOnMobile position="right">
-      {#snippet buttonContent()}
-        <TableOfContents size={24} />
-      {/snippet}
-      <SectionNav />
-    </HideOnMobile>
-  {/if}
+  <HideOnMobile position="right">
+    {#snippet buttonContent()}
+      <TableOfContents size={24} />
+    {/snippet}
+    <SectionNav class="max-w-[350px]" />
+  </HideOnMobile>
 </div>
 
 <svelte:head>
@@ -78,16 +76,18 @@
 
 <style>
   .x-wrapper {
-    padding: var(--page-padding);
-
-    display: grid;
-    grid-template-columns:
-      minmax(300px, 400px)
-      minmax(min(50%, 800px), 800px)
-      minmax(300px, 400px);
+    display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: center;
+  }
+
+  .x-wrapper :global(> div:nth-of-type(1)) {
+    flex: 1 0 300px;
+  }
+
+  .x-wrapper :global(> div:nth-of-type(3)) {
+    flex: 1 0 300px;
   }
 
   .markdown {
