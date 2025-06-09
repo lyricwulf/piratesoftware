@@ -58,7 +58,7 @@ Additionally, the entire archive does take place in 2018, between the months of 
 
 ## All feedback received
 
-After I published the document, I received a lot of trolling comments. The
+After I published the document, Thor's community flooded the comments. The
 coherent ones are listed below.
 
 <KvTable rows={[
