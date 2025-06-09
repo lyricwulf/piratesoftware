@@ -217,7 +217,7 @@ mark[blue] {
 
 .sticky-top {
   position: sticky;
-  top: var(--page-padding);
+  top: 0;
 }
 
 mark[area] {
