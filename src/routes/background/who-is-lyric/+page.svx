@@ -3,10 +3,18 @@ title: Who is Lyric?
 order: 1
 ---
 
+<script>
+   import Image from '$lib/components/Image.svelte';
+   import InlineButton from '$lib/components/InlineButton.svelte';
+</script>
+
+
 Hi, I'm Lyric. I was a college student, completing my undergrad requirements and
 double majoring in Mechanical Engineering and Aerospace Engineering. I was a
 full-time student taking 17 credits, equal to a minimum of 51 hours total
 academic engagement per week.
+
+<Image src="lyric.jpg" caption="Portrait of Lyric" />
 
 Until the events described in this document, I maintained a GPA of 3.92
 throughout my college career, and I was on the Dean's List and President's Honor
@@ -31,3 +39,7 @@ fanbase, drowned out all my hope with criticism. I was accused of doxxing him
 and fabricating the entire incident, and everyone believed him. I felt betrayed
 by everyone. By 2021, I stopped making educational resources, music, and I
 stopped posting everywhere. 
+
+<InlineButton href="/aftermath/effects-on-my-life">
+   Read more on "Effects On My Life"
+</InlineButton>

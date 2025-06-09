@@ -3,12 +3,20 @@ title: Who is Thor?
 order: 3
 ---
 
-Thor Thor Hall, at the time of the incident, was a 31-year-old content creator
-and streamer.
+<script>
+   import Image from '$lib/components/Image.svelte';
+</script>
 
-At the time, Thor was living with his wife (referred to by Shaye as his "secret
-wife"). He was married on October 17, 2015, and lived together until February
-21, 2019. On February 18, 2020, they filed for divorce.
+
+Jason "Thor" Hall, at the time of the incident, was a 31-year-old content
+creator and streamer.
+
+<Image src="thor.png" caption="Portrait of Thor" />
+
+During these events, Thor was living with his wife (referred to by Shaye as his
+"secret wife"). He was married on October 17, 2015, and lived together until
+February 21, 2019. On February 18, 2020, they filed for divorce. [Thor's
+Marriage](/sources/thors-marriage).
 
 His main project at the time was "Heartbound", and he streamed the development
 of this game on his Twitch channel, at the time having ~6,000 followers
