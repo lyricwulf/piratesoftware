@@ -11,6 +11,7 @@
     SquareArrowOutUpRight,
   } from "@lucide/svelte";
   import Callout from "$lib/components/Callout.svelte";
+  import { page } from "$app/state";
 
   let {
     from = "",
@@ -26,6 +27,8 @@
     showFrom = false,
     comment = null,
   } = $props();
+
+  if (page.url.searchParams.get("annotations") === "false") dialog = false;
 
   const inProps = { from, text, dt, id, withDate, media, key, file, dialog };
 
@@ -55,6 +58,7 @@
   };
 
   const hasAnnotation = Boolean(messageAnnotation && !annotation?.comment);
+
   const useAnnotated = Boolean(annotation?.message);
 
   let timeStr = $derived(
