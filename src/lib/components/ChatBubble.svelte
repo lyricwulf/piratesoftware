@@ -28,6 +28,9 @@
     comment = null,
   } = $props();
 
+  // disable annotations, maybe enable in specific places
+  dialog = false;
+
   const inProps = { from, text, dt, id, withDate, media, key, file, dialog };
 
   let useRight = { Lyric: true, Partner: true }[from] || false;
