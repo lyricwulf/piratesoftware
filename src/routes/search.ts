@@ -1,4 +1,4 @@
-import fx, { type DocumentData, type EnrichedResults } from "flexsearch";
+import type { DocumentData, EnrichedResults } from "flexsearch";
 import promiseOnce from "$lib/util/promise-once";
 import type { SearchIndexEntry } from "../search";
 
@@ -12,6 +12,8 @@ async function fetchSearchData() {
 
 export const prepareSearchData = promiseOnce(async () => {
   const searchData = await fetchSearchData();
+
+  const fx = await import("flexsearch");
 
   const index = new fx.Document<DocType>({
     document: {

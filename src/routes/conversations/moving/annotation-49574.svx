@@ -1,8 +1,0 @@
----
-message: <mark yellow>Also do you live on your own? c.c</mark>
-comment: Bringing up the topic of living situation.
----
-
-<mark area yellow>
-Bringing up the topic of living situation.
-</mark>

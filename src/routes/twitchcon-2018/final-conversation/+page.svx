@@ -26,7 +26,7 @@ commitment.
 
 <Message n="73263" />
 
-This is in contrast to [Thor's Love Bombing](/conversations/love-bombing) and
+This is in contrast to [Thor's Love Bombing](/supplements/love-bombing) and
 Thor in ["No" Means Yes](/conversations/no-means-yes).
 
 </Callout>

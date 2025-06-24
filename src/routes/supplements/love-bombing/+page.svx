@@ -1,0 +1,134 @@
+---
+title: Love Bombing
+order: 0
+---
+
+<script>
+   import Messages from '$lib/components/Messages.svelte';
+   import Message from '$lib/components/Message.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+   import Popup from '$lib/components/Popup.svelte';
+</script>
+
+Love bombing can be described as **intense displays of affection and
+declarations of love early in the relationship**. This rapid progression can be
+overwhelming and make it difficult to see potential red flags.
+
+For abusers, love bombing can be the first phase of a cycle of abuse, and is
+**often followed by periods of devaluation and [shame](/asides/shame)**. The
+abuser may switch from intense affection to criticism, control, and even
+emotional abuse.
+
+From the abuser's perspective, **love bombing is an investment**: it is a way to
+establish rapport, and can be **later cashed out in the form of compliance,
+submission, and control**.
+
+<Callout color="red">
+
+   The primary purpose of this article is to contrast with Thor's demeanor in
+   the [Final Conversation](/twitchcon-2018/final-conversation), where he
+   attempts to deny any advances toward Lyric:
+
+   <Messages from="73263" />
+
+   <!-- When Lyric confronts Thor about his lies, Thor tries to gaslight Lyric,
+   saying that **they** are an aggressor who was pushing themself onto him. -->
+
+</Callout>
+
+## Dedication
+
+<Callout color="yellow">
+
+Early on, Thor would establish a pattern of emotional dependence, seeming to
+mirror Lyric's desires and emphasize them.
+
+<Messages from="49116" to="49121" />
+
+<Messages from="49406" to="49413" />
+
+<Messages from="49494" />
+
+</Callout>
+
+<Callout color="sky">
+
+Thor also expects the same dedication from Lyric, conveying his emotional
+dependence on them.
+
+<Messages from="50349" to="50361" />
+
+<Messages from="64290" to="64321" />
+<!-- <Messages from="70780" to="70780" /> -->
+
+</Callout>
+
+## Unconditional Support
+
+<Callout color="red">
+
+Thor would show unconditional support for Lyric. This is a very weird statement
+for a 31-year-old to make to a 20-year-old:
+
+<Messages from="49755" />
+
+</Callout>
+
+## Pet names
+
+Thor would use pet names to establish a sense of intimacy and attachment. He
+would also use them to praise Lyric's submission.
+
+<Popup preview="Pet names">
+
+<Messages from="49272" />
+<Messages from="49477" />
+<Messages from="49862" />
+
+<Messages from="49679" />
+
+<Messages from="70125" />
+
+<Messages from="49515" />
+<Messages from="50349" />
+<Messages from="50843" />
+<Messages from="56160" />
+
+</Popup>
+
+<!-- ## Gifts 
+
+While giving gifts is a common practice in relationships, it is also a staple of
+the love-bombing and withdrawl cycle. While this action alone does not
+constitute manipulation, the pattern it continues is a well-studied manipulative
+tactic.
+
+<Messages from="50138" /> -->
+
+## Training Submission
+
+Thor will often compliment Lyric for their submission, and reward them with
+praise for agreeing with him.
+
+<Messages from="49692" to="49700" />
+
+<Messages from="50470" />
+<Messages from="64876" to="64880" />
+<Messages from="70156" to="70161" />
+
+## Meeting Up
+
+Thor really looks forward to meeting Lyric, expressing his excitement and even
+counting down the days until they meet.
+
+<Messages from="55219" to="55225" />
+
+<Messages from="70022" />
+
+<Messages from="72284" />
+
+<!-- ## Moving in
+
+Along with [Moving](/supplements/moving), Thor would also try to get Lyric to move in with him, which would further establish his control over Lyric.
+
+<Messages from="70131" to="70136" /> -->

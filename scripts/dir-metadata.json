@@ -23,8 +23,12 @@
     "name": "Sources",
     "order": 8
   },
+  "supplements": {
+    "name": "Supplements",
+    "order": 9
+  },
   "asides": {
     "name": "Asides",
-    "order": 9
+    "order": 10
   }
 }

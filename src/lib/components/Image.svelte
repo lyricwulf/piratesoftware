@@ -24,7 +24,7 @@
 <style>
   .image-container {
     max-width: 300px;
-    margin-inline: auto;
+    align-self: center;
   }
   .image-container input {
     display: none;

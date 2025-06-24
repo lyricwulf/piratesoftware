@@ -1,0 +1,160 @@
+---
+title: Authenticity of Chat Logs
+order: 2
+---
+
+<script>
+   import Callout from '$lib/components/Callout.svelte';
+   import Popup from '$lib/components/Popup.svelte';
+   import Image from '$lib/components/Image.svelte';
+</script>
+
+## Not Fabricated
+
+There is solid proof that the chat archive was not fabricated, as Thor sends
+pictures not found anywhere on the Internet.
+<div class="flex gap-1 items-center justify-center">
+   <Image src="picture1.png" />
+   <Image src="picture2.png" />
+</div>
+
+## Not Altered
+
+The chat archive has undeniably not been altered since Dec 18, 2018, as the file hash matches.
+
+File hash: `bfc008695e1757b02ffa087b0f1b7c28`
+<Popup preview="Video: Proof of the file hash and verification">
+   <video controls class="max-h-[calc(100vh-16rem)]">
+      <source src="/authenticity/ScreenRecording_06-12-2025_04-10-34_1.mp4">
+   </video>
+
+   You can also download the original file to verify the checksum yourself: 
+   <a href="/authenticity/nsfw_lyrics_love_story.7z" class="text-blue-500
+   hover:underline">
+      nsfw_lyrics_love_story.zip
+   </a>
+</Popup>
+
+However, how can we be sure that the archive was not modified *before* their
+first upload?
+
+There are a few points that support this. Firstly that I was a full-time student
+that also ran a YouTube channel. Assuming I started after TwitchCon (the last
+messages in the archive), I would have had about a month and a half to modify
+the archive.
+
+### The "Original" Archive
+
+When I uploaded my logs in December 2018 to my Patreon supporters, I discussed
+the situation:
+
+> "for anyone who wants to know why **i haven't had the motivation** to post
+> anything recently... it literally **killed all my creativity** and i've been
+> feeling like shit so sorry"
+>
+> "the fact that someone like this is targeting people to manipulate makes me
+> want to speak out because he has so many fans who would easily fall prey to
+> him as well but at the same time i don't want to involve everyone in our
+> drama. i don't want to introduce problems into other people's lives"
+>
+> <Image src="discord-2018.png" />
+
+Clearly I new there was something in the archive that may be damning to Thor.
+
+It still seems plausible I may have edited the chat archive.
+
+The following video shows a conversation I had with a friend in January 2019,
+*one month after* I made the post to my supporters. As part of this conversation
+I send screenshots of Telegram chats between myself and Thor. Notice the time on
+the phone, I took the screenshots **at the time of this convesation**.
+
+<Popup preview="Video: Screenshots of Telegram app in 2019">
+   <video>
+      <source src="/authenticityScreenRecording_06-12-2025_03-45-56_1.mp4">
+   </video>
+</Popup>
+
+If I modified the chat archive, why did I
+- send the full chat archive to my Patreon supporters, knowing that the archive
+  includes 18+ content and lots of mundane conversations, *rather than sending
+  screenshots of the archive* that showcased the troublesome behavior?
+- one month later, take screenshots of our conversations in the Telegram app,
+  *and not screenshots of the allegedly modified archive*?
+
+I would also send screenshots of our conversations in October and November 2018:
+<Popup preview="Telegram Screenshots from October and November 2018">
+<div class="flex gap-1 items-center justify-center">
+<Image src="discord-10-2018.png" />
+<Image src="discord-11-2018.png" />
+</div>
+</Popup>
+
+During this time, I should have been modifying the archive, yet I was still
+taking screenshots of our conversations in the Telegram app. That doesn't really
+add up.
+
+### I said I didn't even read the archive
+
+<Popup preview="Twitter DMs I said I uploaded the archive without reading it">
+<div class="flex gap-1 items-center justify-center">
+<Image src="read-1.png" />
+<Image src="read-2.png" />
+</div>
+</Popup>
+
+This alone is not actual proof that I didn't read the messages at the time.
+However, it should be a consideration that I was telling the truth here,
+considering no one can prove that I actually lied about any of my claims, only
+empty accusations made against me by Thor and his fanbase. All evidence on this
+page points to the fact that I did not read the archive.
+
+### Thor's Claims in 2019
+
+Thor claimed that the chat archive was altered, and that I doxxed him since his
+phone number was in the chat archive (see [Thor's
+Defense](/aftermath/thors-defense)).
+
+**However, his phone number does not exist in the chat archive.** How can this
+prove that the chat archive wasn't altered...?
+
+In order to create a forensically-sound archive with no detection of tampering,
+I would have to, among other requirements,
+- ensure that each page of messages contains exactly 1000 messages
+- ensure that all message ids and timestamps are consistent
+- strictly follow the source code formatting of the original export, to remain
+  undetected
+
+Additionally, because Thor specifically denies being intimate with me, in order
+to fabricate the lewd stickers, I would have to, among other requirements,
+- ensure that all stickers are named by the order in which they appear
+  chronologically, for example, sticker50 must have been sent by myself or Thor
+  before sticker51, and so on, for 196 stickers.
+- generate two thumbnails for each sticker which are forensically identical to
+  the archiver's thumbnails. 
+- ensure that the creation date of each sticker in the filesystem is consistent.
+  eg "last modified" and "creation date" must be modified to match the "creation
+  date" of the page of messages that the sticker first appears.
+
+**To believe the chat archive was modified, you would have to accept that I
+would be so meticulous in all of the above requirements, while *at the same time
+not being able to confirm that Thor was lying about me doxxing him*.** If I was
+capable of all of the above in the span of a month while maintaining my careers,
+then certainly I would have been capable of searching for phone numbers in the
+archive.
+
+### Thor's Claims in 2025
+
+There are a few holes with Thor's and Shaye's claims that the logs were altered.
+They claim that the logs were altered. Saying that 
+- Thor denied my advances (he didn't), and 
+- they cannot provide receipts because I deleted them (I didn't, even in
+Discord, only Thor's messages are deleted, not mine).
+
+Proof these in my Twitter thread
+https://x.com/LyricWulf/status/1933215909684129891
+
+### Conclusion
+
+It's really insane to me that anyone would believe that I faked the chat logs,
+considering I have never lied about any of my claims, yet Thor has been caught
+lying over and over and over again.
