@@ -28,8 +28,9 @@ File hash: `bfc008695e1757b02ffa087b0f1b7c28`
       <source src="/authenticity/ScreenRecording_06-12-2025_04-10-34_1.mp4">
    </video>
 
-   You can also download the original file to verify the checksum yourself: 
-   <a href="/authenticity/nsfw_lyrics_love_story.7z" class="text-blue-500
+   You can also download the original file to verify the checksum yourself and
+   see his phone number is not in the archive: 
+   <a href="https://dl.piratesoftware.sucks/nsfw_lyrics_love_story.7z" class="text-blue-500
    hover:underline">
       nsfw_lyrics_love_story.zip
    </a>
