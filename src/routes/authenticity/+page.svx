@@ -71,7 +71,7 @@ the phone, I took the screenshots **at the time of this convesation**.
 
 <Popup preview="Video: Screenshots of Telegram app in 2019">
    <video>
-      <source src="/authenticityScreenRecording_06-12-2025_03-45-56_1.mp4">
+      <source src="/authenticity/ScreenRecording_06-12-2025_03-45-56_1.mp4">
    </video>
 </Popup>
 
