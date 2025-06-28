@@ -70,7 +70,7 @@ I send screenshots of Telegram chats between myself and Thor. Notice the time on
 the phone, I took the screenshots **at the time of this convesation**.
 
 <Popup preview="Video: Screenshots of Telegram app in 2019">
-   <video>
+   <video controls class="max-h-[calc(100vh-16rem)]">
       <source src="/authenticity/ScreenRecording_06-12-2025_03-45-56_1.mp4">
    </video>
 </Popup>
