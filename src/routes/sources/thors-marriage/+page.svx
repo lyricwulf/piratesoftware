@@ -12,7 +12,7 @@ Jason Thor Hall was married to Nicole Gillett **from October 17, 2015 to August 
 <Timeline items={[
 ["October 17, 2015", "Marriage", "Jason Thor Hall marries Nicole Gillett"],
 ["February 21, 2019", "Separation", "Jason and Nicole no longer live in the same house"],
-["February 18, 2020", "Filing", "Jason and Nicole file for divorce at the Lamoraux Justice Center in Orange County, California. The court assigns case number 200001318."],
+["February 18, 2020", "Filing", "Jason and Nicole file for divorce at the Lamoraux Justice Center in Orange County, California. The court assigns case number 20D001318."],
 ["August 19, 2020", "Divorce", "Marriage dissolved after a mandatory 6-month \"Cooling Off\" period."]
 ]} />
 
@@ -31,7 +31,7 @@ Jason Thor Hall was married to Nicole Gillett **from October 17, 2015 to August 
 
 ## Public Records for Marriage and Divorce
 
-The public records for Case 200001318, provided by the clerk of the Superior
+The public records for Case 20D001318, provided by the clerk of the Superior
 Court of Orange County, are shown below.
 
 <Image src="court-petition.png" caption="Divorce filing, married on 10/17/2015" />
