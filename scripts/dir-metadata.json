@@ -30,5 +30,9 @@
   "asides": {
     "name": "Asides",
     "order": 10
+  },
+  "additional-incidents": {
+    "name": "Additional Incidents",
+    "order": 11
   }
 }

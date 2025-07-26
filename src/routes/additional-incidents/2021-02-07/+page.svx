@@ -1,0 +1,180 @@
+---
+title: Feb 7, 2021 
+---
+
+<script>
+   import Image from '$lib/components/Image.svelte';
+   import Callout from '$lib/components/Callout.svelte';
+</script>
+
+<Callout>
+
+**X consented to anonymously share their experience with Thor.**
+
+</Callout>
+
+X met Thor through Howlr, a furry dating app, looking for companionship as a
+furry game dev. Despite X setting clear boundaries, explicitly stating that they
+did not want any sexual activity, Thor repeatedly ignored these wishes.
+
+Thor insisted on penetrative sex with X, who clearly communicated their refusal.
+He would force himself onto X and dry-hump them. When X tried to push him
+away, Thor would forcefully push himself onto them. This would continue until Thor ejaculated.
+
+When X expresses their discomfort at the situation, stating it was NOT okay, Thor responds with, “You know you liked it.”
+
+Screenshots show X talking about those events right after they happened.
+
+On June 16, 2024, screenshots show X being comforted by a friend, saying it's
+okay to confront Thor about the sexual assault.
+
+**There are screenshots of Thor reflecting on this incident.**
+
+## X's Experience with Thor
+
+<div class="flex flex-col gap-4 bg-muted p-4 rounded-lg text-muted-foreground">
+
+This was during the covid or just post-covid era, we had met on a furry dating
+app called Howlr. At the time I had just wanted to know another furry game dev
+friend. I had no idea who he was, what game he made, or how big he was on the
+internet. I do not follow streamers or content creators.
+
+He had told me at the time he was going through depression from a divorce. I do
+not know if this was true, but this is what he was telling me. I wanted to lend
+him an ear, and invited him over. It was strictly on a platonic basis, talking
+about game dev, and light cuddling at most.
+
+First awkward sign was that he was unwilling to wear shoes outside. Despite me
+asking him to, he just told me he doesn't wear shoes outside. This led to him
+tracking dirt and mud in my car and home, which was already disrespectful to me
+but I chalked it up to him being awkward.
+
+Afterwards he continued talking to me about his divorce and life problems, and
+then spent a few hours ranting to me about Diablo builds and how big he was as a
+streamer. I wasn't particularly interested but again, as a young, furry game dev
+recently moved to Seattle, I just wanted a similar friend.
+
+When we started hanging out in my room is where things got weird. Despite me
+explicitly telling him I did not want penetrative sex, or any bodily fluids on
+my bed, he kept insisting on doing sexual things. Eventually it got to the point
+where I was pushing him away, or telling him to stop, but he seemed to pretend
+not to hear, and with him being larger than me it wasn't exactly easy to push
+him off. So he continued to dry hump me until he ejaculated.
+
+After it was all done I lectured him saying that I had told him repeatedly NOT
+to do that. Luckily I'm pretty thick-skinned when it comes to casual sex, but if
+I were anyone else that could have been a traumatic experience. His reply was
+simply "You know you liked it." To which I rolled my eyes in disgust. 
+
+At that point I pretty much just said "I'm taking you home." And even as I was
+taking him home, he begged me to take him to the grocery store to pick things
+up. Frustrated, I reluctantly did so and just figured this would be the last
+time I ever interacted with this person. Afterwards neither of us messaged each
+other on telegram anymore, and he deleted his telegram.
+
+
+<Image src="Friend-2021.png" caption="Conversation with a friend after the incident" />
+
+I pretty much blocked it all out of my mind, I wasn't particularly hurt. I just
+thought "Wow, that was surreal. I can't believe someone like that exists."
+
+For authenticity's sake, I can also tell you I confided in many other indie game
+devs in seattle this story, and they believed me and have always known Thor to
+be kind of shady. I had no intention of coming out with my story, and didn't
+care for attention, but it did weigh on my conscience because I do believe Thor
+should not be allowed to abuse anyone else further.
+
+I had zero idea that he was a big entity on the internet until some game awards
+show showed him. This is when I sort of realized maybe I should confront Thor.
+We're in similar game dev circles, I see his name everywhere, and beyond that I
+did not want to see further harm done to someone else.
+
+
+[On June 16, 2024, screenshots show X being comforted by a friend, saying it’s okay to confront Thor about the sexual assault.]
+
+> it feels so fucking bad dude
+> 
+> I keep replaying that night in my head trying to find some good in him but
+> whenever I do its like "Nope, even without the fact he ignored my boundaries
+> he was also just kind of shit in general" 
+> 
+> like he came into my house, no shoes, ignored most the things I said to talk
+> about himself, immediately wanted to cum inside of me despite me telling him
+> no multiple times DURING the time I was having terrible nerve pain 
+> 
+> kept pushing himself on me as I was pushing him off, and when I told him that
+> he shouldn't have done that he said "You know you liked it"
+> 
+> and somehow at the end I felt so pathetically bad for the guy he somehow
+> convinced me to drive him to groceries
+> 
+> and I cant help but process it all as "I cant believe someone that awkward
+> exists." but then its like "HEY HE WAS KIND OF AWFUL LIKE REAL BAD"
+> 
+> <Image src="Friend-2024.png" caption="Conversation with a friend before
+> speaking with Thor" />
+
+These are pictures of the conversation I had with him, he deleted his messages
+literally only a day or two after we had them. And has not messaged me since.
+
+<div class="flex gap-2 flex-wrap justify-center">
+   <Image src="PS1.png" alt="Conversation with Thor 1" />
+   <Image src="PS2.png" alt="Conversation with Thor 2" />
+   <Image src="PS3.png" alt="Conversation with Thor 3" />
+   <Image src="PS4.png" alt="Conversation with Thor 4" />
+</div>
+
+[Additional images with Thor's messages]
+
+<div class="flex gap-2 flex-wrap justify-center">
+   <Image src="PS1.1.png" alt="Conversation with Thor 1.1" />
+   <Image src="PS1.2.png" alt="Conversation with Thor 1.2" />
+   <Image src="PS2.1.png" alt="Conversation with Thor 2.1" />
+   <Image src="PS2.2.png" alt="Conversation with Thor 2.2" />
+</div>
+
+I was normally going to let this issue die, but seeing that other people have
+suffered from him made me feel like I should bring my story forward. Its not
+okay for Thor to use his status to slander other people, knowing he himself is
+not perfect in any way. I do not want to see other people suffer from his
+actions.
+
+<Image src="PS-Tele.png" caption="Some Telegram screenshots with Thor, proving they interacted" />
+
+</div>
+
+## A Note from X
+
+<div class="flex flex-col gap-4 bg-muted p-4 rounded-lg text-muted-foreground">
+
+It would be good to make a post saying something about how your post has
+inspired others to come forward. 
+
+At least for me, that's how I feel. 
+
+I really hate to see you harassed over what I think was a legitimately toxic
+relationship, especially knowing that Thor’s behavior hasn’t improved
+whatsoever. 
+
+The way he deletes his messages just to play the victim and twist
+the story is gross as hell.
+
+</div>
+
+## Discord Conversation in June 2024
+
+Below is a reconstruction of the conversation based on the screenshots sent:
+
+<Image src="PS-combined.png" external />
+
+<Callout>
+Some notes about this conversation:
+
+- 11:31PM: "I get why you would delete your messages" refers to Thor deleting
+his Telegram messages with X after the incident.
+
+- A recollection of Thor's Discord messages after 11:16PM: "he
+basically deflected and said that he was hurt emotionally and figured I wanted
+nothing to do with him"
+
+</Callout>

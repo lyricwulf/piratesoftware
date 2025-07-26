@@ -1,25 +1,35 @@
 <script lang="ts">
   import { page } from "$app/state";
-  const { src: srcProp, caption } = $props();
+  const { src: srcProp, caption, external } = $props();
 
   const pathname = page.url.pathname;
   const src = `${pathname}/${srcProp}`;
 </script>
 
-<div class="image-container">
-  <label>
-    <div class="image-small">
-      <img {src} alt={caption} width="300" height="300" />
-      {#if caption}
-        <div class="caption">{@html caption}</div>
-      {/if}
-    </div>
-    <input type="checkbox" />
-    <div class="image-large">
-      <img {src} alt={caption} class="large-image" />
-    </div>
-  </label>
-</div>
+{#if external}
+  <div class="image-container">
+    <a href={src} target="_blank" rel="noopener noreferrer">
+      <div class="image-small">
+        <img {src} alt={caption} width="300" height="300" />
+      </div>
+    </a>
+  </div>
+{:else}
+  <div class="image-container">
+    <label>
+      <div class="image-small">
+        <img {src} alt={caption} width="300" height="300" />
+        {#if caption}
+          <div class="caption">{@html caption}</div>
+        {/if}
+      </div>
+      <input type="checkbox" />
+      <div class="image-large">
+        <img {src} alt={caption} class="large-image" />
+      </div>
+    </label>
+  </div>
+{/if}
 
 <style>
   .image-container {
